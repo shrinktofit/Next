@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "805a0eec-1e61-4cbc-b3ae-2642e78de6eb",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "38828": {
+      "importer": "gltf-animation",
+      "uuid": "805a0eec-1e61-4cbc-b3ae-2642e78de6eb@38828",
+      "displayName": "",
+      "id": "38828",
+      "name": "Left Strafe.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.6666666865348816
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "a4221": {
+      "importer": "gltf-scene",
+      "uuid": "805a0eec-1e61-4cbc-b3ae-2642e78de6eb@a4221",
+      "displayName": "",
+      "id": "a4221",
+      "name": "Michelle@Left Strafe.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 0.6666666865348816,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Left Strafe",
+            "from": 0,
+            "to": 0.6666666865348816,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "805a0eec-1e61-4cbc-b3ae-2642e78de6eb@a4221",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "805a0eec-1e61-4cbc-b3ae-2642e78de6eb@a4221"
+      ]
+    }
+  }
+}

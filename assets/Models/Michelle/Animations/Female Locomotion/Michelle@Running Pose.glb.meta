@@ -1,0 +1,78 @@
+{
+  "ver": "2.3.2",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "7e2736e1-befb-4336-b612-a57a0f622cfd",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "c9a57": {
+      "importer": "gltf-animation",
+      "uuid": "7e2736e1-befb-4336-b612-a57a0f622cfd@c9a57",
+      "displayName": "",
+      "id": "c9a57",
+      "name": "Running Pose.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.699999988079071
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "e00ad": {
+      "importer": "gltf-scene",
+      "uuid": "7e2736e1-befb-4336-b612-a57a0f622cfd@e00ad",
+      "displayName": "",
+      "id": "e00ad",
+      "name": "Michelle@Running Pose.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "animationImportSettings": [
+      {
+        "name": "Running Pose",
+        "duration": 0.699999988079071,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Running Pose",
+            "from": 0,
+            "to": 0.699999988079071,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "7e2736e1-befb-4336-b612-a57a0f622cfd@e00ad",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "7e2736e1-befb-4336-b612-a57a0f622cfd@e00ad"
+      ]
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "9632b30e-3094-4012-b0a8-e69bb896c87b",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "c1360": {
+      "importer": "gltf-animation",
+      "uuid": "9632b30e-3094-4012-b0a8-e69bb896c87b@c1360",
+      "displayName": "",
+      "id": "c1360",
+      "name": "Jump Up.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.5333333611488342
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "641db": {
+      "importer": "gltf-scene",
+      "uuid": "9632b30e-3094-4012-b0a8-e69bb896c87b@641db",
+      "displayName": "",
+      "id": "641db",
+      "name": "Michelle@Jump Up.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 0.5333333611488342,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Jump Up",
+            "from": 0,
+            "to": 0.5333333611488342,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "9632b30e-3094-4012-b0a8-e69bb896c87b@641db",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "9632b30e-3094-4012-b0a8-e69bb896c87b@641db"
+      ]
+    }
+  }
+}

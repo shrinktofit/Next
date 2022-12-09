@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "0faa4de6-0341-4403-ae83-46a9f0033663",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "05534": {
+      "importer": "gltf-animation",
+      "uuid": "0faa4de6-0341-4403-ae83-46a9f0033663@05534",
+      "displayName": "",
+      "id": "05534",
+      "name": "Run Forward Left.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.5
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "c8939": {
+      "importer": "gltf-scene",
+      "uuid": "0faa4de6-0341-4403-ae83-46a9f0033663@c8939",
+      "displayName": "",
+      "id": "c8939",
+      "name": "Michelle@Run Forward Left.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 0.5,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Run Forward Left",
+            "from": 0,
+            "to": 0.5,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "0faa4de6-0341-4403-ae83-46a9f0033663@c8939",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "0faa4de6-0341-4403-ae83-46a9f0033663@c8939"
+      ]
+    }
+  }
+}

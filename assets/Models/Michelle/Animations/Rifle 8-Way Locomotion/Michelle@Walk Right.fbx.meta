@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "b156a918-c5a8-43b1-a4cb-7fde823aebb8",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "38fa1": {
+      "importer": "gltf-animation",
+      "uuid": "b156a918-c5a8-43b1-a4cb-7fde823aebb8@38fa1",
+      "displayName": "",
+      "id": "38fa1",
+      "name": "Walk Right.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "a584c": {
+      "importer": "gltf-scene",
+      "uuid": "b156a918-c5a8-43b1-a4cb-7fde823aebb8@a584c",
+      "displayName": "",
+      "id": "a584c",
+      "name": "Michelle@Walk Right.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 1,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Walk Right",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "b156a918-c5a8-43b1-a4cb-7fde823aebb8@a584c",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "b156a918-c5a8-43b1-a4cb-7fde823aebb8@a584c"
+      ]
+    }
+  }
+}

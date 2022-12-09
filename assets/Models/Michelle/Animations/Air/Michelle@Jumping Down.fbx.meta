@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "fa62e9af-ed22-4a37-94b8-ea763ea8ae62",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "91404": {
+      "importer": "gltf-animation",
+      "uuid": "fa62e9af-ed22-4a37-94b8-ea763ea8ae62@91404",
+      "displayName": "",
+      "id": "91404",
+      "name": "Jumping Down.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.36666667461395264
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "b3116": {
+      "importer": "gltf-scene",
+      "uuid": "fa62e9af-ed22-4a37-94b8-ea763ea8ae62@b3116",
+      "displayName": "",
+      "id": "b3116",
+      "name": "Michelle@Jumping Down.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 0.36666667461395264,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Jumping Down",
+            "from": 0,
+            "to": 0.36666667461395264,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "fa62e9af-ed22-4a37-94b8-ea763ea8ae62@b3116",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "fa62e9af-ed22-4a37-94b8-ea763ea8ae62@b3116"
+      ]
+    }
+  }
+}

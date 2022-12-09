@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "37f9e200-9578-4d27-be56-5b404abcaf34",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "ff651": {
+      "importer": "gltf-animation",
+      "uuid": "37f9e200-9578-4d27-be56-5b404abcaf34@ff651",
+      "displayName": "",
+      "id": "ff651",
+      "name": "Walk Left.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "6b222": {
+      "importer": "gltf-scene",
+      "uuid": "37f9e200-9578-4d27-be56-5b404abcaf34@6b222",
+      "displayName": "",
+      "id": "6b222",
+      "name": "Michelle@Walk Left.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 1,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Walk Left",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "37f9e200-9578-4d27-be56-5b404abcaf34@6b222",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "37f9e200-9578-4d27-be56-5b404abcaf34@6b222"
+      ]
+    }
+  }
+}

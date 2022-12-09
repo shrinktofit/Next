@@ -1,0 +1,201 @@
+[
+  {
+    "__type__": "cc.animation.AnimationGraph",
+    "_name": "",
+    "_objFlags": 0,
+    "_native": "",
+    "_layers": [
+      {
+        "__id__": 1
+      }
+    ],
+    "_variables": {},
+    "useDefaultTopLevelPoseExpr": true,
+    "poseExprs": {
+      "__id__": 12
+    }
+  },
+  {
+    "__type__": "cc.animation.Layer",
+    "_stateMachine": {
+      "__id__": 2
+    },
+    "name": "",
+    "weight": 1,
+    "mask": null,
+    "additive": false
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16705773798460.260211602428273",
+      "clone": null,
+      "viewport": {
+        "scale": 1,
+        "top": 0,
+        "left": 0
+      }
+    },
+    "_states": [
+      {
+        "__id__": 3
+      },
+      {
+        "__id__": 4
+      },
+      {
+        "__id__": 5
+      },
+      {
+        "__id__": 6
+      }
+    ],
+    "_transitions": [
+      {
+        "__id__": 11
+      }
+    ],
+    "_entryState": {
+      "__id__": 3
+    },
+    "_exitState": {
+      "__id__": 4
+    },
+    "_anyState": {
+      "__id__": 5
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16705773798460.9396611687080758",
+      "clone": null,
+      "centerX": -125,
+      "centerY": 0
+    },
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16705773798460.20122438742635085",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16705773798460.4937148976217398",
+      "clone": null,
+      "centerX": 302,
+      "centerY": -16
+    },
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.PoseExprState",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16705773837360.9161521976052274",
+      "clone": null,
+      "centerX": 43,
+      "centerY": -153
+    },
+    "name": "Pose",
+    "poseExprGraph": {
+      "__id__": 7
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseExprGraph",
+    "__editorExtras__": {
+      "outputNode": {
+        "centerX": 455,
+        "centerY": -7
+      }
+    },
+    "_exprs": [
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 9
+      }
+    ],
+    "_main": {
+      "__id__": 8
+    }
+  },
+  {
+    "__type__": "cc.animation.ApplyTransform",
+    "__editorExtras__": {
+      "centerX": 27,
+      "centerY": -7
+    },
+    "input": {
+      "__id__": 9
+    },
+    "transformName": "mixamorig:Hips",
+    "positionApplyFlag": 2,
+    "position": {
+      "__type__": "cc.Vec3",
+      "x": 2,
+      "y": 0,
+      "z": 0
+    },
+    "rotationApplyFlag": 0,
+    "rotation": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    }
+  },
+  {
+    "__type__": "cc.animation.MotionExpr",
+    "__editorExtras__": {
+      "centerX": -222,
+      "centerY": -28
+    },
+    "motion": {
+      "__id__": 10
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "c78a6e88-eb17-411c-84b0-63cb3c96a9c4@bab64",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.Transition",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16705789516040.35237704006668324",
+      "clone": null
+    },
+    "from": {
+      "__id__": 3
+    },
+    "to": {
+      "__id__": 6
+    },
+    "conditions": []
+  },
+  {
+    "__type__": "cc.animation.PoseExprGraph",
+    "__editorExtras__": null,
+    "_exprs": [],
+    "_main": null
+  }
+]

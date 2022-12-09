@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "c78a6e88-eb17-411c-84b0-63cb3c96a9c4",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "11871": {
+      "importer": "gltf-scene",
+      "uuid": "c78a6e88-eb17-411c-84b0-63cb3c96a9c4@11871",
+      "displayName": "",
+      "id": "11871",
+      "name": "Michelle@Idle Aiming.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "bab64": {
+      "importer": "gltf-animation",
+      "uuid": "c78a6e88-eb17-411c-84b0-63cb3c96a9c4@bab64",
+      "displayName": "",
+      "id": "bab64",
+      "name": "Idle Aiming.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2.0999999046325684
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 2.0999999046325684,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Idle Aiming",
+            "from": 0,
+            "to": 2.0999999046325684,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "c78a6e88-eb17-411c-84b0-63cb3c96a9c4@11871",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "c78a6e88-eb17-411c-84b0-63cb3c96a9c4@11871"
+      ]
+    }
+  }
+}

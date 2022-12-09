@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "dc04f672-1435-4d7b-bb49-21ad03bc612b",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "71708": {
+      "importer": "gltf-animation",
+      "uuid": "dc04f672-1435-4d7b-bb49-21ad03bc612b@71708",
+      "displayName": "",
+      "id": "71708",
+      "name": "Run Backward Right.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.5
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "5b59f": {
+      "importer": "gltf-scene",
+      "uuid": "dc04f672-1435-4d7b-bb49-21ad03bc612b@5b59f",
+      "displayName": "",
+      "id": "5b59f",
+      "name": "Michelle@Run Backward Right.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 0.5,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Run Backward Right",
+            "from": 0,
+            "to": 0.5,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "dc04f672-1435-4d7b-bb49-21ad03bc612b@5b59f",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "dc04f672-1435-4d7b-bb49-21ad03bc612b@5b59f"
+      ]
+    }
+  }
+}

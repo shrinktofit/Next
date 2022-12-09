@@ -1,0 +1,115 @@
+{
+  "ver": "2.3.2",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "027bfb69-b272-4d3c-941a-517d420bdcba",
+  "files": [
+    "__original-animation-0.cconb",
+    "__original-animation-1.cconb"
+  ],
+  "subMetas": {
+    "adb58": {
+      "importer": "gltf-animation",
+      "uuid": "027bfb69-b272-4d3c-941a-517d420bdcba@adb58",
+      "displayName": "",
+      "id": "adb58",
+      "name": "Injured.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 9.366666793823242
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "431f0": {
+      "importer": "gltf-animation",
+      "uuid": "027bfb69-b272-4d3c-941a-517d420bdcba@431f0",
+      "displayName": "",
+      "id": "431f0",
+      "name": "Injured(OnlyUpperBody).animation",
+      "userData": {
+        "gltfIndex": 1,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 9.366666793823242
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "d206f": {
+      "importer": "gltf-scene",
+      "uuid": "027bfb69-b272-4d3c-941a-517d420bdcba@d206f",
+      "displayName": "",
+      "id": "d206f",
+      "name": "Michelle@Injured.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "animationImportSettings": [
+      {
+        "name": "Injured",
+        "duration": 9.366666793823242,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Injured",
+            "from": 0,
+            "to": 9.366666793823242,
+            "wrapMode": 2
+          }
+        ]
+      },
+      {
+        "name": "Injured(OnlyUpperBody)",
+        "duration": 9.366666793823242,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Injured(OnlyUpperBody)",
+            "from": 0,
+            "to": 9.366666793823242,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "027bfb69-b272-4d3c-941a-517d420bdcba@d206f",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "027bfb69-b272-4d3c-941a-517d420bdcba@d206f"
+      ]
+    }
+  }
+}

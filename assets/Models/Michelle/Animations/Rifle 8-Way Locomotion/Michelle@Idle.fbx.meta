@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "2def71d4-79d1-4a7c-a6f7-ad0165dd6492",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "c2696": {
+      "importer": "gltf-animation",
+      "uuid": "2def71d4-79d1-4a7c-a6f7-ad0165dd6492@c2696",
+      "displayName": "",
+      "id": "c2696",
+      "name": "Idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2.0999999046325684
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "6a0fd": {
+      "importer": "gltf-scene",
+      "uuid": "2def71d4-79d1-4a7c-a6f7-ad0165dd6492@6a0fd",
+      "displayName": "",
+      "id": "6a0fd",
+      "name": "Michelle@Idle.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 2.0999999046325684,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Idle",
+            "from": 0,
+            "to": 2.0999999046325684,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "2def71d4-79d1-4a7c-a6f7-ad0165dd6492@6a0fd",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "2def71d4-79d1-4a7c-a6f7-ad0165dd6492@6a0fd"
+      ]
+    }
+  }
+}

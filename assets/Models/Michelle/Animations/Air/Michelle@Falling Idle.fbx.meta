@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "8213a34c-a0b0-432c-a9b7-94a1847c9912",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "c9df2": {
+      "importer": "gltf-animation",
+      "uuid": "8213a34c-a0b0-432c-a9b7-94a1847c9912@c9df2",
+      "displayName": "",
+      "id": "c9df2",
+      "name": "Falling Idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.699999988079071
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "b4d4f": {
+      "importer": "gltf-scene",
+      "uuid": "8213a34c-a0b0-432c-a9b7-94a1847c9912@b4d4f",
+      "displayName": "",
+      "id": "b4d4f",
+      "name": "Michelle@Falling Idle.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 0.699999988079071,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Falling Idle",
+            "from": 0,
+            "to": 0.699999988079071,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "8213a34c-a0b0-432c-a9b7-94a1847c9912@b4d4f",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "8213a34c-a0b0-432c-a9b7-94a1847c9912@b4d4f"
+      ]
+    }
+  }
+}

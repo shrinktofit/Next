@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "b47c356f-ec2b-4ef4-ad06-3bb975c1db99",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "fa11d": {
+      "importer": "gltf-animation",
+      "uuid": "b47c356f-ec2b-4ef4-ad06-3bb975c1db99@fa11d",
+      "displayName": "",
+      "id": "fa11d",
+      "name": "Walk Forward Right.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "19a4b": {
+      "importer": "gltf-scene",
+      "uuid": "b47c356f-ec2b-4ef4-ad06-3bb975c1db99@19a4b",
+      "displayName": "",
+      "id": "19a4b",
+      "name": "Michelle@Walk Forward Right.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 1,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Walk Forward Right",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "b47c356f-ec2b-4ef4-ad06-3bb975c1db99@19a4b",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "b47c356f-ec2b-4ef4-ad06-3bb975c1db99@19a4b"
+      ]
+    }
+  }
+}

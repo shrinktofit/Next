@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "a9d9cb00-4adb-4063-a481-64728af00f09",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "d42c9": {
+      "importer": "gltf-animation",
+      "uuid": "a9d9cb00-4adb-4063-a481-64728af00f09@d42c9",
+      "displayName": "",
+      "id": "d42c9",
+      "name": "Jump Loop.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "1f003": {
+      "importer": "gltf-scene",
+      "uuid": "a9d9cb00-4adb-4063-a481-64728af00f09@1f003",
+      "displayName": "",
+      "id": "1f003",
+      "name": "Michelle@Jump Loop.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 1,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Jump Loop",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "a9d9cb00-4adb-4063-a481-64728af00f09@1f003",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "a9d9cb00-4adb-4063-a481-64728af00f09@1f003"
+      ]
+    }
+  }
+}

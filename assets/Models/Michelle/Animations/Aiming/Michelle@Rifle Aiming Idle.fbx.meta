@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e036d0d4-1791-42f5-80d7-90c020954fbc",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "47e2c": {
+      "importer": "gltf-animation",
+      "uuid": "e036d0d4-1791-42f5-80d7-90c020954fbc@47e2c",
+      "displayName": "",
+      "id": "47e2c",
+      "name": "Rifle Aiming Idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 3.0999999046325684
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "c0ccd": {
+      "importer": "gltf-scene",
+      "uuid": "e036d0d4-1791-42f5-80d7-90c020954fbc@c0ccd",
+      "displayName": "",
+      "id": "c0ccd",
+      "name": "Michelle@Rifle Aiming Idle.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 3.0999999046325684,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Rifle Aiming Idle",
+            "from": 0,
+            "to": 3.0999999046325684,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "e036d0d4-1791-42f5-80d7-90c020954fbc@c0ccd",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "e036d0d4-1791-42f5-80d7-90c020954fbc@c0ccd"
+      ]
+    }
+  }
+}
