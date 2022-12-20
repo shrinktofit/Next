@@ -1,0 +1,42 @@
+{
+    "package_version": 2,
+    "version": "1.0.0",
+    "name": "animation-next",
+    "description": "i18n:animation-next.description",
+    "main": "./dist/main.js",
+    "devDependencies": {
+        "@types/fs-extra": "^9.0.13",
+        "@types/node": "^16.18.9",
+        "typescript": "^4.3.4",
+        "typescript-json-schema": "^0.55.0"
+    },
+    "author": "Cocos Creator",
+    "editor": ">=3.7.0",
+    "scripts": {
+        "build": "tsc -b",
+        "watch": "tsc -w",
+        "build-schemas": "typescript-json-schema ./src/Importers/Internals/AnimPPFile.ts PPAnim -o animpp.schema.json --strictNullChecks --required --noExtraProps"
+    },
+    "contributions": {
+        "assets": {
+            "menu": {
+                "methods": "./dist/Assets/Menu.js",
+                "createMenu": "onCreateMenu"
+            }
+        },
+        "asset-db": {
+            "importer": {
+                "script": "./dist/Importers/index.js",
+                "list": [
+                    "registerAnimPPImporter"
+                ]
+            },
+            "mount": {
+                "path": "./static/assets"
+            }
+        }
+    },
+    "dependencies": {
+        "fs-extra": "^11.1.0"
+    }
+}

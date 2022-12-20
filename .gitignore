@@ -24,3 +24,5 @@ node_modules/
 # WebStorm
 #//////////////////////////
 .idea/
+
+./extensions/animation-next/dist/

@@ -1,0 +1,8 @@
+{
+    "source": "74855ed6-0675-4b08-b408-db557e84f831@083c5",
+    "processes": [{
+        "type": "calculate-rotation-amount",
+        "curveName": "RotationAmount",
+        "root": "root"
+    }]
+}

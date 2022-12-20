@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "ES2017",
+        "module": "CommonJS",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "types": [
+            "./@types/asset-db",
+            "./@types/editor",
+            "./@types/index",
+            "./@types/packages/asset-db/@types/public",
+            "../../temp/declarations/cc",
+        ],
+    },
+    "include": [
+        "./src"
+    ],
+    "exclude": [
+        "./static"
+    ],
+}

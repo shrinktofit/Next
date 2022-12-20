@@ -1,0 +1,6 @@
+{
+    "source": "3b489dbe-6e1d-43fd-9367-1ac9e49a78f3@c5b98",
+    "processes": [{
+        "type": "calculate-rotation-amount"
+    }]
+}

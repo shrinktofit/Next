@@ -1,0 +1,377 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "57451": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@57451",
+      "displayName": "",
+      "id": "57451",
+      "name": "Fbx Default Material 5.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "68034": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@68034",
+      "displayName": "",
+      "id": "68034",
+      "name": "Fbx Default Material 9.material",
+      "userData": {
+        "gltfIndex": 9
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "bac42": {
+      "importer": "gltf-mesh",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@bac42",
+      "displayName": "",
+      "id": "bac42",
+      "name": "AnimMan_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "07767": {
+      "importer": "gltf-animation",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767",
+      "displayName": "",
+      "id": "07767",
+      "name": "N_Pose.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.03333333507180214
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 68
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "aa05b": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@aa05b",
+      "displayName": "",
+      "id": "aa05b",
+      "name": "M_AnimMan_Default.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5b118": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@5b118",
+      "displayName": "",
+      "id": "5b118",
+      "name": "Fbx Default Material 1.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "49ede": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@49ede",
+      "displayName": "",
+      "id": "49ede",
+      "name": "Fbx Default Material 2.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6d6e1": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@6d6e1",
+      "displayName": "",
+      "id": "6d6e1",
+      "name": "Fbx Default Material 3.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8f68d": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@8f68d",
+      "displayName": "",
+      "id": "8f68d",
+      "name": "Fbx Default Material 4.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "712a2": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@712a2",
+      "displayName": "",
+      "id": "712a2",
+      "name": "Fbx Default Material 6.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b00ac": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@b00ac",
+      "displayName": "",
+      "id": "b00ac",
+      "name": "Fbx Default Material 7.material",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1e95a": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@1e95a",
+      "displayName": "",
+      "id": "1e95a",
+      "name": "Fbx Default Material 8.material",
+      "userData": {
+        "gltfIndex": 8
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "028d1": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@028d1",
+      "displayName": "",
+      "id": "028d1",
+      "name": "M_AnimMan_Eyes.material",
+      "userData": {
+        "gltfIndex": 10
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d094b": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@d094b",
+      "displayName": "",
+      "id": "d094b",
+      "name": "Fbx Default Material 11.material",
+      "userData": {
+        "gltfIndex": 11
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "de880": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@de880",
+      "displayName": "",
+      "id": "de880",
+      "name": "Fbx Default Material 12.material",
+      "userData": {
+        "gltfIndex": 12
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e7622": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@e7622",
+      "displayName": "",
+      "id": "e7622",
+      "name": "Fbx Default Material 13.material",
+      "userData": {
+        "gltfIndex": 13
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0392c": {
+      "importer": "gltf-material",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@0392c",
+      "displayName": "",
+      "id": "0392c",
+      "name": "Fbx Default Material 14.material",
+      "userData": {
+        "gltfIndex": 14
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1eed0": {
+      "importer": "gltf-scene",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@1eed0",
+      "displayName": "",
+      "id": "1eed0",
+      "name": "AnimMan@ALS_N_Pose.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 0.03333333507180214,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "N_Pose",
+            "from": 0,
+            "to": 0.03333333507180214,
+            "wrapMode": 2,
+            "speed": 1
+          }
+        ]
+      }
+    ],
+    "redirect": "a3dfab70-da56-449d-b7df-a79fb5c46acc@1eed0",
+    "assetFinder": {
+      "meshes": [
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@bac42"
+      ],
+      "skeletons": [
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@438fe"
+      ],
+      "textures": [],
+      "materials": [
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@aa05b",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@5b118",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@49ede",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@6d6e1",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@8f68d",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@57451",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@712a2",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@b00ac",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@1e95a",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@68034",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@028d1",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@d094b",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@de880",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@e7622",
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@0392c"
+      ],
+      "scenes": [
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@1eed0"
+      ]
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "bb0b9275-3789-46c0-800e-e4f2091a35b4",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "45480": {
+      "importer": "gltf-scene",
+      "uuid": "bb0b9275-3789-46c0-800e-e4f2091a35b4@45480",
+      "displayName": "",
+      "id": "45480",
+      "name": "Michelle@Right Turn 90.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b413e": {
+      "importer": "gltf-animation",
+      "uuid": "bb0b9275-3789-46c0-800e-e4f2091a35b4@b413e",
+      "displayName": "",
+      "id": "b413e",
+      "name": "Right Turn 90.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.9333333373069763
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 0.9333333373069763,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Right Turn 90",
+            "from": 0,
+            "to": 0.9333333373069763,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "bb0b9275-3789-46c0-800e-e4f2091a35b4@45480",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "bb0b9275-3789-46c0-800e-e4f2091a35b4@45480"
+      ]
+    }
+  }
+}
