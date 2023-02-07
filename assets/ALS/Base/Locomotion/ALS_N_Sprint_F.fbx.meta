@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "98d0825f-ebba-45a1-809f-feabc7fee2c4",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "49965": {
+      "importer": "gltf-animation",
+      "uuid": "98d0825f-ebba-45a1-809f-feabc7fee2c4@49965",
+      "displayName": "",
+      "id": "49965",
+      "name": "ALS_N_Sprint_F.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.6333333253860474
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "4dfc5": {
+      "importer": "gltf-scene",
+      "uuid": "98d0825f-ebba-45a1-809f-feabc7fee2c4@4dfc5",
+      "displayName": "",
+      "id": "4dfc5",
+      "name": "ALS_N_Sprint_F.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 0.6333333253860474,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_Sprint_F",
+            "from": 0,
+            "to": 0.6333333253860474,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "98d0825f-ebba-45a1-809f-feabc7fee2c4@4dfc5",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "98d0825f-ebba-45a1-809f-feabc7fee2c4@4dfc5"
+      ]
+    }
+  }
+}

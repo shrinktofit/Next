@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "c85da497-6147-49b0-bb4f-bc725f434873",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "c0d71": {
+      "importer": "gltf-animation",
+      "uuid": "c85da497-6147-49b0-bb4f-bc725f434873@c0d71",
+      "displayName": "",
+      "id": "c0d71",
+      "name": "ALS_N_Walk_LB.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.1333333253860474
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "3e410": {
+      "importer": "gltf-scene",
+      "uuid": "c85da497-6147-49b0-bb4f-bc725f434873@3e410",
+      "displayName": "",
+      "id": "3e410",
+      "name": "ALS_N_Walk_LB.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 1.1333333253860474,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_Walk_LB",
+            "from": 0,
+            "to": 1.1333333253860474,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "c85da497-6147-49b0-bb4f-bc725f434873@3e410",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "c85da497-6147-49b0-bb4f-bc725f434873@3e410"
+      ]
+    }
+  }
+}

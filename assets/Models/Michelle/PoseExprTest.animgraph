@@ -4,6 +4,7 @@
     "_name": "",
     "_objFlags": 0,
     "_native": "",
+    "interruptionBehavior": 0,
     "_layers": [
       {
         "__id__": 1
@@ -12,7 +13,7 @@
     "_variables": {},
     "useDefaultTopLevelPoseExpr": true,
     "poseExprs": {
-      "__id__": 18
+      "__id__": 15
     }
   },
   {
@@ -23,7 +24,18 @@
     "name": "",
     "weight": 1,
     "mask": null,
-    "additive": false
+    "additive": false,
+    "_stashes": {
+      "NewStash_0": {
+        "__id__": 9
+      },
+      "NewStash_1": {
+        "__id__": 11
+      },
+      "NewStash_2": {
+        "__id__": 13
+      }
+    }
   },
   {
     "__type__": "cc.animation.StateMachine",
@@ -51,11 +63,7 @@
         "__id__": 6
       }
     ],
-    "_transitions": [
-      {
-        "__id__": 17
-      }
-    ],
+    "_transitions": [],
     "_entryState": {
       "__id__": 3
     },
@@ -103,10 +111,10 @@
     "__type__": "cc.animation.PoseExprState",
     "__editorExtras__": {
       "name": "",
-      "id": "16705773837360.9161521976052274",
+      "id": "16757440114000.5466667841705535",
       "clone": null,
-      "centerX": 43,
-      "centerY": -153
+      "centerX": 103,
+      "centerY": -146
     },
     "name": "Pose",
     "poseExprGraph": {
@@ -117,131 +125,77 @@
     "__type__": "cc.animation.PoseExprGraph",
     "__editorExtras__": {
       "outputNode": {
-        "centerX": 594.5833333333335,
-        "centerY": 25.291666666666686
+        "centerX": 0,
+        "centerY": 0
       }
     },
-    "_xNodes": [
+    "_xNodes": [],
+    "_exprs": [
       {
         "__id__": 8
       }
     ],
-    "_exprs": [
-      {
-        "__id__": 12
-      },
-      {
-        "__id__": 13
-      }
+    "_main": null
+  },
+  {
+    "__type__": "cc.animation.BlendInProportion",
+    "__editorExtras__": {
+      "centerX": -536,
+      "centerY": -75
+    },
+    "_bindings": [],
+    "poses": [
+      null,
+      null,
+      null
     ],
-    "_main": {
+    "proportions": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseExprGraphStash",
+    "__editorExtras__": null,
+    "graph": {
+      "__id__": 10
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseExprGraph",
+    "__editorExtras__": null,
+    "_xNodes": [],
+    "_exprs": [],
+    "_main": null
+  },
+  {
+    "__type__": "cc.animation.PoseExprGraphStash",
+    "__editorExtras__": null,
+    "graph": {
       "__id__": 12
     }
   },
   {
-    "__type__": "cc.animation.x_nodes.math.XNodeClamp",
-    "__editorExtras__": {
-      "centerX": -53,
-      "centerY": -126
-    },
-    "input": {
-      "__id__": 9
-    },
-    "min": {
-      "__id__": 10
-    },
-    "max": {
-      "__id__": 11
-    }
-  },
-  {
-    "__type__": "cc.animation.XNodeConstantNumber",
+    "__type__": "cc.animation.PoseExprGraph",
     "__editorExtras__": null,
-    "value": 0
+    "_xNodes": [],
+    "_exprs": [],
+    "_main": null
   },
   {
-    "__type__": "cc.animation.XNodeConstantNumber",
+    "__type__": "cc.animation.PoseExprGraphStash",
     "__editorExtras__": null,
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.XNodeConstantNumber",
-    "__editorExtras__": null,
-    "value": 1
-  },
-  {
-    "__type__": "cc.animation.ApplyTransform",
-    "__editorExtras__": {
-      "centerX": 336.75,
-      "centerY": -61
-    },
-    "input": {
-      "__id__": 13
-    },
-    "transformName": "",
-    "positionApplyFlag": 0,
-    "position": {
-      "__id__": 15
-    },
-    "rotationApplyFlag": 0,
-    "rotation": {
-      "__id__": 16
-    }
-  },
-  {
-    "__type__": "cc.animation.SampleMotionExpr",
-    "__editorExtras__": {
-      "centerX": 108,
-      "centerY": 32
-    },
-    "motion": {
+    "graph": {
       "__id__": 14
-    },
-    "time": {
-      "__id__": 8
-    },
-    "useNormalizedTime": false
-  },
-  {
-    "__type__": "cc.animation.ClipMotion",
-    "__editorExtras__": null,
-    "clip": null
-  },
-  {
-    "__type__": "cc.animation.XNodeConstantVec3",
-    "__editorExtras__": null,
-    "value": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
     }
   },
   {
-    "__type__": "cc.animation.XNodeConstantQuat",
+    "__type__": "cc.animation.PoseExprGraph",
     "__editorExtras__": null,
-    "value": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    }
-  },
-  {
-    "__type__": "cc.animation.Transition",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16705789516040.35237704006668324",
-      "clone": null
-    },
-    "from": {
-      "__id__": 3
-    },
-    "to": {
-      "__id__": 6
-    },
-    "conditions": []
+    "_xNodes": [],
+    "_exprs": [],
+    "_main": null
   },
   {
     "__type__": "cc.animation.PoseExprGraph",

@@ -1,9 +1,10 @@
-import { _decorator, Component, Node, find, Vec3, v3, animation } from 'cc';
+import { _decorator, Component, Node, find, Vec3, v3, animation, toDegree, director } from 'cc';
 import { getForward } from '../../Scripts/Utils/NodeUtils';
 import { clampMap } from './Utility';
-const { ccclass, property } = _decorator;
+const { ccclass, property, executionOrder } = _decorator;
 
 @ccclass('Aim')
+@executionOrder(-99999)
 export class Aim extends Component {
     start() {
     }
@@ -26,11 +27,39 @@ export class Aim extends Component {
         viewDirHorizontal.y = 0.0;
         viewDirHorizontal.normalize();
 
-        const yaw = signedAngleVec3(characterDir, viewDirHorizontal, Vec3.UP);
-        const yawClampedMapped = clampMap(-yaw, -Math.PI, Math.PI, 0, 1);
+        const yaw = -signedAngleVec3(characterDir, viewDirHorizontal, Vec3.UP);
         
         animationController.setValue('SweepUpDown', pitch / (Math.PI / 2));
-        animationController.setValue('AimLeftRight', yawClampedMapped);
+        const yawDeg = toDegree(yaw);
+        animationController.setValue('AimLeftRight', yawDeg);
+
+        animationController.setValue(
+            `ForwardYawTime`,
+            clampMap(yaw, -Math.PI, Math.PI, 0, 1)
+        );
+        animationController.setValue(
+            `LeftYawTime`,
+            clampMap(Math.abs(yaw), 0, Math.PI, 0.5, 0.0)
+        );
+        animationController.setValue(
+            `RightYawTime`,
+            clampMap(Math.abs(yaw), 0, Math.PI, 0.5, 1.0)
+        );
+        if (yawDeg !== this._yawDeg) {
+            this._yawDeg = yawDeg;
+        }
+
+        if (globalThis.stats) {
+            Object.assign(
+                (globalThis.stats[director.getTotalFrames()] ??= {}),
+                {
+                    yaw: yawDeg,
+                    ForwardYawTime: animationController.getValue('ForwardYawTime'),
+                    LeftYawTime: animationController.getValue('ForwardYawTime'),
+                    RightYawTime: animationController.getValue('ForwardYawTime'),
+                },
+            );
+        }
     }
 
     private _getViewDir() {

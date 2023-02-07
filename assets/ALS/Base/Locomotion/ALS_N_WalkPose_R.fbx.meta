@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "695fb8f4-6b2e-43f5-a14a-83789b545799",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "a28ad": {
+      "importer": "gltf-animation",
+      "uuid": "695fb8f4-6b2e-43f5-a14a-83789b545799@a28ad",
+      "displayName": "",
+      "id": "a28ad",
+      "name": "ALS_N_WalkPose_R.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.1333333253860474
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "30e1a": {
+      "importer": "gltf-scene",
+      "uuid": "695fb8f4-6b2e-43f5-a14a-83789b545799@30e1a",
+      "displayName": "",
+      "id": "30e1a",
+      "name": "ALS_N_WalkPose_R.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 1.1333333253860474,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_WalkPose_R",
+            "from": 0,
+            "to": 1.1333333253860474,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "695fb8f4-6b2e-43f5-a14a-83789b545799@30e1a",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "695fb8f4-6b2e-43f5-a14a-83789b545799@30e1a"
+      ]
+    }
+  }
+}

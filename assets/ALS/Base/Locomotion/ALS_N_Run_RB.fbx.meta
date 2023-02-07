@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "2b596964-ffd2-4a2c-9915-80ef7d1cf418",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "20074": {
+      "importer": "gltf-animation",
+      "uuid": "2b596964-ffd2-4a2c-9915-80ef7d1cf418@20074",
+      "displayName": "",
+      "id": "20074",
+      "name": "ALS_N_Run_RB.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.699999988079071
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "f0419": {
+      "importer": "gltf-scene",
+      "uuid": "2b596964-ffd2-4a2c-9915-80ef7d1cf418@f0419",
+      "displayName": "",
+      "id": "f0419",
+      "name": "ALS_N_Run_RB.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 0.699999988079071,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_Run_RB",
+            "from": 0,
+            "to": 0.699999988079071,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "2b596964-ffd2-4a2c-9915-80ef7d1cf418@f0419",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "2b596964-ffd2-4a2c-9915-80ef7d1cf418@f0419"
+      ]
+    }
+  }
+}
