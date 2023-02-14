@@ -10,56 +10,59 @@
         "__id__": 1
       },
       {
-        "__id__": 260
+        "__id__": 274
       }
     ],
     "_variables": {
       "Turning": {
-        "__id__": 384
+        "__id__": 398
       },
       "TurningAngle": {
-        "__id__": 385
+        "__id__": 399
       },
       "SweepUpDown": {
-        "__id__": 386
+        "__id__": 400
       },
       "AimLeftRight": {
-        "__id__": 387
+        "__id__": 401
       },
       "TurnInPlaceUse180": {
-        "__id__": 388
+        "__id__": 402
       },
       "ForwardYawTime": {
-        "__id__": 389
+        "__id__": 403
       },
       "LeftYawTime": {
-        "__id__": 390
+        "__id__": 404
       },
       "RightYawTime": {
-        "__id__": 391
+        "__id__": 405
       },
       "MovementDirection": {
-        "__id__": 392
+        "__id__": 406
       },
       "VelocityBlendF": {
-        "__id__": 393
+        "__id__": 407
       },
       "VelocityBlendL": {
-        "__id__": 394
+        "__id__": 408
       },
       "VelocityBlendR": {
-        "__id__": 395
+        "__id__": 409
       },
       "VelocityBlendB": {
-        "__id__": 396
+        "__id__": 410
       },
       "ShouldMove": {
-        "__id__": 397
+        "__id__": 411
+      },
+      "#StateWeight": {
+        "__id__": 412
       }
     },
     "useDefaultTopLevelPoseExpr": true,
     "poseExprs": {
-      "__id__": 398
+      "__id__": 413
     }
   },
   {
@@ -76,22 +79,22 @@
         "__id__": 66
       },
       "B Movement": {
-        "__id__": 70
+        "__id__": 71
       },
       "LF Movement": {
-        "__id__": 74
+        "__id__": 76
       },
       "LB Movement": {
-        "__id__": 78
+        "__id__": 81
       },
       "RF Movement": {
-        "__id__": 82
-      },
-      "RB Movement": {
         "__id__": 86
       },
+      "RB Movement": {
+        "__id__": 91
+      },
       "CycleBlending": {
-        "__id__": 90
+        "__id__": 96
       }
     }
   },
@@ -963,6 +966,9 @@
     "_bindings": [],
     "motion": {
       "__id__": 69
+    },
+    "coordination": {
+      "__id__": 70
     }
   },
   {
@@ -974,10 +980,14 @@
     }
   },
   {
+    "__type__": "cc.animation.MotionCoordination",
+    "group": "Locomotion"
+  },
+  {
     "__type__": "cc.animation.PoseExprGraphStash",
     "__editorExtras__": null,
     "graph": {
-      "__id__": 71
+      "__id__": 72
     }
   },
   {
@@ -991,11 +1001,11 @@
     "_xNodes": [],
     "_exprs": [
       {
-        "__id__": 72
+        "__id__": 73
       }
     ],
     "_main": {
-      "__id__": 72
+      "__id__": 73
     }
   },
   {
@@ -1006,7 +1016,10 @@
     },
     "_bindings": [],
     "motion": {
-      "__id__": 73
+      "__id__": 74
+    },
+    "coordination": {
+      "__id__": 75
     }
   },
   {
@@ -1018,10 +1031,14 @@
     }
   },
   {
+    "__type__": "cc.animation.MotionCoordination",
+    "group": "Locomotion"
+  },
+  {
     "__type__": "cc.animation.PoseExprGraphStash",
     "__editorExtras__": null,
     "graph": {
-      "__id__": 75
+      "__id__": 77
     }
   },
   {
@@ -1035,11 +1052,11 @@
     "_xNodes": [],
     "_exprs": [
       {
-        "__id__": 76
+        "__id__": 78
       }
     ],
     "_main": {
-      "__id__": 76
+      "__id__": 78
     }
   },
   {
@@ -1050,7 +1067,10 @@
     },
     "_bindings": [],
     "motion": {
-      "__id__": 77
+      "__id__": 79
+    },
+    "coordination": {
+      "__id__": 80
     }
   },
   {
@@ -1062,10 +1082,14 @@
     }
   },
   {
+    "__type__": "cc.animation.MotionCoordination",
+    "group": "Locomotion"
+  },
+  {
     "__type__": "cc.animation.PoseExprGraphStash",
     "__editorExtras__": null,
     "graph": {
-      "__id__": 79
+      "__id__": 82
     }
   },
   {
@@ -1079,11 +1103,11 @@
     "_xNodes": [],
     "_exprs": [
       {
-        "__id__": 80
+        "__id__": 83
       }
     ],
     "_main": {
-      "__id__": 80
+      "__id__": 83
     }
   },
   {
@@ -1094,7 +1118,10 @@
     },
     "_bindings": [],
     "motion": {
-      "__id__": 81
+      "__id__": 84
+    },
+    "coordination": {
+      "__id__": 85
     }
   },
   {
@@ -1106,48 +1133,8 @@
     }
   },
   {
-    "__type__": "cc.animation.PoseExprGraphStash",
-    "__editorExtras__": null,
-    "graph": {
-      "__id__": 83
-    }
-  },
-  {
-    "__type__": "cc.animation.PoseExprGraph",
-    "__editorExtras__": {
-      "outputNode": {
-        "centerX": 0,
-        "centerY": 0
-      }
-    },
-    "_xNodes": [],
-    "_exprs": [
-      {
-        "__id__": 84
-      }
-    ],
-    "_main": {
-      "__id__": 84
-    }
-  },
-  {
-    "__type__": "cc.animation.MotionExpr",
-    "__editorExtras__": {
-      "centerX": -260,
-      "centerY": -23
-    },
-    "_bindings": [],
-    "motion": {
-      "__id__": 85
-    }
-  },
-  {
-    "__type__": "cc.animation.ClipMotion",
-    "__editorExtras__": null,
-    "clip": {
-      "__uuid__": "0a0ded32-6c6c-4a5b-abae-a04e71e51034@2d351",
-      "__expectedType__": "cc.AnimationClip"
-    }
+    "__type__": "cc.animation.MotionCoordination",
+    "group": "Locomotion"
   },
   {
     "__type__": "cc.animation.PoseExprGraphStash",
@@ -1177,27 +1164,34 @@
   {
     "__type__": "cc.animation.MotionExpr",
     "__editorExtras__": {
-      "centerX": -212,
-      "centerY": -25
+      "centerX": -260,
+      "centerY": -23
     },
     "_bindings": [],
     "motion": {
       "__id__": 89
+    },
+    "coordination": {
+      "__id__": 90
     }
   },
   {
     "__type__": "cc.animation.ClipMotion",
     "__editorExtras__": null,
     "clip": {
-      "__uuid__": "2b596964-ffd2-4a2c-9915-80ef7d1cf418@20074",
+      "__uuid__": "0a0ded32-6c6c-4a5b-abae-a04e71e51034@2d351",
       "__expectedType__": "cc.AnimationClip"
     }
+  },
+  {
+    "__type__": "cc.animation.MotionCoordination",
+    "group": "Locomotion"
   },
   {
     "__type__": "cc.animation.PoseExprGraphStash",
     "__editorExtras__": null,
     "graph": {
-      "__id__": 91
+      "__id__": 92
     }
   },
   {
@@ -1211,11 +1205,62 @@
     "_xNodes": [],
     "_exprs": [
       {
-        "__id__": 92
+        "__id__": 93
       }
     ],
     "_main": {
-      "__id__": 92
+      "__id__": 93
+    }
+  },
+  {
+    "__type__": "cc.animation.MotionExpr",
+    "__editorExtras__": {
+      "centerX": -212,
+      "centerY": -25
+    },
+    "_bindings": [],
+    "motion": {
+      "__id__": 94
+    },
+    "coordination": {
+      "__id__": 95
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "2b596964-ffd2-4a2c-9915-80ef7d1cf418@20074",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.MotionCoordination",
+    "group": "Locomotion"
+  },
+  {
+    "__type__": "cc.animation.PoseExprGraphStash",
+    "__editorExtras__": null,
+    "graph": {
+      "__id__": 97
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseExprGraph",
+    "__editorExtras__": {
+      "outputNode": {
+        "centerX": 0,
+        "centerY": 0
+      }
+    },
+    "_xNodes": [],
+    "_exprs": [
+      {
+        "__id__": 98
+      }
+    ],
+    "_main": {
+      "__id__": 98
     }
   },
   {
@@ -1226,7 +1271,7 @@
     },
     "_bindings": [],
     "stateMachine": {
-      "__id__": 93
+      "__id__": 99
     }
   },
   {
@@ -1240,100 +1285,106 @@
     },
     "_states": [
       {
-        "__id__": 94
+        "__id__": 100
       },
       {
-        "__id__": 95
+        "__id__": 101
       },
       {
-        "__id__": 96
+        "__id__": 102
       },
       {
-        "__id__": 97
+        "__id__": 103
       },
       {
-        "__id__": 112
+        "__id__": 118
       },
       {
-        "__id__": 127
+        "__id__": 133
       },
       {
-        "__id__": 142
+        "__id__": 148
       },
       {
-        "__id__": 157
+        "__id__": 163
       },
       {
-        "__id__": 172
+        "__id__": 178
       }
     ],
     "_transitions": [
       {
-        "__id__": 187
+        "__id__": 193
       },
       {
-        "__id__": 191
+        "__id__": 197
       },
       {
-        "__id__": 195
+        "__id__": 201
       },
       {
-        "__id__": 199
+        "__id__": 205
       },
       {
-        "__id__": 203
+        "__id__": 209
       },
       {
-        "__id__": 207
+        "__id__": 213
       },
       {
-        "__id__": 211
+        "__id__": 217
       },
       {
-        "__id__": 215
+        "__id__": 221
       },
       {
-        "__id__": 219
+        "__id__": 225
       },
       {
-        "__id__": 223
+        "__id__": 229
       },
       {
-        "__id__": 227
+        "__id__": 233
       },
       {
-        "__id__": 231
+        "__id__": 237
       },
       {
-        "__id__": 235
+        "__id__": 241
       },
       {
-        "__id__": 239
+        "__id__": 245
       },
       {
-        "__id__": 243
+        "__id__": 249
       },
       {
-        "__id__": 247
+        "__id__": 253
       },
       {
-        "__id__": 251
+        "__id__": 257
       },
       {
-        "__id__": 255
+        "__id__": 261
       },
       {
-        "__id__": 256
+        "__id__": 262
+      },
+      {
+        "__id__": 266
+      },
+      {
+        "__id__": 270
       }
     ],
     "_entryState": {
-      "__id__": 94
+      "__id__": 100
     },
     "_exitState": {
-      "__id__": 95
+      "__id__": 101
     },
     "_anyState": {
-      "__id__": 96
+      "__id__": 102
     }
   },
   {
@@ -1380,7 +1431,7 @@
     },
     "name": "Move F",
     "poseExprGraph": {
-      "__id__": 98
+      "__id__": 104
     }
   },
   {
@@ -1393,37 +1444,37 @@
     },
     "_xNodes": [
       {
-        "__id__": 99
+        "__id__": 105
       },
       {
-        "__id__": 100
+        "__id__": 106
       },
       {
-        "__id__": 101
+        "__id__": 107
       },
       {
-        "__id__": 102
+        "__id__": 108
       }
     ],
     "_exprs": [
       {
-        "__id__": 103
-      },
-      {
-        "__id__": 108
-      },
-      {
         "__id__": 109
       },
       {
-        "__id__": 110
+        "__id__": 114
       },
       {
-        "__id__": 111
+        "__id__": 115
+      },
+      {
+        "__id__": 116
+      },
+      {
+        "__id__": 117
       }
     ],
     "_main": {
-      "__id__": 103
+      "__id__": 109
     }
   },
   {
@@ -1470,30 +1521,30 @@
     },
     "_bindings": [
       {
-        "__id__": 104
-      },
-      {
-        "__id__": 105
-      },
-      {
-        "__id__": 106
-      },
-      {
-        "__id__": 107
-      }
-    ],
-    "poses": [
-      {
-        "__id__": 108
-      },
-      {
-        "__id__": 109
-      },
-      {
         "__id__": 110
       },
       {
         "__id__": 111
+      },
+      {
+        "__id__": 112
+      },
+      {
+        "__id__": 113
+      }
+    ],
+    "poses": [
+      {
+        "__id__": 114
+      },
+      {
+        "__id__": 115
+      },
+      {
+        "__id__": 116
+      },
+      {
+        "__id__": 117
       }
     ],
     "proportions": [
@@ -1508,7 +1559,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 0,
     "_target": {
-      "__id__": 99
+      "__id__": 105
     },
     "_outputIndex": 0
   },
@@ -1517,7 +1568,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 2,
     "_target": {
-      "__id__": 100
+      "__id__": 106
     },
     "_outputIndex": 0
   },
@@ -1526,7 +1577,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 3,
     "_target": {
-      "__id__": 102
+      "__id__": 108
     },
     "_outputIndex": 0
   },
@@ -1535,7 +1586,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 1,
     "_target": {
-      "__id__": 101
+      "__id__": 107
     },
     "_outputIndex": 0
   },
@@ -1586,7 +1637,7 @@
     },
     "name": "Move LF",
     "poseExprGraph": {
-      "__id__": 113
+      "__id__": 119
     }
   },
   {
@@ -1599,37 +1650,37 @@
     },
     "_xNodes": [
       {
-        "__id__": 114
+        "__id__": 120
       },
       {
-        "__id__": 115
+        "__id__": 121
       },
       {
-        "__id__": 116
+        "__id__": 122
       },
       {
-        "__id__": 117
+        "__id__": 123
       }
     ],
     "_exprs": [
       {
-        "__id__": 118
-      },
-      {
-        "__id__": 123
-      },
-      {
         "__id__": 124
       },
       {
-        "__id__": 125
+        "__id__": 129
       },
       {
-        "__id__": 126
+        "__id__": 130
+      },
+      {
+        "__id__": 131
+      },
+      {
+        "__id__": 132
       }
     ],
     "_main": {
-      "__id__": 118
+      "__id__": 124
     }
   },
   {
@@ -1676,30 +1727,30 @@
     },
     "_bindings": [
       {
-        "__id__": 119
-      },
-      {
-        "__id__": 120
-      },
-      {
-        "__id__": 121
-      },
-      {
-        "__id__": 122
-      }
-    ],
-    "poses": [
-      {
-        "__id__": 123
-      },
-      {
-        "__id__": 124
-      },
-      {
         "__id__": 125
       },
       {
         "__id__": 126
+      },
+      {
+        "__id__": 127
+      },
+      {
+        "__id__": 128
+      }
+    ],
+    "poses": [
+      {
+        "__id__": 129
+      },
+      {
+        "__id__": 130
+      },
+      {
+        "__id__": 131
+      },
+      {
+        "__id__": 132
       }
     ],
     "proportions": [
@@ -1714,7 +1765,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 0,
     "_target": {
-      "__id__": 114
+      "__id__": 120
     },
     "_outputIndex": 0
   },
@@ -1723,7 +1774,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 1,
     "_target": {
-      "__id__": 115
+      "__id__": 121
     },
     "_outputIndex": 0
   },
@@ -1732,7 +1783,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 2,
     "_target": {
-      "__id__": 116
+      "__id__": 122
     },
     "_outputIndex": 0
   },
@@ -1741,7 +1792,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 3,
     "_target": {
-      "__id__": 117
+      "__id__": 123
     },
     "_outputIndex": 0
   },
@@ -1792,7 +1843,7 @@
     },
     "name": "Move RF",
     "poseExprGraph": {
-      "__id__": 128
+      "__id__": 134
     }
   },
   {
@@ -1805,37 +1856,37 @@
     },
     "_xNodes": [
       {
-        "__id__": 129
+        "__id__": 135
       },
       {
-        "__id__": 130
+        "__id__": 136
       },
       {
-        "__id__": 131
+        "__id__": 137
       },
       {
-        "__id__": 132
+        "__id__": 138
       }
     ],
     "_exprs": [
       {
-        "__id__": 133
-      },
-      {
         "__id__": 139
       },
       {
-        "__id__": 138
+        "__id__": 145
       },
       {
-        "__id__": 140
+        "__id__": 144
       },
       {
-        "__id__": 141
+        "__id__": 146
+      },
+      {
+        "__id__": 147
       }
     ],
     "_main": {
-      "__id__": 133
+      "__id__": 139
     }
   },
   {
@@ -1882,30 +1933,30 @@
     },
     "_bindings": [
       {
-        "__id__": 134
-      },
-      {
-        "__id__": 135
-      },
-      {
-        "__id__": 136
-      },
-      {
-        "__id__": 137
-      }
-    ],
-    "poses": [
-      {
-        "__id__": 138
-      },
-      {
-        "__id__": 139
-      },
-      {
         "__id__": 140
       },
       {
         "__id__": 141
+      },
+      {
+        "__id__": 142
+      },
+      {
+        "__id__": 143
+      }
+    ],
+    "poses": [
+      {
+        "__id__": 144
+      },
+      {
+        "__id__": 145
+      },
+      {
+        "__id__": 146
+      },
+      {
+        "__id__": 147
       }
     ],
     "proportions": [
@@ -1920,7 +1971,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 0,
     "_target": {
-      "__id__": 130
+      "__id__": 136
     },
     "_outputIndex": 0
   },
@@ -1929,7 +1980,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 1,
     "_target": {
-      "__id__": 129
+      "__id__": 135
     },
     "_outputIndex": 0
   },
@@ -1938,7 +1989,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 2,
     "_target": {
-      "__id__": 132
+      "__id__": 138
     },
     "_outputIndex": 0
   },
@@ -1947,7 +1998,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 3,
     "_target": {
-      "__id__": 131
+      "__id__": 137
     },
     "_outputIndex": 0
   },
@@ -1998,7 +2049,7 @@
     },
     "name": "Move LB",
     "poseExprGraph": {
-      "__id__": 143
+      "__id__": 149
     }
   },
   {
@@ -2011,37 +2062,37 @@
     },
     "_xNodes": [
       {
-        "__id__": 144
+        "__id__": 150
       },
       {
-        "__id__": 145
+        "__id__": 151
       },
       {
-        "__id__": 146
+        "__id__": 152
       },
       {
-        "__id__": 147
+        "__id__": 153
       }
     ],
     "_exprs": [
       {
-        "__id__": 148
-      },
-      {
-        "__id__": 153
-      },
-      {
-        "__id__": 156
-      },
-      {
-        "__id__": 155
-      },
-      {
         "__id__": 154
+      },
+      {
+        "__id__": 159
+      },
+      {
+        "__id__": 162
+      },
+      {
+        "__id__": 161
+      },
+      {
+        "__id__": 160
       }
     ],
     "_main": {
-      "__id__": 148
+      "__id__": 154
     }
   },
   {
@@ -2088,30 +2139,30 @@
     },
     "_bindings": [
       {
-        "__id__": 149
-      },
-      {
-        "__id__": 150
-      },
-      {
-        "__id__": 151
-      },
-      {
-        "__id__": 152
-      }
-    ],
-    "poses": [
-      {
-        "__id__": 153
-      },
-      {
-        "__id__": 154
-      },
-      {
         "__id__": 155
       },
       {
         "__id__": 156
+      },
+      {
+        "__id__": 157
+      },
+      {
+        "__id__": 158
+      }
+    ],
+    "poses": [
+      {
+        "__id__": 159
+      },
+      {
+        "__id__": 160
+      },
+      {
+        "__id__": 161
+      },
+      {
+        "__id__": 162
       }
     ],
     "proportions": [
@@ -2126,7 +2177,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 0,
     "_target": {
-      "__id__": 147
+      "__id__": 153
     },
     "_outputIndex": 0
   },
@@ -2135,7 +2186,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 1,
     "_target": {
-      "__id__": 144
+      "__id__": 150
     },
     "_outputIndex": 0
   },
@@ -2144,7 +2195,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 2,
     "_target": {
-      "__id__": 145
+      "__id__": 151
     },
     "_outputIndex": 0
   },
@@ -2153,7 +2204,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 3,
     "_target": {
-      "__id__": 146
+      "__id__": 152
     },
     "_outputIndex": 0
   },
@@ -2204,7 +2255,7 @@
     },
     "name": "Move B",
     "poseExprGraph": {
-      "__id__": 158
+      "__id__": 164
     }
   },
   {
@@ -2217,37 +2268,37 @@
     },
     "_xNodes": [
       {
-        "__id__": 159
+        "__id__": 165
       },
       {
-        "__id__": 160
+        "__id__": 166
       },
       {
-        "__id__": 161
+        "__id__": 167
       },
       {
-        "__id__": 162
+        "__id__": 168
       }
     ],
     "_exprs": [
       {
-        "__id__": 163
-      },
-      {
         "__id__": 169
       },
       {
-        "__id__": 168
+        "__id__": 175
       },
       {
-        "__id__": 170
+        "__id__": 174
       },
       {
-        "__id__": 171
+        "__id__": 176
+      },
+      {
+        "__id__": 177
       }
     ],
     "_main": {
-      "__id__": 163
+      "__id__": 169
     }
   },
   {
@@ -2294,30 +2345,30 @@
     },
     "_bindings": [
       {
-        "__id__": 164
-      },
-      {
-        "__id__": 165
-      },
-      {
-        "__id__": 166
-      },
-      {
-        "__id__": 167
-      }
-    ],
-    "poses": [
-      {
-        "__id__": 168
-      },
-      {
-        "__id__": 169
-      },
-      {
         "__id__": 170
       },
       {
         "__id__": 171
+      },
+      {
+        "__id__": 172
+      },
+      {
+        "__id__": 173
+      }
+    ],
+    "poses": [
+      {
+        "__id__": 174
+      },
+      {
+        "__id__": 175
+      },
+      {
+        "__id__": 176
+      },
+      {
+        "__id__": 177
       }
     ],
     "proportions": [
@@ -2332,7 +2383,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 0,
     "_target": {
-      "__id__": 159
+      "__id__": 165
     },
     "_outputIndex": 0
   },
@@ -2341,7 +2392,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 1,
     "_target": {
-      "__id__": 160
+      "__id__": 166
     },
     "_outputIndex": 0
   },
@@ -2350,7 +2401,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 2,
     "_target": {
-      "__id__": 161
+      "__id__": 167
     },
     "_outputIndex": 0
   },
@@ -2359,7 +2410,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 3,
     "_target": {
-      "__id__": 162
+      "__id__": 168
     },
     "_outputIndex": 0
   },
@@ -2405,12 +2456,12 @@
       "name": "Move RB",
       "id": "16751332861560.3250469185927376",
       "clone": null,
-      "centerX": 112,
+      "centerX": 117,
       "centerY": 62
     },
     "name": "Move RB",
     "poseExprGraph": {
-      "__id__": 173
+      "__id__": 179
     }
   },
   {
@@ -2423,37 +2474,37 @@
     },
     "_xNodes": [
       {
-        "__id__": 174
+        "__id__": 180
       },
       {
-        "__id__": 175
+        "__id__": 181
       },
       {
-        "__id__": 176
+        "__id__": 182
       },
       {
-        "__id__": 177
+        "__id__": 183
       }
     ],
     "_exprs": [
       {
-        "__id__": 178
-      },
-      {
-        "__id__": 183
-      },
-      {
         "__id__": 184
       },
       {
-        "__id__": 185
+        "__id__": 189
       },
       {
-        "__id__": 186
+        "__id__": 190
+      },
+      {
+        "__id__": 191
+      },
+      {
+        "__id__": 192
       }
     ],
     "_main": {
-      "__id__": 178
+      "__id__": 184
     }
   },
   {
@@ -2500,30 +2551,30 @@
     },
     "_bindings": [
       {
-        "__id__": 179
-      },
-      {
-        "__id__": 180
-      },
-      {
-        "__id__": 181
-      },
-      {
-        "__id__": 182
-      }
-    ],
-    "poses": [
-      {
-        "__id__": 183
-      },
-      {
-        "__id__": 184
-      },
-      {
         "__id__": 185
       },
       {
         "__id__": 186
+      },
+      {
+        "__id__": 187
+      },
+      {
+        "__id__": 188
+      }
+    ],
+    "poses": [
+      {
+        "__id__": 189
+      },
+      {
+        "__id__": 190
+      },
+      {
+        "__id__": 191
+      },
+      {
+        "__id__": 192
       }
     ],
     "proportions": [
@@ -2538,7 +2589,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 0,
     "_target": {
-      "__id__": 174
+      "__id__": 180
     },
     "_outputIndex": 0
   },
@@ -2547,7 +2598,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 1,
     "_target": {
-      "__id__": 175
+      "__id__": 181
     },
     "_outputIndex": 0
   },
@@ -2556,7 +2607,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 2,
     "_target": {
-      "__id__": 177
+      "__id__": 183
     },
     "_outputIndex": 0
   },
@@ -2565,7 +2616,7 @@
     "_consumerPropertyKey": "proportions",
     "_consumerElementIndex": 3,
     "_target": {
-      "__id__": 176
+      "__id__": 182
     },
     "_outputIndex": 0
   },
@@ -2609,14 +2660,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 112
+      "__id__": 118
     },
     "to": {
-      "__id__": 97
+      "__id__": 103
     },
     "conditions": [
       {
-        "__id__": 188
+        "__id__": 194
       }
     ],
     "duration": 0.7,
@@ -2626,10 +2677,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 189
+      "__id__": 195
     },
     "rhs": {
-      "__id__": 190
+      "__id__": 196
     }
   },
   {
@@ -2646,14 +2697,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 97
+      "__id__": 103
     },
     "to": {
-      "__id__": 112
+      "__id__": 118
     },
     "conditions": [
       {
-        "__id__": 192
+        "__id__": 198
       }
     ],
     "duration": 0.7,
@@ -2663,10 +2714,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 193
+      "__id__": 199
     },
     "rhs": {
-      "__id__": 194
+      "__id__": 200
     }
   },
   {
@@ -2683,14 +2734,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 97
+      "__id__": 103
     },
     "to": {
-      "__id__": 127
+      "__id__": 133
     },
     "conditions": [
       {
-        "__id__": 196
+        "__id__": 202
       }
     ],
     "duration": 0.7,
@@ -2700,10 +2751,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 197
+      "__id__": 203
     },
     "rhs": {
-      "__id__": 198
+      "__id__": 204
     }
   },
   {
@@ -2720,14 +2771,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 127
+      "__id__": 133
     },
     "to": {
-      "__id__": 97
+      "__id__": 103
     },
     "conditions": [
       {
-        "__id__": 200
+        "__id__": 206
       }
     ],
     "duration": 0.7,
@@ -2737,10 +2788,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 201
+      "__id__": 207
     },
     "rhs": {
-      "__id__": 202
+      "__id__": 208
     }
   },
   {
@@ -2757,14 +2808,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 142
+      "__id__": 148
     },
     "to": {
-      "__id__": 112
+      "__id__": 118
     },
     "conditions": [
       {
-        "__id__": 204
+        "__id__": 210
       }
     ],
     "duration": 0.7,
@@ -2774,10 +2825,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 205
+      "__id__": 211
     },
     "rhs": {
-      "__id__": 206
+      "__id__": 212
     }
   },
   {
@@ -2794,14 +2845,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 112
+      "__id__": 118
     },
     "to": {
-      "__id__": 142
+      "__id__": 148
     },
     "conditions": [
       {
-        "__id__": 208
+        "__id__": 214
       }
     ],
     "duration": 0.7,
@@ -2811,47 +2862,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 209
+      "__id__": 215
     },
     "rhs": {
-      "__id__": 210
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "MovementDirection",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": 1
-  },
-  {
-    "__type__": "cc.animation.PoseExprTransition",
-    "__editorExtras__": null,
-    "from": {
-      "__id__": 142
-    },
-    "to": {
-      "__id__": 157
-    },
-    "conditions": [
-      {
-        "__id__": 212
-      }
-    ],
-    "duration": 0.7,
-    "interruptionSource": 0
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 0,
-    "lhs": {
-      "__id__": 213
-    },
-    "rhs": {
-      "__id__": 214
+      "__id__": 216
     }
   },
   {
@@ -2868,14 +2882,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 157
+      "__id__": 148
     },
     "to": {
-      "__id__": 142
+      "__id__": 163
     },
     "conditions": [
       {
-        "__id__": 216
+        "__id__": 218
       }
     ],
     "duration": 0.7,
@@ -2885,10 +2899,47 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 217
+      "__id__": 219
     },
     "rhs": {
-      "__id__": 218
+      "__id__": 220
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "MovementDirection",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 1
+  },
+  {
+    "__type__": "cc.animation.PoseExprTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 163
+    },
+    "to": {
+      "__id__": 148
+    },
+    "conditions": [
+      {
+        "__id__": 222
+      }
+    ],
+    "duration": 0.7,
+    "interruptionSource": 0
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 0,
+    "lhs": {
+      "__id__": 223
+    },
+    "rhs": {
+      "__id__": 224
     }
   },
   {
@@ -2905,14 +2956,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 157
+      "__id__": 163
     },
     "to": {
-      "__id__": 172
+      "__id__": 178
     },
     "conditions": [
       {
-        "__id__": 220
+        "__id__": 226
       }
     ],
     "duration": 0.7,
@@ -2922,10 +2973,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 221
+      "__id__": 227
     },
     "rhs": {
-      "__id__": 222
+      "__id__": 228
     }
   },
   {
@@ -2942,14 +2993,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 172
+      "__id__": 178
     },
     "to": {
-      "__id__": 157
+      "__id__": 163
     },
     "conditions": [
       {
-        "__id__": 224
+        "__id__": 230
       }
     ],
     "duration": 0.7,
@@ -2959,10 +3010,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 225
+      "__id__": 231
     },
     "rhs": {
-      "__id__": 226
+      "__id__": 232
     }
   },
   {
@@ -2979,14 +3030,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 127
+      "__id__": 133
     },
     "to": {
-      "__id__": 172
+      "__id__": 178
     },
     "conditions": [
       {
-        "__id__": 228
+        "__id__": 234
       }
     ],
     "duration": 0.7,
@@ -2996,10 +3047,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 229
+      "__id__": 235
     },
     "rhs": {
-      "__id__": 230
+      "__id__": 236
     }
   },
   {
@@ -3016,14 +3067,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 172
+      "__id__": 178
     },
     "to": {
-      "__id__": 127
+      "__id__": 133
     },
     "conditions": [
       {
-        "__id__": 232
+        "__id__": 238
       }
     ],
     "duration": 0.7,
@@ -3033,10 +3084,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 233
+      "__id__": 239
     },
     "rhs": {
-      "__id__": 234
+      "__id__": 240
     }
   },
   {
@@ -3053,14 +3104,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 142
+      "__id__": 148
     },
     "to": {
-      "__id__": 127
+      "__id__": 133
     },
     "conditions": [
       {
-        "__id__": 236
+        "__id__": 242
       }
     ],
     "duration": 0.5,
@@ -3070,10 +3121,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 237
+      "__id__": 243
     },
     "rhs": {
-      "__id__": 238
+      "__id__": 244
     }
   },
   {
@@ -3090,14 +3141,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 127
+      "__id__": 133
     },
     "to": {
-      "__id__": 142
+      "__id__": 148
     },
     "conditions": [
       {
-        "__id__": 240
+        "__id__": 246
       }
     ],
     "duration": 0.5,
@@ -3107,10 +3158,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 241
+      "__id__": 247
     },
     "rhs": {
-      "__id__": 242
+      "__id__": 248
     }
   },
   {
@@ -3127,27 +3178,27 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 112
+      "__id__": 118
     },
     "to": {
-      "__id__": 172
+      "__id__": 178
     },
     "conditions": [
       {
-        "__id__": 244
+        "__id__": 250
       }
     ],
-    "duration": 5,
+    "duration": 0.5,
     "interruptionSource": 0
   },
   {
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 245
+      "__id__": 251
     },
     "rhs": {
-      "__id__": 246
+      "__id__": 252
     }
   },
   {
@@ -3164,14 +3215,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 172
+      "__id__": 178
     },
     "to": {
-      "__id__": 112
+      "__id__": 118
     },
     "conditions": [
       {
-        "__id__": 248
+        "__id__": 254
       }
     ],
     "duration": 0.5,
@@ -3181,10 +3232,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 249
+      "__id__": 255
     },
     "rhs": {
-      "__id__": 250
+      "__id__": 256
     }
   },
   {
@@ -3201,14 +3252,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 157
+      "__id__": 163
     },
     "to": {
-      "__id__": 97
+      "__id__": 103
     },
     "conditions": [
       {
-        "__id__": 252
+        "__id__": 258
       }
     ],
     "duration": 0.5,
@@ -3218,10 +3269,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 253
+      "__id__": 259
     },
     "rhs": {
-      "__id__": 254
+      "__id__": 260
     }
   },
   {
@@ -3238,10 +3289,10 @@
     "__type__": "cc.animation.Transition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 94
+      "__id__": 100
     },
     "to": {
-      "__id__": 97
+      "__id__": 103
     },
     "conditions": []
   },
@@ -3249,14 +3300,14 @@
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 97
+      "__id__": 103
     },
     "to": {
-      "__id__": 157
+      "__id__": 163
     },
     "conditions": [
       {
-        "__id__": 257
+        "__id__": 263
       }
     ],
     "duration": 0.5,
@@ -3266,10 +3317,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 0,
     "lhs": {
-      "__id__": 258
+      "__id__": 264
     },
     "rhs": {
-      "__id__": 259
+      "__id__": 265
     }
   },
   {
@@ -3283,9 +3334,83 @@
     "value": 1
   },
   {
+    "__type__": "cc.animation.PoseExprTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 148
+    },
+    "to": {
+      "__id__": 118
+    },
+    "conditions": [
+      {
+        "__id__": 267
+      }
+    ],
+    "duration": 0.75,
+    "interruptionSource": 0
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 268
+    },
+    "rhs": {
+      "__id__": 269
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "#StateWeight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 0.9999
+  },
+  {
+    "__type__": "cc.animation.PoseExprTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 178
+    },
+    "to": {
+      "__id__": 133
+    },
+    "conditions": [
+      {
+        "__id__": 271
+      }
+    ],
+    "duration": 0.75,
+    "interruptionSource": 0
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 272
+    },
+    "rhs": {
+      "__id__": 273
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "#StateWeight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 0.9999
+  },
+  {
     "__type__": "cc.animation.Layer",
     "_stateMachine": {
-      "__id__": 261
+      "__id__": 275
     },
     "name": "Aiming",
     "weight": 1,
@@ -3307,39 +3432,33 @@
     },
     "_states": [
       {
-        "__id__": 262
-      },
-      {
-        "__id__": 263
-      },
-      {
-        "__id__": 264
-      },
-      {
-        "__id__": 265
+        "__id__": 276
       },
       {
         "__id__": 277
       },
       {
-        "__id__": 290
+        "__id__": 278
       },
       {
-        "__id__": 303
+        "__id__": 279
       },
       {
-        "__id__": 316
+        "__id__": 291
+      },
+      {
+        "__id__": 304
+      },
+      {
+        "__id__": 317
+      },
+      {
+        "__id__": 330
       }
     ],
     "_transitions": [
       {
-        "__id__": 327
-      },
-      {
-        "__id__": 328
-      },
-      {
-        "__id__": 335
+        "__id__": 341
       },
       {
         "__id__": 342
@@ -3358,16 +3477,22 @@
       },
       {
         "__id__": 377
+      },
+      {
+        "__id__": 384
+      },
+      {
+        "__id__": 391
       }
     ],
     "_entryState": {
-      "__id__": 262
+      "__id__": 276
     },
     "_exitState": {
-      "__id__": 263
+      "__id__": 277
     },
     "_anyState": {
-      "__id__": 264
+      "__id__": 278
     }
   },
   {
@@ -3414,7 +3539,7 @@
     },
     "name": "Zero",
     "poseExprGraph": {
-      "__id__": 266
+      "__id__": 280
     }
   },
   {
@@ -3427,16 +3552,16 @@
     },
     "_xNodes": [
       {
-        "__id__": 267
+        "__id__": 281
       }
     ],
     "_exprs": [
       {
-        "__id__": 268
+        "__id__": 282
       }
     ],
     "_main": {
-      "__id__": 268
+      "__id__": 282
     }
   },
   {
@@ -3456,7 +3581,7 @@
     },
     "_bindings": [],
     "motion": {
-      "__id__": 269
+      "__id__": 283
     },
     "time": 0.5,
     "useNormalizedTime": true
@@ -3471,23 +3596,23 @@
     "name": "",
     "_items": [
       {
-        "__id__": 270
+        "__id__": 284
       },
       {
-        "__id__": 272
+        "__id__": 286
       },
       {
-        "__id__": 274
+        "__id__": 288
       }
     ],
     "param": {
-      "__id__": 276
+      "__id__": 290
     }
   },
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 271
+      "__id__": 285
     },
     "threshold": -1
   },
@@ -3508,7 +3633,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 273
+      "__id__": 287
     },
     "threshold": 0
   },
@@ -3529,7 +3654,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 275
+      "__id__": 289
     },
     "threshold": 1
   },
@@ -3563,7 +3688,7 @@
     },
     "name": "Forward",
     "poseExprGraph": {
-      "__id__": 278
+      "__id__": 292
     }
   },
   {
@@ -3576,16 +3701,16 @@
     },
     "_xNodes": [
       {
-        "__id__": 279
+        "__id__": 293
       }
     ],
     "_exprs": [
       {
-        "__id__": 280
+        "__id__": 294
       }
     ],
     "_main": {
-      "__id__": 280
+      "__id__": 294
     }
   },
   {
@@ -3605,11 +3730,11 @@
     },
     "_bindings": [
       {
-        "__id__": 281
+        "__id__": 295
       }
     ],
     "motion": {
-      "__id__": 282
+      "__id__": 296
     },
     "time": 0.5,
     "useNormalizedTime": true
@@ -3619,7 +3744,7 @@
     "_consumerPropertyKey": "time",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 279
+      "__id__": 293
     },
     "_outputIndex": 0
   },
@@ -3637,23 +3762,23 @@
     "name": "",
     "_items": [
       {
-        "__id__": 283
+        "__id__": 297
       },
       {
-        "__id__": 285
+        "__id__": 299
       },
       {
-        "__id__": 287
+        "__id__": 301
       }
     ],
     "param": {
-      "__id__": 289
+      "__id__": 303
     }
   },
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 284
+      "__id__": 298
     },
     "threshold": -1
   },
@@ -3674,7 +3799,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 286
+      "__id__": 300
     },
     "threshold": 0
   },
@@ -3695,7 +3820,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 288
+      "__id__": 302
     },
     "threshold": 1
   },
@@ -3729,7 +3854,7 @@
     },
     "name": "Left",
     "poseExprGraph": {
-      "__id__": 291
+      "__id__": 305
     }
   },
   {
@@ -3742,16 +3867,16 @@
     },
     "_xNodes": [
       {
-        "__id__": 292
+        "__id__": 306
       }
     ],
     "_exprs": [
       {
-        "__id__": 293
+        "__id__": 307
       }
     ],
     "_main": {
-      "__id__": 293
+      "__id__": 307
     }
   },
   {
@@ -3771,11 +3896,11 @@
     },
     "_bindings": [
       {
-        "__id__": 294
+        "__id__": 308
       }
     ],
     "motion": {
-      "__id__": 295
+      "__id__": 309
     },
     "time": 0.5,
     "useNormalizedTime": true
@@ -3785,7 +3910,7 @@
     "_consumerPropertyKey": "time",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 292
+      "__id__": 306
     },
     "_outputIndex": 0
   },
@@ -3798,23 +3923,23 @@
     "name": "",
     "_items": [
       {
-        "__id__": 296
+        "__id__": 310
       },
       {
-        "__id__": 298
+        "__id__": 312
       },
       {
-        "__id__": 300
+        "__id__": 314
       }
     ],
     "param": {
-      "__id__": 302
+      "__id__": 316
     }
   },
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 297
+      "__id__": 311
     },
     "threshold": -1
   },
@@ -3835,7 +3960,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 299
+      "__id__": 313
     },
     "threshold": 0
   },
@@ -3856,7 +3981,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 301
+      "__id__": 315
     },
     "threshold": 1
   },
@@ -3890,7 +4015,7 @@
     },
     "name": "Right",
     "poseExprGraph": {
-      "__id__": 304
+      "__id__": 318
     }
   },
   {
@@ -3903,16 +4028,16 @@
     },
     "_xNodes": [
       {
-        "__id__": 305
+        "__id__": 319
       }
     ],
     "_exprs": [
       {
-        "__id__": 306
+        "__id__": 320
       }
     ],
     "_main": {
-      "__id__": 306
+      "__id__": 320
     }
   },
   {
@@ -3932,11 +4057,11 @@
     },
     "_bindings": [
       {
-        "__id__": 307
+        "__id__": 321
       }
     ],
     "motion": {
-      "__id__": 308
+      "__id__": 322
     },
     "time": 0.5,
     "useNormalizedTime": true
@@ -3946,7 +4071,7 @@
     "_consumerPropertyKey": "time",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 305
+      "__id__": 319
     },
     "_outputIndex": 0
   },
@@ -3959,23 +4084,23 @@
     "name": "",
     "_items": [
       {
-        "__id__": 309
+        "__id__": 323
       },
       {
-        "__id__": 311
+        "__id__": 325
       },
       {
-        "__id__": 313
+        "__id__": 327
       }
     ],
     "param": {
-      "__id__": 315
+      "__id__": 329
     }
   },
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 310
+      "__id__": 324
     },
     "threshold": -1
   },
@@ -3996,7 +4121,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 312
+      "__id__": 326
     },
     "threshold": 0
   },
@@ -4017,7 +4142,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 314
+      "__id__": 328
     },
     "threshold": 1
   },
@@ -4051,7 +4176,7 @@
     },
     "name": "Pose",
     "poseExprGraph": {
-      "__id__": 317
+      "__id__": 331
     }
   },
   {
@@ -4065,11 +4190,11 @@
     "_xNodes": [],
     "_exprs": [
       {
-        "__id__": 318
+        "__id__": 332
       }
     ],
     "_main": {
-      "__id__": 318
+      "__id__": 332
     }
   },
   {
@@ -4080,7 +4205,7 @@
     },
     "_bindings": [],
     "motion": {
-      "__id__": 319
+      "__id__": 333
     },
     "time": 0.5,
     "useNormalizedTime": true
@@ -4094,23 +4219,23 @@
     "name": "",
     "_items": [
       {
-        "__id__": 320
+        "__id__": 334
       },
       {
-        "__id__": 322
+        "__id__": 336
       },
       {
-        "__id__": 324
+        "__id__": 338
       }
     ],
     "param": {
-      "__id__": 326
+      "__id__": 340
     }
   },
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 321
+      "__id__": 335
     },
     "threshold": -1
   },
@@ -4131,7 +4256,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 323
+      "__id__": 337
     },
     "threshold": 0
   },
@@ -4152,7 +4277,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 325
+      "__id__": 339
     },
     "threshold": 1
   },
@@ -4183,10 +4308,10 @@
       "clone": null
     },
     "from": {
-      "__id__": 262
+      "__id__": 276
     },
     "to": {
-      "__id__": 277
+      "__id__": 291
     },
     "conditions": []
   },
@@ -4198,138 +4323,10 @@
       "clone": null
     },
     "from": {
-      "__id__": 277
+      "__id__": 291
     },
     "to": {
-      "__id__": 290
-    },
-    "conditions": [
-      {
-        "__id__": 329
-      },
-      {
-        "__id__": 332
-      }
-    ],
-    "duration": 0.2,
-    "interruptionSource": 0
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 5,
-    "lhs": {
-      "__id__": 330
-    },
-    "rhs": {
-      "__id__": 331
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "AimLeftRight",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": -180
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 3,
-    "lhs": {
-      "__id__": 333
-    },
-    "rhs": {
-      "__id__": 334
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "AimLeftRight",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": -130
-  },
-  {
-    "__type__": "cc.animation.PoseExprTransition",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16735057861490.03461983320774453",
-      "clone": null
-    },
-    "from": {
-      "__id__": 290
-    },
-    "to": {
-      "__id__": 277
-    },
-    "conditions": [
-      {
-        "__id__": 336
-      },
-      {
-        "__id__": 339
-      }
-    ],
-    "duration": 0.2,
-    "interruptionSource": 0
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 5,
-    "lhs": {
-      "__id__": 337
-    },
-    "rhs": {
-      "__id__": 338
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "AimLeftRight",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": -125
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 3,
-    "lhs": {
-      "__id__": 340
-    },
-    "rhs": {
-      "__id__": 341
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "AimLeftRight",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": 125
-  },
-  {
-    "__type__": "cc.animation.PoseExprTransition",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16735057861490.057571106256820714",
-      "clone": null
-    },
-    "from": {
-      "__id__": 303
-    },
-    "to": {
-      "__id__": 277
+      "__id__": 304
     },
     "conditions": [
       {
@@ -4360,7 +4357,7 @@
   {
     "__type__": "cc.animation.BindableNumber",
     "variable": "",
-    "value": -125
+    "value": -180
   },
   {
     "__type__": "cc.animation.BinaryCondition",
@@ -4380,20 +4377,20 @@
   {
     "__type__": "cc.animation.BindableNumber",
     "variable": "",
-    "value": 125
+    "value": -130
   },
   {
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": {
       "name": "",
-      "id": "16735057861490.27188471144857274",
+      "id": "16735057861490.03461983320774453",
       "clone": null
     },
     "from": {
-      "__id__": 316
+      "__id__": 304
     },
     "to": {
-      "__id__": 290
+      "__id__": 291
     },
     "conditions": [
       {
@@ -4403,7 +4400,7 @@
         "__id__": 353
       }
     ],
-    "duration": 1,
+    "duration": 0.2,
     "interruptionSource": 0
   },
   {
@@ -4424,7 +4421,7 @@
   {
     "__type__": "cc.animation.BindableNumber",
     "variable": "",
-    "value": -180
+    "value": -125
   },
   {
     "__type__": "cc.animation.BinaryCondition",
@@ -4444,20 +4441,20 @@
   {
     "__type__": "cc.animation.BindableNumber",
     "variable": "",
-    "value": -130
+    "value": 125
   },
   {
     "__type__": "cc.animation.PoseExprTransition",
     "__editorExtras__": {
       "name": "",
-      "id": "16735106123370.845594975384238",
+      "id": "16735057861490.057571106256820714",
       "clone": null
     },
     "from": {
-      "__id__": 277
+      "__id__": 317
     },
     "to": {
-      "__id__": 303
+      "__id__": 291
     },
     "conditions": [
       {
@@ -4488,7 +4485,7 @@
   {
     "__type__": "cc.animation.BindableNumber",
     "variable": "",
-    "value": 130
+    "value": -125
   },
   {
     "__type__": "cc.animation.BinaryCondition",
@@ -4498,6 +4495,134 @@
     },
     "rhs": {
       "__id__": 362
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 125
+  },
+  {
+    "__type__": "cc.animation.PoseExprTransition",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16735057861490.27188471144857274",
+      "clone": null
+    },
+    "from": {
+      "__id__": 330
+    },
+    "to": {
+      "__id__": 304
+    },
+    "conditions": [
+      {
+        "__id__": 364
+      },
+      {
+        "__id__": 367
+      }
+    ],
+    "duration": 1,
+    "interruptionSource": 0
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 365
+    },
+    "rhs": {
+      "__id__": 366
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": -180
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 3,
+    "lhs": {
+      "__id__": 368
+    },
+    "rhs": {
+      "__id__": 369
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": -130
+  },
+  {
+    "__type__": "cc.animation.PoseExprTransition",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16735106123370.845594975384238",
+      "clone": null
+    },
+    "from": {
+      "__id__": 291
+    },
+    "to": {
+      "__id__": 317
+    },
+    "conditions": [
+      {
+        "__id__": 371
+      },
+      {
+        "__id__": 374
+      }
+    ],
+    "duration": 0.2,
+    "interruptionSource": 0
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 372
+    },
+    "rhs": {
+      "__id__": 373
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 130
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 3,
+    "lhs": {
+      "__id__": 375
+    },
+    "rhs": {
+      "__id__": 376
     }
   },
   {
@@ -4518,138 +4643,10 @@
       "clone": null
     },
     "from": {
-      "__id__": 290
+      "__id__": 304
     },
     "to": {
-      "__id__": 316
-    },
-    "conditions": [
-      {
-        "__id__": 364
-      },
-      {
-        "__id__": 367
-      }
-    ],
-    "duration": 1,
-    "interruptionSource": 3
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 5,
-    "lhs": {
-      "__id__": 365
-    },
-    "rhs": {
-      "__id__": 366
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "AimLeftRight",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": 130
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 3,
-    "lhs": {
-      "__id__": 368
-    },
-    "rhs": {
-      "__id__": 369
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "AimLeftRight",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": 180
-  },
-  {
-    "__type__": "cc.animation.PoseExprTransition",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16735106123370.4534628411340522",
-      "clone": null
-    },
-    "from": {
-      "__id__": 303
-    },
-    "to": {
-      "__id__": 316
-    },
-    "conditions": [
-      {
-        "__id__": 371
-      },
-      {
-        "__id__": 374
-      }
-    ],
-    "duration": 1,
-    "interruptionSource": 3
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 5,
-    "lhs": {
-      "__id__": 372
-    },
-    "rhs": {
-      "__id__": 373
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "AimLeftRight",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": -180
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 3,
-    "lhs": {
-      "__id__": 375
-    },
-    "rhs": {
-      "__id__": 376
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "AimLeftRight",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": -130
-  },
-  {
-    "__type__": "cc.animation.PoseExprTransition",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16735106123370.021818023937154818",
-      "clone": null
-    },
-    "from": {
-      "__id__": 316
-    },
-    "to": {
-      "__id__": 303
+      "__id__": 330
     },
     "conditions": [
       {
@@ -4660,7 +4657,7 @@
       }
     ],
     "duration": 1,
-    "interruptionSource": 0
+    "interruptionSource": 3
   },
   {
     "__type__": "cc.animation.BinaryCondition",
@@ -4690,6 +4687,134 @@
     },
     "rhs": {
       "__id__": 383
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 180
+  },
+  {
+    "__type__": "cc.animation.PoseExprTransition",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16735106123370.4534628411340522",
+      "clone": null
+    },
+    "from": {
+      "__id__": 317
+    },
+    "to": {
+      "__id__": 330
+    },
+    "conditions": [
+      {
+        "__id__": 385
+      },
+      {
+        "__id__": 388
+      }
+    ],
+    "duration": 1,
+    "interruptionSource": 3
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 386
+    },
+    "rhs": {
+      "__id__": 387
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": -180
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 3,
+    "lhs": {
+      "__id__": 389
+    },
+    "rhs": {
+      "__id__": 390
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": -130
+  },
+  {
+    "__type__": "cc.animation.PoseExprTransition",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16735106123370.021818023937154818",
+      "clone": null
+    },
+    "from": {
+      "__id__": 330
+    },
+    "to": {
+      "__id__": 317
+    },
+    "conditions": [
+      {
+        "__id__": 392
+      },
+      {
+        "__id__": 395
+      }
+    ],
+    "duration": 1,
+    "interruptionSource": 0
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 393
+    },
+    "rhs": {
+      "__id__": 394
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 130
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 3,
+    "lhs": {
+      "__id__": 396
+    },
+    "rhs": {
+      "__id__": 397
     }
   },
   {
@@ -4771,6 +4896,11 @@
     "__type__": "cc.animation.PlainVariable",
     "_type": 1,
     "_value": false
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 0,
+    "_value": 0
   },
   {
     "__type__": "cc.animation.PoseExprGraph",
