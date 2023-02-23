@@ -1,5 +1,6 @@
 
-import { animation, clamp, Component, director, lerp, toDegree, Vec3, _decorator } from 'cc';
+import { animation, clamp, Component, director, lerp, Quat, toDegree, Vec3, _decorator } from 'cc';
+import { ALSCharacterInfo } from './ALSCharacterInfo';
 import { createRealtimeNumberChart, RealTimeNumberChart } from './Debug/Charts/ChartService';
 import { calculateMoveDirection, MoveDirection } from './Internal/MoveDirection';
 const { ccclass, property } = _decorator;
@@ -9,14 +10,18 @@ export class MoveAnimationController extends Component {
     @property
     public debug = false;
 
-    public localVelocity = new Vec3();
-
     public start() {
         const animationController = this.node.getComponent(animation.AnimationController);
         if (!animationController) {
             throw new Error(`Animation controller does not exist!`);
         }
         this._animationController = animationController;
+
+        const characterInfo = this.node.getComponent(ALSCharacterInfo);
+        if (!characterInfo) {
+            throw new Error(`Character info does not exist!`);
+        }
+        this._characterInfo = characterInfo;
 
         if (this.debug) {
             this._chart = createRealtimeNumberChart?.({
@@ -39,8 +44,8 @@ export class MoveAnimationController extends Component {
 
         if (shouldMove) {
             this._updateMoveDirection();
+            this._updateVelocityBlend(deltaTime);
         }
-        this._updateVelocityBlend(deltaTime);
 
         if (this._currentMoveDirection !== this._lastMoveDirection) {
             this._lastMoveDirection = this._currentMoveDirection;
@@ -54,11 +59,14 @@ export class MoveAnimationController extends Component {
                 _currentVelocityBlend: currentVelocityBlend,
             } = this;
             animationController.setValue(`ShouldMove`, shouldMove);
-            animationController.setValue(`MovementDirection`, currentMoveDirection);
-            animationController.setValue(`VelocityBlendF`, currentVelocityBlend.f);
-            animationController.setValue(`VelocityBlendB`, currentVelocityBlend.b);
-            animationController.setValue(`VelocityBlendL`, currentVelocityBlend.l);
-            animationController.setValue(`VelocityBlendR`, currentVelocityBlend.r);
+            if (shouldMove) {
+                animationController.setValue(`MovementDirection`, currentMoveDirection);
+                const sumBlend = currentVelocityBlend.f + currentVelocityBlend.b + currentVelocityBlend.l + currentVelocityBlend.r;
+                animationController.setValue(`VelocityBlendF`, currentVelocityBlend.f / sumBlend);
+                animationController.setValue(`VelocityBlendB`, currentVelocityBlend.b / sumBlend);
+                animationController.setValue(`VelocityBlendL`, currentVelocityBlend.l / sumBlend);
+                animationController.setValue(`VelocityBlendR`, currentVelocityBlend.r / sumBlend);
+            }
         }
 
         if (this._chart) {
@@ -73,6 +81,8 @@ export class MoveAnimationController extends Component {
 
     private _animationController!: animation.AnimationController;
 
+    private _characterInfo!: ALSCharacterInfo;
+
     private _currentMoveDirection = MoveDirection.Forward;
 
     private _currentVelocityBlend = new VelocityBlend();
@@ -80,7 +90,10 @@ export class MoveAnimationController extends Component {
     private _chart: RealTimeNumberChart | undefined;
 
     private get _localVelocity() {
-        return this.localVelocity;
+        const v = this._characterInfo.velocity;
+        const invQ = Quat.invert(new Quat(), this.node.worldRotation);
+        const localVelocity = Vec3.transformQuat(new Vec3(), v, invQ);
+        return localVelocity;
     }
 
     private _updateMoveDirection() {
@@ -104,6 +117,9 @@ export class MoveAnimationController extends Component {
             Math.abs(localVelocityNormalized.x) +
             Math.abs(localVelocityNormalized.y) +
             Math.abs(localVelocityNormalized.z);
+        if (sum === 0.0) {
+            debugger;
+        }
         Vec3.multiplyScalar(localVelocityNormalized, localVelocityNormalized, 1.0 / sum);
 
         const { x, z } = localVelocityNormalized;
@@ -113,7 +129,7 @@ export class MoveAnimationController extends Component {
         const l = clamp(0, 1.0, x);
         const r = Math.abs(clamp(-1.0, 0.0, x));
 
-        const velocityBlendInteropSpeed = 12.0;
+        const velocityBlendInteropSpeed = 12 * 1;
         currentVelocityBlend.f = interopTo(currentVelocityBlend.f, f, deltaTime, velocityBlendInteropSpeed);
         currentVelocityBlend.b = interopTo(currentVelocityBlend.b, b, deltaTime, velocityBlendInteropSpeed);
         currentVelocityBlend.l = interopTo(currentVelocityBlend.l, l, deltaTime, velocityBlendInteropSpeed);

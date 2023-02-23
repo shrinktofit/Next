@@ -65,7 +65,13 @@ class RealTimeNumberChart {
             vAxis: {
                 title: "Value"
             },
-            legend: { position: 'bottom' }
+            legend: { position: 'bottom' },
+            series: {
+                0: { color: '#D7CAFF' },
+                1: { color: '#ff0000' },
+                2: { color: '#00ff00' },
+                3: { color: '#0000ff' },
+            }
         };
 
           // create data object with default value

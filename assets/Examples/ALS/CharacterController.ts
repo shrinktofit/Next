@@ -1,7 +1,8 @@
-import { _decorator, Component, Node, Vec2, Vec3, Quat, NodeSpace, clamp } from 'cc';
+import { _decorator, Component, Node, Vec2, Vec3, Quat, NodeSpace, clamp, find } from 'cc';
+import { getForward } from '../../Scripts/Utils/NodeUtils';
+import { ALSCharacterInfo } from './ALSCharacterInfo';
 import { globalInputManager } from './Input/Input';
 import { PredefinedAxisId } from './Input/Predefined';
-import { MoveAnimationController } from './MoveAnimationController';
 const { ccclass, property } = _decorator;
 
 @ccclass('CharacterController')
@@ -14,7 +15,6 @@ export class CharacterController extends Component {
     public maxMoveSpeed = 3.75;
 
     start() {
-        this._moveAnimationController = this.node.getComponent(MoveAnimationController);
     }
 
     update(deltaTime: number) {
@@ -31,8 +31,9 @@ export class CharacterController extends Component {
             1500.0 * 0.01,
         );
         
-        if (this._moveAnimationController) {
-            Vec3.copy(this._moveAnimationController.localVelocity, this._velocity);
+        const characterInfo = this.node.getComponent(ALSCharacterInfo);
+        if (characterInfo) {
+            Vec3.copy(characterInfo.velocity, this._velocity);
         }
     }
 
@@ -44,8 +45,6 @@ export class CharacterController extends Component {
     private _requestedVelocity = new Vec3();
     private _requestedMoveWithMaxSpeed = false;
     private _requestedMoveUseAcceleration = true;
-
-    private _moveAnimationController: MoveAnimationController | null = null;
     
     private _applyInput(deltaTime: number) {
         const inputVelocity = new Vec2(
@@ -59,6 +58,21 @@ export class CharacterController extends Component {
             0.0,
             inputVelocity.y,
         );
+
+        const _getViewDir = () => {
+            const mainCamera = find('Main Camera');
+            if (!mainCamera) {
+                return new Vec3(0, 0, -1);
+            }
+            return Vec3.negate(new Vec3(), getForward(mainCamera));
+        }
+
+        const viewDir = _getViewDir();
+        viewDir.y = 0.0;
+        Vec3.normalize(viewDir, viewDir);
+
+        const q = Quat.rotationTo(new Quat(), Vec3.UNIT_Z, viewDir);
+        Vec3.transformQuat(this._requestedVelocity, this._requestedVelocity, q);
     }
 
     private _updateVelocity(deltaTime: number, friction: number, brakingDeceleration: number) {

@@ -1,5 +1,6 @@
 import { _decorator, Component, Node, find, Vec3, v3, animation, toDegree, director } from 'cc';
 import { getForward } from '../../Scripts/Utils/NodeUtils';
+import { signedAngleVec3 } from '../ALS/Utility/SignedAngle';
 import { clampMap } from './Utility';
 const { ccclass, property, executionOrder } = _decorator;
 
@@ -69,12 +70,5 @@ export class Aim extends Component {
         }
         return Vec3.negate(v3(), getForward(mainCamera));
     }
-}
-
-function signedAngleVec3(a: Readonly<Vec3>, b: Readonly<Vec3>, normal: Readonly<Vec3>) {
-    const angle = Vec3.angle(a, b);
-    const cross = Vec3.cross(new Vec3(), a, b);
-    cross.normalize();
-    return Vec3.dot(cross, normal) < 0 ? -angle : angle;
 }
 

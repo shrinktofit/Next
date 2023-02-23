@@ -1,5 +1,6 @@
 import { _decorator, Component, Node, find, Vec3, v3, animation, Quat, toRadian, toDegree } from 'cc';
 import { getForward } from '../../Scripts/Utils/NodeUtils';
+import { ALSCharacterInfo } from '../ALS/ALSCharacterInfo';
 import { clampMap } from './Utility';
 const { ccclass, property } = _decorator;
 
@@ -18,12 +19,31 @@ export class TurnInPlace extends Component {
     public turn180Threshold = 135.0;
 
     start() {
-        this._lastViewDir = this._getViewDir();
+        const characterInfo = this.node.getComponent(ALSCharacterInfo);
+        if (!characterInfo) {
+            return;
+        }
+        this._characterInfo = characterInfo;
+
+        const viewDir = Vec3.copy(this._lastViewDir, this._characterInfo.viewDirection);
+        viewDir.y = 0.0;
+        viewDir.normalize();
     }
 
     update(deltaTime: number) {
         const animationController = this.getComponent(animation.AnimationController);
         if (!animationController) {
+            return;
+        }
+
+        const characterInfo = this.node.getComponent(ALSCharacterInfo);
+        if (!characterInfo) {
+            return;
+        }
+
+        if (!Vec3.equals(characterInfo.velocity, Vec3.ZERO)) {
+            this._turning = false;
+            animationController.setValue('Turning', this._turning);
             return;
         }
 
@@ -42,6 +62,8 @@ export class TurnInPlace extends Component {
         }
     }
 
+    private declare _characterInfo: ALSCharacterInfo;
+
     private _turning = false;
 
     private _use180 = false;
@@ -54,21 +76,13 @@ export class TurnInPlace extends Component {
 
     private _elapsedDelayTime = 0.0;
 
-    private _getViewDir() {
-        const mainCamera = find('Main Camera');
-        if (!mainCamera) {
-            return new Vec3(0, 0, -1);
-        }
-        return Vec3.negate(v3(), getForward(mainCamera));
-    }
-
     private _updateTurning(deltaTime: number) {
         const animationController = this.getComponent(animation.AnimationController);
         if (!animationController) {
             return;
         }
 
-        const viewDir = this._getViewDir();
+        const viewDir = Vec3.clone(this._characterInfo.viewDirection);
         viewDir.y = 0.0;
         viewDir.normalize();
 
