@@ -1,21 +1,41 @@
 import { _decorator, Component, Node, Vec2, Vec3, Quat, NodeSpace, clamp, find } from 'cc';
 import { getForward } from '../../Scripts/Utils/NodeUtils';
 import { ALSCharacterInfo } from './ALSCharacterInfo';
+import { ALSComponent } from './ALSComponent';
 import { globalInputManager } from './Input/Input';
 import { PredefinedAxisId } from './Input/Predefined';
+import { clampToMaxLength } from './Utility/ClampToMaxLength';
 const { ccclass, property } = _decorator;
 
+const UNIT_SCALE_ALS_TO_CC = 0.01;
+
 @ccclass('CharacterController')
-export class CharacterController extends Component {
+export class CharacterController extends ALSComponent {
     @property
-    public debugView = false;
+    public moveAccordingToCharacterDirection = false;
 
-    public maxAcceleration = 2000.0 * 0.01;
+    public maxAcceleration = 2000.0 * UNIT_SCALE_ALS_TO_CC;
 
-    public maxMoveSpeed = 3.75;
+    public maxBrakingDeceleration = 1500.0 * UNIT_SCALE_ALS_TO_CC;
+
+    public maxMoveSpeed = 375 * UNIT_SCALE_ALS_TO_CC;
+
+    public minAnalogWalkSpeed = 25 * UNIT_SCALE_ALS_TO_CC;
+
+    /**
+     * Unit: [0-1]/s.
+     */
+    public groundFriction = 5.0;
+
+    /**
+     * Historical value, 1 would be more appropriate.
+     */
+    public brakingFriction = 0.0;
 
     start() {
     }
+
+    private readonly _lastVelocity = new Vec3();
 
     update(deltaTime: number) {
         this._hasRequestedVelocity = false;
@@ -25,21 +45,44 @@ export class CharacterController extends Component {
 
         this._applyInput(deltaTime);
 
-        this._updateVelocity(
+        this._controlledCharacterMove(
+            this._inputVector,
             deltaTime,
-            5.0 * 0.01,
-            1500.0 * 0.01,
         );
         
         const characterInfo = this.node.getComponent(ALSCharacterInfo);
         if (characterInfo) {
             Vec3.copy(characterInfo.velocity, this._velocity);
+
+            (() => {
+                const currentAcceleration = new Vec3();
+                Vec3.subtract(
+                    currentAcceleration,
+                    this._velocity,
+                    this._lastVelocity,
+                );
+                Vec3.multiplyScalar(
+                    currentAcceleration,
+                    currentAcceleration,
+                    1.0 / deltaTime,
+                );
+                Vec3.copy(this._lastVelocity, this._velocity);
+                Vec3.copy(characterInfo.acceleration, currentAcceleration);
+            })();
+            // Vec3.copy(characterInfo.acceleration, this._acceleration);
+
+            characterInfo.maxAcceleration = this.maxAcceleration;
+            characterInfo.maxBrakingDeceleration = this.maxBrakingDeceleration;
         }
     }
+
+    private _inputVector = new Vec3();
 
     private _acceleration = new Vec3();
 
     private _velocity = new Vec3();
+
+    private _analogInputModifier = 0.0;
 
     private _hasRequestedVelocity = false;
     private _requestedVelocity = new Vec3();
@@ -51,34 +94,78 @@ export class CharacterController extends Component {
             globalInputManager.getAxisValue(PredefinedAxisId.MoveLeft),
             globalInputManager.getAxisValue(PredefinedAxisId.MoveForward),
         );
-        this._hasRequestedVelocity = true;
+        if (Vec2.equals(inputVelocity, Vec2.ZERO)) {
+            Vec3.zero(this._inputVector);
+            return;
+        }
+        // this._hasRequestedVelocity = true;
+
+        // Vec2.normalize(inputVelocity, inputVelocity);
+        // Vec3.set(
+        //     this._requestedVelocity,
+        //     inputVelocity.x * this.maxMoveSpeed,
+        //     0.0,
+        //     inputVelocity.y * this.maxMoveSpeed,
+        // );
+
+        // if (this.moveAccordingToCharacterDirection) {
+        //     const viewDir = Vec3.clone(getForward(this.node));
+        //     viewDir.y = 0.0;
+        //     Vec3.normalize(viewDir, viewDir);
+
+        //     const q = Quat.rotationTo(new Quat(), Vec3.UNIT_Z, viewDir);
+        //     Vec3.transformQuat(this._requestedVelocity, this._requestedVelocity, q);
+        // } else {
+        //     const viewDir = Vec3.clone(this.characterInfo.viewDirection);
+        //     viewDir.y = 0.0;
+        //     Vec3.normalize(viewDir, viewDir);
+    
+        //     const q = Quat.rotationTo(new Quat(), Vec3.UNIT_Z, viewDir);
+        //     Vec3.transformQuat(this._requestedVelocity, this._requestedVelocity, q);
+        // }
+        Vec3.zero(this._inputVector);
+        Vec2.normalize(inputVelocity, inputVelocity);
+        const ss = 0.5;
         Vec3.set(
-            this._requestedVelocity,
-            inputVelocity.x,
+            this._inputVector,
+            inputVelocity.x * ss,
             0.0,
-            inputVelocity.y,
+            inputVelocity.y * ss,
         );
 
-        const _getViewDir = () => {
-            const mainCamera = find('Main Camera');
-            if (!mainCamera) {
-                return new Vec3(0, 0, -1);
-            }
-            return Vec3.negate(new Vec3(), getForward(mainCamera));
+        if (this.moveAccordingToCharacterDirection) {
+            const viewDir = Vec3.clone(getForward(this.node));
+            viewDir.y = 0.0;
+            Vec3.normalize(viewDir, viewDir);
+
+            const q = Quat.rotationTo(new Quat(), Vec3.UNIT_Z, viewDir);
+            Vec3.transformQuat(this._inputVector, this._inputVector, q);
+        } else {
+            const viewDir = Vec3.clone(this.characterInfo.viewDirection);
+            viewDir.y = 0.0;
+            Vec3.normalize(viewDir, viewDir);
+    
+            const q = Quat.rotationTo(new Quat(), Vec3.UNIT_Z, viewDir);
+            Vec3.transformQuat(this._inputVector, this._inputVector, q);
         }
-
-        const viewDir = _getViewDir();
-        viewDir.y = 0.0;
-        Vec3.normalize(viewDir, viewDir);
-
-        const q = Quat.rotationTo(new Quat(), Vec3.UNIT_Z, viewDir);
-        Vec3.transformQuat(this._requestedVelocity, this._requestedVelocity, q);
     }
 
-    private _updateVelocity(deltaTime: number, friction: number, brakingDeceleration: number) {
+    private _controlledCharacterMove(inputVector: Readonly<Vec3>, deltaTime: number) {
+        const constrainedInputVector = this._constrainInputAcceleration(new Vec3(), inputVector);
+        this._scaleInputAcceleration(this._acceleration, constrainedInputVector);
+        this._analogInputModifier = this._computeAnalogInputModifier();
+        this._calcVelocity(
+            deltaTime,
+            this.groundFriction,
+            this.maxBrakingDeceleration,
+        );
+    }
+
+    private _calcVelocity(deltaTime: number, friction: number, brakingDeceleration: number) {
         const {
             _acceleration: acceleration,
             _velocity: velocity,
+            brakingFriction,
         } = this;
 
         const isExceedingMaxSpeed = (maxSpeed: number) => {
@@ -87,9 +174,8 @@ export class CharacterController extends Component {
 
         // !!-----------------
         const useSeparateBrakingFriction = false;
-        const brakingFriction = 1.0;  // Historical value, 1 would be more appropriate.
-        const analogInputModifier = 0.0;
-        const minAnalogSpeed = 0.0;
+        const analogInputModifier = this._analogInputModifier;
+        const minAnalogSpeed = this.minAnalogWalkSpeed;
         // ------------------
 
         let zeroRequestedAcceleration = true;
@@ -119,7 +205,7 @@ export class CharacterController extends Component {
             const oldVelocity = Vec3.clone(velocity);
             
             const actualBrakingFriction = (useSeparateBrakingFriction ? brakingFriction : friction);
-            this._applyVelocityBraking(deltaTime, actualBrakingFriction, brakingFriction);
+            this._applyVelocityBraking(deltaTime, actualBrakingFriction, brakingDeceleration);
 
             if (velocityOverMax
                 && Vec3.lengthSqr(velocity) < (maxSpeed ** 2)
@@ -205,7 +291,7 @@ export class CharacterController extends Component {
         }
     }
 
-    private _applyRequestedMove (deltaTime: number, MaxAccel: number, maxSpeed: number, friction: number, brakingDeceleration: number): undefined | {
+    private _applyRequestedMove (deltaTime: number, maxAccel: number, maxSpeed: number, friction: number, _brakingDeceleration: number): undefined | {
         acceleration: Vec3;
         requestedSpeed: number;
     } {
@@ -251,7 +337,7 @@ export class CharacterController extends Component {
             // How much do we need to accelerate to get to the new velocity?
             Vec3.subtract(newAcceleration, moveVelocity, velocity);
             Vec3.multiplyScalar(newAcceleration, newAcceleration, 1.0 / deltaTime);
-            clampToMaxLength(newAcceleration, newAcceleration, MaxAccel);
+            clampToMaxLength(newAcceleration, newAcceleration, maxAccel);
         } else {
             // Just set velocity directly.
             // If decelerating we do so instantly, so we don't slide through the destination if we can't brake fast enough.
@@ -263,18 +349,25 @@ export class CharacterController extends Component {
             requestedSpeed,
             acceleration: newAcceleration,
         };
-    };
-}
-
-function clampToMaxLength(out: Vec3, v: Vec3, maxLength: number) {
-    if (maxLength < 1e-6) {
-        return Vec3.copy(out, Vec3.ZERO);
     }
-    const lenSqr = Vec3.lengthSqr(v);
-    if (lenSqr > (maxLength ** 2)) {
-        const scale = maxLength * (lenSqr ** (-1.0 / 2.0));
-        return Vec3.multiplyScalar(out, v, scale);
-    } else {
-        return Vec3.copy(out, v);
+
+    private _constrainInputAcceleration(out: Vec3, inputAcceleration: Readonly<Vec3>) {
+        return Vec3.set(out, inputAcceleration.x, 0.0, inputAcceleration.z);
+    }
+
+    private _scaleInputAcceleration(out: Vec3, inputAcceleration: Readonly<Vec3>) {
+        const result = new Vec3();
+        clampToMaxLength(result, inputAcceleration, 1.0);
+        Vec3.multiplyScalar(result, result, this.maxAcceleration);
+        Vec3.copy(out, result);
+    }
+
+    private _computeAnalogInputModifier() {
+        const maxAccel = this.maxAcceleration;
+        const { _acceleration: acceleration } = this;
+        if (acceleration.lengthSqr() > 0.0 && maxAccel > 1e-8) {
+            return clamp(acceleration.length() / maxAccel, 0.0, 1.0);
+        }
+        return 0.0;
     }
 }

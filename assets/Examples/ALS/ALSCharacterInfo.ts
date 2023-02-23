@@ -4,7 +4,13 @@ const { ccclass, property } = _decorator;
 
 @ccclass('ALSCharacterInfo')
 export class ALSCharacterInfo extends Component {
-    public velocity = new Vec3();
+    public readonly velocity = new Vec3();
+
+    public readonly acceleration = new Vec3();
+
+    public maxAcceleration = 0.0;
+
+    public maxBrakingDeceleration = 0.0;
 
     public get viewDirection(): Readonly<Vec3> {
         return this._viewDirection;

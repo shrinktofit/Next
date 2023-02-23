@@ -1,0 +1,87 @@
+{
+  "ver": "2.3.3",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "679c0a1f-8ff3-434e-8143-97799f83c8b9",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "45357": {
+      "importer": "gltf-animation",
+      "uuid": "679c0a1f-8ff3-434e-8143-97799f83c8b9@45357",
+      "displayName": "",
+      "id": "45357",
+      "name": "ALS_N_LeanPose_F.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.03333333507180214
+        },
+        "events": [],
+        "additive": {
+          "baseClip": "e749e648-19a4-4512-9a08-27cba10a6162@760c4"
+        }
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "7c8f4": {
+      "importer": "gltf-scene",
+      "uuid": "679c0a1f-8ff3-434e-8143-97799f83c8b9@7c8f4",
+      "displayName": "",
+      "id": "7c8f4",
+      "name": "ALS_N_LeanPose_F.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 0.03333333507180214,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_LeanPose_F",
+            "from": 0,
+            "to": 0.03333333507180214,
+            "wrapMode": 2,
+            "additive": {
+              "baseClip": "e749e648-19a4-4512-9a08-27cba10a6162@760c4"
+            }
+          }
+        ]
+      }
+    ],
+    "redirect": "679c0a1f-8ff3-434e-8143-97799f83c8b9@7c8f4",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "679c0a1f-8ff3-434e-8143-97799f83c8b9@7c8f4"
+      ]
+    }
+  }
+}

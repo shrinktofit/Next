@@ -3,6 +3,7 @@ import { animation, clamp, Component, director, lerp, Quat, toDegree, Vec3, _dec
 import { ALSCharacterInfo } from './ALSCharacterInfo';
 import { createRealtimeNumberChart, RealTimeNumberChart } from './Debug/Charts/ChartService';
 import { calculateMoveDirection, MoveDirection } from './Internal/MoveDirection';
+import { interopTo } from './Utility/InteropTo';
 const { ccclass, property } = _decorator;
 
 @ccclass('MoveAnimationController')
@@ -158,17 +159,4 @@ function calculateYawInRadians(localVelocity: Vec3) {
     }
 
     return angle;
-}
-
-function interopTo(from: number, to: number, deltaTime: number, speed: number): number {
-    if (speed <= 0.0) {
-        return to;
-    }
-    const diff = to - from;
-    if ((diff ** 2) < 1e-8) {
-        return to;
-    }
-    // TODO: why? The `speed` means percentage/s?
-    const delta = diff * clamp(deltaTime * speed, 0.0, 1.0);
-    return from + delta;
 }

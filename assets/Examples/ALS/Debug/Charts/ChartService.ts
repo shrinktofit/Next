@@ -23,11 +23,17 @@ const initialize = (() => {
 class RealTimeNumberChart {
     constructor({
         valueDescriptions,
+        minValue,
+        maxValue,
     }: {
         valueDescriptions: ValueDescription[];
+        minValue?: number;
+        maxValue?: number;
     }) {
         this.#valueDescriptions = valueDescriptions;
         this.#values = [0, ...valueDescriptions.map(({ defaultValue }) => defaultValue ?? 0.0)];
+        this.#minValue = minValue;
+        this.#maxValue = maxValue;
 
         const container = document.createElement('div');
         container.id = 'chart_div';
@@ -63,7 +69,9 @@ class RealTimeNumberChart {
                 textPosition: 'none',
             },
             vAxis: {
-                title: "Value"
+                title: "Value",
+                minValue: this.#minValue,
+                maxValue: this.#maxValue,
             },
             legend: { position: 'bottom' },
             series: {
@@ -112,6 +120,8 @@ class RealTimeNumberChart {
     #updateIndex = 0;
     #valueDescriptions: ValueDescription[];
     #values: number[];
+    #minValue: number | undefined = undefined;
+    #maxValue: number | undefined = undefined;
     #maxRows = 200;
     #ready = false;
     _dataTable!: google.visualization.DataTable;
