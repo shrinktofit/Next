@@ -1987,7 +1987,7 @@
   },
   {
     "__type__": "cc.animation.MotionCoordination",
-    "group": ""
+    "group": "Locomotion"
   },
   {
     "__type__": "cc.animation.PoseExprGraphStash",
@@ -4710,13 +4710,13 @@
         "__id__": 387
       },
       {
-        "__id__": 406
-      },
-      {
-        "__id__": 391
-      },
-      {
         "__id__": 388
+      },
+      {
+        "__id__": 389
+      },
+      {
+        "__id__": 404
       }
     ],
     "_main": {
@@ -4734,34 +4734,17 @@
       "__id__": 388
     },
     "addition": {
-      "__id__": 391
+      "__id__": 389
     }
   },
   {
-    "__type__": "cc.animation.MotionExpr",
+    "__type__": "cc.animation.UseStashedPose",
     "__editorExtras__": {
-      "centerX": -542,
-      "centerY": -196
+      "centerX": -609,
+      "centerY": -66
     },
     "_bindings": [],
-    "motion": {
-      "__id__": 389
-    },
-    "coordination": {
-      "__id__": 390
-    }
-  },
-  {
-    "__type__": "cc.animation.ClipMotion",
-    "__editorExtras__": null,
-    "clip": {
-      "__uuid__": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767",
-      "__expectedType__": "cc.AnimationClip"
-    }
-  },
-  {
-    "__type__": "cc.animation.MotionCoordination",
-    "group": ""
+    "stashName": "CycleBlending"
   },
   {
     "__type__": "cc.animation.MotionExpr",
@@ -4771,10 +4754,10 @@
     },
     "_bindings": [],
     "motion": {
-      "__id__": 392
+      "__id__": 390
     },
     "coordination": {
-      "__id__": 405
+      "__id__": 403
     }
   },
   {
@@ -4795,6 +4778,9 @@
     "algorithm": 0,
     "_items": [
       {
+        "__id__": 391
+      },
+      {
         "__id__": 393
       },
       {
@@ -4805,22 +4791,19 @@
       },
       {
         "__id__": 399
-      },
-      {
-        "__id__": 401
       }
     ],
     "paramX": {
-      "__id__": 403
+      "__id__": 401
     },
     "paramY": {
-      "__id__": 404
+      "__id__": 402
     }
   },
   {
     "__type__": "cc.animation.AnimationBlend2DItem",
     "motion": {
-      "__id__": 394
+      "__id__": 392
     },
     "threshold": {
       "__type__": "cc.Vec2",
@@ -4845,7 +4828,7 @@
   {
     "__type__": "cc.animation.AnimationBlend2DItem",
     "motion": {
-      "__id__": 396
+      "__id__": 394
     },
     "threshold": {
       "__type__": "cc.Vec2",
@@ -4870,7 +4853,7 @@
   {
     "__type__": "cc.animation.AnimationBlend2DItem",
     "motion": {
-      "__id__": 398
+      "__id__": 396
     },
     "threshold": {
       "__type__": "cc.Vec2",
@@ -4895,7 +4878,7 @@
   {
     "__type__": "cc.animation.AnimationBlend2DItem",
     "motion": {
-      "__id__": 400
+      "__id__": 398
     },
     "threshold": {
       "__type__": "cc.Vec2",
@@ -4920,7 +4903,7 @@
   {
     "__type__": "cc.animation.AnimationBlend2DItem",
     "motion": {
-      "__id__": 402
+      "__id__": 400
     },
     "threshold": {
       "__type__": "cc.Vec2",
@@ -4957,13 +4940,30 @@
     "group": ""
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.MotionExpr",
     "__editorExtras__": {
-      "centerX": -609,
-      "centerY": -66
+      "centerX": -542,
+      "centerY": -196
     },
     "_bindings": [],
-    "stashName": "CycleBlending"
+    "motion": {
+      "__id__": 405
+    },
+    "coordination": {
+      "__id__": 406
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.MotionCoordination",
+    "group": ""
   },
   {
     "__type__": "cc.animation.Layer",
