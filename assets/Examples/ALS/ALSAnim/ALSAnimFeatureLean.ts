@@ -1,20 +1,21 @@
 import { _decorator, Component, Node, Vec3, Quat } from 'cc';
-import { ALSComponent } from './ALSComponent';
-import { createRealtimeNumberChart, RealTimeNumberChart } from './Debug/Charts/ChartService';
-import { clampToMaxLength } from './Utility/ClampToMaxLength';
-import { interopTo } from './Utility/InteropTo';
+import { ALSAnimFeature } from './ALSAnimFeature';
+import { createRealtimeNumberChart, RealTimeNumberChart } from '../Debug/Charts/ChartService';
+import { clampToMaxLength } from '../Utility/ClampToMaxLength';
+import { interopTo } from '../Utility/InteropTo';
+import { assertIsTrue } from '../Utility/Asserts';
 const { ccclass, property } = _decorator;
 
-@ccclass('ALSLean')
-export class ALSLean extends ALSComponent {
-    @property
+@ccclass('ALSAnimFeatureLean')
+export class ALSAnimFeatureLean extends ALSAnimFeature {
+    @property({ unit: '[0-1]/s', min: 0.0 })
     public groundedLeanInteropSpeed = 4.0;
 
     @property
     public debug = false;
 
-    start() {
-        super.start();
+    public onStart() {
+        super.onStart();
         if (this.debug) {
             this._debug = createRealtimeNumberChart?.({
                 minValue: -1.0,
@@ -28,7 +29,13 @@ export class ALSLean extends ALSComponent {
         }
     }
 
-    update(deltaTime: number) {
+    public onUpdate(deltaTime: number) {
+        if (!this.shouldMove) {
+            // this._currentLeanAmountFB = 0.0;
+            // this._currentLeanAmountLR = 0.0;
+            return;
+        }
+
         const {
             characterInfo: {
                 velocity,
@@ -47,6 +54,7 @@ export class ALSLean extends ALSComponent {
             ? maxAcceleration
             : maxBrakingDeceleration;
         clampToMaxLength(accelerationAmount, acceleration, maxAccelerationAmount);
+        assertIsTrue(maxAccelerationAmount !== 0.0);
         Vec3.multiplyScalar(accelerationAmount, accelerationAmount, 1.0 / maxAccelerationAmount);
         
         const invQ = Quat.invert(new Quat(), this.node.worldRotation);

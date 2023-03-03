@@ -1,16 +1,14 @@
 import { _decorator, Component, Node, Vec2, Vec3, Quat, NodeSpace, clamp, find } from 'cc';
 import { getForward } from '../../Scripts/Utils/NodeUtils';
 import { ALSCharacterInfo } from './ALSCharacterInfo';
-import { ALSComponent } from './ALSComponent';
 import { globalInputManager } from './Input/Input';
 import { PredefinedAxisId } from './Input/Predefined';
 import { clampToMaxLength } from './Utility/ClampToMaxLength';
+import { UNIT_SCALE_ALS_TO_CC } from './Utility/UnitConversion';
 const { ccclass, property } = _decorator;
 
-const UNIT_SCALE_ALS_TO_CC = 0.01;
-
 @ccclass('CharacterController')
-export class CharacterController extends ALSComponent {
+export class CharacterController extends Component {
     @property
     public moveAccordingToCharacterDirection = false;
 
@@ -27,12 +25,15 @@ export class CharacterController extends ALSComponent {
      */
     public groundFriction = 5.0;
 
+    public brakingFrictionFactor = 0.0;
+
     /**
      * Historical value, 1 would be more appropriate.
      */
     public brakingFriction = 0.0;
 
     start() {
+        this.characterInfo = this.node.getComponent(ALSCharacterInfo)!;
     }
 
     private readonly _lastVelocity = new Vec3();
@@ -75,6 +76,8 @@ export class CharacterController extends ALSComponent {
             characterInfo.maxBrakingDeceleration = this.maxBrakingDeceleration;
         }
     }
+
+    private characterInfo!: ALSCharacterInfo;
 
     private _inputVector = new Vec3();
 
@@ -125,12 +128,12 @@ export class CharacterController extends ALSComponent {
         // }
         Vec3.zero(this._inputVector);
         Vec2.normalize(inputVelocity, inputVelocity);
-        const ss = 0.5;
+        const movementInputScale = 1.0;
         Vec3.set(
             this._inputVector,
-            inputVelocity.x * ss,
+            inputVelocity.x * movementInputScale,
             0.0,
-            inputVelocity.y * ss,
+            inputVelocity.y * movementInputScale,
         );
 
         if (this.moveAccordingToCharacterDirection) {
@@ -224,30 +227,31 @@ export class CharacterController extends ALSComponent {
         if (!zeroAcceleration) {
             const newMaxInputSpeed = isExceedingMaxSpeed(maxInputSpeed) ? Vec3.len(this._velocity) : maxInputSpeed;
             Vec3.scaleAndAdd(velocity, velocity, acceleration, deltaTime);
-            clampToMaxLength(this._velocity, this._velocity, newMaxInputSpeed);
+            clampToMaxLength(velocity, this._velocity, newMaxInputSpeed);
         }
 
         if (!zeroRequestedAcceleration) {
             const newMaxRequestedSpeed = isExceedingMaxSpeed(requestedSpeed) ? Vec3.len(this._velocity) : requestedSpeed;
             Vec3.scaleAndAdd(velocity, velocity, requestedAcceleration, deltaTime);
-            clampToMaxLength(this._velocity, this._velocity, newMaxRequestedSpeed);
+            clampToMaxLength(velocity, this._velocity, newMaxRequestedSpeed);
         }
     }
 
     private _applyVelocityBraking(deltaTime: number, friction: number, brakingDeceleration: number) {
         const {
             _velocity: velocity,
+            brakingFrictionFactor,
         } = this;
 
         const brakingSubStepTime = 1.0 / 33.0;
         const MIN_TICK_TIME = 1e-6;
-        const BRAKE_TO_STOP_VELOCITY = 10.0;
+        const BRAKE_TO_STOP_VELOCITY = 10.0 * UNIT_SCALE_ALS_TO_CC;
 
         if (Vec3.strictEquals(velocity, Vec3.ZERO)) {
             return;
         }
 
-        const frictionFactor = Math.max(0, brakingDeceleration);
+        const frictionFactor = Math.max(0, brakingFrictionFactor);
         friction = Math.max(0, friction * frictionFactor);
         brakingDeceleration = Math.max(0, brakingDeceleration);
         const zeroFriction = (friction == 0);

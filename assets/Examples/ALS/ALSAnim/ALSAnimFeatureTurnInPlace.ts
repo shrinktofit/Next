@@ -1,11 +1,12 @@
-import { _decorator, Component, Node, find, Vec3, v3, animation, Quat, toRadian, toDegree } from 'cc';
-import { getForward } from '../../Scripts/Utils/NodeUtils';
-import { ALSCharacterInfo } from '../ALS/ALSCharacterInfo';
-import { clampMap } from './Utility';
+import { _decorator, Vec3, Quat, toDegree } from 'cc';
+import { ALSAnimFeature } from './ALSAnimFeature';
+import { getForward } from '../../../Scripts/Utils/NodeUtils';
+import { signedAngleVec3 } from '../Utility/SignedAngle';
+import { clampMap } from '../Utility/ClampMap';
 const { ccclass, property } = _decorator;
 
-@ccclass('TurnInPlace')
-export class TurnInPlace extends Component {
+@ccclass('ALSAnimFeatureTurnInPlace')
+export class ALSAnimFeatureTurnInPlace extends ALSAnimFeature {
     @property({ min: 0, max: 180, step: 1, slide: true, unit: '°' })
     public minTurnAngle = 45.0;
 
@@ -18,28 +19,17 @@ export class TurnInPlace extends Component {
     @property({ min: 0, max: 180, step: 1, slide: true, unit: '°' })
     public turn180Threshold = 135.0;
 
-    start() {
-        const characterInfo = this.node.getComponent(ALSCharacterInfo);
-        if (!characterInfo) {
-            return;
-        }
-        this._characterInfo = characterInfo;
-
-        const viewDir = Vec3.copy(this._lastViewDir, this._characterInfo.viewDirection);
+    onStart() {
+        const viewDir = Vec3.copy(this._lastViewDir, this.characterInfo.viewDirection);
         viewDir.y = 0.0;
         viewDir.normalize();
     }
 
-    update(deltaTime: number) {
-        const animationController = this.getComponent(animation.AnimationController);
-        if (!animationController) {
-            return;
-        }
-
-        const characterInfo = this.node.getComponent(ALSCharacterInfo);
-        if (!characterInfo) {
-            return;
-        }
+    onUpdate(deltaTime: number) {
+        const {
+            characterInfo,
+            animationController,
+        } = this;
 
         if (!Vec3.equals(characterInfo.velocity, Vec3.ZERO)) {
             this._turning = false;
@@ -62,8 +52,6 @@ export class TurnInPlace extends Component {
         }
     }
 
-    private declare _characterInfo: ALSCharacterInfo;
-
     private _turning = false;
 
     private _use180 = false;
@@ -77,12 +65,7 @@ export class TurnInPlace extends Component {
     private _elapsedDelayTime = 0.0;
 
     private _updateTurning(deltaTime: number) {
-        const animationController = this.getComponent(animation.AnimationController);
-        if (!animationController) {
-            return;
-        }
-
-        const viewDir = Vec3.clone(this._characterInfo.viewDirection);
+        const viewDir = Vec3.clone(this.characterInfo.viewDirection);
         viewDir.y = 0.0;
         viewDir.normalize();
 
@@ -128,15 +111,7 @@ export class TurnInPlace extends Component {
                 }
                 this._turning = true;
             }
-            animationController.setValue('TurningAngle', toDegree(currentAimAngle));
+            this.animationController.setValue('TurningAngle', toDegree(currentAimAngle));
         }
     }
 }
-
-function signedAngleVec3(a: Readonly<Vec3>, b: Readonly<Vec3>, normal: Readonly<Vec3>) {
-    const angle = Vec3.angle(a, b);
-    const cross = Vec3.cross(new Vec3(), a, b);
-    cross.normalize();
-    return Vec3.dot(cross, normal) < 0 ? -angle : angle;
-}
-

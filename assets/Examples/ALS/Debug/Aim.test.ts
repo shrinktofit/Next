@@ -1,6 +1,6 @@
 import { _decorator, Component, Node, toDegree, find, Vec3, v3, Quat, NodeSpace, input, Input, KeyCode, toRadian, tween, approx } from 'cc';
-import { getForward } from '../../Scripts/Utils/NodeUtils';
-import { clampMap } from './Utility';
+import { getForward } from '../../../Scripts/Utils/NodeUtils';
+import { clampMap } from '../Utility/ClampMap';
 const { ccclass, property } = _decorator;
 
 @ccclass('Aim_test')

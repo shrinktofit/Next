@@ -1,29 +1,20 @@
-
-import { animation, clamp, Component, director, lerp, Quat, toDegree, Vec3, _decorator } from 'cc';
-import { ALSCharacterInfo } from './ALSCharacterInfo';
-import { createRealtimeNumberChart, RealTimeNumberChart } from './Debug/Charts/ChartService';
-import { calculateMoveDirection, MoveDirection } from './Internal/MoveDirection';
-import { interopTo } from './Utility/InteropTo';
+import { _decorator, Vec3, Quat, toDegree, clamp } from 'cc';
+import { createRealtimeNumberChart, RealTimeNumberChart } from '../Debug/Charts/ChartService';
+import { calculateMoveDirection, MoveDirection } from '../Internal/MoveDirection';
+import { assertIsTrue } from '../Utility/Asserts';
+import { interopTo } from '../Utility/InteropTo';
+import { ALSAnimFeature } from './ALSAnimFeature';
 const { ccclass, property } = _decorator;
 
-@ccclass('MoveAnimationController')
-export class MoveAnimationController extends Component {
+@ccclass('ALSAnimFeatureMovement')
+export class ALSAnimFeatureMovement extends ALSAnimFeature {
     @property
     public debug = false;
 
-    public start() {
-        const animationController = this.node.getComponent(animation.AnimationController);
-        if (!animationController) {
-            throw new Error(`Animation controller does not exist!`);
-        }
-        this._animationController = animationController;
+    @property({ unit: '[0-1]/s', min: 0.0 })
+    public velocityBlendInteropSpeed = 12.0;
 
-        const characterInfo = this.node.getComponent(ALSCharacterInfo);
-        if (!characterInfo) {
-            throw new Error(`Character info does not exist!`);
-        }
-        this._characterInfo = characterInfo;
-
+    public onStart() {
         if (this.debug) {
             this._chart = createRealtimeNumberChart?.({
                 valueDescriptions: [
@@ -36,12 +27,12 @@ export class MoveAnimationController extends Component {
         }
     }
 
-    public update(deltaTime: number) {
+    public onUpdate(deltaTime: number) {
         const {
-            _animationController: animationController,
+            animationController,
         } = this;
 
-        const shouldMove = !Vec3.equals(this._localVelocity, Vec3.ZERO);
+        const shouldMove = this.shouldMove;
 
         if (shouldMove) {
             this._updateMoveDirection();
@@ -80,10 +71,6 @@ export class MoveAnimationController extends Component {
         }
     }
 
-    private _animationController!: animation.AnimationController;
-
-    private _characterInfo!: ALSCharacterInfo;
-
     private _currentMoveDirection = MoveDirection.Forward;
 
     private _currentVelocityBlend = new VelocityBlend();
@@ -91,7 +78,7 @@ export class MoveAnimationController extends Component {
     private _chart: RealTimeNumberChart | undefined;
 
     private get _localVelocity() {
-        const v = this._characterInfo.velocity;
+        const v = this.characterInfo.velocity;
         const invQ = Quat.invert(new Quat(), this.node.worldRotation);
         const localVelocity = Vec3.transformQuat(new Vec3(), v, invQ);
         return localVelocity;
@@ -111,16 +98,17 @@ export class MoveAnimationController extends Component {
     }
 
     private _updateVelocityBlend(deltaTime: number) {
-        const { _currentVelocityBlend: currentVelocityBlend } = this;
+        const {
+            _currentVelocityBlend: currentVelocityBlend,
+            velocityBlendInteropSpeed,
+        } = this;
 
         const localVelocityNormalized = Vec3.normalize(new Vec3(), this._localVelocity);
         const sum =
             Math.abs(localVelocityNormalized.x) +
             Math.abs(localVelocityNormalized.y) +
             Math.abs(localVelocityNormalized.z);
-        if (sum === 0.0) {
-            debugger;
-        }
+        assertIsTrue(sum !== 0.0);
         Vec3.multiplyScalar(localVelocityNormalized, localVelocityNormalized, 1.0 / sum);
 
         const { x, z } = localVelocityNormalized;
@@ -130,7 +118,6 @@ export class MoveAnimationController extends Component {
         const l = clamp(0, 1.0, x);
         const r = Math.abs(clamp(-1.0, 0.0, x));
 
-        const velocityBlendInteropSpeed = 12 * 1;
         currentVelocityBlend.f = interopTo(currentVelocityBlend.f, f, deltaTime, velocityBlendInteropSpeed);
         currentVelocityBlend.b = interopTo(currentVelocityBlend.b, b, deltaTime, velocityBlendInteropSpeed);
         currentVelocityBlend.l = interopTo(currentVelocityBlend.l, l, deltaTime, velocityBlendInteropSpeed);
@@ -160,3 +147,4 @@ function calculateYawInRadians(localVelocity: Vec3) {
 
     return angle;
 }
+

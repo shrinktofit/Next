@@ -1,22 +1,16 @@
-import { _decorator, Component, Node, find, Vec3, v3, animation, toDegree, director } from 'cc';
-import { getForward } from '../../Scripts/Utils/NodeUtils';
-import { signedAngleVec3 } from '../ALS/Utility/SignedAngle';
-import { clampMap } from './Utility';
-const { ccclass, property, executionOrder } = _decorator;
+import { _decorator, Vec3, Quat, toDegree, clamp, director } from 'cc';
+import { getForward } from '../../../Scripts/Utils/NodeUtils';
+import { clampMap } from '../Utility/ClampMap';
+import { signedAngleVec3 } from '../Utility/SignedAngle';
+import { ALSAnimFeature } from './ALSAnimFeature';
+const { ccclass, property } = _decorator;
 
-@ccclass('Aim')
-@executionOrder(-99999)
-export class Aim extends Component {
-    start() {
-    }
+@ccclass('ALSAnimFeatureAiming')
+export class ALSAnimFeatureAiming extends ALSAnimFeature {
+    onUpdate(deltaTime: number) {
+        const animationController = this.animationController
 
-    update(deltaTime: number) {
-        const animationController = this.getComponent(animation.AnimationController);
-        if (!animationController) {
-            return;
-        }
-
-        const viewDir = this._getViewDir();
+        const viewDir = this.characterInfo.viewDirection;
 
         const characterDir = getForward(this.node);
         characterDir.y = 0.0;
@@ -62,13 +56,4 @@ export class Aim extends Component {
             );
         }
     }
-
-    private _getViewDir() {
-        const mainCamera = find('Main Camera');
-        if (!mainCamera) {
-            return new Vec3(0, 0, -1);
-        }
-        return Vec3.negate(v3(), getForward(mainCamera));
-    }
 }
-
