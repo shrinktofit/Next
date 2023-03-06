@@ -523,7 +523,7 @@
     "featureLean": {
       "__id__": 21
     },
-    "featureLeanEnabled": true,
+    "featureLeanEnabled": false,
     "featureTurnInPlace": {
       "__id__": 22
     },
@@ -542,7 +542,7 @@
   },
   {
     "__type__": "ALSAnimFeatureLean",
-    "enabled": true,
+    "enabled": false,
     "groundedLeanInteropSpeed": 4,
     "debug": true
   },

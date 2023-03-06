@@ -1,8 +1,10 @@
-import { _decorator, Vec3, Quat, toDegree, clamp } from 'cc';
+import { _decorator, Vec3, Quat, toDegree, clamp, clamp01 } from 'cc';
 import { createRealtimeNumberChart, RealTimeNumberChart } from '../Debug/Charts/ChartService';
 import { calculateMoveDirection, MoveDirection } from '../Internal/MoveDirection';
 import { assertIsTrue } from '../Utility/Asserts';
 import { interopTo } from '../Utility/InteropTo';
+import { safeNormalizeVec3 } from '../Utility/SafeNormalize';
+import { UNIT_SCALE_ALS_TO_CC } from '../Utility/UnitConversion';
 import { ALSAnimFeature } from './ALSAnimFeature';
 const { ccclass, property } = _decorator;
 
@@ -16,14 +18,30 @@ export class ALSAnimFeatureMovement extends ALSAnimFeature {
 
     public onStart() {
         if (this.debug) {
-            this._chart = createRealtimeNumberChart?.({
-                valueDescriptions: [
-                    { displayName: 'VelocityBlend.F' },
-                    { displayName: 'VelocityBlend.B' },
-                    { displayName: 'VelocityBlend.L' },
-                    { displayName: 'VelocityBlend.R' },
-                ],
-            });
+            if (this._debugFB) {
+                this._chart = createRealtimeNumberChart?.({
+                    valueDescriptions: [
+                        { displayName: 'N/A' },
+                        { displayName: 'VelocityBlend.F' },
+                        { displayName: 'VelocityBlend.B' },
+                    ],
+                    chart: {
+                        type: 'pie',
+                    },
+                });
+            } else {
+                this._chart = createRealtimeNumberChart?.({
+                    valueDescriptions: [
+                        { displayName: 'VelocityBlend.F' },
+                        { displayName: 'VelocityBlend.B' },
+                        { displayName: 'VelocityBlend.L' },
+                        { displayName: 'VelocityBlend.R' },
+                    ],
+                    chart: {
+                        type: 'line',
+                    },
+                });
+            }
         }
     }
 
@@ -48,26 +66,39 @@ export class ALSAnimFeatureMovement extends ALSAnimFeature {
         {
             const {
                 _currentMoveDirection: currentMoveDirection,
-                _currentVelocityBlend: currentVelocityBlend,
+                _currentVelocityBlend: { f, b, l, r },
             } = this;
             animationController.setValue(`ShouldMove`, shouldMove);
             if (shouldMove) {
                 animationController.setValue(`MovementDirection`, currentMoveDirection);
-                const sumBlend = currentVelocityBlend.f + currentVelocityBlend.b + currentVelocityBlend.l + currentVelocityBlend.r;
-                animationController.setValue(`VelocityBlendF`, currentVelocityBlend.f / sumBlend);
-                animationController.setValue(`VelocityBlendB`, currentVelocityBlend.b / sumBlend);
-                animationController.setValue(`VelocityBlendL`, currentVelocityBlend.l / sumBlend);
-                animationController.setValue(`VelocityBlendR`, currentVelocityBlend.r / sumBlend);
-            }
-        }
+                const sumBlend = f + b + l + r;
+                assertIsTrue(sumBlend !== 0.0);
+                animationController.setValue(`VelocityBlendF`, f / sumBlend);
+                animationController.setValue(`VelocityBlendB`, b / sumBlend);
+                animationController.setValue(`VelocityBlendL`, l / sumBlend);
+                animationController.setValue(`VelocityBlendR`, r / sumBlend);
 
-        if (this._chart) {
-            let i = 0;
-            this._chart.setValue(i++, this._currentVelocityBlend.f);
-            this._chart.setValue(i++, this._currentVelocityBlend.b);
-            this._chart.setValue(i++, this._currentVelocityBlend.l);
-            this._chart.setValue(i++, this._currentVelocityBlend.r);
-            this._chart.update();
+                if (this._debugFB) {
+                    if (this._chart) {
+                        let i = 0;
+                        const f_ = f / sumBlend;
+                        const b_ = b / sumBlend;
+                        this._chart.setValue(i++, (1.0 - clamp01(f_ + b_)));
+                        this._chart.setValue(i++, f_);
+                        this._chart.setValue(i++, b_);
+                        this._chart.update();
+                    }
+                } else {
+                    if (this._chart) {
+                        let i = 0;
+                        this._chart.setValue(i++, f);
+                        this._chart.setValue(i++, b);
+                        this._chart.setValue(i++, l);
+                        this._chart.setValue(i++, r);
+                        this._chart.update();
+                    }
+                }
+            }
         }
     }
 
@@ -76,6 +107,8 @@ export class ALSAnimFeatureMovement extends ALSAnimFeature {
     private _currentVelocityBlend = new VelocityBlend();
 
     private _chart: RealTimeNumberChart | undefined;
+
+    private _debugFB = true;
 
     private get _localVelocity() {
         const v = this.characterInfo.velocity;
@@ -103,20 +136,23 @@ export class ALSAnimFeatureMovement extends ALSAnimFeature {
             velocityBlendInteropSpeed,
         } = this;
 
-        const localVelocityNormalized = Vec3.normalize(new Vec3(), this._localVelocity);
+        const localVelocityNormalized = safeNormalizeVec3(new Vec3(), this._localVelocity, 0.1 * UNIT_SCALE_ALS_TO_CC);
         const sum =
             Math.abs(localVelocityNormalized.x) +
             Math.abs(localVelocityNormalized.y) +
             Math.abs(localVelocityNormalized.z);
+        if (sum === 0.0) { // TODO?
+            return;
+        }
         assertIsTrue(sum !== 0.0);
         Vec3.multiplyScalar(localVelocityNormalized, localVelocityNormalized, 1.0 / sum);
 
         const { x, z } = localVelocityNormalized;
 
-        const f = clamp(0, 1.0, z);
-        const b = Math.abs(clamp(-1.0, 0.0, z));
-        const l = clamp(0, 1.0, x);
-        const r = Math.abs(clamp(-1.0, 0.0, x));
+        const f = clamp(z, 0.0, 1.0);
+        const b = Math.abs(clamp(z, -1.0, 0.0));
+        const l = clamp(x, 0.0, 1.0);
+        const r = Math.abs(clamp(x, -1.0, 0.0));
 
         currentVelocityBlend.f = interopTo(currentVelocityBlend.f, f, deltaTime, velocityBlendInteropSpeed);
         currentVelocityBlend.b = interopTo(currentVelocityBlend.b, b, deltaTime, velocityBlendInteropSpeed);

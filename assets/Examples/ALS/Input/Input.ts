@@ -67,21 +67,37 @@ class InputManager {
 
     private _initialize() {
         engineInput.on(EngineInput.EventType.KEY_DOWN, (event) => {
-            this._pressedKeys.add(event.keyCode);
-            for (const [_, action] of Object.entries(this._actions)) {
-                if (action.mappings.some((mapping) => mapping.keyCode === event.keyCode)) {
-                    action.triggered2 = true;
-                }
-            }
+            this._onKeyDown(event.keyCode);
         });
         engineInput.on(EngineInput.EventType.KEY_UP, (event) => {
-            this._pressedKeys.delete(event.keyCode);
+            this._onKeyUp(event.keyCode);
         });
+    }
+
+    public sendKeyDown(keyCode: KeyCode) {
+        this._onKeyDown(keyCode);
+    }
+
+    public sendKeyUp(keyCode: KeyCode) {
+        this._onKeyUp(keyCode);
     }
 
     private _axes: Record<AxisId, AxisRecord> = {};
     private _actions: Record<ActionId, ActionRecord> = {};
     private _pressedKeys = new Set();
+
+    private _onKeyDown(keyCode: KeyCode) {
+        this._pressedKeys.add(keyCode);
+        for (const [_, action] of Object.entries(this._actions)) {
+            if (action.mappings.some((mapping) => mapping.keyCode === keyCode)) {
+                action.triggered2 = true;
+            }
+        }
+    }
+
+    private _onKeyUp(keyCode: KeyCode) {
+        this._pressedKeys.delete(keyCode);
+    }
 }
 
 class Axis {

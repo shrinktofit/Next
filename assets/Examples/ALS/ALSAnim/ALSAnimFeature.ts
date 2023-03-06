@@ -1,5 +1,6 @@
 import { animation, Node, _decorator } from "cc";
 import { ALSCharacterInfo } from "../ALSCharacterInfo";
+import { UNIT_SCALE_ALS_TO_CC } from "../Utility/UnitConversion";
 
 const { ccclass, property } = _decorator;
 
@@ -34,7 +35,7 @@ export class ALSAnimFeature {
 
     protected get shouldMove() {
         const { characterInfo } = this;
-        return (characterInfo.isMoving && characterInfo.hasMovementInput) || characterInfo.speed > 1.5;
+        return (characterInfo.isMoving && characterInfo.hasMovementInput) || characterInfo.speed > (150 * UNIT_SCALE_ALS_TO_CC);
     }
 
     private declare _node: Node;
