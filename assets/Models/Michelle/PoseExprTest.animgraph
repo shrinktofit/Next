@@ -10,11 +10,7 @@
         "__id__": 1
       }
     ],
-    "_variables": {},
-    "useDefaultTopLevelPoseExpr": true,
-    "poseExprs": {
-      "__id__": 15
-    }
+    "_variables": {}
   },
   {
     "__type__": "cc.animation.Layer",
@@ -27,13 +23,13 @@
     "additive": false,
     "_stashes": {
       "NewStash_0": {
-        "__id__": 9
+        "__id__": 10
       },
       "NewStash_1": {
-        "__id__": 11
+        "__id__": 12
       },
       "NewStash_2": {
-        "__id__": 13
+        "__id__": 14
       }
     }
   },
@@ -81,7 +77,7 @@
       "id": "16705773798460.9396611687080758",
       "clone": null,
       "centerX": -125,
-      "centerY": 0
+      "centerY": 43
     },
     "name": "Entry"
   },
@@ -108,7 +104,7 @@
     "name": "Any"
   },
   {
-    "__type__": "cc.animation.PoseExprState",
+    "__type__": "cc.animation.PoseState",
     "__editorExtras__": {
       "name": "",
       "id": "16757440114000.5466667841705535",
@@ -117,33 +113,39 @@
       "centerY": -146
     },
     "name": "Pose",
-    "poseExprGraph": {
+    "poseGraph": {
       "__id__": 7
     }
   },
   {
-    "__type__": "cc.animation.PoseExprGraph",
+    "__type__": "cc.animation.PoseGraph",
     "__editorExtras__": {
       "outputNode": {
         "centerX": 0,
         "centerY": 0
       }
     },
-    "_xNodes": [],
-    "_exprs": [
+    "_main": null,
+    "_shells": [
       {
         "__id__": 8
       }
-    ],
-    "_main": null
+    ]
   },
   {
-    "__type__": "cc.animation.BlendInProportion",
+    "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
       "centerX": -536,
       "centerY": -75
     },
-    "_bindings": [],
+    "_node": {
+      "__id__": 9
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.BlendInProportion",
+    "__editorExtras__": null,
     "poses": [
       null,
       null,
@@ -156,52 +158,42 @@
     ]
   },
   {
-    "__type__": "cc.animation.PoseExprGraphStash",
+    "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "graph": {
-      "__id__": 10
+    "poseGraph": {
+      "__id__": 11
     }
   },
   {
-    "__type__": "cc.animation.PoseExprGraph",
+    "__type__": "cc.animation.PoseGraph",
     "__editorExtras__": null,
-    "_xNodes": [],
-    "_exprs": [],
-    "_main": null
+    "_main": null,
+    "_shells": []
   },
   {
-    "__type__": "cc.animation.PoseExprGraphStash",
+    "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "graph": {
-      "__id__": 12
+    "poseGraph": {
+      "__id__": 13
     }
   },
   {
-    "__type__": "cc.animation.PoseExprGraph",
+    "__type__": "cc.animation.PoseGraph",
     "__editorExtras__": null,
-    "_xNodes": [],
-    "_exprs": [],
-    "_main": null
+    "_main": null,
+    "_shells": []
   },
   {
-    "__type__": "cc.animation.PoseExprGraphStash",
+    "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "graph": {
-      "__id__": 14
+    "poseGraph": {
+      "__id__": 15
     }
   },
   {
-    "__type__": "cc.animation.PoseExprGraph",
+    "__type__": "cc.animation.PoseGraph",
     "__editorExtras__": null,
-    "_xNodes": [],
-    "_exprs": [],
-    "_main": null
-  },
-  {
-    "__type__": "cc.animation.PoseExprGraph",
-    "__editorExtras__": null,
-    "_xNodes": [],
-    "_exprs": [],
-    "_main": null
+    "_main": null,
+    "_shells": []
   }
 ]

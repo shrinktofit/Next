@@ -481,7 +481,7 @@
     "node": {
       "__id__": 9
     },
-    "_enabled": false,
+    "_enabled": true,
     "__prefab": null,
     "turnSpeed": 270,
     "_id": "1bNlp1E21GWJ8iIvrWJlEk"
@@ -523,15 +523,15 @@
     "featureLean": {
       "__id__": 21
     },
-    "featureLeanEnabled": false,
+    "featureLeanEnabled": true,
     "featureTurnInPlace": {
       "__id__": 22
     },
-    "featureTurnInPlaceEnabled": false,
+    "featureTurnInPlaceEnabled": true,
     "featureAiming": {
       "__id__": 23
     },
-    "featureAimingEnabled": false,
+    "featureAimingEnabled": true,
     "_id": "3ehDWmKuNKwpDhVaA38AxF"
   },
   {
@@ -542,13 +542,13 @@
   },
   {
     "__type__": "ALSAnimFeatureLean",
-    "enabled": false,
+    "enabled": true,
     "groundedLeanInteropSpeed": 4,
     "debug": true
   },
   {
     "__type__": "ALSAnimFeatureTurnInPlace",
-    "enabled": false,
+    "enabled": true,
     "minTurnAngle": 45,
     "minTurnAngleDelay": 0,
     "maxTurnAngleDelay": 0.5,
@@ -556,7 +556,7 @@
   },
   {
     "__type__": "ALSAnimFeatureAiming",
-    "enabled": false
+    "enabled": true
   },
   {
     "__type__": "cc.animation.AnimationController",
@@ -592,7 +592,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "moveAccordingToCharacterDirection": true,
+    "moveAccordingToCharacterDirection": false,
     "_id": "3dqjmPSPdODqkr2e/wrXz9"
   },
   {
