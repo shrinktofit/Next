@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.3",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "896ddea9-1f28-45d5-9eb5-3111bdd13bb3",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "eff5a": {
+      "importer": "gltf-animation",
+      "uuid": "896ddea9-1f28-45d5-9eb5-3111bdd13bb3@eff5a",
+      "displayName": "",
+      "id": "eff5a",
+      "name": "ALS_N_Transition_L.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2.3333332538604736
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "234e2": {
+      "importer": "gltf-scene",
+      "uuid": "896ddea9-1f28-45d5-9eb5-3111bdd13bb3@234e2",
+      "displayName": "",
+      "id": "234e2",
+      "name": "ALS_N_Transition_L.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 2.3333332538604736,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_Transition_L",
+            "from": 0,
+            "to": 2.3333332538604736,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "896ddea9-1f28-45d5-9eb5-3111bdd13bb3@234e2",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "896ddea9-1f28-45d5-9eb5-3111bdd13bb3@234e2"
+      ]
+    }
+  }
+}

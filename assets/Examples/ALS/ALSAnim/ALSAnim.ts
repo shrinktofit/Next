@@ -4,6 +4,7 @@ import { ALSAnimFeature } from './ALSAnimFeature';
 import { ALSAnimFeatureAiming } from './ALSAnimFeatureAiming';
 import { ALSAnimFeatureLean } from './ALSAnimFeatureLean';
 import { ALSAnimFeatureMovement } from './ALSAnimFeatureMovement';
+import { ALSAnimFeatureStop } from './ALSAnimFeatureStop';
 import { ALSAnimFeatureTurnInPlace } from './ALSAnimFeatureTurnInPlace';
 const { ccclass, property, executionOrder } = _decorator;
 
@@ -14,6 +15,8 @@ const FEATURE_NAME_LEAN = '倾斜';
 const FEATURE_NAME_TURN_IN_PLACE = '原地转向';
 
 const FEATURE_NAME_AIMING = '瞄准';
+
+const FEATURE_NAME_STOP = '停止';
 
 const GROUP_ENABLING = '启用';
 
@@ -44,6 +47,18 @@ export class ALSAnim extends Component {
         group: FEATURE_NAME_MOVEMENT,
     })
     public featureMovement = new ALSAnimFeatureMovement();
+
+    @property({
+        group: FEATURE_NAME_STOP,
+    })
+    public featureStop = new ALSAnimFeatureStop();
+
+    @featureEnabling(function(this: ALSAnim) { return this.featureStop; })
+    @property({
+        group: GROUP_ENABLING,
+        displayName: FEATURE_NAME_STOP,
+    })
+    public featureStopEnabled = true;
 
     @property({
         group: FEATURE_NAME_LEAN,
@@ -104,9 +119,10 @@ export class ALSAnim extends Component {
         
         for (const feature of ([
             this.featureMovement,
+            this.featureStop,
             this.featureLean,
             this.featureTurnInPlace,
-            this.featureAiming
+            this.featureAiming,
         ] as const)) {
             if (feature.enabled) {
                 feature._init(
