@@ -14,7 +14,7 @@ export class CharacterController extends Component {
 
     public maxAcceleration = 2000.0 * UNIT_SCALE_ALS_TO_CC;
 
-    public maxBrakingDeceleration = 1500.0 * UNIT_SCALE_ALS_TO_CC;
+    public maxBrakingDeceleration = 1250.0 * UNIT_SCALE_ALS_TO_CC;
 
     public maxMoveSpeed = 375 * UNIT_SCALE_ALS_TO_CC;
 
@@ -23,7 +23,7 @@ export class CharacterController extends Component {
     /**
      * Unit: [0-1]/s.
      */
-    public groundFriction = 5.0;
+    public groundFriction = 4.0;
 
     public brakingFrictionFactor = 0.0;
 
