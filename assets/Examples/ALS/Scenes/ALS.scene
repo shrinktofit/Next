@@ -546,7 +546,8 @@
   },
   {
     "__type__": "ALSAnimFeatureStop",
-    "enabled": true
+    "enabled": true,
+    "debug": false
   },
   {
     "__type__": "ALSAnimFeatureLean",
