@@ -14,7 +14,7 @@ import { CCON, encodeCCONBinary } from 'cc/editor/serialization';
 
 export default class AnimPPImporter extends Importer {
     public get version() {
-        return '1.0.0';
+        return '1.0.1';
     }
 
     public get name() {
@@ -197,14 +197,16 @@ export default class AnimPPImporter extends Importer {
 
         const curveName = process.curveName || 'curveName';
 
-        const track = new animation.RealTrack();
-        track.path.toAdjointCurve(curveName);
-        track.channel.curve.assignSorted(
+        const auxiliaryCurve = new animation.Auxiliary_experimental();
+        auxiliaryCurve.name = curveName;
+        auxiliaryCurve.curve.assignSorted(
             times,
             [...amounts],
         );
-
-        animationClip.addTrack(track);
+        animationClip.auxiliaryCurves_experimental = [
+            ...animationClip.auxiliaryCurves_experimental,
+            auxiliaryCurve,
+        ];
 
         removeNodeTransformAnimation(animationClip, rootBonePath, TransformFlag.ROTATION);
     }
