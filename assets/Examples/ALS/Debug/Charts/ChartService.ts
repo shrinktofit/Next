@@ -64,7 +64,7 @@ abstract class RealTimeNumberChart {
         console.log(`Loaded`);
 
         const chartOptions = {
-            title: "Velocity Blend",
+            title: "",
             legend: { position: 'bottom' },
             series: {
                 0: { color: '#D7CAFF' },
@@ -76,7 +76,7 @@ abstract class RealTimeNumberChart {
         
         this.makeOptions(chartOptions);
 
-        const chart = new google.visualization.PieChart(
+        const chart = new (this.getChartType())(
             container,
         );
 
@@ -112,6 +112,8 @@ abstract class RealTimeNumberChart {
 
     };
 
+    protected abstract getChartType(): typeof google.visualization.LineChart | typeof google.visualization.PieChart;
+
     protected abstract makeOptions(options: Record<string, unknown>): void;
 
     protected abstract initializeDataTable(
@@ -135,6 +137,10 @@ class LineChart extends RealTimeNumberChart {
         this.#minValue = minValue;
         this.#maxValue = maxValue;
     }
+    
+    protected getChartType(): typeof google.visualization.LineChart | typeof google.visualization.PieChart {
+        return google.visualization.LineChart;
+    }
 
     protected initializeDataTable(
         valueDescriptions: readonly ValueDescription[],
@@ -142,6 +148,7 @@ class LineChart extends RealTimeNumberChart {
     ): any[][] {
         return [
             ['Frame', ...valueDescriptions.map(({ displayName }) => displayName)],
+            [0, ...values],
         ];
     }
 
@@ -150,11 +157,15 @@ class LineChart extends RealTimeNumberChart {
             hAxis: {
                 textPosition: 'none',
             },
-            vAxis: {
-                title: "Value",
-                minValue: this.#minValue,
-                maxValue: this.#maxValue,
-            },
+            vAxes: Array.from({ length: 2 }, () => {
+                return {
+                    title: "Value",
+                    viewWindow: {
+                        min: this.#minValue,
+                        max: this.#maxValue,
+                    },
+                };
+            }),
         });
     }
 
@@ -189,6 +200,10 @@ class PieChart extends RealTimeNumberChart {
                 return [vd.displayName, values[index]];
             }),
         ];
+    }
+
+    protected getChartType(): typeof google.visualization.LineChart | typeof google.visualization.PieChart {
+        return google.visualization.PieChart;
     }
 
     protected makeOptions(options: Record<string, unknown>) {
