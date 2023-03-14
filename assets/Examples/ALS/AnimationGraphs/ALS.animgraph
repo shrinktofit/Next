@@ -14,77 +14,80 @@
       },
       {
         "__id__": 941
+      },
+      {
+        "__id__": 965
       }
     ],
     "_variables": {
       "Turning": {
-        "__id__": 965
-      },
-      "TurningAngle": {
-        "__id__": 966
-      },
-      "SweepUpDown": {
-        "__id__": 967
-      },
-      "AimLeftRight": {
-        "__id__": 968
-      },
-      "TurnInPlaceUse180": {
-        "__id__": 969
-      },
-      "ForwardYawTime": {
-        "__id__": 970
-      },
-      "LeftYawTime": {
-        "__id__": 971
-      },
-      "RightYawTime": {
-        "__id__": 972
-      },
-      "MovementDirection": {
-        "__id__": 973
-      },
-      "VelocityBlendF": {
-        "__id__": 974
-      },
-      "VelocityBlendL": {
-        "__id__": 975
-      },
-      "VelocityBlendR": {
-        "__id__": 976
-      },
-      "VelocityBlendB": {
-        "__id__": 977
-      },
-      "ShouldMove": {
-        "__id__": 978
-      },
-      "#StateWeight": {
-        "__id__": 979
-      },
-      "NEVER": {
-        "__id__": 980
-      },
-      "LeanAmountLR": {
-        "__id__": 981
-      },
-      "LeanAmountFB": {
         "__id__": 982
       },
-      "StrideBlend": {
+      "TurningAngle": {
         "__id__": 983
       },
-      "WalkRunBlend": {
+      "SweepUpDown": {
         "__id__": 984
       },
-      "QuickStopN": {
+      "AimLeftRight": {
         "__id__": 985
       },
-      "StopTransition": {
+      "TurnInPlaceUse180": {
         "__id__": 986
       },
-      "#Feet_Position": {
+      "ForwardYawTime": {
         "__id__": 987
+      },
+      "LeftYawTime": {
+        "__id__": 988
+      },
+      "RightYawTime": {
+        "__id__": 989
+      },
+      "MovementDirection": {
+        "__id__": 990
+      },
+      "VelocityBlendF": {
+        "__id__": 991
+      },
+      "VelocityBlendL": {
+        "__id__": 992
+      },
+      "VelocityBlendR": {
+        "__id__": 993
+      },
+      "VelocityBlendB": {
+        "__id__": 994
+      },
+      "ShouldMove": {
+        "__id__": 995
+      },
+      "#StateWeight": {
+        "__id__": 996
+      },
+      "NEVER": {
+        "__id__": 997
+      },
+      "LeanAmountLR": {
+        "__id__": 998
+      },
+      "LeanAmountFB": {
+        "__id__": 999
+      },
+      "StrideBlend": {
+        "__id__": 1000
+      },
+      "WalkRunBlend": {
+        "__id__": 1001
+      },
+      "QuickStopN": {
+        "__id__": 1002
+      },
+      "StopTransition": {
+        "__id__": 1003
+      },
+      "#Feet_Position": {
+        "__id__": 1004
       }
     }
   },
@@ -10376,6 +10379,227 @@
   {
     "__type__": "cc.animation.AnimationGraphEvent",
     "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.Layer",
+    "_stateMachine": {
+      "__id__": 966
+    },
+    "name": "Foot IK",
+    "weight": 1,
+    "mask": null,
+    "additive": false,
+    "_stashes": {}
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16787902871190.678249465980743",
+      "clone": null,
+      "viewport": {
+        "scale": 1,
+        "top": 0,
+        "left": 0
+      }
+    },
+    "_states": [
+      {
+        "__id__": 967
+      },
+      {
+        "__id__": 968
+      },
+      {
+        "__id__": 969
+      },
+      {
+        "__id__": 970
+      }
+    ],
+    "_transitions": [
+      {
+        "__id__": 981
+      }
+    ],
+    "_entryState": {
+      "__id__": 967
+    },
+    "_exitState": {
+      "__id__": 968
+    },
+    "_anyState": {
+      "__id__": 969
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16787902871190.8156953892178016",
+      "clone": null,
+      "centerX": -301,
+      "centerY": 0
+    },
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16787902871190.38421262762009256",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16787902871190.8858102934000589",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.PoseState",
+    "__editorExtras__": {
+      "name": "Foot IK",
+      "id": "16787902948070.952099853724832",
+      "clone": null,
+      "centerX": -125,
+      "centerY": -4
+    },
+    "name": "Foot IK",
+    "transitionInEvent": {
+      "__id__": 971
+    },
+    "enteredEvent": {
+      "__id__": 972
+    },
+    "transitionOutEvent": {
+      "__id__": 973
+    },
+    "exitedEvent": {
+      "__id__": 974
+    },
+    "poseGraph": {
+      "__id__": 975
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": {
+      "rootOutputNodeEditorData": {
+        "centerX": 0,
+        "centerY": 0
+      },
+      "viewport": {
+        "scale": 1,
+        "top": -35,
+        "left": 228
+      }
+    },
+    "_main": {
+      "__id__": 976
+    },
+    "_shells": [
+      {
+        "__id__": 979
+      },
+      {
+        "__id__": 976
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -220,
+      "centerY": -3
+    },
+    "_node": {
+      "__id__": 977
+    },
+    "_bindings": [
+      {
+        "__id__": 978
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.TwoBoneIKSolver",
+    "__editorExtras__": {
+      "centerX": -232,
+      "centerY": 13
+    },
+    "input": null,
+    "debug": false,
+    "endEffectorBoneName": "foot_r",
+    "endEffectorPosition": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "input",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 979
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -446,
+      "centerY": -6
+    },
+    "_node": {
+      "__id__": 980
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.GetAllPreviousLayersResult",
+    "__editorExtras__": {
+      "centerX": -268,
+      "centerY": 23
+    }
+  },
+  {
+    "__type__": "cc.animation.Transition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 967
+    },
+    "to": {
+      "__id__": 970
+    },
+    "conditions": []
   },
   {
     "__type__": "cc.animation.PlainVariable",

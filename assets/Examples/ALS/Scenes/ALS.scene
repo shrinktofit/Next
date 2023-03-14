@@ -581,6 +581,10 @@
     },
     "_enabled": true,
     "__prefab": null,
+    "_graph": {
+      "__uuid__": "27d06a57-f20d-4080-ae49-c7928c7999fc",
+      "__expectedType__": "cc.animation.AnimationGraph"
+    },
     "graph": {
       "__uuid__": "27d06a57-f20d-4080-ae49-c7928c7999fc",
       "__expectedType__": "cc.animation.AnimationGraph"
