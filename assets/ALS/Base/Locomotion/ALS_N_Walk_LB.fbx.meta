@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.3",
+  "ver": "2.3.4",
   "importer": "fbx",
   "imported": true,
   "uuid": "c85da497-6147-49b0-bb4f-bc725f434873",
@@ -22,30 +22,38 @@
           "to": 1.1333333253860474
         },
         "events": [],
-        "auxiliaryCurves": [{
+        "auxiliaryCurves": [
+          {
             "name": "Feet_Position",
-            "curve": [{
+            "curve": [
+              {
                 "interop": "constant",
                 "time": 0,
                 "value": -0.2
-            }, {
+              },
+              {
                 "interop": "constant",
                 "time": 4,
                 "value": -1
-            }, {
+              },
+              {
                 "interop": "constant",
                 "time": 13,
                 "value": 0.2
-            }, {
+              },
+              {
                 "interop": "constant",
                 "time": 24,
                 "value": 1
-            }, {
+              },
+              {
                 "interop": "constant",
                 "time": 30,
                 "value": -0.2
-            }]
-        }]
+              }
+            ]
+          }
+        ]
       },
       "ver": "1.0.16",
       "imported": true,
