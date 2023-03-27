@@ -10699,7 +10699,8 @@
     },
     "intensity": {
       "__id__": 984
-    }
+    },
+    "transformSpaceRequirement": 2
   },
   {
     "__type__": "cc.animation.IntensitySpecification",
@@ -10762,7 +10763,8 @@
     },
     "intensity": {
       "__id__": 988
-    }
+    },
+    "transformSpaceRequirement": 2
   },
   {
     "__type__": "cc.animation.IntensitySpecification",
