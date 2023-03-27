@@ -21,73 +21,85 @@
     ],
     "_variables": {
       "Turning": {
-        "__id__": 991
-      },
-      "TurningAngle": {
-        "__id__": 992
-      },
-      "SweepUpDown": {
-        "__id__": 993
-      },
-      "AimLeftRight": {
-        "__id__": 994
-      },
-      "TurnInPlaceUse180": {
-        "__id__": 995
-      },
-      "ForwardYawTime": {
-        "__id__": 996
-      },
-      "LeftYawTime": {
-        "__id__": 997
-      },
-      "RightYawTime": {
-        "__id__": 998
-      },
-      "MovementDirection": {
-        "__id__": 999
-      },
-      "VelocityBlendF": {
-        "__id__": 1000
-      },
-      "VelocityBlendL": {
-        "__id__": 1001
-      },
-      "VelocityBlendR": {
-        "__id__": 1002
-      },
-      "VelocityBlendB": {
-        "__id__": 1003
-      },
-      "ShouldMove": {
-        "__id__": 1004
-      },
-      "#StateWeight": {
-        "__id__": 1005
-      },
-      "NEVER": {
-        "__id__": 1006
-      },
-      "LeanAmountLR": {
-        "__id__": 1007
-      },
-      "LeanAmountFB": {
-        "__id__": 1008
-      },
-      "StrideBlend": {
-        "__id__": 1009
-      },
-      "WalkRunBlend": {
-        "__id__": 1010
-      },
-      "QuickStopN": {
         "__id__": 1011
       },
-      "StopTransition": {
+      "TurningAngle": {
         "__id__": 1012
       },
-      "#Feet_Position": {
+      "SweepUpDown": {
         "__id__": 1013
+      },
+      "AimLeftRight": {
+        "__id__": 1014
+      },
+      "TurnInPlaceUse180": {
+        "__id__": 1015
+      },
+      "ForwardYawTime": {
+        "__id__": 1016
+      },
+      "LeftYawTime": {
+        "__id__": 1017
+      },
+      "RightYawTime": {
+        "__id__": 1018
+      },
+      "MovementDirection": {
+        "__id__": 1019
+      },
+      "VelocityBlendF": {
+        "__id__": 1020
+      },
+      "VelocityBlendL": {
+        "__id__": 1021
+      },
+      "VelocityBlendR": {
+        "__id__": 1022
+      },
+      "VelocityBlendB": {
+        "__id__": 1023
+      },
+      "ShouldMove": {
+        "__id__": 1024
+      },
+      "#StateWeight": {
+        "__id__": 1025
+      },
+      "NEVER": {
+        "__id__": 1026
+      },
+      "LeanAmountLR": {
+        "__id__": 1027
+      },
+      "LeanAmountFB": {
+        "__id__": 1028
+      },
+      "StrideBlend": {
+        "__id__": 1029
+      },
+      "WalkRunBlend": {
+        "__id__": 1030
+      },
+      "QuickStopN": {
+        "__id__": 1031
+      },
+      "StopTransition": {
+        "__id__": 1032
+      },
+      "#Feet_Position": {
+        "__id__": 1033
+      },
+      "FootLock_L_Location": {
+        "__id__": 1034
+      },
+      "FootLock_L_Alpha": {
+        "__id__": 1035
+      },
+      "FootLock_R_Location": {
+        "__id__": 1036
+      },
+      "FootLock_R_Alpha": {
+        "__id__": 1037
       }
     }
   },
@@ -10419,7 +10431,7 @@
     ],
     "_transitions": [
       {
-        "__id__": 990
+        "__id__": 1010
       }
     ],
     "_entryState": {
@@ -10511,13 +10523,13 @@
     "__type__": "cc.animation.PoseGraph",
     "__editorExtras__": {
       "rootOutputNodeEditorData": {
-        "centerX": -255,
-        "centerY": -37
+        "centerX": -477.8571428571429,
+        "centerY": 205.8163265306123
       },
       "viewport": {
-        "scale": 1,
-        "top": 13,
-        "left": 580
+        "scale": 0.98,
+        "top": 101.1,
+        "left": 510.7
       }
     },
     "_main": {
@@ -10525,27 +10537,45 @@
     },
     "_shells": [
       {
-        "__id__": 988
+        "__id__": 996
       },
       {
         "__id__": 979
       },
       {
-        "__id__": 982
+        "__id__": 990
       },
       {
         "__id__": 976
       },
       {
-        "__id__": 985
+        "__id__": 993
+      },
+      {
+        "__id__": 986
+      },
+      {
+        "__id__": 982
+      },
+      {
+        "__id__": 999
+      },
+      {
+        "__id__": 1005
+      },
+      {
+        "__id__": 1002
+      },
+      {
+        "__id__": 1008
       }
     ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -532.5,
-      "centerY": 71.5
+      "centerX": -309.6020408163265,
+      "centerY": 32.82653061224488
     },
     "_node": {
       "__id__": 977
@@ -10565,7 +10595,8 @@
     "input": null,
     "debug": false,
     "endEffectorBoneName": "foot_r",
-    "endEffectorPosition": {
+    "endEffectorTargetBoneName": "ik_foot_r",
+    "endEffectorTargetPosition": {
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
@@ -10584,8 +10615,8 @@
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -531,
-      "centerY": -100
+      "centerX": -631.7142857142858,
+      "centerY": 24.163265306122412
     },
     "_node": {
       "__id__": 980
@@ -10605,7 +10636,8 @@
     "input": null,
     "debug": false,
     "endEffectorBoneName": "foot_l",
-    "endEffectorPosition": {
+    "endEffectorTargetBoneName": "ik_foot_l",
+    "endEffectorTargetPosition": {
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
@@ -10624,15 +10656,141 @@
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -757,
-      "centerY": 32
+      "centerX": -284.3367346938776,
+      "centerY": -250.82653061224488
     },
     "_node": {
       "__id__": 983
     },
     "_bindings": [
       {
-        "__id__": 984
+        "__id__": 985
+      },
+      {
+        "__id__": 1004
+      },
+      {
+        "__id__": 1007
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.ApplyTransform",
+    "__editorExtras__": {
+      "centerX": -481,
+      "centerY": -142
+    },
+    "input": null,
+    "transformName": "ik_foot_r",
+    "positionApplyFlag": 1,
+    "position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotationApplyFlag": 0,
+    "rotation": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "intensity": {
+      "__id__": 984
+    }
+  },
+  {
+    "__type__": "cc.animation.IntensitySpecification",
+    "type": 0,
+    "value": 0,
+    "auxiliaryCurveName": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "input",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 986
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -603.3673469387755,
+      "centerY": -239.77551020408163
+    },
+    "_node": {
+      "__id__": 987
+    },
+    "_bindings": [
+      {
+        "__id__": 989
+      },
+      {
+        "__id__": 998
+      },
+      {
+        "__id__": 1001
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.ApplyTransform",
+    "__editorExtras__": {
+      "centerX": -481,
+      "centerY": -142
+    },
+    "input": null,
+    "transformName": "ik_foot_l",
+    "positionApplyFlag": 1,
+    "position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotationApplyFlag": 0,
+    "rotation": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "intensity": {
+      "__id__": 988
+    }
+  },
+  {
+    "__type__": "cc.animation.IntensitySpecification",
+    "type": 0,
+    "value": 0,
+    "auxiliaryCurveName": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "input",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 990
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -287.61224489795916,
+      "centerY": -439.42857142857144
+    },
+    "_node": {
+      "__id__": 991
+    },
+    "_bindings": [
+      {
+        "__id__": 992
       }
     ]
   },
@@ -10644,29 +10802,30 @@
     },
     "input": null,
     "sourceTransformName": "foot_r",
-    "targetTransformName": "ik_foot_r"
+    "targetTransformName": "ik_foot_r",
+    "transformSpaceRequirement": 2
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 985
+      "__id__": 993
     },
     "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -753.5,
-      "centerY": -73.5
+      "centerX": -587.1734693877551,
+      "centerY": -432.68367346938777
     },
     "_node": {
-      "__id__": 986
+      "__id__": 994
     },
     "_bindings": [
       {
-        "__id__": 987
+        "__id__": 995
       }
     ]
   },
@@ -10678,25 +10837,26 @@
     },
     "input": null,
     "sourceTransformName": "foot_l",
-    "targetTransformName": "ik_foot_l"
+    "targetTransformName": "ik_foot_l",
+    "transformSpaceRequirement": 2
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 988
+      "__id__": 996
     },
     "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -1032,
-      "centerY": -23
+      "centerX": -423.8367346938776,
+      "centerY": -533.204081632653
     },
     "_node": {
-      "__id__": 989
+      "__id__": 997
     },
     "_bindings": []
   },
@@ -10706,6 +10866,118 @@
       "centerX": -268,
       "centerY": 23
     }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "position",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 999
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -932.6530612244898,
+      "centerY": -262.2448979591837
+    },
+    "_node": {
+      "__id__": 1000
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": {
+      "centerX": -856.9593356385524,
+      "centerY": -186.04076525629785
+    },
+    "variableName": "FootLock_L_Location"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "intensityValue",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 1002
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -934.6938775510205,
+      "centerY": -189.79591836734693
+    },
+    "_node": {
+      "__id__": 1003
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": {
+      "centerX": -964.1021927814095,
+      "centerY": -171.7550509705835
+    },
+    "variableName": "FootLock_L_Alpha"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "position",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 1005
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -25.51020408163265,
+      "centerY": -283.6734693877551
+    },
+    "_node": {
+      "__id__": 1006
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": {
+      "centerX": -24.3062744140625,
+      "centerY": -289.10198974609375
+    },
+    "variableName": "FootLock_R_Location"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "intensityValue",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 1008
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -26.530612244897952,
+      "centerY": -198.9795918367347
+    },
+    "_node": {
+      "__id__": 1009
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": {
+      "centerX": -14.102192781409485,
+      "centerY": -183.99994892976724
+    },
+    "variableName": "FootLock_R_Alpha"
   },
   {
     "__type__": "cc.animation.Transition",
@@ -10825,6 +11097,34 @@
   {
     "__type__": "cc.animation.TriggerVariable",
     "_flags": 2
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 0,
+    "_value": 0
+  },
+  {
+    "__type__": "cc.animation.Vec3Variable",
+    "_value": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 0,
+    "_value": 0
+  },
+  {
+    "__type__": "cc.animation.Vec3Variable",
+    "_value": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
   },
   {
     "__type__": "cc.animation.PlainVariable",
