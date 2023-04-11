@@ -2,54 +2,74 @@
   "ver": "2.3.4",
   "importer": "fbx",
   "imported": true,
-  "uuid": "1755a542-a6ad-4e0a-8a45-56c296ecee7d",
+  "uuid": "d50a2381-0e6c-4cdd-9d7c-3436c8d8778a",
   "files": [
     "__original-animation-0.cconb"
   ],
   "subMetas": {
-    "8059d": {
+    "90ec0": {
       "importer": "gltf-animation",
-      "uuid": "1755a542-a6ad-4e0a-8a45-56c296ecee7d@8059d",
+      "uuid": "d50a2381-0e6c-4cdd-9d7c-3436c8d8778a@90ec0",
       "displayName": "",
-      "id": "8059d",
-      "name": "ALS_N_Run_F.animation",
+      "id": "90ec0",
+      "name": "ALS_N_Stop_L_Down.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
         "sample": 30,
         "span": {
           "from": 0,
-          "to": 0.8333333134651184
+          "to": 2.3333332538604736
         },
         "events": [],
         "auxiliaryCurves": [
           {
-            "name": "Feet_Position",
+            "name": "Enable_Transition",
             "curve": [
               {
                 "interop": "constant",
                 "time": 0,
-                "value": -0.2
-              },
-              {
-                "interop": "constant",
-                "time": 2,
                 "value": -1
               },
               {
                 "interop": "constant",
-                "time": 6,
-                "value": 0.2
+                "time": 40,
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Foot Lock L",
+            "curve": [
+              {
+                "interop": "linear",
+                "time": 25,
+                "value": 0
               },
               {
                 "interop": "constant",
-                "time": 14,
+                "time": 38,
+                "value": -1
+              },
+              {
+                "interop": "constant",
+                "time": 40,
+                "value": 0
+              }
+            ]
+          },
+          {
+            "name": "Foot Lock R",
+            "curve": [
+              {
+                "interop": "constant",
+                "time": 0,
+                "value": 0
+              },
+              {
+                "interop": "constant",
+                "time": 24,
                 "value": 1
-              },
-              {
-                "interop": "constant",
-                "time": 18,
-                "value": -0.2
               }
             ]
           }
@@ -62,12 +82,12 @@
       ],
       "subMetas": {}
     },
-    "724c0": {
+    "fb5e2": {
       "importer": "gltf-scene",
-      "uuid": "1755a542-a6ad-4e0a-8a45-56c296ecee7d@724c0",
+      "uuid": "d50a2381-0e6c-4cdd-9d7c-3436c8d8778a@fb5e2",
       "displayName": "",
-      "id": "724c0",
-      "name": "ALS_N_Run_F.prefab",
+      "id": "fb5e2",
+      "name": "ALS_N_Stop_L_Down.prefab",
       "userData": {
         "gltfIndex": 0
       },
@@ -87,26 +107,26 @@
     "animationImportSettings": [
       {
         "name": "Unreal Take",
-        "duration": 0.8333333134651184,
+        "duration": 2.3333332538604736,
         "fps": 30,
         "splits": [
           {
-            "name": "ALS_N_Run_F",
+            "name": "ALS_N_Stop_L_Down",
             "from": 0,
-            "to": 0.8333333134651184,
+            "to": 2.3333332538604736,
             "wrapMode": 2
           }
         ]
       }
     ],
-    "redirect": "1755a542-a6ad-4e0a-8a45-56c296ecee7d@724c0",
+    "redirect": "d50a2381-0e6c-4cdd-9d7c-3436c8d8778a@fb5e2",
     "assetFinder": {
       "meshes": [],
       "skeletons": [],
       "textures": [],
       "materials": [],
       "scenes": [
-        "1755a542-a6ad-4e0a-8a45-56c296ecee7d@724c0"
+        "d50a2381-0e6c-4cdd-9d7c-3436c8d8778a@fb5e2"
       ]
     }
   }

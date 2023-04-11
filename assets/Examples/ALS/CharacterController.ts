@@ -54,27 +54,19 @@ export class CharacterController extends Component {
         const characterInfo = this.node.getComponent(ALSCharacterInfo);
         if (characterInfo) {
             Vec3.copy(characterInfo.velocity, this._velocity);
-
-            (() => {
-                const currentAcceleration = new Vec3();
-                Vec3.subtract(
-                    currentAcceleration,
-                    this._velocity,
-                    this._lastVelocity,
-                );
-                Vec3.multiplyScalar(
-                    currentAcceleration,
-                    currentAcceleration,
-                    1.0 / deltaTime,
-                );
-                Vec3.copy(this._lastVelocity, this._velocity);
-                Vec3.copy(characterInfo.acceleration, currentAcceleration);
-            })();
-            // Vec3.copy(characterInfo.acceleration, this._acceleration);
-
             characterInfo.maxAcceleration = this.maxAcceleration;
             characterInfo.maxBrakingDeceleration = this.maxBrakingDeceleration;
+            if (!this._lastAcc || !Vec3.equals(this._acceleration, this._lastAcc)) {
+                console.warn(`${this._acceleration}`);
+                this._lastAcc = Vec3.clone(this._acceleration);
+            }
         }
+
+        Vec3.zero(this._inputVector);
+    }
+
+    public addInputVector(input: Readonly<Vec3>) {
+        Vec3.add(this._inputVector, this._inputVector, input);
     }
 
     private characterInfo!: ALSCharacterInfo;
@@ -98,7 +90,6 @@ export class CharacterController extends Component {
             globalInputManager.getAxisValue(PredefinedAxisId.MoveForward),
         );
         if (Vec2.equals(inputVelocity, Vec2.ZERO)) {
-            Vec3.zero(this._inputVector);
             return;
         }
         // this._hasRequestedVelocity = true;

@@ -10,96 +10,114 @@
         "__id__": 1
       },
       {
-        "__id__": 772
+        "__id__": 870
       },
       {
-        "__id__": 941
+        "__id__": 1087
       },
       {
-        "__id__": 965
+        "__id__": 1145
       }
     ],
     "_variables": {
-      "Turning": {
-        "__id__": 1011
-      },
-      "TurningAngle": {
-        "__id__": 1012
-      },
       "SweepUpDown": {
-        "__id__": 1013
+        "__id__": 1205
       },
       "AimLeftRight": {
-        "__id__": 1014
-      },
-      "TurnInPlaceUse180": {
-        "__id__": 1015
+        "__id__": 1206
       },
       "ForwardYawTime": {
-        "__id__": 1016
+        "__id__": 1207
       },
       "LeftYawTime": {
-        "__id__": 1017
+        "__id__": 1208
       },
       "RightYawTime": {
-        "__id__": 1018
+        "__id__": 1209
       },
       "MovementDirection": {
-        "__id__": 1019
+        "__id__": 1210
       },
       "VelocityBlendF": {
-        "__id__": 1020
+        "__id__": 1211
       },
       "VelocityBlendL": {
-        "__id__": 1021
+        "__id__": 1212
       },
       "VelocityBlendR": {
-        "__id__": 1022
+        "__id__": 1213
       },
       "VelocityBlendB": {
-        "__id__": 1023
+        "__id__": 1214
       },
       "ShouldMove": {
-        "__id__": 1024
+        "__id__": 1215
       },
       "#StateWeight": {
-        "__id__": 1025
+        "__id__": 1216
       },
       "NEVER": {
-        "__id__": 1026
+        "__id__": 1217
       },
       "LeanAmountLR": {
-        "__id__": 1027
+        "__id__": 1218
       },
       "LeanAmountFB": {
-        "__id__": 1028
+        "__id__": 1219
       },
       "StrideBlend": {
-        "__id__": 1029
+        "__id__": 1220
       },
       "WalkRunBlend": {
-        "__id__": 1030
+        "__id__": 1221
       },
       "QuickStopN": {
-        "__id__": 1031
+        "__id__": 1222
       },
       "StopTransition": {
-        "__id__": 1032
+        "__id__": 1223
       },
       "#Feet_Position": {
-        "__id__": 1033
+        "__id__": 1224
       },
       "FootLock_L_Location": {
-        "__id__": 1034
+        "__id__": 1225
       },
       "FootLock_L_Alpha": {
-        "__id__": 1035
+        "__id__": 1226
       },
       "FootLock_R_Location": {
-        "__id__": 1036
+        "__id__": 1227
       },
       "FootLock_R_Alpha": {
-        "__id__": 1037
+        "__id__": 1228
+      },
+      "->N Stop L": {
+        "__id__": 1229
+      },
+      "->N Stop R": {
+        "__id__": 1230
+      },
+      "TrackedHipsDirection": {
+        "__id__": 1231
+      },
+      "TurnIPLeft90": {
+        "__id__": 1232
+      },
+      "TurnIPLeft180": {
+        "__id__": 1233
+      },
+      "TurnIPRight90": {
+        "__id__": 1234
+      },
+      "TurnIPRight180": {
+        "__id__": 1235
+      },
+      "TrackedHipsDirection_LB": {
+        "__id__": 1236
+      },
+      "TrackedHipsDirection_RB": {
+        "__id__": 1237
       }
     }
   },
@@ -144,7 +162,7 @@
         "__id__": 518
       },
       "Main Grounded States": {
-        "__id__": 742
+        "__id__": 840
       }
     }
   },
@@ -228,8 +246,8 @@
       "name": "Pose Entry",
       "id": "16782467308880.6491535195696303",
       "clone": null,
-      "centerX": 19,
-      "centerY": -74
+      "centerX": 20,
+      "centerY": -75
     },
     "name": "Pose Entry",
     "transitionInEvent": {
@@ -289,7 +307,7 @@
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -365,
+      "centerX": -364,
       "centerY": -29
     },
     "_node": {
@@ -1989,8 +2007,8 @@
       },
       "viewport": {
         "scale": 1,
-        "top": 0,
-        "left": 0
+        "top": -3,
+        "left": 212
       }
     },
     "_main": {
@@ -2018,15 +2036,16 @@
     "__editorExtras__": null,
     "stateMachine": {
       "__id__": 169
-    }
+    },
+    "emptyStatePose": null
   },
   {
     "__type__": "cc.animation.StateMachine",
     "__editorExtras__": {
       "viewport": {
         "scale": 1,
-        "top": 38,
-        "left": -96
+        "top": 18,
+        "left": -64
       }
     },
     "_states": [
@@ -2194,7 +2213,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "Hips F"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -2529,7 +2548,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "Hips LF"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -2864,7 +2883,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "Hips RF"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -3199,7 +3218,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "Hips LB"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -3534,7 +3553,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "Hips B"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -3869,7 +3888,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "Hips RB"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -5321,7 +5340,7 @@
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -609,
+      "centerX": -582,
       "centerY": -66
     },
     "_node": {
@@ -5379,7 +5398,6 @@
       }
     },
     "name": "",
-    "algorithm": 0,
     "_items": [
       {
         "__id__": 497
@@ -5402,7 +5420,8 @@
     },
     "paramY": {
       "__id__": 508
-    }
+    },
+    "_algorithm": 0
   },
   {
     "__type__": "cc.animation.AnimationBlend2DItem",
@@ -5669,7 +5688,8 @@
     "__editorExtras__": null,
     "stateMachine": {
       "__id__": 522
-    }
+    },
+    "emptyStatePose": null
   },
   {
     "__type__": "cc.animation.StateMachine",
@@ -5697,36 +5717,27 @@
         "__id__": 526
       },
       {
-        "__id__": 588
+        "__id__": 534
       },
       {
-        "__id__": 596
-      },
-      {
-        "__id__": 612
+        "__id__": 614
       }
     ],
     "_transitions": [
       {
-        "__id__": 707
+        "__id__": 811
       },
       {
-        "__id__": 712
+        "__id__": 816
       },
       {
-        "__id__": 720
+        "__id__": 824
       },
       {
-        "__id__": 721
+        "__id__": 825
       },
       {
-        "__id__": 726
-      },
-      {
-        "__id__": 729
-      },
-      {
-        "__id__": 736
+        "__id__": 832
       }
     ],
     "_entryState": {
@@ -5773,15 +5784,15 @@
     "name": "Any"
   },
   {
-    "__type__": "cc.animation.SubStateMachine",
+    "__type__": "cc.animation.PoseState",
     "__editorExtras__": {
-      "name": "Turning",
-      "id": "16715314524510.668662562036584",
+      "name": "Moving",
+      "id": "16758441197060.4907653651800066",
       "clone": null,
-      "centerX": -502,
-      "centerY": 7
+      "centerX": -509,
+      "centerY": -391
     },
-    "name": "Turning",
+    "name": "Moving",
     "transitionInEvent": {
       "__id__": 527
     },
@@ -5794,646 +5805,8 @@
     "exitedEvent": {
       "__id__": 530
     },
-    "_components": [],
-    "_stateMachine": {
-      "__id__": 531
-    }
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.StateMachine",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16715314524510.6645542709076053",
-      "clone": null,
-      "viewport": {
-        "scale": 0.98,
-        "top": -34.975,
-        "left": -151.74
-      }
-    },
-    "_states": [
-      {
-        "__id__": 532
-      },
-      {
-        "__id__": 533
-      },
-      {
-        "__id__": 534
-      },
-      {
-        "__id__": 535
-      },
-      {
-        "__id__": 541
-      },
-      {
-        "__id__": 547
-      },
-      {
-        "__id__": 553
-      }
-    ],
-    "_transitions": [
-      {
-        "__id__": 559
-      },
-      {
-        "__id__": 565
-      },
-      {
-        "__id__": 571
-      },
-      {
-        "__id__": 576
-      },
-      {
-        "__id__": 582
-      }
-    ],
-    "_entryState": {
-      "__id__": 532
-    },
-    "_exitState": {
-      "__id__": 533
-    },
-    "_anyState": {
-      "__id__": 534
-    }
-  },
-  {
-    "__type__": "cc.animation.State",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16715314524510.3319524926911632",
-      "clone": null,
-      "centerX": -138.26530612244898,
-      "centerY": -66.32653061224488
-    },
-    "name": "Entry"
-  },
-  {
-    "__type__": "cc.animation.State",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16715314524510.13378177438624217",
-      "clone": null,
-      "centerX": 299.9387755102041,
-      "centerY": -58.918367346938794
-    },
-    "name": "Exit"
-  },
-  {
-    "__type__": "cc.animation.State",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16715314524510.22764996276632754",
-      "clone": null,
-      "centerX": 192.1020408163265,
-      "centerY": 58.85714285714283
-    },
-    "name": "Any"
-  },
-  {
-    "__type__": "cc.animation.Motion",
-    "__editorExtras__": {
-      "name": "TurnIP_L90",
-      "id": "16715315082370.4533678077980663",
-      "clone": null,
-      "centerX": 44.571348852040785,
-      "centerY": -110.32145348373723
-    },
-    "name": "TurnIP_L90",
-    "transitionInEvent": {
-      "__id__": 536
-    },
-    "enteredEvent": {
-      "__id__": 537
-    },
-    "transitionOutEvent": {
-      "__id__": 538
-    },
-    "exitedEvent": {
-      "__id__": 539
-    },
-    "_components": [],
-    "motion": {
-      "__id__": 540
-    },
-    "speed": 1,
-    "speedMultiplier": "",
-    "speedMultiplierEnabled": false
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.ClipMotion",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16715315082420.5489399912886748",
-      "clone": null
-    },
-    "clip": {
-      "__uuid__": "9b0c1826-1746-4135-944d-c5f279cd3442",
-      "__expectedType__": "cc.AnimationClip"
-    }
-  },
-  {
-    "__type__": "cc.animation.Motion",
-    "__editorExtras__": {
-      "name": "TurnIP_R90",
-      "id": "16715317305100.939166640238968",
-      "clone": null,
-      "centerX": 45.59175701530614,
-      "centerY": -0.11737185108418657
-    },
-    "name": "TurnIP_R90",
-    "transitionInEvent": {
-      "__id__": 542
-    },
-    "enteredEvent": {
-      "__id__": 543
-    },
-    "transitionOutEvent": {
-      "__id__": 544
-    },
-    "exitedEvent": {
-      "__id__": 545
-    },
-    "_components": [],
-    "motion": {
-      "__id__": 546
-    },
-    "speed": 1,
-    "speedMultiplier": "",
-    "speedMultiplierEnabled": false
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.ClipMotion",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16715317305170.34593468208030154",
-      "clone": null
-    },
-    "clip": {
-      "__uuid__": "6c25a8b1-1e59-4319-ae4e-c07292ad4b80",
-      "__expectedType__": "cc.AnimationClip"
-    }
-  },
-  {
-    "__type__": "cc.animation.Motion",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16734300087790.5251273917299284",
-      "clone": null,
-      "centerX": 52.734665851203715,
-      "centerY": 66.20403585628583
-    },
-    "name": "ALS_N_TurnIP_L180",
-    "transitionInEvent": {
-      "__id__": 548
-    },
-    "enteredEvent": {
-      "__id__": 549
-    },
-    "transitionOutEvent": {
-      "__id__": 550
-    },
-    "exitedEvent": {
-      "__id__": 551
-    },
-    "_components": [],
-    "motion": {
-      "__id__": 552
-    },
-    "speed": 1,
-    "speedMultiplier": "",
-    "speedMultiplierEnabled": false
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.ClipMotion",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16734300087840.35399378133080495",
-      "clone": null
-    },
-    "clip": {
-      "__uuid__": "d8b51d75-82f6-4963-bacd-218d5e5570ab",
-      "__expectedType__": "cc.AnimationClip"
-    }
-  },
-  {
-    "__type__": "cc.animation.Motion",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16734300124330.1199038933327925",
-      "clone": null,
-      "centerX": 57.83670666753022,
-      "centerY": 161.10199503995932
-    },
-    "name": "ALS_N_TurnIP_R180",
-    "transitionInEvent": {
-      "__id__": 554
-    },
-    "enteredEvent": {
-      "__id__": 555
-    },
-    "transitionOutEvent": {
-      "__id__": 556
-    },
-    "exitedEvent": {
-      "__id__": 557
-    },
-    "_components": [],
-    "motion": {
-      "__id__": 558
-    },
-    "speed": 1,
-    "speedMultiplier": "",
-    "speedMultiplierEnabled": false
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.ClipMotion",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16734300124380.15612892985042093",
-      "clone": null
-    },
-    "clip": {
-      "__uuid__": "f91816aa-6004-4cda-8c8a-b05e41dbf6f0",
-      "__expectedType__": "cc.AnimationClip"
-    }
-  },
-  {
-    "__type__": "cc.animation.Transition",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16716033189590.44001699279363016",
-      "clone": null
-    },
-    "from": {
-      "__id__": 532
-    },
-    "to": {
-      "__id__": 535
-    },
-    "conditions": [
-      {
-        "__id__": 560
-      },
-      {
-        "__id__": 563
-      }
-    ]
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 5,
-    "lhs": {
-      "__id__": 561
-    },
-    "rhs": {
-      "__id__": 562
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "TurningAngle",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.UnaryCondition",
-    "operator": 1,
-    "operand": {
-      "__id__": 564
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableBoolean",
-    "variable": "TurnInPlaceUse180",
-    "value": false
-  },
-  {
-    "__type__": "cc.animation.Transition",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16716033189590.22637049269729292",
-      "clone": null
-    },
-    "from": {
-      "__id__": 532
-    },
-    "to": {
-      "__id__": 541
-    },
-    "conditions": [
-      {
-        "__id__": 566
-      },
-      {
-        "__id__": 569
-      }
-    ]
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 2,
-    "lhs": {
-      "__id__": 567
-    },
-    "rhs": {
-      "__id__": 568
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "TurningAngle",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.UnaryCondition",
-    "operator": 1,
-    "operand": {
-      "__id__": 570
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableBoolean",
-    "variable": "TurnInPlaceUse180",
-    "value": false
-  },
-  {
-    "__type__": "cc.animation.AnimationTransition",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16716033189590.7603849824502986",
-      "clone": null
-    },
-    "from": {
-      "__id__": 534
-    },
-    "to": {
-      "__id__": 533
-    },
-    "conditions": [
-      {
-        "__id__": 572
-      }
-    ],
-    "startEvent": {
-      "__id__": 574
-    },
-    "endEvent": {
-      "__id__": 575
-    },
-    "destinationStart": 0,
-    "relativeDestinationStart": false,
-    "duration": 0.3,
-    "relativeDuration": false,
-    "exitConditionEnabled": false,
-    "interruptionSource": 0,
-    "_exitCondition": 1
-  },
-  {
-    "__type__": "cc.animation.UnaryCondition",
-    "operator": 1,
-    "operand": {
-      "__id__": 573
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableBoolean",
-    "variable": "Turning",
-    "value": false
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.Transition",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16734935518970.16595439279009638",
-      "clone": null
-    },
-    "from": {
-      "__id__": 532
-    },
-    "to": {
-      "__id__": 547
-    },
-    "conditions": [
-      {
-        "__id__": 577
-      },
-      {
-        "__id__": 580
-      }
-    ]
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 5,
-    "lhs": {
-      "__id__": 578
-    },
-    "rhs": {
-      "__id__": 579
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "TurningAngle",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.UnaryCondition",
-    "operator": 0,
-    "operand": {
-      "__id__": 581
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableBoolean",
-    "variable": "TurnInPlaceUse180",
-    "value": false
-  },
-  {
-    "__type__": "cc.animation.Transition",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16734935518970.3748220226344967",
-      "clone": null
-    },
-    "from": {
-      "__id__": 532
-    },
-    "to": {
-      "__id__": 553
-    },
-    "conditions": [
-      {
-        "__id__": 583
-      },
-      {
-        "__id__": 586
-      }
-    ]
-  },
-  {
-    "__type__": "cc.animation.BinaryCondition",
-    "operator": 2,
-    "lhs": {
-      "__id__": 584
-    },
-    "rhs": {
-      "__id__": 585
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "TurningAngle",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.BindableNumber",
-    "variable": "",
-    "value": 0
-  },
-  {
-    "__type__": "cc.animation.UnaryCondition",
-    "operator": 0,
-    "operand": {
-      "__id__": 587
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableBoolean",
-    "variable": "TurnInPlaceUse180",
-    "value": false
-  },
-  {
-    "__type__": "cc.animation.PoseState",
-    "__editorExtras__": {
-      "name": "Moving",
-      "id": "16758441197060.4907653651800066",
-      "clone": null,
-      "centerX": -509,
-      "centerY": -391
-    },
-    "name": "Moving",
-    "transitionInEvent": {
-      "__id__": 589
-    },
-    "enteredEvent": {
-      "__id__": 590
-    },
-    "transitionOutEvent": {
-      "__id__": 591
-    },
-    "exitedEvent": {
-      "__id__": 592
-    },
     "poseGraph": {
-      "__id__": 593
+      "__id__": 531
     }
   },
   {
@@ -6466,11 +5839,11 @@
       }
     },
     "_main": {
-      "__id__": 594
+      "__id__": 532
     },
     "_shells": [
       {
-        "__id__": 594
+        "__id__": 532
       }
     ]
   },
@@ -6481,7 +5854,7 @@
       "centerY": -22
     },
     "_node": {
-      "__id__": 595
+      "__id__": 533
     },
     "_bindings": []
   },
@@ -6501,24 +5874,24 @@
     },
     "name": "Not Moving",
     "transitionInEvent": {
-      "__id__": 597
+      "__id__": 535
     },
     "enteredEvent": {
-      "__id__": 598
+      "__id__": 536
     },
     "transitionOutEvent": {
-      "__id__": 599
+      "__id__": 537
     },
     "exitedEvent": {
-      "__id__": 600
+      "__id__": 538
     },
     "poseGraph": {
-      "__id__": 601
+      "__id__": 539
     }
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "debug-->NotMoving"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -6536,29 +5909,732 @@
     "__type__": "cc.animation.PoseGraph",
     "__editorExtras__": {
       "rootOutputNodeEditorData": {
-        "centerX": 349,
-        "centerY": -10
+        "centerX": 638,
+        "centerY": -12
       },
       "viewport": {
-        "scale": 1,
-        "top": -64,
-        "left": -1
+        "scale": 0.94,
+        "top": 45.93862229976524,
+        "left": -498.63268707482996
       }
     },
     "_main": {
-      "__id__": 602
+      "__id__": 540
     },
     "_shells": [
       {
-        "__id__": 608
+        "__id__": 610
       },
       {
-        "__id__": 605
+        "__id__": 607
       },
       {
-        "__id__": 602
+        "__id__": 604
+      },
+      {
+        "__id__": 540
+      },
+      {
+        "__id__": 601
       }
     ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": 490.48936170212767,
+      "centerY": 76.10638297872339
+    },
+    "_node": {
+      "__id__": 541
+    },
+    "_bindings": [
+      {
+        "__id__": 600
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.StateMachineNode",
+    "__editorExtras__": null,
+    "stateMachine": {
+      "__id__": 542
+    },
+    "emptyStatePose": null
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": {
+      "viewport": {
+        "scale": 1.08,
+        "top": 31.74669004746289,
+        "left": -166.41116767869403
+      }
+    },
+    "_states": [
+      {
+        "__id__": 543
+      },
+      {
+        "__id__": 544
+      },
+      {
+        "__id__": 545
+      },
+      {
+        "__id__": 546
+      },
+      {
+        "__id__": 547
+      },
+      {
+        "__id__": 553
+      },
+      {
+        "__id__": 559
+      },
+      {
+        "__id__": 565
+      }
+    ],
+    "_transitions": [
+      {
+        "__id__": 571
+      },
+      {
+        "__id__": 572
+      },
+      {
+        "__id__": 576
+      },
+      {
+        "__id__": 580
+      },
+      {
+        "__id__": 584
+      },
+      {
+        "__id__": 588
+      },
+      {
+        "__id__": 591
+      },
+      {
+        "__id__": 594
+      },
+      {
+        "__id__": 597
+      }
+    ],
+    "_entryState": {
+      "__id__": 543
+    },
+    "_exitState": {
+      "__id__": 544
+    },
+    "_anyState": {
+      "__id__": 545
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16809475328400.7047669924381159",
+      "clone": null,
+      "centerX": -72,
+      "centerY": -37
+    },
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16809475328400.42582006898637514",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16809475328400.3587240589480194",
+      "clone": null,
+      "centerX": 458,
+      "centerY": -36
+    },
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.EmptyState",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16809475405730.09121681822258743",
+      "clone": null,
+      "centerX": 23,
+      "centerY": -34
+    },
+    "name": "Empty"
+  },
+  {
+    "__type__": "cc.animation.Motion",
+    "__editorExtras__": {
+      "name": "Turn In Place Left 90",
+      "id": "16809477559890.7758406249182963",
+      "clone": null,
+      "centerX": -123,
+      "centerY": -189
+    },
+    "name": "Turn In Place Left 90",
+    "transitionInEvent": {
+      "__id__": 548
+    },
+    "enteredEvent": {
+      "__id__": 549
+    },
+    "transitionOutEvent": {
+      "__id__": 550
+    },
+    "exitedEvent": {
+      "__id__": 551
+    },
+    "_components": [],
+    "motion": {
+      "__id__": 552
+    },
+    "speed": 1,
+    "speedMultiplier": "",
+    "speedMultiplierEnabled": false
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": "-->Turn In Place Left 90"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16809477559890.3654905484785036",
+      "clone": null
+    },
+    "clip": {
+      "__uuid__": "9b0c1826-1746-4135-944d-c5f279cd3442",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.Motion",
+    "__editorExtras__": {
+      "name": "Turn In Place Right 90",
+      "id": "16809477581950.4029301387119246",
+      "clone": null,
+      "centerX": 198,
+      "centerY": -167
+    },
+    "name": "Turn In Place Right 90",
+    "transitionInEvent": {
+      "__id__": 554
+    },
+    "enteredEvent": {
+      "__id__": 555
+    },
+    "transitionOutEvent": {
+      "__id__": 556
+    },
+    "exitedEvent": {
+      "__id__": 557
+    },
+    "_components": [],
+    "motion": {
+      "__id__": 558
+    },
+    "speed": 1,
+    "speedMultiplier": "",
+    "speedMultiplierEnabled": false
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": "-->Turn In Place Right 90"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16809477581950.9491518476518535",
+      "clone": null
+    },
+    "clip": {
+      "__uuid__": "6c25a8b1-1e59-4319-ae4e-c07292ad4b80",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.Motion",
+    "__editorExtras__": {
+      "name": "Turn In Place Left 180",
+      "id": "16809477601000.23005052619769994",
+      "clone": null,
+      "centerX": -113,
+      "centerY": 112
+    },
+    "name": "Turn In Place Left 180",
+    "transitionInEvent": {
+      "__id__": 560
+    },
+    "enteredEvent": {
+      "__id__": 561
+    },
+    "transitionOutEvent": {
+      "__id__": 562
+    },
+    "exitedEvent": {
+      "__id__": 563
+    },
+    "_components": [],
+    "motion": {
+      "__id__": 564
+    },
+    "speed": 1,
+    "speedMultiplier": "",
+    "speedMultiplierEnabled": false
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": "-->Turn In Place Left 180"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16809477601000.6947025627731038",
+      "clone": null
+    },
+    "clip": {
+      "__uuid__": "d8b51d75-82f6-4963-bacd-218d5e5570ab",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.Motion",
+    "__editorExtras__": {
+      "name": "Turn In Place Right 180",
+      "id": "16809477620530.9833807277064108",
+      "clone": null,
+      "centerX": 146,
+      "centerY": 109
+    },
+    "name": "Turn In Place Right 180",
+    "transitionInEvent": {
+      "__id__": 566
+    },
+    "enteredEvent": {
+      "__id__": 567
+    },
+    "transitionOutEvent": {
+      "__id__": 568
+    },
+    "exitedEvent": {
+      "__id__": 569
+    },
+    "_components": [],
+    "motion": {
+      "__id__": 570
+    },
+    "speed": 1,
+    "speedMultiplier": "",
+    "speedMultiplierEnabled": false
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": "-->Turn In Place Right 180"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16809477620530.1611711248487484",
+      "clone": null
+    },
+    "clip": {
+      "__uuid__": "f91816aa-6004-4cda-8c8a-b05e41dbf6f0",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.Transition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 543
+    },
+    "to": {
+      "__id__": 546
+    },
+    "conditions": []
+  },
+  {
+    "__type__": "cc.animation.EmptyStateTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 546
+    },
+    "to": {
+      "__id__": 547
+    },
+    "conditions": [
+      {
+        "__id__": 573
+      }
+    ],
+    "startEvent": {
+      "__id__": 574
+    },
+    "endEvent": {
+      "__id__": 575
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2
+  },
+  {
+    "__type__": "cc.animation.TriggerCondition",
+    "trigger": "TurnIPLeft90"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.EmptyStateTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 546
+    },
+    "to": {
+      "__id__": 553
+    },
+    "conditions": [
+      {
+        "__id__": 577
+      }
+    ],
+    "startEvent": {
+      "__id__": 578
+    },
+    "endEvent": {
+      "__id__": 579
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2
+  },
+  {
+    "__type__": "cc.animation.TriggerCondition",
+    "trigger": "TurnIPRight90"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.EmptyStateTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 546
+    },
+    "to": {
+      "__id__": 559
+    },
+    "conditions": [
+      {
+        "__id__": 581
+      }
+    ],
+    "startEvent": {
+      "__id__": 582
+    },
+    "endEvent": {
+      "__id__": 583
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2
+  },
+  {
+    "__type__": "cc.animation.TriggerCondition",
+    "trigger": "TurnIPLeft180"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.EmptyStateTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 546
+    },
+    "to": {
+      "__id__": 565
+    },
+    "conditions": [
+      {
+        "__id__": 585
+      }
+    ],
+    "startEvent": {
+      "__id__": 586
+    },
+    "endEvent": {
+      "__id__": 587
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2
+  },
+  {
+    "__type__": "cc.animation.TriggerCondition",
+    "trigger": "TurnIPRight180"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 559
+    },
+    "to": {
+      "__id__": 546
+    },
+    "conditions": [],
+    "startEvent": {
+      "__id__": 589
+    },
+    "endEvent": {
+      "__id__": 590
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2,
+    "relativeDuration": false,
+    "exitConditionEnabled": true,
+    "interruptionSource": 0,
+    "_exitCondition": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 565
+    },
+    "to": {
+      "__id__": 546
+    },
+    "conditions": [],
+    "startEvent": {
+      "__id__": 592
+    },
+    "endEvent": {
+      "__id__": 593
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2,
+    "relativeDuration": false,
+    "exitConditionEnabled": true,
+    "interruptionSource": 0,
+    "_exitCondition": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 553
+    },
+    "to": {
+      "__id__": 546
+    },
+    "conditions": [],
+    "startEvent": {
+      "__id__": 595
+    },
+    "endEvent": {
+      "__id__": 596
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2,
+    "relativeDuration": false,
+    "exitConditionEnabled": true,
+    "interruptionSource": 0,
+    "_exitCondition": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 547
+    },
+    "to": {
+      "__id__": 546
+    },
+    "conditions": [],
+    "startEvent": {
+      "__id__": 598
+    },
+    "endEvent": {
+      "__id__": 599
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2,
+    "relativeDuration": false,
+    "exitConditionEnabled": true,
+    "interruptionSource": 0,
+    "_exitCondition": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "emptyStatePose",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 601
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": 283.5532499272772,
+      "centerY": -53.14894948107133
+    },
+    "_node": {
+      "__id__": 602
+    },
+    "_bindings": [
+      {
+        "__id__": 603
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__editorExtras__": null,
+    "input": null,
+    "curveName": "Enable_Transition",
+    "curveValue": 1,
+    "flag": 1
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "input",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 604
+    },
+    "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -6567,11 +6643,11 @@
       "centerY": -59
     },
     "_node": {
-      "__id__": 603
+      "__id__": 605
     },
     "_bindings": [
       {
-        "__id__": 604
+        "__id__": 606
       }
     ]
   },
@@ -6591,7 +6667,7 @@
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 605
+      "__id__": 607
     },
     "_outputIndex": 0
   },
@@ -6602,11 +6678,11 @@
       "centerY": -58
     },
     "_node": {
-      "__id__": 606
+      "__id__": 608
     },
     "_bindings": [
       {
-        "__id__": 607
+        "__id__": 609
       }
     ]
   },
@@ -6626,7 +6702,7 @@
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 608
+      "__id__": 610
     },
     "_outputIndex": 0
   },
@@ -6637,7 +6713,7 @@
       "centerY": -37
     },
     "_node": {
-      "__id__": 609
+      "__id__": 611
     },
     "_bindings": []
   },
@@ -6645,10 +6721,10 @@
     "__type__": "cc.animation.MotionNode",
     "__editorExtras__": null,
     "motion": {
-      "__id__": 610
+      "__id__": 612
     },
     "coordination": {
-      "__id__": 611
+      "__id__": 613
     }
   },
   {
@@ -6674,19 +6750,19 @@
     },
     "name": "Stop",
     "transitionInEvent": {
-      "__id__": 613
-    },
-    "enteredEvent": {
-      "__id__": 614
-    },
-    "transitionOutEvent": {
       "__id__": 615
     },
-    "exitedEvent": {
+    "enteredEvent": {
       "__id__": 616
     },
-    "poseGraph": {
+    "transitionOutEvent": {
       "__id__": 617
+    },
+    "exitedEvent": {
+      "__id__": 618
+    },
+    "poseGraph": {
+      "__id__": 619
     }
   },
   {
@@ -6713,17 +6789,17 @@
         "centerY": 0
       },
       "viewport": {
-        "scale": 1,
-        "top": -62,
-        "left": 108
+        "scale": 0.8999999999999999,
+        "top": -74.64639506303172,
+        "left": 55.12425725323253
       }
     },
     "_main": {
-      "__id__": 618
+      "__id__": 620
     },
     "_shells": [
       {
-        "__id__": 618
+        "__id__": 620
       }
     ]
   },
@@ -6734,7 +6810,7 @@
       "centerY": 91
     },
     "_node": {
-      "__id__": 619
+      "__id__": 621
     },
     "_bindings": []
   },
@@ -6745,8 +6821,9 @@
       "centerY": 53
     },
     "stateMachine": {
-      "__id__": 620
-    }
+      "__id__": 622
+    },
+    "emptyStatePose": null
   },
   {
     "__type__": "cc.animation.StateMachine",
@@ -6759,55 +6836,55 @@
     },
     "_states": [
       {
-        "__id__": 621
-      },
-      {
-        "__id__": 622
-      },
-      {
         "__id__": 623
       },
       {
         "__id__": 624
       },
       {
-        "__id__": 632
+        "__id__": 625
       },
       {
-        "__id__": 643
+        "__id__": 626
       },
       {
-        "__id__": 654
+        "__id__": 634
       },
       {
-        "__id__": 665
+        "__id__": 645
+      },
+      {
+        "__id__": 710
+      },
+      {
+        "__id__": 721
       }
     ],
     "_transitions": [
       {
-        "__id__": 676
+        "__id__": 780
       },
       {
-        "__id__": 677
+        "__id__": 781
       },
       {
-        "__id__": 686
+        "__id__": 790
       },
       {
-        "__id__": 695
+        "__id__": 799
       },
       {
-        "__id__": 701
+        "__id__": 805
       }
     ],
     "_entryState": {
-      "__id__": 621
+      "__id__": 623
     },
     "_exitState": {
-      "__id__": 622
+      "__id__": 624
     },
     "_anyState": {
-      "__id__": 623
+      "__id__": 625
     }
   },
   {
@@ -6854,19 +6931,19 @@
     },
     "name": "Pre-Stop",
     "transitionInEvent": {
-      "__id__": 625
-    },
-    "enteredEvent": {
-      "__id__": 626
-    },
-    "transitionOutEvent": {
       "__id__": 627
     },
-    "exitedEvent": {
+    "enteredEvent": {
       "__id__": 628
     },
-    "poseGraph": {
+    "transitionOutEvent": {
       "__id__": 629
+    },
+    "exitedEvent": {
+      "__id__": 630
+    },
+    "poseGraph": {
+      "__id__": 631
     }
   },
   {
@@ -6891,14 +6968,19 @@
       "rootOutputNodeEditorData": {
         "centerX": 0,
         "centerY": 0
+      },
+      "viewport": {
+        "scale": 1,
+        "top": 0,
+        "left": 0
       }
     },
     "_main": {
-      "__id__": 630
+      "__id__": 632
     },
     "_shells": [
       {
-        "__id__": 630
+        "__id__": 632
       }
     ]
   },
@@ -6909,7 +6991,7 @@
       "centerY": 0
     },
     "_node": {
-      "__id__": 631
+      "__id__": 633
     },
     "_bindings": []
   },
@@ -6932,24 +7014,24 @@
     },
     "name": "Lock Left Foot",
     "transitionInEvent": {
-      "__id__": 633
-    },
-    "enteredEvent": {
-      "__id__": 634
-    },
-    "transitionOutEvent": {
       "__id__": 635
     },
-    "exitedEvent": {
+    "enteredEvent": {
       "__id__": 636
     },
-    "poseGraph": {
+    "transitionOutEvent": {
       "__id__": 637
+    },
+    "exitedEvent": {
+      "__id__": 638
+    },
+    "poseGraph": {
+      "__id__": 639
     }
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": "-->LockLeftFoot"
+    "eventName": "->N Stop L"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -6977,14 +7059,14 @@
       }
     },
     "_main": {
-      "__id__": 638
+      "__id__": 640
     },
     "_shells": [
       {
-        "__id__": 641
+        "__id__": 643
       },
       {
-        "__id__": 638
+        "__id__": 640
       }
     ]
   },
@@ -6995,11 +7077,11 @@
       "centerY": -29
     },
     "_node": {
-      "__id__": 639
+      "__id__": 641
     },
     "_bindings": [
       {
-        "__id__": 640
+        "__id__": 642
       }
     ]
   },
@@ -7019,7 +7101,7 @@
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 641
+      "__id__": 643
     },
     "_outputIndex": 0
   },
@@ -7030,7 +7112,7 @@
       "centerY": 1
     },
     "_node": {
-      "__id__": 642
+      "__id__": 644
     },
     "_bindings": []
   },
@@ -7053,24 +7135,24 @@
     },
     "name": "Plant Left Foot",
     "transitionInEvent": {
-      "__id__": 644
-    },
-    "enteredEvent": {
-      "__id__": 645
-    },
-    "transitionOutEvent": {
       "__id__": 646
     },
-    "exitedEvent": {
+    "enteredEvent": {
       "__id__": 647
     },
-    "poseGraph": {
+    "transitionOutEvent": {
       "__id__": 648
+    },
+    "exitedEvent": {
+      "__id__": 649
+    },
+    "poseGraph": {
+      "__id__": 650
     }
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": "-->PlantLeftFoot"
+    "eventName": "->N Stop L"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -7088,39 +7170,87 @@
     "__type__": "cc.animation.PoseGraph",
     "__editorExtras__": {
       "rootOutputNodeEditorData": {
-        "centerX": 163,
-        "centerY": -28
+        "centerX": 180.5675675675675,
+        "centerY": -126.64864864864853
       },
       "viewport": {
-        "scale": 1,
-        "top": 0,
-        "left": 0
+        "scale": 0.5999999999999996,
+        "top": -311.4565224313291,
+        "left": 733.340646973683
       }
     },
     "_main": {
-      "__id__": 649
+      "__id__": 651
     },
     "_shells": [
       {
-        "__id__": 652
+        "__id__": 657
       },
       {
-        "__id__": 649
+        "__id__": 651
+      },
+      {
+        "__id__": 654
+      },
+      {
+        "__id__": 660
+      },
+      {
+        "__id__": 663
+      },
+      {
+        "__id__": 667
+      },
+      {
+        "__id__": 674
+      },
+      {
+        "__id__": 688
+      },
+      {
+        "__id__": 699
+      },
+      {
+        "__id__": 702
+      },
+      {
+        "__id__": 705
+      },
+      {
+        "__id__": 708
+      },
+      {
+        "__id__": 671
+      },
+      {
+        "__id__": 678
+      },
+      {
+        "__id__": 682
+      },
+      {
+        "__id__": 685
+      },
+      {
+        "__id__": 692
+      },
+      {
+        "__id__": 696
       }
     ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -88,
-      "centerY": -40
+      "centerX": -89.35135135135135,
+      "centerY": -42.70270270270271
     },
     "_node": {
-      "__id__": 650
+      "__id__": 652
     },
     "_bindings": [
       {
-        "__id__": 651
+        "__id__": 653
       }
     ]
   },
@@ -7140,18 +7270,59 @@
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 652
+      "__id__": 654
     },
     "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -317,
-      "centerY": -5
+      "centerX": -388,
+      "centerY": 32
     },
     "_node": {
-      "__id__": 653
+      "__id__": 655
+    },
+    "_bindings": [
+      {
+        "__id__": 656
+      },
+      {
+        "__id__": 659
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.BlendWithTransformFilter",
+    "__editorExtras__": {
+      "centerX": -386,
+      "centerY": 1
+    },
+    "pose0": null,
+    "pose1": null,
+    "weight": 1,
+    "mask": {
+      "__uuid__": "8e7a86aa-4c74-4508-973e-386b73d09ff6",
+      "__expectedType__": "cc.animation.AnimationMask"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "pose0",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 657
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -668,
+      "centerY": -67
+    },
+    "_node": {
+      "__id__": 658
     },
     "_bindings": []
   },
@@ -7164,6 +7335,552 @@
     "stashName": "Locomotion Detail"
   },
   {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "pose1",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 660
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -648.1060606060607,
+      "centerY": 286.1111111111111
+    },
+    "_node": {
+      "__id__": 661
+    },
+    "_bindings": [
+      {
+        "__id__": 662
+      },
+      {
+        "__id__": 666
+      },
+      {
+        "__id__": 670
+      },
+      {
+        "__id__": 684
+      },
+      {
+        "__id__": 698
+      },
+      {
+        "__id__": 701
+      },
+      {
+        "__id__": 704
+      },
+      {
+        "__id__": 707
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.BlendInProportion",
+    "__editorExtras__": {
+      "centerX": -688,
+      "centerY": 94
+    },
+    "poses": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "proportions": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "poses",
+    "_consumerElementIndex": 0,
+    "_target": {
+      "__id__": 663
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1148.3306836248018,
+      "centerY": 137.56624271330156
+    },
+    "_node": {
+      "__id__": 664
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.SampleMotionNode",
+    "__editorExtras__": {
+      "centerX": -993.722290039063,
+      "centerY": 172.94443575541175
+    },
+    "motion": {
+      "__id__": 665
+    },
+    "time": 0.133,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "1403c1b6-6f43-49f9-9b73-7ec617c55cbd@23b0f",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "poses",
+    "_consumerElementIndex": 1,
+    "_target": {
+      "__id__": 667
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1150.414482231255,
+      "centerY": 265.16366027282174
+    },
+    "_node": {
+      "__id__": 668
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.SampleMotionNode",
+    "__editorExtras__": {
+      "centerX": -993.722290039063,
+      "centerY": 172.94443575541175
+    },
+    "motion": {
+      "__id__": 669
+    },
+    "time": 0.133,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "469be665-3f75-4609-a748-32dc9249133d@5c34d",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "poses",
+    "_consumerElementIndex": 2,
+    "_target": {
+      "__id__": 671
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1391.4594264674836,
+      "centerY": 451.4864716400972
+    },
+    "_node": {
+      "__id__": 672
+    },
+    "_bindings": [
+      {
+        "__id__": 673
+      },
+      {
+        "__id__": 677
+      },
+      {
+        "__id__": 681
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.ChoosePoseByBoolean",
+    "__editorExtras__": null,
+    "_poses": [
+      null,
+      null
+    ],
+    "_alteringDurations": [
+      0,
+      0
+    ],
+    "chosen": true
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "falsePose",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 674
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1718.7731612492219,
+      "centerY": 476.12072242715215
+    },
+    "_node": {
+      "__id__": 675
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.SampleMotionNode",
+    "__editorExtras__": {
+      "centerX": -993.722290039063,
+      "centerY": 172.94443575541175
+    },
+    "motion": {
+      "__id__": 676
+    },
+    "time": 0.2,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "e5dbabe3-1a08-4886-8442-8999633ade4a@1fc01",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "truePose",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 678
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1707.8022120276164,
+      "centerY": 338.7093009061591
+    },
+    "_node": {
+      "__id__": 679
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.SampleMotionNode",
+    "__editorExtras__": {
+      "centerX": -993.722290039063,
+      "centerY": 172.94443575541175
+    },
+    "motion": {
+      "__id__": 680
+    },
+    "time": 0.133,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "c85da497-6147-49b0-bb4f-bc725f434873@c0d71",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "chosen",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 682
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1708.9998864462214,
+      "centerY": 578.7906962549964
+    },
+    "_node": {
+      "__id__": 683
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": null,
+    "variableName": "TrackedHipsDirection_LB"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "poses",
+    "_consumerElementIndex": 3,
+    "_target": {
+      "__id__": 685
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1419.5526637027142,
+      "centerY": 729.1315934030636
+    },
+    "_node": {
+      "__id__": 686
+    },
+    "_bindings": [
+      {
+        "__id__": 687
+      },
+      {
+        "__id__": 691
+      },
+      {
+        "__id__": 695
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.ChoosePoseByBoolean",
+    "__editorExtras__": null,
+    "_poses": [
+      null,
+      null
+    ],
+    "_alteringDurations": [
+      0.1,
+      0
+    ],
+    "chosen": true
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "falsePose",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 688
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1738.6118316458878,
+      "centerY": 793.2495188687142
+    },
+    "_node": {
+      "__id__": 689
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.SampleMotionNode",
+    "__editorExtras__": {
+      "centerX": -993.722290039063,
+      "centerY": 172.94443575541175
+    },
+    "motion": {
+      "__id__": 690
+    },
+    "time": 0.233,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "b5e5487c-2314-4c44-86e1-705fe1824be6@3abb8",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "truePose",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 692
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1739.2895058079778,
+      "centerY": 673.8684355083266
+    },
+    "_node": {
+      "__id__": 693
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.SampleMotionNode",
+    "__editorExtras__": {
+      "centerX": -993.722290039063,
+      "centerY": 172.94443575541175
+    },
+    "motion": {
+      "__id__": 694
+    },
+    "time": 0.233,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "9a6eb644-ec9c-414a-ac45-b71adf69b858@3a4af",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "chosen",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 696
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1732.684242650083,
+      "centerY": 916.0000144556952
+    },
+    "_node": {
+      "__id__": 697
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": null,
+    "variableName": "TrackedHipsDirection_RB"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "proportions",
+    "_consumerElementIndex": 0,
+    "_target": {
+      "__id__": 699
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1139.1891891891896,
+      "centerY": 644.5945945945948
+    },
+    "_node": {
+      "__id__": 700
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": {
+      "centerX": -865.7567237647809,
+      "centerY": 514.6486338022594
+    },
+    "variableName": "VelocityBlendF"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "proportions",
+    "_consumerElementIndex": 1,
+    "_target": {
+      "__id__": 702
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1102.702702702703,
+      "centerY": 712.1621621621623
+    },
+    "_node": {
+      "__id__": 703
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": {
+      "centerX": -1137.3783453864025,
+      "centerY": 728.1621473157729
+    },
+    "variableName": "VelocityBlendB"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "proportions",
+    "_consumerElementIndex": 2,
+    "_target": {
+      "__id__": 705
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1087.3783453864025,
+      "centerY": 787.6216067752325
+    },
+    "_node": {
+      "__id__": 706
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": null,
+    "variableName": "VelocityBlendL"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "proportions",
+    "_consumerElementIndex": 3,
+    "_target": {
+      "__id__": 708
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1081.9729399809971,
+      "centerY": 856.5405256941513
+    },
+    "_node": {
+      "__id__": 709
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": null,
+    "variableName": "VelocityBlendR"
+  },
+  {
     "__type__": "cc.animation.PoseState",
     "__editorExtras__": {
       "name": "Lock Right Foot",
@@ -7174,24 +7891,24 @@
     },
     "name": "Lock Right Foot",
     "transitionInEvent": {
-      "__id__": 655
+      "__id__": 711
     },
     "enteredEvent": {
-      "__id__": 656
+      "__id__": 712
     },
     "transitionOutEvent": {
-      "__id__": 657
+      "__id__": 713
     },
     "exitedEvent": {
-      "__id__": 658
+      "__id__": 714
     },
     "poseGraph": {
-      "__id__": 659
+      "__id__": 715
     }
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": "-->LockRightFoot"
+    "eventName": "->N Stop R"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -7219,14 +7936,14 @@
       }
     },
     "_main": {
-      "__id__": 660
+      "__id__": 716
     },
     "_shells": [
       {
-        "__id__": 663
+        "__id__": 719
       },
       {
-        "__id__": 660
+        "__id__": 716
       }
     ]
   },
@@ -7237,11 +7954,11 @@
       "centerY": -10
     },
     "_node": {
-      "__id__": 661
+      "__id__": 717
     },
     "_bindings": [
       {
-        "__id__": 662
+        "__id__": 718
       }
     ]
   },
@@ -7261,7 +7978,7 @@
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 663
+      "__id__": 719
     },
     "_outputIndex": 0
   },
@@ -7272,7 +7989,7 @@
       "centerY": -8
     },
     "_node": {
-      "__id__": 664
+      "__id__": 720
     },
     "_bindings": []
   },
@@ -7295,24 +8012,24 @@
     },
     "name": "Plant Right Foot",
     "transitionInEvent": {
-      "__id__": 666
+      "__id__": 722
     },
     "enteredEvent": {
-      "__id__": 667
+      "__id__": 723
     },
     "transitionOutEvent": {
-      "__id__": 668
+      "__id__": 724
     },
     "exitedEvent": {
-      "__id__": 669
+      "__id__": 725
     },
     "poseGraph": {
-      "__id__": 670
+      "__id__": 726
     }
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": "-->PlantRightFoot"
+    "eventName": "->N Stop R"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -7334,20 +8051,62 @@
         "centerY": -24
       },
       "viewport": {
-        "scale": 1,
-        "top": 0,
-        "left": 0
+        "scale": 0.7199999999999998,
+        "top": -109.49341892475508,
+        "left": 770.1171207238951
       }
     },
     "_main": {
-      "__id__": 671
+      "__id__": 727
     },
     "_shells": [
       {
-        "__id__": 674
+        "__id__": 733
       },
       {
-        "__id__": 671
+        "__id__": 727
+      },
+      {
+        "__id__": 730
+      },
+      {
+        "__id__": 736
+      },
+      {
+        "__id__": 739
+      },
+      {
+        "__id__": 743
+      },
+      {
+        "__id__": 766
+      },
+      {
+        "__id__": 773
+      },
+      {
+        "__id__": 747
+      },
+      {
+        "__id__": 750
+      },
+      {
+        "__id__": 753
+      },
+      {
+        "__id__": 756
+      },
+      {
+        "__id__": 759
+      },
+      {
+        "__id__": 770
+      },
+      {
+        "__id__": 762
+      },
+      {
+        "__id__": 777
       }
     ]
   },
@@ -7358,11 +8117,11 @@
       "centerY": -81
     },
     "_node": {
-      "__id__": 672
+      "__id__": 728
     },
     "_bindings": [
       {
-        "__id__": 673
+        "__id__": 729
       }
     ]
   },
@@ -7382,18 +8141,59 @@
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 674
+      "__id__": 730
     },
     "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -310,
-      "centerY": -1
+      "centerX": -358.5,
+      "centerY": -49.5
     },
     "_node": {
-      "__id__": 675
+      "__id__": 731
+    },
+    "_bindings": [
+      {
+        "__id__": 732
+      },
+      {
+        "__id__": 735
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.BlendWithTransformFilter",
+    "__editorExtras__": {
+      "centerX": -386,
+      "centerY": 1
+    },
+    "pose0": null,
+    "pose1": null,
+    "weight": 1,
+    "mask": {
+      "__uuid__": "aeb43624-6ca5-4568-b343-9d3615c9fe6c",
+      "__expectedType__": "cc.animation.AnimationMask"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "pose0",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 733
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -587,
+      "centerY": -94
+    },
+    "_node": {
+      "__id__": 734
     },
     "_bindings": []
   },
@@ -7406,13 +8206,497 @@
     "stashName": "Locomotion Detail"
   },
   {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "pose1",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 736
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -610.2203647416413,
+      "centerY": 187.196048632219
+    },
+    "_node": {
+      "__id__": 737
+    },
+    "_bindings": [
+      {
+        "__id__": 738
+      },
+      {
+        "__id__": 742
+      },
+      {
+        "__id__": 746
+      },
+      {
+        "__id__": 749
+      },
+      {
+        "__id__": 752
+      },
+      {
+        "__id__": 755
+      },
+      {
+        "__id__": 758
+      },
+      {
+        "__id__": 769
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.BlendInProportion",
+    "__editorExtras__": {
+      "centerX": -619,
+      "centerY": 86
+    },
+    "poses": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "proportions": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "poses",
+    "_consumerElementIndex": 0,
+    "_target": {
+      "__id__": 739
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1088.2003955174691,
+      "centerY": -152.83454185893217
+    },
+    "_node": {
+      "__id__": 740
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.SampleMotionNode",
+    "__editorExtras__": {
+      "centerX": -873.8935910488697,
+      "centerY": 63.87232711467334
+    },
+    "motion": {
+      "__id__": 741
+    },
+    "time": 0.7,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "1403c1b6-6f43-49f9-9b73-7ec617c55cbd@23b0f",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "poses",
+    "_consumerElementIndex": 1,
+    "_target": {
+      "__id__": 743
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1100.4659832246045,
+      "centerY": -20.456663560111792
+    },
+    "_node": {
+      "__id__": 744
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.SampleMotionNode",
+    "__editorExtras__": {
+      "centerX": -873.8935910488697,
+      "centerY": 63.87232711467334
+    },
+    "motion": {
+      "__id__": 745
+    },
+    "time": 0.7,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "469be665-3f75-4609-a748-32dc9249133d@5c34d",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "proportions",
+    "_consumerElementIndex": 0,
+    "_target": {
+      "__id__": 747
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1033.3242913323484,
+      "centerY": 410.59455912822
+    },
+    "_node": {
+      "__id__": 748
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": null,
+    "variableName": "VelocityBlendF"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "proportions",
+    "_consumerElementIndex": 1,
+    "_target": {
+      "__id__": 750
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1023.864831872889,
+      "centerY": 494.37834291200386
+    },
+    "_node": {
+      "__id__": 751
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": null,
+    "variableName": "VelocityBlendB"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "proportions",
+    "_consumerElementIndex": 2,
+    "_target": {
+      "__id__": 753
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1013.0540210620782,
+      "centerY": 568.7027084762985
+    },
+    "_node": {
+      "__id__": 754
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": null,
+    "variableName": "VelocityBlendL"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "proportions",
+    "_consumerElementIndex": 3,
+    "_target": {
+      "__id__": 756
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1006.2972643053214,
+      "centerY": 626.8108165844067
+    },
+    "_node": {
+      "__id__": 757
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__editorExtras__": null,
+    "variableName": "VelocityBlendR"
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "poses",
+    "_consumerElementIndex": 2,
+    "_target": {
+      "__id__": 759
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1321.8571428571436,
+      "centerY": 108.85715975080211
+    },
+    "_node": {
+      "__id__": 760
+    },
+    "_bindings": [
+      {
+        "__id__": 761
+      },
+      {
+        "__id__": 765
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.ChoosePoseByBoolean",
+    "__editorExtras__": null,
+    "_poses": [
+      null,
+      null
+    ],
+    "_alteringDurations": [
+      0,
+      0
+    ],
+    "chosen": true
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "truePose",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 762
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1652.785714285715,
+      "centerY": -64.21426609584276
+    },
+    "_node": {
+      "__id__": 763
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.SampleMotionNode",
+    "__editorExtras__": {
+      "centerX": -873.8935910488697,
+      "centerY": 63.87232711467334
+    },
+    "motion": {
+      "__id__": 764
+    },
+    "time": 0.8,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "c85da497-6147-49b0-bb4f-bc725f434873@c0d71",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "falsePose",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 766
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1679.6183546183556,
+      "centerY": 69.55895455895467
+    },
+    "_node": {
+      "__id__": 767
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.SampleMotionNode",
+    "__editorExtras__": {
+      "centerX": -873.8935910488697,
+      "centerY": 63.87232711467334
+    },
+    "motion": {
+      "__id__": 768
+    },
+    "time": 0.8,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "e5dbabe3-1a08-4886-8442-8999633ade4a@1fc01",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "poses",
+    "_consumerElementIndex": 3,
+    "_target": {
+      "__id__": 770
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1317.5714285714291,
+      "centerY": 338.8571597508021
+    },
+    "_node": {
+      "__id__": 771
+    },
+    "_bindings": [
+      {
+        "__id__": 772
+      },
+      {
+        "__id__": 776
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.ChoosePoseByBoolean",
+    "__editorExtras__": null,
+    "_poses": [
+      null,
+      null
+    ],
+    "_alteringDurations": [
+      0.1,
+      0
+    ],
+    "chosen": true
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "falsePose",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 773
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1703.87436887437,
+      "centerY": 361.8874368874374
+    },
+    "_node": {
+      "__id__": 774
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.SampleMotionNode",
+    "__editorExtras__": {
+      "centerX": -873.8935910488697,
+      "centerY": 63.87232711467334
+    },
+    "motion": {
+      "__id__": 775
+    },
+    "time": 0.766,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "b5e5487c-2314-4c44-86e1-705fe1824be6@3abb8",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "truePose",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 777
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -1672.7857142857151,
+      "centerY": 238.64287676130016
+    },
+    "_node": {
+      "__id__": 778
+    },
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.SampleMotionNode",
+    "__editorExtras__": {
+      "centerX": -873.8935910488697,
+      "centerY": 63.87232711467334
+    },
+    "motion": {
+      "__id__": 779
+    },
+    "time": 0.7,
+    "useNormalizedTime": false
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": null,
+    "clip": {
+      "__uuid__": "9a6eb644-ec9c-414a-ac45-b71adf69b858@3a4af",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
     "__type__": "cc.animation.Transition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 621
+      "__id__": 623
     },
     "to": {
-      "__id__": 624
+      "__id__": 626
     },
     "conditions": []
   },
@@ -7420,24 +8704,24 @@
     "__type__": "cc.animation.PoseTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 624
+      "__id__": 626
     },
     "to": {
-      "__id__": 643
+      "__id__": 645
     },
     "conditions": [
       {
-        "__id__": 678
+        "__id__": 782
       },
       {
-        "__id__": 681
+        "__id__": 785
       }
     ],
     "startEvent": {
-      "__id__": 684
+      "__id__": 788
     },
     "endEvent": {
-      "__id__": 685
+      "__id__": 789
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -7448,10 +8732,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 4,
     "lhs": {
-      "__id__": 679
+      "__id__": 783
     },
     "rhs": {
-      "__id__": 680
+      "__id__": 784
     }
   },
   {
@@ -7468,10 +8752,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 2,
     "lhs": {
-      "__id__": 682
+      "__id__": 786
     },
     "rhs": {
-      "__id__": 683
+      "__id__": 787
     }
   },
   {
@@ -7486,7 +8770,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "-> Debug Plant Left Foot"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -7496,24 +8780,24 @@
     "__type__": "cc.animation.PoseTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 624
+      "__id__": 626
     },
     "to": {
-      "__id__": 665
+      "__id__": 721
     },
     "conditions": [
       {
-        "__id__": 687
+        "__id__": 791
       },
       {
-        "__id__": 690
+        "__id__": 794
       }
     ],
     "startEvent": {
-      "__id__": 693
+      "__id__": 797
     },
     "endEvent": {
-      "__id__": 694
+      "__id__": 798
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -7524,10 +8808,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 4,
     "lhs": {
-      "__id__": 688
+      "__id__": 792
     },
     "rhs": {
-      "__id__": 689
+      "__id__": 793
     }
   },
   {
@@ -7544,10 +8828,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 2,
     "lhs": {
-      "__id__": 691
+      "__id__": 795
     },
     "rhs": {
-      "__id__": 692
+      "__id__": 796
     }
   },
   {
@@ -7562,7 +8846,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "-> Debug Plant Right Foot"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -7572,21 +8856,21 @@
     "__type__": "cc.animation.PoseTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 624
+      "__id__": 626
     },
     "to": {
-      "__id__": 632
+      "__id__": 634
     },
     "conditions": [
       {
-        "__id__": 696
+        "__id__": 800
       }
     ],
     "startEvent": {
-      "__id__": 699
+      "__id__": 803
     },
     "endEvent": {
-      "__id__": 700
+      "__id__": 804
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -7597,10 +8881,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 3,
     "lhs": {
-      "__id__": 697
+      "__id__": 801
     },
     "rhs": {
-      "__id__": 698
+      "__id__": 802
     }
   },
   {
@@ -7615,7 +8899,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "-> Debug Lock Left Foot"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -7625,21 +8909,21 @@
     "__type__": "cc.animation.PoseTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 624
+      "__id__": 626
     },
     "to": {
-      "__id__": 654
+      "__id__": 710
     },
     "conditions": [
       {
-        "__id__": 702
+        "__id__": 806
       }
     ],
     "startEvent": {
-      "__id__": 705
+      "__id__": 809
     },
     "endEvent": {
-      "__id__": 706
+      "__id__": 810
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -7650,10 +8934,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 5,
     "lhs": {
-      "__id__": 703
+      "__id__": 807
     },
     "rhs": {
-      "__id__": 704
+      "__id__": 808
     }
   },
   {
@@ -7668,7 +8952,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "-> Debug Lock Right Foot"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -7678,21 +8962,21 @@
     "__type__": "cc.animation.PoseTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 596
+      "__id__": 534
     },
     "to": {
-      "__id__": 588
+      "__id__": 526
     },
     "conditions": [
       {
-        "__id__": 708
+        "__id__": 812
       }
     ],
     "startEvent": {
-      "__id__": 710
+      "__id__": 814
     },
     "endEvent": {
-      "__id__": 711
+      "__id__": 815
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -7703,7 +8987,7 @@
     "__type__": "cc.animation.UnaryCondition",
     "operator": 0,
     "operand": {
-      "__id__": 709
+      "__id__": 813
     }
   },
   {
@@ -7723,24 +9007,24 @@
     "__type__": "cc.animation.PoseTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 588
+      "__id__": 526
     },
     "to": {
-      "__id__": 612
+      "__id__": 614
     },
     "conditions": [
       {
-        "__id__": 713
+        "__id__": 817
       },
       {
-        "__id__": 715
+        "__id__": 819
       }
     ],
     "startEvent": {
-      "__id__": 718
+      "__id__": 822
     },
     "endEvent": {
-      "__id__": 719
+      "__id__": 823
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -7751,7 +9035,7 @@
     "__type__": "cc.animation.UnaryCondition",
     "operator": 1,
     "operand": {
-      "__id__": 714
+      "__id__": 818
     }
   },
   {
@@ -7763,10 +9047,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 5,
     "lhs": {
-      "__id__": 716
+      "__id__": 820
     },
     "rhs": {
-      "__id__": 717
+      "__id__": 821
     }
   },
   {
@@ -7794,7 +9078,7 @@
       "__id__": 523
     },
     "to": {
-      "__id__": 596
+      "__id__": 534
     },
     "conditions": []
   },
@@ -7802,96 +9086,24 @@
     "__type__": "cc.animation.PoseTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 596
-    },
-    "to": {
-      "__id__": 526
-    },
-    "conditions": [
-      {
-        "__id__": 722
-      }
-    ],
-    "startEvent": {
-      "__id__": 724
-    },
-    "endEvent": {
-      "__id__": 725
-    },
-    "destinationStart": 0,
-    "relativeDestinationStart": false,
-    "duration": 0.3,
-    "interruptionSource": 0
-  },
-  {
-    "__type__": "cc.animation.UnaryCondition",
-    "operator": 0,
-    "operand": {
-      "__id__": 723
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableBoolean",
-    "variable": "Turning",
-    "value": false
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
-  },
-  {
-    "__type__": "cc.animation.Transition",
-    "__editorExtras__": null,
-    "from": {
       "__id__": 526
     },
     "to": {
-      "__id__": 596
+      "__id__": 534
     },
     "conditions": [
       {
-        "__id__": 727
-      }
-    ]
-  },
-  {
-    "__type__": "cc.animation.UnaryCondition",
-    "operator": 1,
-    "operand": {
-      "__id__": 728
-    }
-  },
-  {
-    "__type__": "cc.animation.BindableBoolean",
-    "variable": "Turning",
-    "value": false
-  },
-  {
-    "__type__": "cc.animation.PoseTransition",
-    "__editorExtras__": null,
-    "from": {
-      "__id__": 588
-    },
-    "to": {
-      "__id__": 596
-    },
-    "conditions": [
-      {
-        "__id__": 730
+        "__id__": 826
       },
       {
-        "__id__": 732
+        "__id__": 828
       }
     ],
     "startEvent": {
-      "__id__": 734
+      "__id__": 830
     },
     "endEvent": {
-      "__id__": 735
+      "__id__": 831
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -7902,7 +9114,7 @@
     "__type__": "cc.animation.UnaryCondition",
     "operator": 1,
     "operand": {
-      "__id__": 731
+      "__id__": 827
     }
   },
   {
@@ -7914,7 +9126,7 @@
     "__type__": "cc.animation.UnaryCondition",
     "operator": 1,
     "operand": {
-      "__id__": 733
+      "__id__": 829
     }
   },
   {
@@ -7934,21 +9146,24 @@
     "__type__": "cc.animation.PoseTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 612
+      "__id__": 614
     },
     "to": {
-      "__id__": 596
+      "__id__": 534
     },
     "conditions": [
       {
-        "__id__": 737
+        "__id__": 833
+      },
+      {
+        "__id__": 836
       }
     ],
     "startEvent": {
-      "__id__": 740
+      "__id__": 838
     },
     "endEvent": {
-      "__id__": 741
+      "__id__": 839
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -7959,10 +9174,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 5,
     "lhs": {
-      "__id__": 738
+      "__id__": 834
     },
     "rhs": {
-      "__id__": 739
+      "__id__": 835
     }
   },
   {
@@ -7976,6 +9191,18 @@
     "value": 0.9999
   },
   {
+    "__type__": "cc.animation.UnaryCondition",
+    "operator": 1,
+    "operand": {
+      "__id__": 837
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableBoolean",
+    "variable": "NEVER",
+    "value": false
+  },
+  {
     "__type__": "cc.animation.AnimationGraphEvent",
     "eventName": ""
   },
@@ -7987,7 +9214,7 @@
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
     "poseGraph": {
-      "__id__": 743
+      "__id__": 841
     }
   },
   {
@@ -8004,11 +9231,11 @@
       }
     },
     "_main": {
-      "__id__": 744
+      "__id__": 842
     },
     "_shells": [
       {
-        "__id__": 744
+        "__id__": 842
       }
     ]
   },
@@ -8019,7 +9246,7 @@
       "centerY": -11
     },
     "_node": {
-      "__id__": 745
+      "__id__": 843
     },
     "_bindings": []
   },
@@ -8030,45 +9257,46 @@
       "centerY": -72
     },
     "stateMachine": {
-      "__id__": 746
-    }
+      "__id__": 844
+    },
+    "emptyStatePose": null
   },
   {
     "__type__": "cc.animation.StateMachine",
     "__editorExtras__": {
       "viewport": {
         "scale": 1,
-        "top": -57,
-        "left": -410
+        "top": -64,
+        "left": -136
       }
     },
     "_states": [
       {
-        "__id__": 747
+        "__id__": 845
       },
       {
-        "__id__": 748
+        "__id__": 846
       },
       {
-        "__id__": 749
+        "__id__": 847
       },
       {
-        "__id__": 750
+        "__id__": 848
       }
     ],
     "_transitions": [
       {
-        "__id__": 771
+        "__id__": 869
       }
     ],
     "_entryState": {
-      "__id__": 747
+      "__id__": 845
     },
     "_exitState": {
-      "__id__": 748
+      "__id__": 846
     },
     "_anyState": {
-      "__id__": 749
+      "__id__": 847
     }
   },
   {
@@ -8115,19 +9343,19 @@
     },
     "name": "Main Grounded States",
     "transitionInEvent": {
-      "__id__": 751
+      "__id__": 849
     },
     "enteredEvent": {
-      "__id__": 752
+      "__id__": 850
     },
     "transitionOutEvent": {
-      "__id__": 753
+      "__id__": 851
     },
     "exitedEvent": {
-      "__id__": 754
+      "__id__": 852
     },
     "poseGraph": {
-      "__id__": 755
+      "__id__": 853
     }
   },
   {
@@ -8160,11 +9388,11 @@
       }
     },
     "_main": {
-      "__id__": 756
+      "__id__": 854
     },
     "_shells": [
       {
-        "__id__": 756
+        "__id__": 854
       }
     ]
   },
@@ -8175,7 +9403,7 @@
       "centerY": -32
     },
     "_node": {
-      "__id__": 757
+      "__id__": 855
     },
     "_bindings": []
   },
@@ -8186,8 +9414,9 @@
       "centerY": -72
     },
     "stateMachine": {
-      "__id__": 758
-    }
+      "__id__": 856
+    },
+    "emptyStatePose": null
   },
   {
     "__type__": "cc.animation.StateMachine",
@@ -8200,31 +9429,31 @@
     },
     "_states": [
       {
-        "__id__": 759
+        "__id__": 857
       },
       {
-        "__id__": 760
+        "__id__": 858
       },
       {
-        "__id__": 761
+        "__id__": 859
       },
       {
-        "__id__": 762
+        "__id__": 860
       }
     ],
     "_transitions": [
       {
-        "__id__": 770
+        "__id__": 868
       }
     ],
     "_entryState": {
-      "__id__": 759
+      "__id__": 857
     },
     "_exitState": {
-      "__id__": 760
+      "__id__": 858
     },
     "_anyState": {
-      "__id__": 761
+      "__id__": 859
     }
   },
   {
@@ -8271,19 +9500,19 @@
     },
     "name": "Standing",
     "transitionInEvent": {
-      "__id__": 763
+      "__id__": 861
     },
     "enteredEvent": {
-      "__id__": 764
+      "__id__": 862
     },
     "transitionOutEvent": {
-      "__id__": 765
+      "__id__": 863
     },
     "exitedEvent": {
-      "__id__": 766
+      "__id__": 864
     },
     "poseGraph": {
-      "__id__": 767
+      "__id__": 865
     }
   },
   {
@@ -8316,11 +9545,11 @@
       }
     },
     "_main": {
-      "__id__": 768
+      "__id__": 866
     },
     "_shells": [
       {
-        "__id__": 768
+        "__id__": 866
       }
     ]
   },
@@ -8331,7 +9560,7 @@
       "centerY": -44
     },
     "_node": {
-      "__id__": 769
+      "__id__": 867
     },
     "_bindings": []
   },
@@ -8347,10 +9576,10 @@
     "__type__": "cc.animation.Transition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 759
+      "__id__": 857
     },
     "to": {
-      "__id__": 762
+      "__id__": 860
     },
     "conditions": []
   },
@@ -8358,17 +9587,17 @@
     "__type__": "cc.animation.Transition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 747
+      "__id__": 845
     },
     "to": {
-      "__id__": 750
+      "__id__": 848
     },
     "conditions": []
   },
   {
     "__type__": "cc.animation.Layer",
     "_stateMachine": {
-      "__id__": 773
+      "__id__": 871
     },
     "name": "Aiming",
     "weight": 1,
@@ -8390,67 +9619,79 @@
     },
     "_states": [
       {
-        "__id__": 774
+        "__id__": 872
       },
       {
-        "__id__": 775
+        "__id__": 873
       },
       {
-        "__id__": 776
+        "__id__": 874
       },
       {
-        "__id__": 777
+        "__id__": 875
       },
       {
-        "__id__": 795
+        "__id__": 893
       },
       {
-        "__id__": 814
+        "__id__": 912
       },
       {
-        "__id__": 833
+        "__id__": 931
       },
       {
-        "__id__": 852
+        "__id__": 950
       }
     ],
     "_transitions": [
       {
-        "__id__": 868
+        "__id__": 966
       },
       {
-        "__id__": 869
+        "__id__": 967
       },
       {
-        "__id__": 878
+        "__id__": 979
       },
       {
-        "__id__": 887
+        "__id__": 991
       },
       {
-        "__id__": 896
+        "__id__": 1003
       },
       {
-        "__id__": 905
+        "__id__": 1012
       },
       {
-        "__id__": 914
+        "__id__": 1024
       },
       {
-        "__id__": 923
+        "__id__": 1033
       },
       {
-        "__id__": 932
+        "__id__": 1042
+      },
+      {
+        "__id__": 1051
+      },
+      {
+        "__id__": 1060
+      },
+      {
+        "__id__": 1069
+      },
+      {
+        "__id__": 1078
       }
     ],
     "_entryState": {
-      "__id__": 774
+      "__id__": 872
     },
     "_exitState": {
-      "__id__": 775
+      "__id__": 873
     },
     "_anyState": {
-      "__id__": 776
+      "__id__": 874
     }
   },
   {
@@ -8497,19 +9738,19 @@
     },
     "name": "Zero",
     "transitionInEvent": {
-      "__id__": 778
+      "__id__": 876
     },
     "enteredEvent": {
-      "__id__": 779
+      "__id__": 877
     },
     "transitionOutEvent": {
-      "__id__": 780
+      "__id__": 878
     },
     "exitedEvent": {
-      "__id__": 781
+      "__id__": 879
     },
     "poseGraph": {
-      "__id__": 782
+      "__id__": 880
     }
   },
   {
@@ -8537,14 +9778,14 @@
       }
     },
     "_main": {
-      "__id__": 783
+      "__id__": 881
     },
     "_shells": [
       {
-        "__id__": 783
+        "__id__": 881
       },
       {
-        "__id__": 793
+        "__id__": 891
       }
     ]
   },
@@ -8555,7 +9796,7 @@
       "centerY": -41
     },
     "_node": {
-      "__id__": 784
+      "__id__": 882
     },
     "_bindings": []
   },
@@ -8563,7 +9804,7 @@
     "__type__": "cc.animation.SampleMotionNode",
     "__editorExtras__": null,
     "motion": {
-      "__id__": 785
+      "__id__": 883
     },
     "time": 0.5,
     "useNormalizedTime": true
@@ -8578,23 +9819,23 @@
     "name": "",
     "_items": [
       {
-        "__id__": 786
+        "__id__": 884
       },
       {
-        "__id__": 788
+        "__id__": 886
       },
       {
-        "__id__": 790
+        "__id__": 888
       }
     ],
     "param": {
-      "__id__": 792
+      "__id__": 890
     }
   },
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 787
+      "__id__": 885
     },
     "threshold": -1
   },
@@ -8615,7 +9856,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 789
+      "__id__": 887
     },
     "threshold": 0
   },
@@ -8636,7 +9877,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 791
+      "__id__": 889
     },
     "threshold": 1
   },
@@ -8666,7 +9907,7 @@
       "centerY": 85
     },
     "_node": {
-      "__id__": 794
+      "__id__": 892
     },
     "_bindings": []
   },
@@ -8686,19 +9927,19 @@
     },
     "name": "Forward",
     "transitionInEvent": {
-      "__id__": 796
+      "__id__": 894
     },
     "enteredEvent": {
-      "__id__": 797
+      "__id__": 895
     },
     "transitionOutEvent": {
-      "__id__": 798
+      "__id__": 896
     },
     "exitedEvent": {
-      "__id__": 799
+      "__id__": 897
     },
     "poseGraph": {
-      "__id__": 800
+      "__id__": 898
     }
   },
   {
@@ -8726,14 +9967,14 @@
       }
     },
     "_main": {
-      "__id__": 801
+      "__id__": 899
     },
     "_shells": [
       {
-        "__id__": 801
+        "__id__": 899
       },
       {
-        "__id__": 812
+        "__id__": 910
       }
     ]
   },
@@ -8744,11 +9985,11 @@
       "centerY": -64
     },
     "_node": {
-      "__id__": 802
+      "__id__": 900
     },
     "_bindings": [
       {
-        "__id__": 811
+        "__id__": 909
       }
     ]
   },
@@ -8756,7 +9997,7 @@
     "__type__": "cc.animation.SampleMotionNode",
     "__editorExtras__": null,
     "motion": {
-      "__id__": 803
+      "__id__": 901
     },
     "time": 0.5,
     "useNormalizedTime": true
@@ -8775,23 +10016,23 @@
     "name": "",
     "_items": [
       {
-        "__id__": 804
+        "__id__": 902
       },
       {
-        "__id__": 806
+        "__id__": 904
       },
       {
-        "__id__": 808
+        "__id__": 906
       }
     ],
     "param": {
-      "__id__": 810
+      "__id__": 908
     }
   },
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 805
+      "__id__": 903
     },
     "threshold": -1
   },
@@ -8812,7 +10053,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 807
+      "__id__": 905
     },
     "threshold": 0
   },
@@ -8833,7 +10074,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 809
+      "__id__": 907
     },
     "threshold": 1
   },
@@ -8861,7 +10102,7 @@
     "_consumerPropertyKey": "time",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 812
+      "__id__": 910
     },
     "_outputIndex": 0
   },
@@ -8872,7 +10113,7 @@
       "centerY": 46
     },
     "_node": {
-      "__id__": 813
+      "__id__": 911
     },
     "_bindings": []
   },
@@ -8892,19 +10133,19 @@
     },
     "name": "Left",
     "transitionInEvent": {
-      "__id__": 815
+      "__id__": 913
     },
     "enteredEvent": {
-      "__id__": 816
+      "__id__": 914
     },
     "transitionOutEvent": {
-      "__id__": 817
+      "__id__": 915
     },
     "exitedEvent": {
-      "__id__": 818
+      "__id__": 916
     },
     "poseGraph": {
-      "__id__": 819
+      "__id__": 917
     }
   },
   {
@@ -8932,14 +10173,14 @@
       }
     },
     "_main": {
-      "__id__": 820
+      "__id__": 918
     },
     "_shells": [
       {
-        "__id__": 820
+        "__id__": 918
       },
       {
-        "__id__": 831
+        "__id__": 929
       }
     ]
   },
@@ -8950,11 +10191,11 @@
       "centerY": -81
     },
     "_node": {
-      "__id__": 821
+      "__id__": 919
     },
     "_bindings": [
       {
-        "__id__": 830
+        "__id__": 928
       }
     ]
   },
@@ -8962,7 +10203,7 @@
     "__type__": "cc.animation.SampleMotionNode",
     "__editorExtras__": null,
     "motion": {
-      "__id__": 822
+      "__id__": 920
     },
     "time": 0.5,
     "useNormalizedTime": true
@@ -8976,23 +10217,23 @@
     "name": "",
     "_items": [
       {
-        "__id__": 823
+        "__id__": 921
       },
       {
-        "__id__": 825
+        "__id__": 923
       },
       {
-        "__id__": 827
+        "__id__": 925
       }
     ],
     "param": {
-      "__id__": 829
+      "__id__": 927
     }
   },
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 824
+      "__id__": 922
     },
     "threshold": -1
   },
@@ -9013,7 +10254,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 826
+      "__id__": 924
     },
     "threshold": 0
   },
@@ -9034,7 +10275,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 828
+      "__id__": 926
     },
     "threshold": 1
   },
@@ -9062,7 +10303,7 @@
     "_consumerPropertyKey": "time",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 831
+      "__id__": 929
     },
     "_outputIndex": 0
   },
@@ -9073,7 +10314,7 @@
       "centerY": 20.22222222222223
     },
     "_node": {
-      "__id__": 832
+      "__id__": 930
     },
     "_bindings": []
   },
@@ -9093,19 +10334,19 @@
     },
     "name": "Right",
     "transitionInEvent": {
-      "__id__": 834
+      "__id__": 932
     },
     "enteredEvent": {
-      "__id__": 835
+      "__id__": 933
     },
     "transitionOutEvent": {
-      "__id__": 836
+      "__id__": 934
     },
     "exitedEvent": {
-      "__id__": 837
+      "__id__": 935
     },
     "poseGraph": {
-      "__id__": 838
+      "__id__": 936
     }
   },
   {
@@ -9133,14 +10374,14 @@
       }
     },
     "_main": {
-      "__id__": 839
+      "__id__": 937
     },
     "_shells": [
       {
-        "__id__": 839
+        "__id__": 937
       },
       {
-        "__id__": 850
+        "__id__": 948
       }
     ]
   },
@@ -9151,11 +10392,11 @@
       "centerY": -108
     },
     "_node": {
-      "__id__": 840
+      "__id__": 938
     },
     "_bindings": [
       {
-        "__id__": 849
+        "__id__": 947
       }
     ]
   },
@@ -9163,7 +10404,7 @@
     "__type__": "cc.animation.SampleMotionNode",
     "__editorExtras__": null,
     "motion": {
-      "__id__": 841
+      "__id__": 939
     },
     "time": 0.5,
     "useNormalizedTime": true
@@ -9177,23 +10418,23 @@
     "name": "",
     "_items": [
       {
-        "__id__": 842
+        "__id__": 940
       },
       {
-        "__id__": 844
+        "__id__": 942
       },
       {
-        "__id__": 846
+        "__id__": 944
       }
     ],
     "param": {
-      "__id__": 848
+      "__id__": 946
     }
   },
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 843
+      "__id__": 941
     },
     "threshold": -1
   },
@@ -9214,7 +10455,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 845
+      "__id__": 943
     },
     "threshold": 0
   },
@@ -9235,7 +10476,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 847
+      "__id__": 945
     },
     "threshold": 1
   },
@@ -9263,7 +10504,7 @@
     "_consumerPropertyKey": "time",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 850
+      "__id__": 948
     },
     "_outputIndex": 0
   },
@@ -9274,7 +10515,7 @@
       "centerY": 28
     },
     "_node": {
-      "__id__": 851
+      "__id__": 949
     },
     "_bindings": []
   },
@@ -9286,27 +10527,27 @@
   {
     "__type__": "cc.animation.PoseState",
     "__editorExtras__": {
-      "name": "",
+      "name": "SwitchSidesBlendPose",
       "id": "16734950386970.5238001021374425",
       "clone": null,
       "centerX": -27,
       "centerY": 176
     },
-    "name": "Pose",
+    "name": "SwitchSidesBlendPose",
     "transitionInEvent": {
-      "__id__": 853
+      "__id__": 951
     },
     "enteredEvent": {
-      "__id__": 854
+      "__id__": 952
     },
     "transitionOutEvent": {
-      "__id__": 855
+      "__id__": 953
     },
     "exitedEvent": {
-      "__id__": 856
+      "__id__": 954
     },
     "poseGraph": {
-      "__id__": 857
+      "__id__": 955
     }
   },
   {
@@ -9334,11 +10575,11 @@
       }
     },
     "_main": {
-      "__id__": 858
+      "__id__": 956
     },
     "_shells": [
       {
-        "__id__": 858
+        "__id__": 956
       }
     ]
   },
@@ -9349,7 +10590,7 @@
       "centerY": -4
     },
     "_node": {
-      "__id__": 859
+      "__id__": 957
     },
     "_bindings": []
   },
@@ -9357,7 +10598,7 @@
     "__type__": "cc.animation.SampleMotionNode",
     "__editorExtras__": null,
     "motion": {
-      "__id__": 860
+      "__id__": 958
     },
     "time": 0.5,
     "useNormalizedTime": true
@@ -9371,23 +10612,23 @@
     "name": "",
     "_items": [
       {
-        "__id__": 861
+        "__id__": 959
       },
       {
-        "__id__": 863
+        "__id__": 961
       },
       {
-        "__id__": 865
+        "__id__": 963
       }
     ],
     "param": {
-      "__id__": 867
+      "__id__": 965
     }
   },
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 862
+      "__id__": 960
     },
     "threshold": -1
   },
@@ -9408,7 +10649,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 864
+      "__id__": 962
     },
     "threshold": 0
   },
@@ -9429,7 +10670,7 @@
   {
     "__type__": "cc.animation.AnimationBlend1DItem",
     "motion": {
-      "__id__": 866
+      "__id__": 964
     },
     "threshold": 1
   },
@@ -9460,10 +10701,10 @@
       "clone": null
     },
     "from": {
-      "__id__": 774
+      "__id__": 872
     },
     "to": {
-      "__id__": 795
+      "__id__": 893
     },
     "conditions": []
   },
@@ -9475,38 +10716,41 @@
       "clone": null
     },
     "from": {
-      "__id__": 795
+      "__id__": 893
     },
     "to": {
-      "__id__": 814
+      "__id__": 912
     },
     "conditions": [
       {
-        "__id__": 870
+        "__id__": 968
       },
       {
-        "__id__": 873
+        "__id__": 971
+      },
+      {
+        "__id__": 974
       }
     ],
     "startEvent": {
-      "__id__": 876
+      "__id__": 977
     },
     "endEvent": {
-      "__id__": 877
+      "__id__": 978
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
-    "duration": 0.2,
+    "duration": 0,
     "interruptionSource": 0
   },
   {
     "__type__": "cc.animation.BinaryCondition",
     "operator": 5,
     "lhs": {
-      "__id__": 871
+      "__id__": 969
     },
     "rhs": {
-      "__id__": 872
+      "__id__": 970
     }
   },
   {
@@ -9523,10 +10767,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 3,
     "lhs": {
-      "__id__": 874
+      "__id__": 972
     },
     "rhs": {
-      "__id__": 875
+      "__id__": 973
     }
   },
   {
@@ -9538,6 +10782,26 @@
     "__type__": "cc.animation.BindableNumber",
     "variable": "",
     "value": -130
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 975
+    },
+    "rhs": {
+      "__id__": 976
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "#StateWeight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 0.999
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -9555,38 +10819,41 @@
       "clone": null
     },
     "from": {
-      "__id__": 814
+      "__id__": 912
     },
     "to": {
-      "__id__": 795
+      "__id__": 893
     },
     "conditions": [
       {
-        "__id__": 879
+        "__id__": 980
       },
       {
-        "__id__": 882
+        "__id__": 983
+      },
+      {
+        "__id__": 986
       }
     ],
     "startEvent": {
-      "__id__": 885
+      "__id__": 989
     },
     "endEvent": {
-      "__id__": 886
+      "__id__": 990
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
-    "duration": 0.2,
+    "duration": 0,
     "interruptionSource": 0
   },
   {
     "__type__": "cc.animation.BinaryCondition",
     "operator": 5,
     "lhs": {
-      "__id__": 880
+      "__id__": 981
     },
     "rhs": {
-      "__id__": 881
+      "__id__": 982
     }
   },
   {
@@ -9603,10 +10870,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 3,
     "lhs": {
-      "__id__": 883
+      "__id__": 984
     },
     "rhs": {
-      "__id__": 884
+      "__id__": 985
     }
   },
   {
@@ -9618,6 +10885,26 @@
     "__type__": "cc.animation.BindableNumber",
     "variable": "",
     "value": 125
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 987
+    },
+    "rhs": {
+      "__id__": 988
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "#StateWeight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 0.999
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -9635,38 +10922,41 @@
       "clone": null
     },
     "from": {
-      "__id__": 833
+      "__id__": 931
     },
     "to": {
-      "__id__": 795
+      "__id__": 893
     },
     "conditions": [
       {
-        "__id__": 888
+        "__id__": 992
       },
       {
-        "__id__": 891
+        "__id__": 995
+      },
+      {
+        "__id__": 998
       }
     ],
     "startEvent": {
-      "__id__": 894
+      "__id__": 1001
     },
     "endEvent": {
-      "__id__": 895
+      "__id__": 1002
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
-    "duration": 0.2,
+    "duration": 0,
     "interruptionSource": 0
   },
   {
     "__type__": "cc.animation.BinaryCondition",
     "operator": 5,
     "lhs": {
-      "__id__": 889
+      "__id__": 993
     },
     "rhs": {
-      "__id__": 890
+      "__id__": 994
     }
   },
   {
@@ -9683,10 +10973,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 3,
     "lhs": {
-      "__id__": 892
+      "__id__": 996
     },
     "rhs": {
-      "__id__": 893
+      "__id__": 997
     }
   },
   {
@@ -9698,6 +10988,26 @@
     "__type__": "cc.animation.BindableNumber",
     "variable": "",
     "value": 125
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 999
+    },
+    "rhs": {
+      "__id__": 1000
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "#StateWeight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 0.999
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -9715,24 +11025,24 @@
       "clone": null
     },
     "from": {
-      "__id__": 852
+      "__id__": 950
     },
     "to": {
-      "__id__": 814
+      "__id__": 912
     },
     "conditions": [
       {
-        "__id__": 897
+        "__id__": 1004
       },
       {
-        "__id__": 900
+        "__id__": 1007
       }
     ],
     "startEvent": {
-      "__id__": 903
+      "__id__": 1010
     },
     "endEvent": {
-      "__id__": 904
+      "__id__": 1011
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -9743,10 +11053,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 5,
     "lhs": {
-      "__id__": 898
+      "__id__": 1005
     },
     "rhs": {
-      "__id__": 899
+      "__id__": 1006
     }
   },
   {
@@ -9763,10 +11073,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 3,
     "lhs": {
-      "__id__": 901
+      "__id__": 1008
     },
     "rhs": {
-      "__id__": 902
+      "__id__": 1009
     }
   },
   {
@@ -9789,44 +11099,43 @@
   },
   {
     "__type__": "cc.animation.PoseTransition",
-    "__editorExtras__": {
-      "name": "",
-      "id": "16735106123370.845594975384238",
-      "clone": null
-    },
+    "__editorExtras__": null,
     "from": {
-      "__id__": 795
+      "__id__": 893
     },
     "to": {
-      "__id__": 833
+      "__id__": 931
     },
     "conditions": [
       {
-        "__id__": 906
+        "__id__": 1013
       },
       {
-        "__id__": 909
+        "__id__": 1016
+      },
+      {
+        "__id__": 1019
       }
     ],
     "startEvent": {
-      "__id__": 912
+      "__id__": 1022
     },
     "endEvent": {
-      "__id__": 913
+      "__id__": 1023
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
-    "duration": 0.2,
+    "duration": 0,
     "interruptionSource": 0
   },
   {
     "__type__": "cc.animation.BinaryCondition",
     "operator": 5,
     "lhs": {
-      "__id__": 907
+      "__id__": 1014
     },
     "rhs": {
-      "__id__": 908
+      "__id__": 1015
     }
   },
   {
@@ -9843,10 +11152,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 3,
     "lhs": {
-      "__id__": 910
+      "__id__": 1017
     },
     "rhs": {
-      "__id__": 911
+      "__id__": 1018
     }
   },
   {
@@ -9858,6 +11167,26 @@
     "__type__": "cc.animation.BindableNumber",
     "variable": "",
     "value": 180
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 1020
+    },
+    "rhs": {
+      "__id__": 1021
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "#StateWeight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 0.999
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -9875,24 +11204,24 @@
       "clone": null
     },
     "from": {
-      "__id__": 814
+      "__id__": 912
     },
     "to": {
-      "__id__": 852
+      "__id__": 950
     },
     "conditions": [
       {
-        "__id__": 915
+        "__id__": 1025
       },
       {
-        "__id__": 918
+        "__id__": 1028
       }
     ],
     "startEvent": {
-      "__id__": 921
+      "__id__": 1031
     },
     "endEvent": {
-      "__id__": 922
+      "__id__": 1032
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -9903,10 +11232,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 5,
     "lhs": {
-      "__id__": 916
+      "__id__": 1026
     },
     "rhs": {
-      "__id__": 917
+      "__id__": 1027
     }
   },
   {
@@ -9923,10 +11252,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 3,
     "lhs": {
-      "__id__": 919
+      "__id__": 1029
     },
     "rhs": {
-      "__id__": 920
+      "__id__": 1030
     }
   },
   {
@@ -9955,24 +11284,24 @@
       "clone": null
     },
     "from": {
-      "__id__": 833
+      "__id__": 931
     },
     "to": {
-      "__id__": 852
+      "__id__": 950
     },
     "conditions": [
       {
-        "__id__": 924
+        "__id__": 1034
       },
       {
-        "__id__": 927
+        "__id__": 1037
       }
     ],
     "startEvent": {
-      "__id__": 930
+      "__id__": 1040
     },
     "endEvent": {
-      "__id__": 931
+      "__id__": 1041
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -9983,10 +11312,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 5,
     "lhs": {
-      "__id__": 925
+      "__id__": 1035
     },
     "rhs": {
-      "__id__": 926
+      "__id__": 1036
     }
   },
   {
@@ -10003,10 +11332,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 3,
     "lhs": {
-      "__id__": 928
+      "__id__": 1038
     },
     "rhs": {
-      "__id__": 929
+      "__id__": 1039
     }
   },
   {
@@ -10035,24 +11364,24 @@
       "clone": null
     },
     "from": {
-      "__id__": 852
+      "__id__": 950
     },
     "to": {
-      "__id__": 833
+      "__id__": 931
     },
     "conditions": [
       {
-        "__id__": 933
+        "__id__": 1043
       },
       {
-        "__id__": 936
+        "__id__": 1046
       }
     ],
     "startEvent": {
-      "__id__": 939
+      "__id__": 1049
     },
     "endEvent": {
-      "__id__": 940
+      "__id__": 1050
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -10063,10 +11392,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 5,
     "lhs": {
-      "__id__": 934
+      "__id__": 1044
     },
     "rhs": {
-      "__id__": 935
+      "__id__": 1045
     }
   },
   {
@@ -10083,10 +11412,10 @@
     "__type__": "cc.animation.BinaryCondition",
     "operator": 3,
     "lhs": {
-      "__id__": 937
+      "__id__": 1047
     },
     "rhs": {
-      "__id__": 938
+      "__id__": 1048
     }
   },
   {
@@ -10108,9 +11437,317 @@
     "eventName": ""
   },
   {
+    "__type__": "cc.animation.PoseTransition",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16735106123370.845594975384238",
+      "clone": null
+    },
+    "from": {
+      "__id__": 893
+    },
+    "to": {
+      "__id__": 931
+    },
+    "conditions": [
+      {
+        "__id__": 1052
+      },
+      {
+        "__id__": 1055
+      }
+    ],
+    "startEvent": {
+      "__id__": 1058
+    },
+    "endEvent": {
+      "__id__": 1059
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2,
+    "interruptionSource": 0
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 1053
+    },
+    "rhs": {
+      "__id__": 1054
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 130
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 3,
+    "lhs": {
+      "__id__": 1056
+    },
+    "rhs": {
+      "__id__": 1057
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 180
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.PoseTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 931
+    },
+    "to": {
+      "__id__": 893
+    },
+    "conditions": [
+      {
+        "__id__": 1061
+      },
+      {
+        "__id__": 1064
+      }
+    ],
+    "startEvent": {
+      "__id__": 1067
+    },
+    "endEvent": {
+      "__id__": 1068
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2,
+    "interruptionSource": 0
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 1062
+    },
+    "rhs": {
+      "__id__": 1063
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": -125
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 3,
+    "lhs": {
+      "__id__": 1065
+    },
+    "rhs": {
+      "__id__": 1066
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 125
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.PoseTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 893
+    },
+    "to": {
+      "__id__": 912
+    },
+    "conditions": [
+      {
+        "__id__": 1070
+      },
+      {
+        "__id__": 1073
+      }
+    ],
+    "startEvent": {
+      "__id__": 1076
+    },
+    "endEvent": {
+      "__id__": 1077
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2,
+    "interruptionSource": 0
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 1071
+    },
+    "rhs": {
+      "__id__": 1072
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": -180
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 3,
+    "lhs": {
+      "__id__": 1074
+    },
+    "rhs": {
+      "__id__": 1075
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": -130
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.PoseTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 912
+    },
+    "to": {
+      "__id__": 893
+    },
+    "conditions": [
+      {
+        "__id__": 1079
+      },
+      {
+        "__id__": 1082
+      }
+    ],
+    "startEvent": {
+      "__id__": 1085
+    },
+    "endEvent": {
+      "__id__": 1086
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2,
+    "interruptionSource": 0
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 5,
+    "lhs": {
+      "__id__": 1080
+    },
+    "rhs": {
+      "__id__": 1081
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": -125
+  },
+  {
+    "__type__": "cc.animation.BinaryCondition",
+    "operator": 3,
+    "lhs": {
+      "__id__": 1083
+    },
+    "rhs": {
+      "__id__": 1084
+    }
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "AimLeftRight",
+    "value": 0
+  },
+  {
+    "__type__": "cc.animation.BindableNumber",
+    "variable": "",
+    "value": 125
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
     "__type__": "cc.animation.Layer",
     "_stateMachine": {
-      "__id__": 942
+      "__id__": 1088
     },
     "name": "Base.Slot",
     "weight": 1,
@@ -10126,49 +11763,73 @@
       "clone": null,
       "viewport": {
         "scale": 1,
-        "top": 4,
-        "left": -170
+        "top": 32,
+        "left": -431
       }
     },
     "_states": [
       {
-        "__id__": 943
+        "__id__": 1089
       },
       {
-        "__id__": 944
+        "__id__": 1090
       },
       {
-        "__id__": 945
+        "__id__": 1091
       },
       {
-        "__id__": 946
+        "__id__": 1092
       },
       {
-        "__id__": 947
+        "__id__": 1093
+      },
+      {
+        "__id__": 1099
+      },
+      {
+        "__id__": 1105
       }
     ],
     "_transitions": [
       {
-        "__id__": 953
+        "__id__": 1111
       },
       {
-        "__id__": 954
+        "__id__": 1112
       },
       {
-        "__id__": 958
+        "__id__": 1116
       },
       {
-        "__id__": 961
+        "__id__": 1119
+      },
+      {
+        "__id__": 1123
+      },
+      {
+        "__id__": 1127
+      },
+      {
+        "__id__": 1131
+      },
+      {
+        "__id__": 1135
+      },
+      {
+        "__id__": 1139
+      },
+      {
+        "__id__": 1142
       }
     ],
     "_entryState": {
-      "__id__": 943
+      "__id__": 1089
     },
     "_exitState": {
-      "__id__": 944
+      "__id__": 1090
     },
     "_anyState": {
-      "__id__": 945
+      "__id__": 1091
     }
   },
   {
@@ -10199,8 +11860,8 @@
       "name": "",
       "id": "16783541141440.5672742206306587",
       "clone": null,
-      "centerX": 185,
-      "centerY": 115
+      "centerX": 228,
+      "centerY": 238
     },
     "name": "Any"
   },
@@ -10221,25 +11882,25 @@
       "name": "QuickStop",
       "id": "16783541786830.962031350064019",
       "clone": null,
-      "centerX": 163,
-      "centerY": -112
+      "centerX": 243,
+      "centerY": -249
     },
     "name": "QuickStop",
     "transitionInEvent": {
-      "__id__": 948
+      "__id__": 1094
     },
     "enteredEvent": {
-      "__id__": 949
+      "__id__": 1095
     },
     "transitionOutEvent": {
-      "__id__": 950
+      "__id__": 1096
     },
     "exitedEvent": {
-      "__id__": 951
+      "__id__": 1097
     },
     "_components": [],
     "motion": {
-      "__id__": 952
+      "__id__": 1098
     },
     "speed": 1.75,
     "speedMultiplier": "",
@@ -10274,13 +11935,129 @@
     }
   },
   {
+    "__type__": "cc.animation.Motion",
+    "__editorExtras__": {
+      "name": "Play ALS_N_Stop_L_Down",
+      "id": "16799181007830.003454450400865783",
+      "clone": null,
+      "centerX": 281,
+      "centerY": -41
+    },
+    "name": "Play ALS_N_Stop_L_Down",
+    "transitionInEvent": {
+      "__id__": 1100
+    },
+    "enteredEvent": {
+      "__id__": 1101
+    },
+    "transitionOutEvent": {
+      "__id__": 1102
+    },
+    "exitedEvent": {
+      "__id__": 1103
+    },
+    "_components": [],
+    "motion": {
+      "__id__": 1104
+    },
+    "speed": 1.5,
+    "speedMultiplier": "",
+    "speedMultiplierEnabled": false
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16799181007900.580548296268734",
+      "clone": null
+    },
+    "clip": {
+      "__uuid__": "d50a2381-0e6c-4cdd-9d7c-3436c8d8778a@90ec0",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.Motion",
+    "__editorExtras__": {
+      "name": "Play ALS_N_Stop_R_Down",
+      "id": "16799181027360.5128746140821794",
+      "clone": null,
+      "centerX": 278,
+      "centerY": 35
+    },
+    "name": "Play ALS_N_Stop_R_Down",
+    "transitionInEvent": {
+      "__id__": 1106
+    },
+    "enteredEvent": {
+      "__id__": 1107
+    },
+    "transitionOutEvent": {
+      "__id__": 1108
+    },
+    "exitedEvent": {
+      "__id__": 1109
+    },
+    "_components": [],
+    "motion": {
+      "__id__": 1110
+    },
+    "speed": 1.5,
+    "speedMultiplier": "",
+    "speedMultiplierEnabled": false
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16799181027590.022333868958809733",
+      "clone": null
+    },
+    "clip": {
+      "__uuid__": "998d5f90-3a3e-4121-a8ee-56184c6be9e3@30492",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
     "__type__": "cc.animation.Transition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 943
+      "__id__": 1089
     },
     "to": {
-      "__id__": 946
+      "__id__": 1092
     },
     "conditions": []
   },
@@ -10288,21 +12065,21 @@
     "__type__": "cc.animation.EmptyStateTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 946
+      "__id__": 1092
     },
     "to": {
-      "__id__": 947
+      "__id__": 1093
     },
     "conditions": [
       {
-        "__id__": 955
+        "__id__": 1113
       }
     ],
     "startEvent": {
-      "__id__": 956
+      "__id__": 1114
     },
     "endEvent": {
-      "__id__": 957
+      "__id__": 1115
     },
     "destinationStart": 0.3,
     "relativeDestinationStart": false,
@@ -10324,17 +12101,17 @@
     "__type__": "cc.animation.AnimationTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 947
+      "__id__": 1093
     },
     "to": {
-      "__id__": 946
+      "__id__": 1092
     },
     "conditions": [],
     "startEvent": {
-      "__id__": 959
+      "__id__": 1117
     },
     "endEvent": {
-      "__id__": 960
+      "__id__": 1118
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -10356,21 +12133,21 @@
     "__type__": "cc.animation.AnimationTransition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 947
+      "__id__": 1093
     },
     "to": {
-      "__id__": 946
+      "__id__": 1092
     },
     "conditions": [
       {
-        "__id__": 962
+        "__id__": 1120
       }
     ],
     "startEvent": {
-      "__id__": 963
+      "__id__": 1121
     },
     "endEvent": {
-      "__id__": 964
+      "__id__": 1122
     },
     "destinationStart": 0,
     "relativeDestinationStart": false,
@@ -10393,9 +12170,225 @@
     "eventName": ""
   },
   {
+    "__type__": "cc.animation.EmptyStateTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 1092
+    },
+    "to": {
+      "__id__": 1099
+    },
+    "conditions": [
+      {
+        "__id__": 1124
+      }
+    ],
+    "startEvent": {
+      "__id__": 1125
+    },
+    "endEvent": {
+      "__id__": 1126
+    },
+    "destinationStart": 0.4,
+    "relativeDestinationStart": false,
+    "duration": 0.2
+  },
+  {
+    "__type__": "cc.animation.TriggerCondition",
+    "trigger": "->N Stop L"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.EmptyStateTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 1092
+    },
+    "to": {
+      "__id__": 1105
+    },
+    "conditions": [
+      {
+        "__id__": 1128
+      }
+    ],
+    "startEvent": {
+      "__id__": 1129
+    },
+    "endEvent": {
+      "__id__": 1130
+    },
+    "destinationStart": 0.4,
+    "relativeDestinationStart": false,
+    "duration": 0.2
+  },
+  {
+    "__type__": "cc.animation.TriggerCondition",
+    "trigger": "->N Stop R"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 1099
+    },
+    "to": {
+      "__id__": 1092
+    },
+    "conditions": [
+      {
+        "__id__": 1132
+      }
+    ],
+    "startEvent": {
+      "__id__": 1133
+    },
+    "endEvent": {
+      "__id__": 1134
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2,
+    "relativeDuration": false,
+    "exitConditionEnabled": false,
+    "interruptionSource": 0,
+    "_exitCondition": 1
+  },
+  {
+    "__type__": "cc.animation.TriggerCondition",
+    "trigger": "StopTransition"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 1105
+    },
+    "to": {
+      "__id__": 1092
+    },
+    "conditions": [
+      {
+        "__id__": 1136
+      }
+    ],
+    "startEvent": {
+      "__id__": 1137
+    },
+    "endEvent": {
+      "__id__": 1138
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2,
+    "relativeDuration": false,
+    "exitConditionEnabled": false,
+    "interruptionSource": 0,
+    "_exitCondition": 1
+  },
+  {
+    "__type__": "cc.animation.TriggerCondition",
+    "trigger": "StopTransition"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 1099
+    },
+    "to": {
+      "__id__": 1092
+    },
+    "conditions": [],
+    "startEvent": {
+      "__id__": 1140
+    },
+    "endEvent": {
+      "__id__": 1141
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2,
+    "relativeDuration": false,
+    "exitConditionEnabled": true,
+    "interruptionSource": 0,
+    "_exitCondition": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 1105
+    },
+    "to": {
+      "__id__": 1092
+    },
+    "conditions": [],
+    "startEvent": {
+      "__id__": 1143
+    },
+    "endEvent": {
+      "__id__": 1144
+    },
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "duration": 0.2,
+    "relativeDuration": false,
+    "exitConditionEnabled": true,
+    "interruptionSource": 0,
+    "_exitCondition": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
     "__type__": "cc.animation.Layer",
     "_stateMachine": {
-      "__id__": 966
+      "__id__": 1146
     },
     "name": "Foot IK",
     "weight": 1,
@@ -10417,31 +12410,31 @@
     },
     "_states": [
       {
-        "__id__": 967
+        "__id__": 1147
       },
       {
-        "__id__": 968
+        "__id__": 1148
       },
       {
-        "__id__": 969
+        "__id__": 1149
       },
       {
-        "__id__": 970
+        "__id__": 1150
       }
     ],
     "_transitions": [
       {
-        "__id__": 1010
+        "__id__": 1204
       }
     ],
     "_entryState": {
-      "__id__": 967
+      "__id__": 1147
     },
     "_exitState": {
-      "__id__": 968
+      "__id__": 1148
     },
     "_anyState": {
-      "__id__": 969
+      "__id__": 1149
     }
   },
   {
@@ -10488,19 +12481,19 @@
     },
     "name": "Foot IK",
     "transitionInEvent": {
-      "__id__": 971
+      "__id__": 1151
     },
     "enteredEvent": {
-      "__id__": 972
+      "__id__": 1152
     },
     "transitionOutEvent": {
-      "__id__": 973
+      "__id__": 1153
     },
     "exitedEvent": {
-      "__id__": 974
+      "__id__": 1154
     },
     "poseGraph": {
-      "__id__": 975
+      "__id__": 1155
     }
   },
   {
@@ -10527,47 +12520,59 @@
         "centerY": 205.8163265306123
       },
       "viewport": {
-        "scale": 0.98,
-        "top": 101.1,
-        "left": 510.7
+        "scale": 0.7799999999999998,
+        "top": 114.76457850769395,
+        "left": 99.64746296405754
       }
     },
     "_main": {
-      "__id__": 976
+      "__id__": 1156
     },
     "_shells": [
       {
-        "__id__": 996
+        "__id__": 1190
       },
       {
-        "__id__": 979
+        "__id__": 1159
       },
       {
-        "__id__": 990
+        "__id__": 1184
       },
       {
-        "__id__": 976
+        "__id__": 1156
       },
       {
-        "__id__": 993
+        "__id__": 1187
       },
       {
-        "__id__": 986
+        "__id__": 1174
       },
       {
-        "__id__": 982
+        "__id__": 1170
       },
       {
-        "__id__": 999
+        "__id__": 1193
       },
       {
-        "__id__": 1005
+        "__id__": 1199
       },
       {
-        "__id__": 1002
+        "__id__": 1196
       },
       {
-        "__id__": 1008
+        "__id__": 1202
+      },
+      {
+        "__id__": 1181
+      },
+      {
+        "__id__": 1178
+      },
+      {
+        "__id__": 1166
+      },
+      {
+        "__id__": 1162
       }
     ]
   },
@@ -10578,11 +12583,11 @@
       "centerY": 32.82653061224488
     },
     "_node": {
-      "__id__": 977
+      "__id__": 1157
     },
     "_bindings": [
       {
-        "__id__": 978
+        "__id__": 1158
       }
     ]
   },
@@ -10601,14 +12606,15 @@
       "x": 0,
       "y": 0,
       "z": 0
-    }
+    },
+    "middleBoneTargetBoneName": "ik_knee_target_r"
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 979
+      "__id__": 1159
     },
     "_outputIndex": 0
   },
@@ -10619,11 +12625,11 @@
       "centerY": 24.163265306122412
     },
     "_node": {
-      "__id__": 980
+      "__id__": 1160
     },
     "_bindings": [
       {
-        "__id__": 981
+        "__id__": 1161
       }
     ]
   },
@@ -10642,35 +12648,152 @@
       "x": 0,
       "y": 0,
       "z": 0
-    }
+    },
+    "middleBoneTargetBoneName": "ik_knee_target_l"
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 982
+      "__id__": 1162
     },
     "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -284.3367346938776,
-      "centerY": -250.82653061224488
+      "centerX": 77.25868725868736,
+      "centerY": -249.26640926640937
     },
     "_node": {
-      "__id__": 983
+      "__id__": 1163
     },
     "_bindings": [
       {
-        "__id__": 985
+        "__id__": 1165
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.ApplyTransform",
+    "__editorExtras__": {
+      "centerX": -481,
+      "centerY": -142
+    },
+    "input": null,
+    "transformName": "ik_knee_target_r",
+    "positionApplyFlag": 2,
+    "position": {
+      "__type__": "cc.Vec3",
+      "x": -0.2,
+      "y": 0.3,
+      "z": 0
+    },
+    "rotationApplyFlag": 0,
+    "rotation": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "intensity": {
+      "__id__": 1164
+    },
+    "transformSpaceRequirement": 1
+  },
+  {
+    "__type__": "cc.animation.IntensitySpecification",
+    "type": 0,
+    "value": 1,
+    "auxiliaryCurveName": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "input",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 1166
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -139.18918918918922,
+      "centerY": -245.94594594594602
+    },
+    "_node": {
+      "__id__": 1167
+    },
+    "_bindings": [
+      {
+        "__id__": 1169
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.ApplyTransform",
+    "__editorExtras__": {
+      "centerX": -481,
+      "centerY": -142
+    },
+    "input": null,
+    "transformName": "ik_knee_target_l",
+    "positionApplyFlag": 2,
+    "position": {
+      "__type__": "cc.Vec3",
+      "x": 0.2,
+      "y": -0.3,
+      "z": 0
+    },
+    "rotationApplyFlag": 0,
+    "rotation": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "intensity": {
+      "__id__": 1168
+    },
+    "transformSpaceRequirement": 1
+  },
+  {
+    "__type__": "cc.animation.IntensitySpecification",
+    "type": 0,
+    "value": 1,
+    "auxiliaryCurveName": ""
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "input",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 1170
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -443.79619415333707,
+      "centerY": -276.50220628792056
+    },
+    "_node": {
+      "__id__": 1171
+    },
+    "_bindings": [
+      {
+        "__id__": 1173
       },
       {
-        "__id__": 1004
+        "__id__": 1198
       },
       {
-        "__id__": 1007
+        "__id__": 1201
       }
     ]
   },
@@ -10698,8 +12821,9 @@
       "w": 1
     },
     "intensity": {
-      "__id__": 984
-    }
+      "__id__": 1172
+    },
+    "transformSpaceRequirement": 2
   },
   {
     "__type__": "cc.animation.IntensitySpecification",
@@ -10712,28 +12836,28 @@
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 986
+      "__id__": 1174
     },
     "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -603.3673469387755,
-      "centerY": -239.77551020408163
+      "centerX": -897.9619415333702,
+      "centerY": -269.50523993381137
     },
     "_node": {
-      "__id__": 987
+      "__id__": 1175
     },
     "_bindings": [
       {
-        "__id__": 989
+        "__id__": 1177
       },
       {
-        "__id__": 998
+        "__id__": 1192
       },
       {
-        "__id__": 1001
+        "__id__": 1195
       }
     ]
   },
@@ -10761,8 +12885,9 @@
       "w": 1
     },
     "intensity": {
-      "__id__": 988
-    }
+      "__id__": 1176
+    },
+    "transformSpaceRequirement": 2
   },
   {
     "__type__": "cc.animation.IntensitySpecification",
@@ -10775,22 +12900,92 @@
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 990
+      "__id__": 1178
     },
     "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -287.61224489795916,
-      "centerY": -439.42857142857144
+      "centerX": -172.82425009237772,
+      "centerY": -443.0945682010138
     },
     "_node": {
-      "__id__": 991
+      "__id__": 1179
     },
     "_bindings": [
       {
-        "__id__": 992
+        "__id__": 1180
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.CopyTransform",
+    "__editorExtras__": {
+      "centerX": -457,
+      "centerY": -17
+    },
+    "input": null,
+    "sourceTransformName": "calf_l",
+    "targetTransformName": "ik_knee_target_l",
+    "transformSpaceRequirement": 2
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "input",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 1181
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -364.71614198426965,
+      "centerY": -445.79727090371637
+    },
+    "_node": {
+      "__id__": 1182
+    },
+    "_bindings": [
+      {
+        "__id__": 1183
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.CopyTransform",
+    "__editorExtras__": {
+      "centerX": -457,
+      "centerY": -17
+    },
+    "input": null,
+    "sourceTransformName": "calf_r",
+    "targetTransformName": "ik_knee_target_r",
+    "transformSpaceRequirement": 2
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodePropertyBinding",
+    "_consumerPropertyKey": "input",
+    "_consumerElementIndex": -1,
+    "_target": {
+      "__id__": 1184
+    },
+    "_outputIndex": 0
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": {
+      "centerX": -552.477109762824,
+      "centerY": -440.7799227799228
+    },
+    "_node": {
+      "__id__": 1185
+    },
+    "_bindings": [
+      {
+        "__id__": 1186
       }
     ]
   },
@@ -10810,22 +13005,22 @@
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 993
+      "__id__": 1187
     },
     "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -587.1734693877551,
-      "centerY": -432.68367346938777
+      "centerX": -760.1464423607281,
+      "centerY": -439.44043022614454
     },
     "_node": {
-      "__id__": 994
+      "__id__": 1188
     },
     "_bindings": [
       {
-        "__id__": 995
+        "__id__": 1189
       }
     ]
   },
@@ -10845,7 +13040,7 @@
     "_consumerPropertyKey": "input",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 996
+      "__id__": 1190
     },
     "_outputIndex": 0
   },
@@ -10856,7 +13051,7 @@
       "centerY": -533.204081632653
     },
     "_node": {
-      "__id__": 997
+      "__id__": 1191
     },
     "_bindings": []
   },
@@ -10872,18 +13067,18 @@
     "_consumerPropertyKey": "position",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 999
+      "__id__": 1193
     },
     "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -932.6530612244898,
-      "centerY": -262.2448979591837
+      "centerX": -1140.761169332598,
+      "centerY": -296.0286817429675
     },
     "_node": {
-      "__id__": 1000
+      "__id__": 1194
     },
     "_bindings": []
   },
@@ -10900,18 +13095,18 @@
     "_consumerPropertyKey": "intensityValue",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 1002
+      "__id__": 1196
     },
     "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -934.6938775510205,
-      "centerY": -189.79591836734693
+      "centerX": -1138.7479316050747,
+      "centerY": -210.0661886376172
     },
     "_node": {
-      "__id__": 1003
+      "__id__": 1197
     },
     "_bindings": []
   },
@@ -10928,18 +13123,18 @@
     "_consumerPropertyKey": "position",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 1005
+      "__id__": 1199
     },
     "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -25.51020408163265,
-      "centerY": -283.6734693877551
+      "centerX": -683.618312189741,
+      "centerY": -285.0248207391065
     },
     "_node": {
-      "__id__": 1006
+      "__id__": 1200
     },
     "_bindings": []
   },
@@ -10956,18 +13151,18 @@
     "_consumerPropertyKey": "intensityValue",
     "_consumerElementIndex": -1,
     "_target": {
-      "__id__": 1008
+      "__id__": 1202
     },
     "_outputIndex": 0
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": {
-      "centerX": -26.530612244897952,
-      "centerY": -198.9795918367347
+      "centerX": -703.5576392719252,
+      "centerY": -227.35797021511308
     },
     "_node": {
-      "__id__": 1009
+      "__id__": 1203
     },
     "_bindings": []
   },
@@ -10983,22 +13178,12 @@
     "__type__": "cc.animation.Transition",
     "__editorExtras__": null,
     "from": {
-      "__id__": 967
+      "__id__": 1147
     },
     "to": {
-      "__id__": 970
+      "__id__": 1150
     },
     "conditions": []
-  },
-  {
-    "__type__": "cc.animation.PlainVariable",
-    "_type": 1,
-    "_value": false
-  },
-  {
-    "__type__": "cc.animation.PlainVariable",
-    "_type": 0,
-    "_value": 0
   },
   {
     "__type__": "cc.animation.PlainVariable",
@@ -11009,11 +13194,6 @@
     "__type__": "cc.animation.PlainVariable",
     "_type": 0,
     "_value": 0.5
-  },
-  {
-    "__type__": "cc.animation.PlainVariable",
-    "_type": 1,
-    "_value": false
   },
   {
     "__type__": "cc.animation.PlainVariable",
@@ -11088,7 +13268,7 @@
   {
     "__type__": "cc.animation.PlainVariable",
     "_type": 0,
-    "_value": 0
+    "_value": 1
   },
   {
     "__type__": "cc.animation.TriggerVariable",
@@ -11130,5 +13310,44 @@
     "__type__": "cc.animation.PlainVariable",
     "_type": 0,
     "_value": 0
+  },
+  {
+    "__type__": "cc.animation.TriggerVariable",
+    "_flags": 0
+  },
+  {
+    "__type__": "cc.animation.TriggerVariable",
+    "_flags": 0
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 3,
+    "_value": 0
+  },
+  {
+    "__type__": "cc.animation.TriggerVariable",
+    "_flags": 0
+  },
+  {
+    "__type__": "cc.animation.TriggerVariable",
+    "_flags": 0
+  },
+  {
+    "__type__": "cc.animation.TriggerVariable",
+    "_flags": 0
+  },
+  {
+    "__type__": "cc.animation.TriggerVariable",
+    "_flags": 0
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 1,
+    "_value": false
+  },
+  {
+    "__type__": "cc.animation.PlainVariable",
+    "_type": 1,
+    "_value": false
   }
 ]

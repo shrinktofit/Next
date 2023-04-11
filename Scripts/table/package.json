@@ -1,0 +1,8 @@
+{
+  "name": "table",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "postinstall": "npm run build"
+  }
+}

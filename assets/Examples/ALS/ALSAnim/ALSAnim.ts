@@ -2,6 +2,7 @@ import { _decorator, Component, Node, error, animation } from 'cc';
 import { ALSCharacterInfo } from '../ALSCharacterInfo';
 import { ALSAnimFeature } from './ALSAnimFeature';
 import { ALSAnimFeatureAiming } from './ALSAnimFeatureAiming';
+import { ALSAnimFeatureFootLock } from './ALSAnimFeatureFootLock';
 import { ALSAnimFeatureLean } from './ALSAnimFeatureLean';
 import { ALSAnimFeatureMovement } from './ALSAnimFeatureMovement';
 import { ALSAnimFeatureStop } from './ALSAnimFeatureStop';
@@ -17,6 +18,8 @@ const FEATURE_NAME_TURN_IN_PLACE = '原地转向';
 const FEATURE_NAME_AIMING = '瞄准';
 
 const FEATURE_NAME_STOP = '停止';
+
+const FEATURE_NAME_FOOT_LOCK = '脚步锁定';
 
 const GROUP_ENABLING = '启用';
 
@@ -96,6 +99,18 @@ export class ALSAnim extends Component {
     })
     public featureAimingEnabled = true;
 
+    @property({
+        group: FEATURE_NAME_FOOT_LOCK,
+    })
+    public featureFootLock = new ALSAnimFeatureFootLock();
+
+    @featureEnabling(function(this: ALSAnim) { return this.featureFootLock; })
+    @property({
+        group: GROUP_ENABLING,
+        displayName: FEATURE_NAME_FOOT_LOCK,
+    })
+    public featureFootLockEnabled = true;
+
     start() {
         const requiredComponents = ([ALSCharacterInfo, animation.AnimationController] as const).map((ComponentConstructor) => {
             const component = this.node.getComponent(ComponentConstructor as typeof Component);
@@ -123,6 +138,7 @@ export class ALSAnim extends Component {
             this.featureLean,
             this.featureTurnInPlace,
             this.featureAiming,
+            this.featureFootLock,
         ] as const)) {
             if (feature.enabled) {
                 feature._init(

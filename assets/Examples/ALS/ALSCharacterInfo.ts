@@ -1,9 +1,20 @@
-import { _decorator, Component, Node, Vec3, find } from 'cc';
+import { _decorator, Component, Node, Vec3, find, Quat } from 'cc';
 import { getForward } from '../../Scripts/Utils/NodeUtils';
+import { ALSGait } from './ALSGait';
+import { UNIT_SCALE_ALS_TO_CC } from './Utility/UnitConversion';
 const { ccclass, property } = _decorator;
 
 @ccclass('ALSCharacterInfo')
 export class ALSCharacterInfo extends Component {
+    @property
+    public walkSpeed = 165 * UNIT_SCALE_ALS_TO_CC;
+
+    @property
+    public runSpeed = 350 * UNIT_SCALE_ALS_TO_CC;
+
+    @property
+    public sprintSpeed = 600 * UNIT_SCALE_ALS_TO_CC;
+
     public get hasMovementInput() {
         // Determine if the character has movement input by getting its movement input amount.
         // The Movement Input Amount is equal to the current acceleration divided by the max acceleration so that
@@ -24,7 +35,9 @@ export class ALSCharacterInfo extends Component {
         return Vec3.len(this.velocity);
     }
 
-    public readonly acceleration = new Vec3();
+    public get acceleration() {
+        return this._acceleration as Readonly<Vec3>;
+    }
 
     public maxAcceleration = 0.0;
 
@@ -34,11 +47,66 @@ export class ALSCharacterInfo extends Component {
         return this._viewDirection;
     }
 
-    public update() {
+    public get worldPosition() {
+        return this.node.worldPosition;
+    }
+
+    public get worldRotation() {
+        return this.node.worldRotation;
+    }
+
+    public get lastUpdateWorldPosition() {
+        return this._lastUpdateWorldPosition as Readonly<Vec3>;
+    }
+
+    public get lastUpdateWorldRotation() {
+        return this._lastUpdateWorldRotation as Readonly<Quat>;
+    }
+
+    public isMovingOnGround() {
+        return true;
+    }
+
+    get gait() {
+        return this._gait;
+    }
+
+    public start() {
+        this._setLastUpdateTransform();
+    }
+
+    public update(deltaTime: number) {
+        this._updateAcceleration(deltaTime);
+
+        // Set the Allowed Gait
+        const allowedGait = this._getAllowedGait();
+
+        // Determine the Actual Gait. If it is different from the current Gait, Set the new Gait Event.
+        const actualGait = this._getActualGait(allowedGait);
+        if (actualGait !== this._gait) {
+            this._setGait(actualGait);
+        }
+
+        this._setAllowedGait(allowedGait);
+        
         this._fetchViewDirection();
     }
 
+    public lateUpdate() {
+        this._setLastUpdateTransform();
+    }
+
+    private readonly _acceleration = new Vec3();
+    private readonly _lastVelocity = new Vec3();
     private readonly _viewDirection = new Vec3();
+    private readonly _lastUpdateWorldPosition = new Vec3();
+    private readonly _lastUpdateWorldRotation = new Quat();
+    private _gait = ALSGait.Walking;
+
+    protected _setLastUpdateTransform() {
+        Vec3.copy(this._lastUpdateWorldPosition, this.node.worldPosition);
+        Quat.copy(this._lastUpdateWorldRotation, this.node.worldRotation);
+    }
 
     private _fetchViewDirection() {
         const mainCamera = find('Main Camera');
@@ -47,6 +115,58 @@ export class ALSCharacterInfo extends Component {
         } else {
             return Vec3.negate(this._viewDirection, getForward(mainCamera));
         }
+    }
+
+    private _updateAcceleration(deltaTime: number) {
+        const newAcceleration = new Vec3();
+        Vec3.subtract(newAcceleration, this.velocity, this._lastVelocity);
+        Vec3.multiplyScalar(newAcceleration, newAcceleration, 1.0 / deltaTime);
+        if (Vec3.equals(newAcceleration, Vec3.ZERO) || this._isLocallyControlled()) {
+            Vec3.copy(this._acceleration, newAcceleration);
+        } else {
+            Vec3.multiplyScalar(this._acceleration, this._acceleration, 0.5);
+        }
+        Vec3.copy(this._lastVelocity, this.velocity);
+    }
+
+    private _getActualGait(allowedGait: ALSGait): ALSGait {
+        const speed = this.speed;
+        if (speed > this.runSpeed + 10 * UNIT_SCALE_ALS_TO_CC) {
+            if (allowedGait === ALSGait.Sprinting) {
+                return ALSGait.Sprinting;
+            } else {
+                return ALSGait.Running;
+            }
+        }
+        if (speed >= this.walkSpeed + 10 * UNIT_SCALE_ALS_TO_CC) {
+            return ALSGait.Running;
+        }
+        return ALSGait.Walking;
+    }
+
+    private _setGait(newGait: ALSGait, force = false) {
+        if (force || this._gait !== newGait) {
+            const prev = this._gait;
+            this._gait = newGait;
+            this._onGaitChange(prev);
+        }
+    }
+
+    private _getAllowedGait() {
+        return ALSGait.Running;
+    }
+
+    private _onGaitChange(previousGait: ALSGait) {
+        // TODO
+    }
+
+    private _setAllowedGait(newAllowedGait: ALSGait) {
+        // TODO
+    }
+
+    private _isLocallyControlled() {
+        // TODO
+        return true;
     }
 }
 

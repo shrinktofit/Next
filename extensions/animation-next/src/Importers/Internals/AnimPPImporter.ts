@@ -6,7 +6,7 @@ const { Path } = Editor.Utils;
 
 module.paths.push(Path.join(Editor.App.path, 'node_modules'));
 import { Asset, Importer, VirtualAsset } from '@editor/asset-db';
-import { animation, AnimationClip, approx, Asset as CCAsset, assetManager, js, Node, Quat, toDegree, Vec3 } from 'cc';
+import { animation, AnimationClip, approx, Asset as CCAsset, assetManager, instantiate, js, Node, Quat, toDegree, Vec3 } from 'cc';
 import assert from 'assert';
 import { exoticAnimationTag, removeNodeTransformAnimation, TransformFlag } from 'cc/editor/exotic-animation';
 import { PPAnim, PPCalculateRotationAmount } from './AnimPPFile';
@@ -68,6 +68,8 @@ export default class AnimPPImporter extends Importer {
 
         const cconb = encodeCCONBinary(ccon);
         await asset.saveToLibrary('.cconb', cconb);
+
+        assetManager.releaseAsset(sourceAnimationClip);
 
         return true;
     }
@@ -174,14 +176,14 @@ export default class AnimPPImporter extends Importer {
             amounts[iFrame] = amount;
         }
 
-        console.log(amounts);
+        console.log(amounts.slice());
 
         for (let i = amounts.length - 1; i > 0; --i) {
-            amounts[i] -= amounts[0];
+            amounts[i] = (amounts[i] - amounts[i - 1]);
         }
         amounts[0] = 0;
 
-        console.log(amounts);
+        console.log(amounts.slice());
 
         const times = Array.from(amounts, (_, i) => i * frameTime);
 

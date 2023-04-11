@@ -4,5 +4,16 @@
   "uuid": "bd8c42d9-bcd9-4980-baa6-d07d0c8194a2",
   "creator": {
     "version": "3.8.0"
+  },
+  "dependencies": {
+    "table": "^6.8.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "rollup": "^3.20.2"
+  },
+  "scripts": {
+    "postinstall": "cd Scripts/table && npm i"
   }
 }

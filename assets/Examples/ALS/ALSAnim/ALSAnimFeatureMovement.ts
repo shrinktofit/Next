@@ -1,12 +1,26 @@
-import { _decorator, Vec3, Quat, toDegree, clamp, clamp01 } from 'cc';
-import { createRealtimeNumberChart, RealTimeNumberChart } from '../Debug/Charts/ChartService';
+import { _decorator, Vec3, Quat, toDegree, clamp, clamp01, lerp, warn, animation } from 'cc';
+import { DEBUG } from 'cc/env';
+import { ALSGait } from '../ALSGait';
 import { calculateMoveDirection, MoveDirection } from '../Internal/MoveDirection';
+import { AnimationGraphVariableSmoothSetter } from '../Utility/AnimationGraphVariableSmoothSetter';
 import { assertIsTrue } from '../Utility/Asserts';
 import { interopTo } from '../Utility/InteropTo';
 import { safeNormalizeVec3 } from '../Utility/SafeNormalize';
 import { UNIT_SCALE_ALS_TO_CC } from '../Utility/UnitConversion';
 import { ALSAnimFeature } from './ALSAnimFeature';
+import { ALSAnimFeatureMovementDebug } from './ALSAnimFeatureMovementDebug';
 const { ccclass, property } = _decorator;
+
+export enum GraphVarName {
+    ShouldMove = 'ShouldMove',
+    WalkRunBlend = 'WalkRunBlend',
+    StrideBlend = 'StrideBlend',
+    VelocityBlendF = 'VelocityBlendF',
+    VelocityBlendB = 'VelocityBlendB',
+    VelocityBlendL = 'VelocityBlendL',
+    VelocityBlendR = 'VelocityBlendR',
+    MovementDirection = 'MovementDirection',
+}
 
 @ccclass('ALSAnimFeatureMovement')
 export class ALSAnimFeatureMovement extends ALSAnimFeature {
@@ -17,31 +31,17 @@ export class ALSAnimFeatureMovement extends ALSAnimFeature {
     public velocityBlendInteropSpeed = 12.0;
 
     public onStart() {
-        if (this.debug) {
-            if (this._debugFB) {
-                this._chart = createRealtimeNumberChart?.({
-                    valueDescriptions: [
-                        { displayName: 'N/A' },
-                        { displayName: 'VelocityBlend.F' },
-                        { displayName: 'VelocityBlend.B' },
-                    ],
-                    chart: {
-                        type: 'pie',
-                    },
-                });
-            } else {
-                this._chart = createRealtimeNumberChart?.({
-                    valueDescriptions: [
-                        { displayName: 'VelocityBlend.F' },
-                        { displayName: 'VelocityBlend.B' },
-                        { displayName: 'VelocityBlend.L' },
-                        { displayName: 'VelocityBlend.R' },
-                    ],
-                    chart: {
-                        type: 'line',
-                    },
-                });
-            }
+        this._walkRunBlendSmoothSetter = new AnimationGraphVariableSmoothSetter(
+            this.animationController,
+            GraphVarName.WalkRunBlend,
+            0.736806,
+        );
+        if (DEBUG && this.debug) {
+            this._debugger = new ALSAnimFeatureMovementDebug(
+                this,
+                this.animationController,
+                this.characterInfo,
+            );
         }
     }
 
@@ -50,16 +50,15 @@ export class ALSAnimFeatureMovement extends ALSAnimFeature {
             animationController,
         } = this;
 
+        this._walkRunBlendSmoothSetter.update(deltaTime);
+
         const shouldMove = this.shouldMove;
 
         if (shouldMove) {
             this._updateMoveDirection();
             this._updateVelocityBlend(deltaTime);
-        }
-
-        if (this._currentMoveDirection !== this._lastMoveDirection) {
-            this._lastMoveDirection = this._currentMoveDirection;
-            console.error(`Move Direction: ${MoveDirection[this._currentMoveDirection]}`);
+            this._updateWalkRunBlend();
+            this._updateStrideBlend();
         }
 
         // Push params to graph.
@@ -68,47 +67,28 @@ export class ALSAnimFeatureMovement extends ALSAnimFeature {
                 _currentMoveDirection: currentMoveDirection,
                 _currentVelocityBlend: { f, b, l, r },
             } = this;
-            animationController.setValue(`ShouldMove`, shouldMove);
+            animationController.setValue(GraphVarName.ShouldMove, shouldMove);
             if (shouldMove) {
-                animationController.setValue(`MovementDirection`, currentMoveDirection);
+                animationController.setValue(GraphVarName.MovementDirection, currentMoveDirection);
                 const sumBlend = f + b + l + r;
                 assertIsTrue(sumBlend !== 0.0);
-                animationController.setValue(`VelocityBlendF`, f / sumBlend);
-                animationController.setValue(`VelocityBlendB`, b / sumBlend);
-                animationController.setValue(`VelocityBlendL`, l / sumBlend);
-                animationController.setValue(`VelocityBlendR`, r / sumBlend);
-
-                if (this._debugFB) {
-                    if (this._chart) {
-                        let i = 0;
-                        const f_ = f / sumBlend;
-                        const b_ = b / sumBlend;
-                        this._chart.setValue(i++, (1.0 - clamp01(f_ + b_)));
-                        this._chart.setValue(i++, f_);
-                        this._chart.setValue(i++, b_);
-                        this._chart.update();
-                    }
-                } else {
-                    if (this._chart) {
-                        let i = 0;
-                        this._chart.setValue(i++, f);
-                        this._chart.setValue(i++, b);
-                        this._chart.setValue(i++, l);
-                        this._chart.setValue(i++, r);
-                        this._chart.update();
-                    }
-                }
+                animationController.setValue(GraphVarName.VelocityBlendF, f / sumBlend);
+                animationController.setValue(GraphVarName.VelocityBlendB, b / sumBlend);
+                animationController.setValue(GraphVarName.VelocityBlendL, l / sumBlend);
+                animationController.setValue(GraphVarName.VelocityBlendR, r / sumBlend);
             }
         }
+
+        this._debugger?.update(deltaTime);
     }
+
+    private _debugger: undefined | ALSAnimFeatureMovementDebug = undefined;
 
     private _currentMoveDirection = MoveDirection.Forward;
 
     private _currentVelocityBlend = new VelocityBlend();
 
-    private _chart: RealTimeNumberChart | undefined;
-
-    private _debugFB = true;
+    private declare _walkRunBlendSmoothSetter: AnimationGraphVariableSmoothSetter;
 
     private get _localVelocity() {
         const v = this.characterInfo.velocity;
@@ -159,6 +139,18 @@ export class ALSAnimFeatureMovement extends ALSAnimFeature {
         currentVelocityBlend.l = interopTo(currentVelocityBlend.l, l, deltaTime, velocityBlendInteropSpeed);
         currentVelocityBlend.r = interopTo(currentVelocityBlend.r, r, deltaTime, velocityBlendInteropSpeed);
     }
+
+    private _updateWalkRunBlend() {
+        const gait = this.characterInfo.gait;
+        const walkRunBlend = gait === ALSGait.Walking ? 0.0 : 1.0;
+        this._walkRunBlendSmoothSetter.set(walkRunBlend);
+    }
+
+    private _updateStrideBlend() {
+        const speed = this.characterInfo.speed;
+        const speedNormalized = lerp(0.2, 1.0, clamp01(speed / 3.6));
+        this.animationController.setValue(GraphVarName.StrideBlend, speedNormalized);
+    }
 }
 
 class VelocityBlend {
@@ -183,4 +175,3 @@ function calculateYawInRadians(localVelocity: Vec3) {
 
     return angle;
 }
-
