@@ -698,7 +698,7 @@
       "centerY": -93
     },
     "name": "Moving",
-    "poseGraph": {
+    "graph": {
       "__id__": 47
     }
   },
@@ -750,7 +750,7 @@
       "centerY": -238
     },
     "name": "Not Moving",
-    "poseGraph": {
+    "graph": {
       "__id__": 51
     }
   },
@@ -947,7 +947,7 @@
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "poseGraph": {
+    "graph": {
       "__id__": 72
     }
   },
@@ -1223,7 +1223,7 @@
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "poseGraph": {
+    "graph": {
       "__id__": 97
     }
   },
@@ -1499,7 +1499,7 @@
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "poseGraph": {
+    "graph": {
       "__id__": 122
     }
   },
@@ -1776,7 +1776,7 @@
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "poseGraph": {
+    "graph": {
       "__id__": 147
     }
   },
@@ -2052,7 +2052,7 @@
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "poseGraph": {
+    "graph": {
       "__id__": 172
     }
   },
@@ -2328,7 +2328,7 @@
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "poseGraph": {
+    "graph": {
       "__id__": 197
     }
   },
@@ -2604,7 +2604,7 @@
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "poseGraph": {
+    "graph": {
       "__id__": 222
     }
   },
@@ -2804,7 +2804,7 @@
       "centerY": -177
     },
     "name": "Move F",
-    "poseGraph": {
+    "graph": {
       "__id__": 230
     }
   },
@@ -2922,7 +2922,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendF"
   },
@@ -2947,7 +2947,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendL"
   },
@@ -2972,7 +2972,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendR"
   },
@@ -2997,7 +2997,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendB"
   },
@@ -3111,7 +3111,7 @@
       "centerY": -77
     },
     "name": "Move LF",
-    "poseGraph": {
+    "graph": {
       "__id__": 258
     }
   },
@@ -3229,7 +3229,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendF"
   },
@@ -3254,7 +3254,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendB"
   },
@@ -3279,7 +3279,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendL"
   },
@@ -3304,7 +3304,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendR"
   },
@@ -3418,7 +3418,7 @@
       "centerY": -77
     },
     "name": "Move RF",
-    "poseGraph": {
+    "graph": {
       "__id__": 286
     }
   },
@@ -3536,7 +3536,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendF"
   },
@@ -3561,7 +3561,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendB"
   },
@@ -3586,7 +3586,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendL"
   },
@@ -3611,7 +3611,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendR"
   },
@@ -3725,7 +3725,7 @@
       "centerY": 61
     },
     "name": "Move LB",
-    "poseGraph": {
+    "graph": {
       "__id__": 314
     }
   },
@@ -3843,7 +3843,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendF"
   },
@@ -3868,7 +3868,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendB"
   },
@@ -3893,7 +3893,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendL"
   },
@@ -3918,7 +3918,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendR"
   },
@@ -4032,7 +4032,7 @@
       "centerY": 155
     },
     "name": "Move B",
-    "poseGraph": {
+    "graph": {
       "__id__": 342
     }
   },
@@ -4150,7 +4150,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendF"
   },
@@ -4175,7 +4175,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendB"
   },
@@ -4200,7 +4200,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendL"
   },
@@ -4225,7 +4225,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendR"
   },
@@ -4339,7 +4339,7 @@
       "centerY": 62
     },
     "name": "Move RB",
-    "poseGraph": {
+    "graph": {
       "__id__": 370
     }
   },
@@ -4457,7 +4457,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendF"
   },
@@ -4482,7 +4482,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendB"
   },
@@ -4507,7 +4507,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendL"
   },
@@ -4532,7 +4532,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "VelocityBlendR"
   },
@@ -5390,7 +5390,7 @@
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "poseGraph": {
+    "graph": {
       "__id__": 479
     }
   },
@@ -5847,7 +5847,7 @@
       "centerY": -25.41666666666663
     },
     "name": "Zero",
-    "poseGraph": {
+    "graph": {
       "__id__": 512
     }
   },
@@ -5994,7 +5994,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "ForwardYawTime"
   },
@@ -6008,7 +6008,7 @@
       "centerY": -191
     },
     "name": "Forward",
-    "poseGraph": {
+    "graph": {
       "__id__": 526
     }
   },
@@ -6172,7 +6172,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "ForwardYawTime"
   },
@@ -6186,7 +6186,7 @@
       "centerY": 8
     },
     "name": "Left",
-    "poseGraph": {
+    "graph": {
       "__id__": 541
     }
   },
@@ -6345,7 +6345,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "LeftYawTime"
   },
@@ -6359,7 +6359,7 @@
       "centerY": 2
     },
     "name": "Right",
-    "poseGraph": {
+    "graph": {
       "__id__": 556
     }
   },
@@ -6518,7 +6518,7 @@
     "_bindings": []
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableNumber",
+    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
     "__editorExtras__": null,
     "variableName": "RightYawTime"
   },
@@ -6532,7 +6532,7 @@
       "centerY": 176
     },
     "name": "Pose",
-    "poseGraph": {
+    "graph": {
       "__id__": 571
     }
   },

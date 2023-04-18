@@ -199,16 +199,16 @@ export default class AnimPPImporter extends Importer {
 
         const curveName = process.curveName || 'curveName';
 
-        const auxiliaryCurve = new animation.Auxiliary_experimental();
-        auxiliaryCurve.name = curveName;
-        auxiliaryCurve.curve.assignSorted(
+        const curveAlreadyExists = animationClip.hasAuxiliaryCurve_experimental(curveName);
+        if (curveAlreadyExists) {
+            console.warn(`Curve ${curveName} already exists.`);
+        }
+        const auxiliaryCurve = animationClip.addAuxiliaryCurve_experimental(curveName);
+        auxiliaryCurve.clear();
+        auxiliaryCurve.assignSorted(
             times,
             [...amounts],
         );
-        animationClip.auxiliaryCurves_experimental = [
-            ...animationClip.auxiliaryCurves_experimental,
-            auxiliaryCurve,
-        ];
 
         removeNodeTransformAnimation(animationClip, rootBonePath, TransformFlag.ROTATION);
     }

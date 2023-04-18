@@ -113,7 +113,7 @@
       "centerY": -146
     },
     "name": "Pose",
-    "poseGraph": {
+    "graph": {
       "__id__": 7
     }
   },
@@ -160,7 +160,7 @@
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "poseGraph": {
+    "graph": {
       "__id__": 11
     }
   },
@@ -173,7 +173,7 @@
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "poseGraph": {
+    "graph": {
       "__id__": 13
     }
   },
@@ -186,7 +186,7 @@
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
-    "poseGraph": {
+    "graph": {
       "__id__": 15
     }
   },
