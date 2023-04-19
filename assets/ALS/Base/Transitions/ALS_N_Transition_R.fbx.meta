@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.5",
   "importer": "fbx",
   "imported": true,
   "uuid": "97091589-a2f8-4958-ba72-0a067a6d7e71",
@@ -29,7 +29,7 @@
               {
                 "interop": "linear",
                 "time": 25,
-                "value": 0.0
+                "value": 0
               },
               {
                 "interop": "constant",
@@ -39,7 +39,7 @@
               {
                 "interop": "constant",
                 "time": 40,
-                "value": 0.0
+                "value": 0
               }
             ]
           }
