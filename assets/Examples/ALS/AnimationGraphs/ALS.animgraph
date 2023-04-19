@@ -7316,7 +7316,7 @@
     },
     "pose0": null,
     "pose1": null,
-    "weight": 1,
+    "ratio": 1,
     "mask": {
       "__uuid__": "8e7a86aa-4c74-4508-973e-386b73d09ff6",
       "__expectedType__": "cc.animation.AnimationMask"
@@ -8193,7 +8193,7 @@
     },
     "pose0": null,
     "pose1": null,
-    "weight": 1,
+    "ratio": 1,
     "mask": {
       "__uuid__": "aeb43624-6ca5-4568-b343-9d3615c9fe6c",
       "__expectedType__": "cc.animation.AnimationMask"
