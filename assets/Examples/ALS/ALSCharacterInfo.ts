@@ -20,7 +20,7 @@ export class ALSCharacterInfo extends Component {
         // The Movement Input Amount is equal to the current acceleration divided by the max acceleration so that
         // it has a range of 0-1, 1 being the maximum possible amount of input, and 0 being none.
         // If the character has movement input, update the Last Movement Input Rotation.
-        const movementInputAmount = Vec3.len(this.acceleration) / this.maxAcceleration;
+        const movementInputAmount = Vec3.len(this.replicatedAcceleration) / this.maxAcceleration;
         return movementInputAmount > 0.0;
     }
 
@@ -38,6 +38,8 @@ export class ALSCharacterInfo extends Component {
     public get acceleration() {
         return this._acceleration as Readonly<Vec3>;
     }
+
+    public replicatedAcceleration = new Vec3();
 
     public maxAcceleration = 0.0;
 

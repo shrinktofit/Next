@@ -46,6 +46,8 @@ export class ALSAnimFeatureStop extends ALSAnimFeature {
             '-> Debug Lock Right Foot',
             '-> Debug Plant Left Foot',
             '-> Debug Plant Right Foot',
+            '-> Debug Play N Stop L',
+            '-> Debug Play N Stop R',
         ]) {
             listenToGraphEvent(this.animationController, eventName, () => {
                 console.warn(eventName);

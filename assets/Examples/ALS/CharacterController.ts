@@ -54,6 +54,7 @@ export class CharacterController extends Component {
         const characterInfo = this.node.getComponent(ALSCharacterInfo);
         if (characterInfo) {
             Vec3.copy(characterInfo.velocity, this._velocity);
+            Vec3.copy(characterInfo.replicatedAcceleration, this._acceleration);
             characterInfo.maxAcceleration = this.maxAcceleration;
             characterInfo.maxBrakingDeceleration = this.maxBrakingDeceleration;
             if (!this._lastAcc || !Vec3.equals(this._acceleration, this._lastAcc)) {

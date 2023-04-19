@@ -1,3 +1,5 @@
+import { error } from "cc";
+import { game } from "cc";
 import { Director } from "cc";
 
 const getOrCreateSlomoPolyfill = (() => {
@@ -18,4 +20,33 @@ const getOrCreateSlomoPolyfill = (() => {
 
 export function slomo(multiplier: number) {
     getOrCreateSlomoPolyfill().multiplier = multiplier;
+}
+
+if (!('__debugTickSlow' in globalThis)) {
+    Object.defineProperty(globalThis, '__debugTickSlow', {
+        value(deltaTime: number) {
+            if (!game.isPaused()) {
+                error(`You should pause to use __debugTickN()`);
+                return;
+            }
+            const multiplier = getOrCreateSlomoPolyfill().multiplier;
+            const tickLength = (1.0 / 60.0 * multiplier);
+            let ticks = deltaTime / tickLength;
+            let nTicks = Math.trunc(ticks);
+            let frac = ticks - nTicks;
+            const stepFrac = () => setTimeout(() => game.step(), frac * 1000);
+            if (nTicks === 0) {
+                stepFrac();
+            } else {
+                const handle = setInterval(() => {
+                    game.step();
+                    --nTicks;
+                    if (nTicks === 0) {
+                        clearInterval(handle);
+                        stepFrac();
+                    }
+                }, tickLength * 1000);
+            }
+        },
+    });    
 }

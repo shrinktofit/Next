@@ -4,6 +4,7 @@ import { createRealtimeNumberChart, RealTimeNumberChart } from '../Debug/Charts/
 import { BooleanRecord, getGlobalDebugInfoDisplay, RangedFloatRecord } from '../DebugInfoDisplay/DebugInfoDisplay';
 import { MoveDirection } from '../Internal/MoveDirection';
 import { ALSAnimFeatureMovement, GraphVarName } from './ALSAnimFeatureMovement';
+import { Vec3 } from 'cc';
 
 const { ccclass, property } = _decorator;
 
@@ -61,18 +62,24 @@ export class ALSAnimFeatureMovementDebug {
     }
 
     private _lastSpeed = 0.0;
+    private _lastAcceleration = new Vec3();
 
     public update(deltaTime: number) {
-        // if (!approx(this._lastSpeed, this.characterInfo.speed, 1e-5)) {
-        //     warn(`Speed: ${this.characterInfo.speed}`);
-        // }
-        // this._lastSpeed = this.characterInfo.speed;
+        if (!approx(this._lastSpeed, this.characterInfo.speed, 1e-5)) {
+            warn(`Speed: ${this.characterInfo.speed}`);
+        }
+        this._lastSpeed = this.characterInfo.speed;
 
-        // const currentShouldMove = this.animationController.getValue(GraphVarName.ShouldMove) as boolean;
-        // if (currentShouldMove !== this._lastShouldMove && !currentShouldMove) {
-        //     debugger;
-        // }
-        // this._lastShouldMove = currentShouldMove;
+        if (!Vec3.equals(this._lastAcceleration, this.characterInfo.acceleration, 1e-5)) {
+            warn(`Acceleration: ${this.characterInfo.acceleration}`);
+        }
+        Vec3.copy(this._lastAcceleration, this.characterInfo.acceleration);
+
+        const currentShouldMove = this.animationController.getValue(GraphVarName.ShouldMove) as boolean;
+        if (currentShouldMove !== this._lastShouldMove && !currentShouldMove) {
+            debugger;
+        }
+        this._lastShouldMove = currentShouldMove;
 
         const currentMoveDirection = this.animationController.getValue(GraphVarName.MovementDirection) as MoveDirection;
         if (currentMoveDirection !== this._lastMoveDirection) {
