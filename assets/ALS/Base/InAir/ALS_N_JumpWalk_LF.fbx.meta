@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.5",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "3e616c65-9de7-4a64-8c49-38fa2fa82b5e",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "c1e4d": {
+      "importer": "gltf-animation",
+      "uuid": "3e616c65-9de7-4a64-8c49-38fa2fa82b5e@c1e4d",
+      "displayName": "",
+      "id": "c1e4d",
+      "name": "ALS_N_JumpWalk_LF.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.6666666269302368
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "a783b": {
+      "importer": "gltf-scene",
+      "uuid": "3e616c65-9de7-4a64-8c49-38fa2fa82b5e@a783b",
+      "displayName": "",
+      "id": "a783b",
+      "name": "ALS_N_JumpWalk_LF.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 1.6666666269302368,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_JumpWalk_LF",
+            "from": 0,
+            "to": 1.6666666269302368,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "3e616c65-9de7-4a64-8c49-38fa2fa82b5e@a783b",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "3e616c65-9de7-4a64-8c49-38fa2fa82b5e@a783b"
+      ]
+    }
+  }
+}

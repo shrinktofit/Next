@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.5",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "faec85d1-f35f-4764-8571-8de062a704e0",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "98510": {
+      "importer": "gltf-animation",
+      "uuid": "faec85d1-f35f-4764-8571-8de062a704e0@98510",
+      "displayName": "",
+      "id": "98510",
+      "name": "ALS_N_FallLoop.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "19b04": {
+      "importer": "gltf-scene",
+      "uuid": "faec85d1-f35f-4764-8571-8de062a704e0@19b04",
+      "displayName": "",
+      "id": "19b04",
+      "name": "ALS_N_FallLoop.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 1,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_FallLoop",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "faec85d1-f35f-4764-8571-8de062a704e0@19b04",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "faec85d1-f35f-4764-8571-8de062a704e0@19b04"
+      ]
+    }
+  }
+}

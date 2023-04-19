@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.5",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "7328e167-3156-4b94-8a61-c01a641c931f",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "a68df": {
+      "importer": "gltf-animation",
+      "uuid": "7328e167-3156-4b94-8a61-c01a641c931f@a68df",
+      "displayName": "",
+      "id": "a68df",
+      "name": "ALS_N_Land_Heavy_Additive.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.1666666269302368
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "bfebd": {
+      "importer": "gltf-scene",
+      "uuid": "7328e167-3156-4b94-8a61-c01a641c931f@bfebd",
+      "displayName": "",
+      "id": "bfebd",
+      "name": "ALS_N_Land_Heavy_Additive.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 1.1666666269302368,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_Land_Heavy_Additive",
+            "from": 0,
+            "to": 1.1666666269302368,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "7328e167-3156-4b94-8a61-c01a641c931f@bfebd",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "7328e167-3156-4b94-8a61-c01a641c931f@bfebd"
+      ]
+    }
+  }
+}

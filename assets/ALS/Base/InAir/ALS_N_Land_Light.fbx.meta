@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.5",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "efdf7eee-13de-4ea1-a2d6-9991191c0e08",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "964f4": {
+      "importer": "gltf-animation",
+      "uuid": "efdf7eee-13de-4ea1-a2d6-9991191c0e08@964f4",
+      "displayName": "",
+      "id": "964f4",
+      "name": "ALS_N_Land_Light.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.1666666269302368
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "1ae8c": {
+      "importer": "gltf-scene",
+      "uuid": "efdf7eee-13de-4ea1-a2d6-9991191c0e08@1ae8c",
+      "displayName": "",
+      "id": "1ae8c",
+      "name": "ALS_N_Land_Light.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 1.1666666269302368,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_Land_Light",
+            "from": 0,
+            "to": 1.1666666269302368,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "efdf7eee-13de-4ea1-a2d6-9991191c0e08@1ae8c",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "efdf7eee-13de-4ea1-a2d6-9991191c0e08@1ae8c"
+      ]
+    }
+  }
+}

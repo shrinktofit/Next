@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.5",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "7340a47d-37b7-41a8-b677-56e81a01d15a",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "10680": {
+      "importer": "gltf-scene",
+      "uuid": "7340a47d-37b7-41a8-b677-56e81a01d15a@10680",
+      "displayName": "",
+      "id": "10680",
+      "name": "ALS_N_Falling_LeanPose_0.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73b2f": {
+      "importer": "gltf-animation",
+      "uuid": "7340a47d-37b7-41a8-b677-56e81a01d15a@73b2f",
+      "displayName": "",
+      "id": "73b2f",
+      "name": "ALS_N_Falling_LeanPose_0.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.03333333507180214
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 0.03333333507180214,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_Falling_LeanPose_0",
+            "from": 0,
+            "to": 0.03333333507180214,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "7340a47d-37b7-41a8-b677-56e81a01d15a@10680",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "7340a47d-37b7-41a8-b677-56e81a01d15a@10680"
+      ]
+    }
+  }
+}
