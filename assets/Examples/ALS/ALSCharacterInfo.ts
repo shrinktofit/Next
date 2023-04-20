@@ -2,7 +2,18 @@ import { _decorator, Component, Node, Vec3, find, Quat } from 'cc';
 import { getForward } from '../../Scripts/Utils/NodeUtils';
 import { ALSGait } from './ALSGait';
 import { UNIT_SCALE_ALS_TO_CC } from './Utility/UnitConversion';
+import { ALSMovementState } from './ALSAnim/ALSMovementState';
+import { EventTarget } from 'cc';
+import { MovementMode } from './ALSAnim/MovementMode';
 const { ccclass, property } = _decorator;
+
+export enum ALSCharacterEventType {
+    Jump,
+}
+
+interface EventMap {
+    [ALSCharacterEventType.Jump](): void;
+}
 
 @ccclass('ALSCharacterInfo')
 export class ALSCharacterInfo extends Component {
@@ -32,7 +43,8 @@ export class ALSCharacterInfo extends Component {
     public readonly velocity = new Vec3();
 
     public get speed() {
-        return Vec3.len(this.velocity);
+        const { x, z } = this.velocity;
+        return Math.sqrt(x * x + z * z);
     }
 
     public get acceleration() {
@@ -63,6 +75,10 @@ export class ALSCharacterInfo extends Component {
 
     public get lastUpdateWorldRotation() {
         return this._lastUpdateWorldRotation as Readonly<Quat>;
+    }
+
+    public get movementState() {
+        return this._movementState;
     }
 
     public isMovingOnGround() {
@@ -98,12 +114,51 @@ export class ALSCharacterInfo extends Component {
         this._setLastUpdateTransform();
     }
 
+    public on<TEventType extends ALSCharacterEventType, TThis>(
+        eventType: ALSCharacterEventType,
+        callback: (this: TThis, ...args: Parameters<EventMap[TEventType]>) => void,
+        thisArg: TThis,
+    ) {
+        this._eventTarget.on(eventType, callback as any, thisArg);
+    }
+
+    public _emit<TEventType extends ALSCharacterEventType>(eventType: ALSCharacterEventType, ...args: Parameters<EventMap[TEventType]>) {
+        this._eventTarget.emit(eventType, ...args);
+    }
+
+    public _emitMovementModeChanged(mode: MovementMode) {
+        this._onMovementModeChanged(mode);
+    }
+
+    private _eventTarget = new EventTarget();
+    private _preMovementState = ALSMovementState.Grounded;
+    private _movementState: ALSMovementState = ALSMovementState.Grounded;
     private readonly _acceleration = new Vec3();
     private readonly _lastVelocity = new Vec3();
     private readonly _viewDirection = new Vec3();
     private readonly _lastUpdateWorldPosition = new Vec3();
     private readonly _lastUpdateWorldRotation = new Quat();
     private _gait = ALSGait.Walking;
+
+    private _onMovementModeChanged(mode: MovementMode) {
+        if (mode === MovementMode.Walking) {
+            this._setMovementState(ALSMovementState.Grounded);
+        } else {
+            this._setMovementState(ALSMovementState.InAir);
+        }
+    }
+
+    private _setMovementState(value: ALSMovementState, force = false) {
+        if (force || value !== this._movementState) {
+            this._preMovementState = this._movementState;
+            this._movementState = value;
+            this._onMovementStateChanged();
+        }
+    }
+
+    private _onMovementStateChanged() {
+        // TODO:
+    }
 
     protected _setLastUpdateTransform() {
         Vec3.copy(this._lastUpdateWorldPosition, this.node.worldPosition);

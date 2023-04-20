@@ -56,7 +56,7 @@ export interface FloatOptions {
     fractionDigits?: number;
 }
 
-export class RangedFloatRecord {
+class RangedFloatRecord {
     constructor(
         public value: number,
         public min: number,
@@ -66,6 +66,8 @@ export class RangedFloatRecord {
 
     }
 }
+
+export type { RangedFloatRecord };
 
 export class BooleanRecord {
     constructor(public value: boolean) {

@@ -9,6 +9,7 @@ import { safeNormalizeVec3 } from '../Utility/SafeNormalize';
 import { UNIT_SCALE_ALS_TO_CC } from '../Utility/UnitConversion';
 import { ALSAnimFeature } from './ALSAnimFeature';
 import { ALSAnimFeatureMovementDebug } from './ALSAnimFeatureMovementDebug';
+import { ALSMovementState } from './ALSMovementState';
 const { ccclass, property } = _decorator;
 
 export enum GraphVarName {
@@ -46,6 +47,10 @@ export class ALSAnimFeatureMovement extends ALSAnimFeature {
     }
 
     public onUpdate(deltaTime: number) {
+        if (this.characterInfo.movementState !== ALSMovementState.Grounded) {
+            return;
+        }
+
         const {
             animationController,
         } = this;

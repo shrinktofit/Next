@@ -1,10 +1,11 @@
 import { _decorator, Component, Node, Vec2, Vec3, Quat, NodeSpace, clamp, find } from 'cc';
 import { getForward } from '../../Scripts/Utils/NodeUtils';
-import { ALSCharacterInfo } from './ALSCharacterInfo';
+import { ALSCharacterEventType, ALSCharacterInfo } from './ALSCharacterInfo';
 import { globalInputManager } from './Input/Input';
-import { PredefinedAxisId } from './Input/Predefined';
+import { PredefinedActionId, PredefinedAxisId } from './Input/Predefined';
 import { clampToMaxLength } from './Utility/ClampToMaxLength';
 import { UNIT_SCALE_ALS_TO_CC } from './Utility/UnitConversion';
+import { MovementMode } from './ALSAnim/MovementMode';
 const { ccclass, property } = _decorator;
 
 @ccclass('CharacterController')
@@ -91,6 +92,24 @@ export class CharacterController extends Component {
             globalInputManager.getAxisValue(PredefinedAxisId.MoveForward),
         );
         if (Vec2.equals(inputVelocity, Vec2.ZERO)) {
+            if (globalInputManager.getAction(PredefinedActionId.Jump)) {
+                if (this._isJumping) {
+                    this._isJumping = false;
+                    this._velocity.y = 0.0;
+                    const characterInfo = this.node.getComponent(ALSCharacterInfo);
+                    if (characterInfo) {
+                        characterInfo._emitMovementModeChanged(MovementMode.Walking);
+                    }
+                } else {
+                    this._isJumping = true;
+                    this._velocity.y = 300 * UNIT_SCALE_ALS_TO_CC;
+                    const characterInfo = this.node.getComponent(ALSCharacterInfo);
+                    if (characterInfo) {
+                        characterInfo._emitMovementModeChanged(MovementMode.Falling);
+                        characterInfo._emit(ALSCharacterEventType.Jump);
+                    }
+                }
+            }
             return;
         }
         // this._hasRequestedVelocity = true;

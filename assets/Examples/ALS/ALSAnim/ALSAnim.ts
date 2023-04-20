@@ -7,6 +7,8 @@ import { ALSAnimFeatureLean } from './ALSAnimFeatureLean';
 import { ALSAnimFeatureMovement } from './ALSAnimFeatureMovement';
 import { ALSAnimFeatureStop } from './ALSAnimFeatureStop';
 import { ALSAnimFeatureTurnInPlace } from './ALSAnimFeatureTurnInPlace';
+import { ALSAnimFeatureJumpAndFall } from './ALSAnimFeatureJumpAndFall';
+import { VarName } from './VarName';
 const { ccclass, property, executionOrder } = _decorator;
 
 const FEATURE_NAME_MOVEMENT = '移动';
@@ -20,6 +22,8 @@ const FEATURE_NAME_AIMING = '瞄准';
 const FEATURE_NAME_STOP = '停止';
 
 const FEATURE_NAME_FOOT_LOCK = '脚步锁定';
+
+const FEATURE_NAME_JUMP_AND_FALL = '跳和下落';
 
 const GROUP_ENABLING = '启用';
 
@@ -100,6 +104,18 @@ export class ALSAnim extends Component {
     public featureAimingEnabled = true;
 
     @property({
+        group: FEATURE_NAME_JUMP_AND_FALL,
+    })
+    public featureJumpAndFall = new ALSAnimFeatureJumpAndFall();
+
+    @featureEnabling(function(this: ALSAnim) { return this.featureJumpAndFall; })
+    @property({
+        group: GROUP_ENABLING,
+        displayName: FEATURE_NAME_JUMP_AND_FALL,
+    })
+    public featureJumpAndFallEnabled = true;
+
+    @property({
         group: FEATURE_NAME_FOOT_LOCK,
     })
     public featureFootLock = new ALSAnimFeatureFootLock();
@@ -131,12 +147,16 @@ export class ALSAnim extends Component {
             characterInfo,
             animationController,
         ] = requiredComponents;
+
+        this._characterInfo = characterInfo!;
+        this._animationController = animationController!;
         
         for (const feature of ([
             this.featureMovement,
             this.featureStop,
             this.featureLean,
             this.featureTurnInPlace,
+            this.featureJumpAndFall,
             this.featureAiming,
             this.featureFootLock,
         ] as const)) {
@@ -153,6 +173,8 @@ export class ALSAnim extends Component {
     }
 
     update(deltaTime: number) {
+        this._animationController.setValue(VarName.MovementState, this._characterInfo.movementState);
+
         for (const feature of this._activatedFeatures) {
             feature.onUpdate(deltaTime);
         }

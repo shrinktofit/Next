@@ -18,7 +18,7 @@ export class Turn extends Component {
             return;
         }
 
-        if (Vec3.equals(characterInfo.velocity, Vec3.ZERO)) {
+        if (Vec3.equals(new Vec3(characterInfo.velocity.x, characterInfo.velocity.z), Vec3.ZERO)) {
             return;
         }
 

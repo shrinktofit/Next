@@ -15,7 +15,7 @@
       "name": "ALS_N_JumpWalk_RF.animation",
       "userData": {
         "gltfIndex": 0,
-        "wrapMode": 2,
+        "wrapMode": 1,
         "sample": 30,
         "span": {
           "from": 0,
@@ -62,7 +62,7 @@
             "name": "ALS_N_JumpWalk_RF",
             "from": 0,
             "to": 1.6666666269302368,
-            "wrapMode": 2
+            "wrapMode": 1
           }
         ]
       }
