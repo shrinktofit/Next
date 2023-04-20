@@ -2903,12 +2903,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 0,
     "_target": {
       "__id__": 234
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      0
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -2928,12 +2930,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 2,
     "_target": {
       "__id__": 237
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      2
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -2953,12 +2957,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 3,
     "_target": {
       "__id__": 240
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      3
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -2978,12 +2984,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 1,
     "_target": {
       "__id__": 243
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      1
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3003,12 +3011,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 0,
     "_target": {
       "__id__": 246
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      0
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3028,12 +3038,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 1,
     "_target": {
       "__id__": 249
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      1
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3053,12 +3065,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 2,
     "_target": {
       "__id__": 252
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      2
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3078,12 +3092,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 3,
     "_target": {
       "__id__": 255
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      3
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3210,12 +3226,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 0,
     "_target": {
       "__id__": 262
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      0
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3235,12 +3253,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 1,
     "_target": {
       "__id__": 265
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      1
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3260,12 +3280,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 2,
     "_target": {
       "__id__": 268
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      2
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3285,12 +3307,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 3,
     "_target": {
       "__id__": 271
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      3
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3310,12 +3334,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 0,
     "_target": {
       "__id__": 274
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      0
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3335,12 +3361,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 1,
     "_target": {
       "__id__": 277
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      1
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3360,12 +3388,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 2,
     "_target": {
       "__id__": 280
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      2
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3385,12 +3415,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 3,
     "_target": {
       "__id__": 283
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      3
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3517,12 +3549,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 0,
     "_target": {
       "__id__": 290
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      0
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3542,12 +3576,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 1,
     "_target": {
       "__id__": 293
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      1
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3567,12 +3603,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 2,
     "_target": {
       "__id__": 296
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      2
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3592,12 +3630,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 3,
     "_target": {
       "__id__": 299
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      3
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3617,12 +3657,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 0,
     "_target": {
       "__id__": 302
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      0
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3642,12 +3684,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 1,
     "_target": {
       "__id__": 305
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      1
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3667,12 +3711,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 2,
     "_target": {
       "__id__": 308
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      2
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3692,12 +3738,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 3,
     "_target": {
       "__id__": 311
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      3
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3824,12 +3872,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 0,
     "_target": {
       "__id__": 318
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      0
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3849,12 +3899,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 1,
     "_target": {
       "__id__": 321
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      1
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3874,12 +3926,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 2,
     "_target": {
       "__id__": 324
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      2
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3899,12 +3953,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 3,
     "_target": {
       "__id__": 327
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      3
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3924,12 +3980,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 0,
     "_target": {
       "__id__": 330
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      0
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3949,12 +4007,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 1,
     "_target": {
       "__id__": 333
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      1
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3974,12 +4034,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 2,
     "_target": {
       "__id__": 336
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      2
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -3999,12 +4061,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 3,
     "_target": {
       "__id__": 339
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      3
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4131,12 +4195,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 0,
     "_target": {
       "__id__": 346
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      0
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4156,12 +4222,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 1,
     "_target": {
       "__id__": 349
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      1
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4181,12 +4249,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 2,
     "_target": {
       "__id__": 352
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      2
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4206,12 +4276,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 3,
     "_target": {
       "__id__": 355
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      3
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4231,12 +4303,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 0,
     "_target": {
       "__id__": 358
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      0
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4256,12 +4330,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 1,
     "_target": {
       "__id__": 361
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      1
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4281,12 +4357,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 2,
     "_target": {
       "__id__": 364
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      2
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4306,12 +4384,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 3,
     "_target": {
       "__id__": 367
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      3
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4438,12 +4518,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 0,
     "_target": {
       "__id__": 374
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      0
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4463,12 +4545,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 1,
     "_target": {
       "__id__": 377
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      1
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4488,12 +4572,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 2,
     "_target": {
       "__id__": 380
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      2
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4513,12 +4599,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "proportions",
-    "_consumerElementIndex": 3,
     "_target": {
       "__id__": 383
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "proportions",
+      3
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4538,12 +4626,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 0,
     "_target": {
       "__id__": 386
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      0
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4563,12 +4653,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 1,
     "_target": {
       "__id__": 389
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      1
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4588,12 +4680,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 2,
     "_target": {
       "__id__": 392
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      2
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -4613,12 +4707,14 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "poses",
-    "_consumerElementIndex": 3,
     "_target": {
       "__id__": 395
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "poses",
+      3
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -5451,12 +5547,13 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "base",
-    "_consumerElementIndex": -1,
     "_target": {
       "__id__": 483
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "base"
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -5476,12 +5573,13 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "addition",
-    "_consumerElementIndex": -1,
     "_target": {
       "__id__": 486
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "addition"
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -6153,12 +6251,13 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "time",
-    "_consumerElementIndex": -1,
     "_target": {
       "__id__": 538
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "time"
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -6326,12 +6425,13 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "time",
-    "_consumerElementIndex": -1,
     "_target": {
       "__id__": 553
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "time"
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -6499,12 +6599,13 @@
   },
   {
     "__type__": "cc.animation.PoseGraphNodePropertyBinding",
-    "_consumerPropertyKey": "time",
-    "_consumerElementIndex": -1,
     "_target": {
       "__id__": 568
     },
-    "_outputIndex": 0
+    "_outputIndex": 0,
+    "_inputPath": [
+      "time"
+    ]
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
