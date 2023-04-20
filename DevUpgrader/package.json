@@ -1,0 +1,9 @@
+{
+  "name": "devupgrader",
+  "dependencies": {
+    "fs-extra": "^11.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.12"
+  }
+}
