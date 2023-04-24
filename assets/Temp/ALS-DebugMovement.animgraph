@@ -56,9 +56,6 @@
       "ShouldMove": {
         "__id__": 612
       },
-      "#StateWeight": {
-        "__id__": 613
-      },
       "NEVER": {
         "__id__": 614
       },
@@ -5304,9 +5301,7 @@
     "rhs": 0.9999
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#StateWeight"
+    "__type__": "cc.animation.TCStateWeightBinding"
   },
   {
     "__type__": "cc.animation.PoseTransition",
@@ -5335,9 +5330,7 @@
     "rhs": 0.9999
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#StateWeight"
+    "__type__": "cc.animation.TCStateWeightBinding"
   },
   {
     "__type__": "cc.animation.PoseGraphStash",

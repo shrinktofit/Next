@@ -57,3 +57,9 @@ function* listFile(directory) {
         }
     }
 }
+
+export function clearObject(obj) {
+    for (const k of Object.getOwnPropertyNames(obj)) {
+        delete obj[k];
+    }
+}

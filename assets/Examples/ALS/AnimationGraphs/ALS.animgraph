@@ -56,86 +56,80 @@
       "ShouldMove": {
         "__id__": 1324
       },
-      "#StateWeight": {
+      "NEVER": {
         "__id__": 1325
       },
-      "NEVER": {
+      "LeanAmountLR": {
         "__id__": 1326
       },
-      "LeanAmountLR": {
+      "LeanAmountFB": {
         "__id__": 1327
       },
-      "LeanAmountFB": {
+      "StrideBlend": {
         "__id__": 1328
       },
-      "StrideBlend": {
+      "WalkRunBlend": {
         "__id__": 1329
       },
-      "WalkRunBlend": {
+      "QuickStopN": {
         "__id__": 1330
       },
-      "QuickStopN": {
+      "StopTransition": {
         "__id__": 1331
       },
-      "StopTransition": {
+      "FootLock_L_Location": {
         "__id__": 1332
       },
-      "#Feet_Position": {
+      "FootLock_L_Alpha": {
         "__id__": 1333
       },
-      "FootLock_L_Location": {
+      "FootLock_R_Location": {
         "__id__": 1334
       },
-      "FootLock_L_Alpha": {
+      "FootLock_R_Alpha": {
         "__id__": 1335
       },
-      "FootLock_R_Location": {
+      "->N Stop L": {
         "__id__": 1336
       },
-      "FootLock_R_Alpha": {
+      "->N Stop R": {
         "__id__": 1337
       },
-      "->N Stop L": {
+      "TrackedHipsDirection": {
         "__id__": 1338
       },
-      "->N Stop R": {
+      "TurnIPLeft90": {
         "__id__": 1339
       },
-      "TrackedHipsDirection": {
+      "TurnIPLeft180": {
         "__id__": 1340
       },
-      "TurnIPLeft90": {
+      "TurnIPRight90": {
         "__id__": 1341
       },
-      "TurnIPLeft180": {
+      "TurnIPRight180": {
         "__id__": 1342
       },
-      "TurnIPRight90": {
+      "TrackedHipsDirection_LB": {
         "__id__": 1343
       },
-      "TurnIPRight180": {
+      "TrackedHipsDirection_RB": {
         "__id__": 1344
       },
-      "TrackedHipsDirection_LB": {
+      "JumpWalkRunBlend": {
         "__id__": 1345
       },
-      "TrackedHipsDirection_RB": {
+      "LandHeavyLightBlend": {
         "__id__": 1346
       },
-      "JumpWalkRunBlend": {
+      "JumpLandBlend": {
         "__id__": 1347
       },
-      "LandHeavyLightBlend": {
+      "MovementState": {
         "__id__": 1348
       },
-      "JumpLandBlend": {
-        "__id__": 1349
-      },
-      "MovementState": {
-        "__id__": 1350
-      },
       "JumpPlayRate": {
-        "__id__": 1351
+        "__id__": 1349
       }
     }
   },
@@ -253,8 +247,8 @@
       "name": "",
       "id": "16782466580460.9463067763448889",
       "clone": null,
-      "centerX": 303,
-      "centerY": 11
+      "centerX": 318,
+      "centerY": 10
     },
     "name": "Any"
   },
@@ -5202,9 +5196,7 @@
     "rhs": 0.9999
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#StateWeight"
+    "__type__": "cc.animation.TCStateWeightBinding"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -5249,9 +5241,7 @@
     "rhs": 0.9999
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#StateWeight"
+    "__type__": "cc.animation.TCStateWeightBinding"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -8856,9 +8846,8 @@
     "rhs": -0.5
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#Feet_Position"
+    "__type__": "cc.animation.TCAuxiliaryCurveBinding",
+    "curveName": "Feet_Position"
   },
   {
     "__type__": "cc.animation.BinaryCondition",
@@ -8870,9 +8859,8 @@
     "rhs": 0
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#Feet_Position"
+    "__type__": "cc.animation.TCAuxiliaryCurveBinding",
+    "curveName": "Feet_Position"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -8920,9 +8908,8 @@
     "rhs": 0
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#Feet_Position"
+    "__type__": "cc.animation.TCAuxiliaryCurveBinding",
+    "curveName": "Feet_Position"
   },
   {
     "__type__": "cc.animation.BinaryCondition",
@@ -8934,9 +8921,8 @@
     "rhs": 0.5
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#Feet_Position"
+    "__type__": "cc.animation.TCAuxiliaryCurveBinding",
+    "curveName": "Feet_Position"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -8981,9 +8967,8 @@
     "rhs": -0.5
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#Feet_Position"
+    "__type__": "cc.animation.TCAuxiliaryCurveBinding",
+    "curveName": "Feet_Position"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -9028,9 +9013,8 @@
     "rhs": 0.5
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#Feet_Position"
+    "__type__": "cc.animation.TCAuxiliaryCurveBinding",
+    "curveName": "Feet_Position"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -9135,9 +9119,7 @@
     "rhs": 0.9999
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#StateWeight"
+    "__type__": "cc.animation.TCStateWeightBinding"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -9256,9 +9238,7 @@
     "rhs": 0.9999
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#StateWeight"
+    "__type__": "cc.animation.TCStateWeightBinding"
   },
   {
     "__type__": "cc.animation.UnaryCondition",
@@ -11267,9 +11247,8 @@
     "rhs": 0
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#Feet_Position"
+    "__type__": "cc.animation.TCAuxiliaryCurveBinding",
+    "curveName": "Feet_Position"
   },
   {
     "__type__": "cc.animation.Transition",
@@ -11296,9 +11275,8 @@
     "rhs": 0
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#Feet_Position"
+    "__type__": "cc.animation.TCAuxiliaryCurveBinding",
+    "curveName": "Feet_Position"
   },
   {
     "__type__": "cc.animation.AnimationTransition",
@@ -13314,9 +13292,7 @@
     "rhs": 0.999
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#StateWeight"
+    "__type__": "cc.animation.TCStateWeightBinding"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -13399,9 +13375,7 @@
     "rhs": 0.999
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#StateWeight"
+    "__type__": "cc.animation.TCStateWeightBinding"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -13484,9 +13458,7 @@
     "rhs": 0.999
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#StateWeight"
+    "__type__": "cc.animation.TCStateWeightBinding"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -13633,9 +13605,7 @@
     "rhs": 0.999
   },
   {
-    "__type__": "cc.animation.TCVariableBinding",
-    "type": 0,
-    "variableName": "#StateWeight"
+    "__type__": "cc.animation.TCStateWeightBinding"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -14980,11 +14950,6 @@
   },
   {
     "__type__": "cc.animation.PlainVariable",
-    "_type": 0,
-    "_value": 0
-  },
-  {
-    "__type__": "cc.animation.PlainVariable",
     "_type": 1,
     "_value": false
   },
@@ -15015,11 +14980,6 @@
   {
     "__type__": "cc.animation.TriggerVariable",
     "_flags": 2
-  },
-  {
-    "__type__": "cc.animation.PlainVariable",
-    "_type": 0,
-    "_value": 0
   },
   {
     "__type__": "cc.animation.Vec3Variable",
