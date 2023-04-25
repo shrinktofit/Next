@@ -56,7 +56,7 @@ export class ALSAnimFeatureMovementDebug {
             };
         }
         
-        this.animationController.graphEventReceiver.on('debug-->NotMoving', () => {
+        this.animationController.onCustomEvent_experimental('debug-->NotMoving', () => {
             warn(`Not moving`);
         });
     }

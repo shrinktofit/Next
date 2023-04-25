@@ -97,7 +97,7 @@ export class ALSAnimFeatureStop extends ALSAnimFeature {
 }
 
 function listenToGraphEvent(controller: animation.AnimationController, eventName: string, callback: () => void) {
-    controller.graphEventReceiver.on(eventName, () => {
+    controller.onCustomEvent_experimental(eventName, () => {
         if (false) {
             console.log(`Graph event ${eventName} triggered.`);
         }

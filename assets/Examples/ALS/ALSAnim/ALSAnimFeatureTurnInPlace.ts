@@ -35,7 +35,7 @@ export class ALSAnimFeatureTurnInPlace extends ALSAnimFeature {
                 `-->Turn In Place Left 90`, `-->Turn In Place Right 90`,
                 `-->Turn In Place Left 180`, `-->Turn In Place Right 180`
             ]) {
-                this.animationController.graphEventReceiver.on(eventName, () => {
+                this.animationController.onCustomEvent_experimental(eventName, () => {
                     warn(eventName);
                 });
             }
