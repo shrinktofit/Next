@@ -34,6 +34,18 @@ export function* visitObj(obj, root = obj, visited = new Set()) {
     }
 }
 
+export function followPossibleAlias(obj, root) {
+    if (obj.__id__) {
+        return root[obj.__id__];
+    } else {
+        return obj;
+    }
+}
+
+export function makeRef(index) {
+    return { __id__: index };
+}
+
 export function renameTypeName(root, typeRenameMap) {
     const renamedType = new Set();
 

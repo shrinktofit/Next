@@ -23,13 +23,13 @@
     "additive": false,
     "_stashes": {
       "NewStash_0": {
-        "__id__": 10
+        "__id__": 16
       },
       "NewStash_1": {
-        "__id__": 12
+        "__id__": 20
       },
       "NewStash_2": {
-        "__id__": 14
+        "__id__": 24
       }
     }
   },
@@ -98,8 +98,8 @@
       "name": "",
       "id": "16705773798460.4937148976217398",
       "clone": null,
-      "centerX": 302,
-      "centerY": -16
+      "centerX": 303,
+      "centerY": 10
     },
     "name": "Any"
   },
@@ -113,9 +113,37 @@
       "centerY": -146
     },
     "name": "Pose",
-    "graph": {
+    "transitionInEvent": {
       "__id__": 7
+    },
+    "enteredEvent": {
+      "__id__": 8
+    },
+    "transitionOutEvent": {
+      "__id__": 9
+    },
+    "exitedEvent": {
+      "__id__": 10
+    },
+    "graph": {
+      "__id__": 11
     }
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEvent",
+    "eventName": ""
   },
   {
     "__type__": "cc.animation.PoseGraph",
@@ -125,27 +153,37 @@
         "centerY": 0
       }
     },
-    "_main": null,
+    "_outputNode": {
+      "__id__": 12
+    },
+    "_nodes": [
+      {
+        "__id__": 12
+      },
+      {
+        "__id__": 13
+      }
+    ],
     "_shells": [
       {
-        "__id__": 8
+        "__id__": 14
+      },
+      {
+        "__id__": 15
       }
     ]
   },
   {
-    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": null,
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.BlendInProportion",
     "__editorExtras__": {
       "centerX": -536,
       "centerY": -75
     },
-    "_node": {
-      "__id__": 9
-    },
-    "_bindings": []
-  },
-  {
-    "__type__": "cc.animation.BlendInProportion",
-    "__editorExtras__": null,
     "poses": [
       null,
       null,
@@ -158,42 +196,115 @@
     ]
   },
   {
-    "__type__": "cc.animation.PoseGraphStash",
+    "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": null,
-    "graph": {
-      "__id__": 11
-    }
+    "_bindings": []
   },
   {
-    "__type__": "cc.animation.PoseGraph",
+    "__type__": "cc.animation.PoseGraphNodeShell",
     "__editorExtras__": null,
-    "_main": null,
-    "_shells": []
+    "_bindings": []
   },
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
     "graph": {
-      "__id__": 13
+      "__id__": 17
     }
   },
   {
     "__type__": "cc.animation.PoseGraph",
     "__editorExtras__": null,
-    "_main": null,
-    "_shells": []
+    "_outputNode": {
+      "__id__": 18
+    },
+    "_nodes": [
+      {
+        "__id__": 18
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 19
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": null,
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
   },
   {
     "__type__": "cc.animation.PoseGraphStash",
     "__editorExtras__": null,
     "graph": {
-      "__id__": 15
+      "__id__": 21
     }
   },
   {
     "__type__": "cc.animation.PoseGraph",
     "__editorExtras__": null,
-    "_main": null,
-    "_shells": []
+    "_outputNode": {
+      "__id__": 22
+    },
+    "_nodes": [
+      {
+        "__id__": 22
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 23
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": null,
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
+  },
+  {
+    "__type__": "cc.animation.PoseGraphStash",
+    "__editorExtras__": null,
+    "graph": {
+      "__id__": 25
+    }
+  },
+  {
+    "__type__": "cc.animation.PoseGraph",
+    "__editorExtras__": null,
+    "_outputNode": {
+      "__id__": 26
+    },
+    "_nodes": [
+      {
+        "__id__": 26
+      }
+    ],
+    "_shells": [
+      {
+        "__id__": 27
+      }
+    ]
+  },
+  {
+    "__type__": "cc.animation.PoseGraphOutputNode",
+    "__editorExtras__": null,
+    "pose": null
+  },
+  {
+    "__type__": "cc.animation.PoseGraphNodeShell",
+    "__editorExtras__": null,
+    "_bindings": []
   }
 ]

@@ -658,27 +658,27 @@
     "featureStop": {
       "__id__": 27
     },
-    "featureStopEnabled": false,
+    "featureStopEnabled": true,
     "featureLean": {
       "__id__": 28
     },
-    "featureLeanEnabled": false,
+    "featureLeanEnabled": true,
     "featureTurnInPlace": {
       "__id__": 29
     },
-    "featureTurnInPlaceEnabled": false,
+    "featureTurnInPlaceEnabled": true,
     "featureAiming": {
       "__id__": 30
     },
-    "featureAimingEnabled": false,
+    "featureAimingEnabled": true,
     "featureJumpAndFall": {
       "__id__": 31
     },
-    "featureJumpAndFallEnabled": true,
+    "featureJumpAndFallEnabled": false,
     "featureFootLock": {
       "__id__": 32
     },
-    "featureFootLockEnabled": false,
+    "featureFootLockEnabled": true,
     "_id": "3ehDWmKuNKwpDhVaA38AxF"
   },
   {
@@ -689,19 +689,19 @@
   },
   {
     "__type__": "ALSAnimFeatureStop",
-    "enabled": false,
+    "enabled": true,
     "debug": false
   },
   {
     "__type__": "ALSAnimFeatureLean",
-    "enabled": false,
+    "enabled": true,
     "groundedLeanInteropSpeed": 4,
     "resetLeanAmountOnceShouldNotMove": false,
     "debug": true
   },
   {
     "__type__": "ALSAnimFeatureTurnInPlace",
-    "enabled": false,
+    "enabled": true,
     "minTurnAngle": 10,
     "minTurnAngleDelay": 0.75,
     "maxTurnAngleDelay": 0,
@@ -710,16 +710,16 @@
   },
   {
     "__type__": "ALSAnimFeatureAiming",
-    "enabled": false
+    "enabled": true
   },
   {
     "__type__": "ALSAnimFeatureJumpAndFall",
-    "enabled": true,
+    "enabled": false,
     "debug": true
   },
   {
     "__type__": "ALSAnimFeatureFootLock",
-    "enabled": false,
+    "enabled": true,
     "debug": true,
     "leftFootEnabled": true,
     "leftFoot": null,
