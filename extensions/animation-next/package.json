@@ -13,6 +13,7 @@
     "author": "Cocos Creator",
     "editor": ">=3.7.0",
     "scripts": {
+        "postinstall": "npm run build",
         "build": "tsc -b",
         "watch": "tsc -w",
         "build-schemas": "typescript-json-schema ./src/Importers/Internals/AnimPPFile.ts PPAnim -o animpp.schema.json --strictNullChecks --required --noExtraProps"

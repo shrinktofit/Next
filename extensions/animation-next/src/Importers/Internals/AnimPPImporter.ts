@@ -67,7 +67,7 @@ export default class AnimPPImporter extends Importer {
         }) as unknown as CCON;
 
         const cconb = encodeCCONBinary(ccon);
-        await asset.saveToLibrary('.cconb', cconb);
+        await asset.saveToLibrary('.cconb', cconb as unknown as Buffer);
 
         assetManager.releaseAsset(sourceAnimationClip);
 

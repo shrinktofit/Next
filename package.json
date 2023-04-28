@@ -14,6 +14,8 @@
     "rollup": "^3.20.2"
   },
   "scripts": {
-    "postinstall": "cd Scripts/table && npm i"
+    "postinstall": "npm run install-extensions && npm run install-table",
+    "install-extensions": "cd ./extensions/animation-next && npm i",
+    "install-table": "cd Scripts/table && npm i"
   }
 }
