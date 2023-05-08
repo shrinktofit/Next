@@ -141,7 +141,7 @@ class FootLockRecord {
             Quat.normalize(rotationDifference, rotationDifference);
         }
         if (!Quat.equals(rotationDifference, Quat.IDENTITY)) {
-            debugger; // Please test this case!
+            // debugger; // Please test this case!
         }
 
         // Get the distance traveled between frames relative to the mesh rotation

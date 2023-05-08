@@ -66,18 +66,18 @@ export class ALSAnimFeatureMovementDebug {
 
     public update(deltaTime: number) {
         if (!approx(this._lastSpeed, this.characterInfo.speed, 1e-5)) {
-            warn(`Speed: ${this.characterInfo.speed}`);
+            // warn(`Speed: ${this.characterInfo.speed}`);
         }
         this._lastSpeed = this.characterInfo.speed;
 
         if (!Vec3.equals(this._lastAcceleration, this.characterInfo.acceleration, 1e-5)) {
-            warn(`Acceleration: ${this.characterInfo.acceleration}`);
+            // warn(`Acceleration: ${this.characterInfo.acceleration}`);
         }
         Vec3.copy(this._lastAcceleration, this.characterInfo.acceleration);
 
         const currentShouldMove = this.animationController.getValue(GraphVarName.ShouldMove) as boolean;
         if (currentShouldMove !== this._lastShouldMove && !currentShouldMove) {
-            debugger;
+            // debugger;
         }
         this._lastShouldMove = currentShouldMove;
 
