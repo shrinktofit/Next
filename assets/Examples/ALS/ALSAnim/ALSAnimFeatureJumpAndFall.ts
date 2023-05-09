@@ -8,6 +8,13 @@ import { VarName } from './VarName';
 import { assertIsTrue } from '../Utility/Asserts';
 import { ALSCharacterEventType } from '../ALSCharacterInfo';
 import { RangedFloatRecord, getGlobalDebugInfoDisplay } from '../DebugInfoDisplay/DebugInfoDisplay';
+import { physics } from 'cc';
+import { geometry } from 'cc';
+import { RealCurve } from 'cc';
+import { approx } from 'cc';
+import { clamp01 } from 'cc';
+import { lerp } from 'cc';
+import { ALSAnimFeatureJumpAndFallDebugHelper } from './ALSAnimFeatureJumpAndFallDebug';
 const { ccclass, property } = _decorator;
 
 const JUMP_PLAY_RATE_MIN = 1.2;
@@ -17,6 +24,13 @@ const JUMP_PLAY_RATE_MAX = 1.5;
 export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
     @property
     debug = false;
+
+    @property
+    landPredictionBlendCurve = (() => {
+        const curve = new RealCurve();
+        curve.assignSorted([0.0, 1.0], [1.0, 0.0]);
+        return curve;
+    })();
 
     onStart() {
         this.characterInfo.on(ALSCharacterEventType.Jump, this.onJumped, this);
@@ -31,6 +45,12 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
                     landHeavyLightBlend: display.addRangedFloat('LandHeavyLightBlend', 0.0, 0.0, 1.0, {}),
                 };
             }
+
+            this._debugHelper = new ALSAnimFeatureJumpAndFallDebugHelper(
+                this,
+                this.animationController,
+                this.characterInfo,
+            );
         }
     }
     
@@ -114,6 +134,7 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
         jumpLandBlend: RangedFloatRecord;
         landHeavyLightBlend: RangedFloatRecord;
     };
+    private _debugHelper: ALSAnimFeatureJumpAndFallDebugHelper | undefined;
 
     private _unsetJumped() {
         this._jumped = false;
@@ -125,8 +146,70 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
             return 0.0;
         }
 
+        const hit = this._hit();
+        if (!hit) {
+            return 0.0;
+        }
 
+        const landPrediction = this.landPredictionBlendCurve.evaluate(hit.time);
+        return landPrediction;
+    }
 
-        return 0.0;
+    private _hit() {
+        const queryPoint = Vec3.clone(this.characterInfo.node.worldPosition);
+        const queryDir = Vec3.clone(this.characterInfo.velocity);
+        Vec3.normalize(queryDir, queryDir);
+        const traceLength = getMappedRangeValueClamped(
+            0.0 * UNIT_SCALE_ALS_TO_CC,
+            -4000 * UNIT_SCALE_ALS_TO_CC,
+            50 * UNIT_SCALE_ALS_TO_CC,
+            2000 * UNIT_SCALE_ALS_TO_CC,
+            this.characterInfo.velocity.y,
+        );
+
+        const ray = new geometry.Ray(
+            queryPoint.x, queryPoint.y, queryPoint.z,
+            queryDir.x, queryDir.y, queryDir.z,
+        );
+        const hit = physics.PhysicsSystem.instance.raycastClosest(ray, undefined, traceLength, undefined);
+
+        this._debugHelper?.showTrace(
+            queryPoint,
+            queryDir,
+            traceLength,
+            hit ? physics.PhysicsSystem.instance.raycastClosestResult.hitPoint : undefined,
+        );
+
+        if (!hit) {
+            return undefined;
+        }
+        const hitResult = physics.PhysicsSystem.instance.raycastClosestResult;
+        const hitPoint = hitResult.hitPoint;
+        const distance = Vec3.len(Vec3.subtract(new Vec3(), hitPoint, queryPoint));
+
+        const t = distance / traceLength;
+        return {
+            time: t,
+        };
+    }
+}
+
+function getMappedRangeValueClamped(
+    inputRangeX: number,
+    inputRangeY: number,
+    outputRangeX: number,
+    outputRangeY: number,
+    value: number,
+) {
+    const t = clamp01(getRatioBetween(inputRangeX, inputRangeY, value));
+    return lerp(outputRangeX, outputRangeY, t);
+}
+
+function getRatioBetween(minValue: number, maxValue: number, value: number) {
+    const extent = maxValue - minValue;
+    if (approx(extent, 0.0, 1e-5)) {
+        return value >= maxValue ? 1.0 : 0.0;
+    } else {
+        return (value - minValue) / extent;
     }
 }

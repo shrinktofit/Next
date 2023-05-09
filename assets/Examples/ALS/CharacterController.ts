@@ -6,6 +6,7 @@ import { PredefinedActionId, PredefinedAxisId } from './Input/Predefined';
 import { clampToMaxLength } from './Utility/ClampToMaxLength';
 import { UNIT_SCALE_ALS_TO_CC } from './Utility/UnitConversion';
 import { MovementMode } from './ALSAnim/MovementMode';
+import { CharacterControllerFallingSimulation } from './CharacterControllerFallingSimulation';
 const { ccclass, property } = _decorator;
 
 @ccclass('CharacterController')
@@ -33,11 +34,14 @@ export class CharacterController extends Component {
      */
     public brakingFriction = 0.0;
 
+    @property
+    public fallingSimulation = new CharacterControllerFallingSimulation();
+
     start() {
+        this.fallingSimulation.node = this.node;
+        this.fallingSimulation.start();
         this.characterInfo = this.node.getComponent(ALSCharacterInfo)!;
     }
-
-    private readonly _lastVelocity = new Vec3();
 
     update(deltaTime: number) {
         this._hasRequestedVelocity = false;
@@ -51,17 +55,19 @@ export class CharacterController extends Component {
             this._inputVector,
             deltaTime,
         );
+
+        this.fallingSimulation.update(deltaTime);
         
         const characterInfo = this.node.getComponent(ALSCharacterInfo);
         if (characterInfo) {
             Vec3.copy(characterInfo.velocity, this._velocity);
+            characterInfo.velocity.y = this.fallingSimulation.velocity;
+
             Vec3.copy(characterInfo.replicatedAcceleration, this._acceleration);
+            characterInfo.replicatedAcceleration.y = this.fallingSimulation.acceleration;
+
             characterInfo.maxAcceleration = this.maxAcceleration;
             characterInfo.maxBrakingDeceleration = this.maxBrakingDeceleration;
-            if (!this._lastAcc || !Vec3.equals(this._acceleration, this._lastAcc)) {
-                console.warn(`${this._acceleration}`);
-                this._lastAcc = Vec3.clone(this._acceleration);
-            }
         }
 
         Vec3.zero(this._inputVector);
@@ -92,51 +98,9 @@ export class CharacterController extends Component {
             globalInputManager.getAxisValue(PredefinedAxisId.MoveForward),
         );
         if (Vec2.equals(inputVelocity, Vec2.ZERO)) {
-            if (globalInputManager.getAction(PredefinedActionId.Jump)) {
-                if (this._isJumping) {
-                    this._isJumping = false;
-                    this._velocity.y = 0.0;
-                    const characterInfo = this.node.getComponent(ALSCharacterInfo);
-                    if (characterInfo) {
-                        characterInfo._emitMovementModeChanged(MovementMode.Walking);
-                    }
-                } else {
-                    this._isJumping = true;
-                    this._velocity.y = 300 * UNIT_SCALE_ALS_TO_CC;
-                    const characterInfo = this.node.getComponent(ALSCharacterInfo);
-                    if (characterInfo) {
-                        characterInfo._emitMovementModeChanged(MovementMode.Falling);
-                        characterInfo._emit(ALSCharacterEventType.Jump);
-                    }
-                }
-            }
             return;
         }
-        // this._hasRequestedVelocity = true;
-
-        // Vec2.normalize(inputVelocity, inputVelocity);
-        // Vec3.set(
-        //     this._requestedVelocity,
-        //     inputVelocity.x * this.maxMoveSpeed,
-        //     0.0,
-        //     inputVelocity.y * this.maxMoveSpeed,
-        // );
-
-        // if (this.moveAccordingToCharacterDirection) {
-        //     const viewDir = Vec3.clone(getForward(this.node));
-        //     viewDir.y = 0.0;
-        //     Vec3.normalize(viewDir, viewDir);
-
-        //     const q = Quat.rotationTo(new Quat(), Vec3.UNIT_Z, viewDir);
-        //     Vec3.transformQuat(this._requestedVelocity, this._requestedVelocity, q);
-        // } else {
-        //     const viewDir = Vec3.clone(this.characterInfo.viewDirection);
-        //     viewDir.y = 0.0;
-        //     Vec3.normalize(viewDir, viewDir);
-    
-        //     const q = Quat.rotationTo(new Quat(), Vec3.UNIT_Z, viewDir);
-        //     Vec3.transformQuat(this._requestedVelocity, this._requestedVelocity, q);
-        // }
+        
         Vec3.zero(this._inputVector);
         Vec2.normalize(inputVelocity, inputVelocity);
         const movementInputScale = 1.0;
