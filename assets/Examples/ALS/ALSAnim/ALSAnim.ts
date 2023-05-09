@@ -127,6 +127,12 @@ export class ALSAnim extends Component {
     })
     public featureFootLockEnabled = true;
 
+    @property({
+        group: GROUP_ENABLING,
+        displayName: '调试',
+    })
+    public debug = false;
+
     start() {
         const requiredComponents = ([ALSCharacterInfo, animation.AnimationController] as const).map((ComponentConstructor) => {
             const component = this.node.getComponent(ComponentConstructor as typeof Component);
@@ -161,6 +167,9 @@ export class ALSAnim extends Component {
             this.featureFootLock,
         ] as const)) {
             if (feature.enabled) {
+                if (!this.debug) {
+                    feature.debug = false;
+                }
                 feature._init(
                     this.node,
                     characterInfo!,
@@ -173,6 +182,8 @@ export class ALSAnim extends Component {
     }
 
     update(deltaTime: number) {
+        this._animationController.setValue(VarName.HasMovementInput, this.characterInfo.hasMovementInput);
+        this._animationController.setValue(VarName.Speed, this.characterInfo.speed);
         this._animationController.setValue(VarName.MovementState, this._characterInfo.movementState);
 
         for (const feature of this._activatedFeatures) {

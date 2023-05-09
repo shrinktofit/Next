@@ -9,9 +9,6 @@ const { ccclass, property } = _decorator;
 @ccclass('ALSAnimFeatureFootLock')
 export class ALSAnimFeatureFootLock extends ALSAnimFeature {
     @property
-    debug = false;
-
-    @property
     leftFootEnabled = true;
 
     @property({

@@ -9,6 +9,9 @@ export class ALSAnimFeature {
     @property({ visible: false })
     public enabled = true;
 
+    @property({})
+    public debug = false;
+
     public onStart() {
     }
 

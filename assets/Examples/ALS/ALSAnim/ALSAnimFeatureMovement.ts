@@ -25,9 +25,6 @@ export enum GraphVarName {
 
 @ccclass('ALSAnimFeatureMovement')
 export class ALSAnimFeatureMovement extends ALSAnimFeature {
-    @property
-    public debug = false;
-
     @property({ unit: '[0-1]/s', min: 0.0 })
     public velocityBlendInteropSpeed = 12.0;
 

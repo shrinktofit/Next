@@ -15,9 +15,6 @@ export class ALSAnimFeatureLean extends ALSAnimFeature {
     @property
     public resetLeanAmountOnceShouldNotMove = false;
 
-    @property
-    public debug = false;
-
     public onStart() {
         super.onStart();
         if (this.debug) {

@@ -80,7 +80,7 @@ export class CharacterControllerFallingSimulation {
 
         this._falling = true;
 
-        this._velocity = 500 * UNIT_SCALE_ALS_TO_CC;
+        this._velocity = 600 * UNIT_SCALE_ALS_TO_CC;
 
         const characterInfo = this.node.getComponent(ALSCharacterInfo);
         if (characterInfo) {

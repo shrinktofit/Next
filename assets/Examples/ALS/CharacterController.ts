@@ -14,6 +14,9 @@ export class CharacterController extends Component {
     @property
     public moveAccordingToCharacterDirection = false;
 
+    @property
+    public inPlace = false;
+
     public maxAcceleration = 2000.0 * UNIT_SCALE_ALS_TO_CC;
 
     public maxBrakingDeceleration = 1250.0 * UNIT_SCALE_ALS_TO_CC;
@@ -62,6 +65,11 @@ export class CharacterController extends Component {
         if (characterInfo) {
             Vec3.copy(characterInfo.velocity, this._velocity);
             characterInfo.velocity.y = this.fallingSimulation.velocity;
+
+            if (!this.inPlace) {
+                const translation = Vec3.multiplyScalar(new Vec3(), characterInfo.velocity, deltaTime);
+                this.node.translate(translation, NodeSpace.WORLD);
+            }
 
             Vec3.copy(characterInfo.replicatedAcceleration, this._acceleration);
             characterInfo.replicatedAcceleration.y = this.fallingSimulation.acceleration;

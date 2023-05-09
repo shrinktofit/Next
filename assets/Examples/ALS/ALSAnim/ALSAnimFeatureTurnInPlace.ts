@@ -20,9 +20,6 @@ export class ALSAnimFeatureTurnInPlace extends ALSAnimFeature {
     @property({ min: 0, max: 180, step: 1, slide: true, unit: '°' })
     public turn180Threshold = 135.0;
 
-    @property
-    public debug = false;
-
     onStart() {
         getHorizontalViewDirection(this._lastViewDir, this.characterInfo.viewDirection);
 

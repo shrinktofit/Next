@@ -8,9 +8,6 @@ const CHART_FEET_POSITION_ENABLED: boolean = true;
 
 @ccclass('ALSAnimFeatureStop')
 export class ALSAnimFeatureStop extends ALSAnimFeature {
-    @property
-    debug = false;
-
     onStart() {
         if (this.debug) {
             this._debugChart = createRealtimeNumberChart?.({

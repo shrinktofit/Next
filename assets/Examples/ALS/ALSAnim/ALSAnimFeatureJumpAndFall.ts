@@ -23,9 +23,6 @@ const JUMP_PLAY_RATE_MAX = 1.5;
 @ccclass('ALSAnimFeatureJumpAndFall')
 export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
     @property
-    debug = false;
-
-    @property
     landPredictionBlendCurve = (() => {
         const curve = new RealCurve();
         curve.assignSorted([0.0, 1.0], [1.0, 0.0]);
@@ -51,6 +48,10 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
                 this.animationController,
                 this.characterInfo,
             );
+
+            this.animationController.onCustomEvent_experimental('--> Debug Land Movement', () => {
+                console.error('--> Debug Land Movement');
+            });
         }
     }
     
@@ -98,6 +99,10 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
             const landHeavyLightBlend = clampMap(
                 Math.abs(fallSpeed), 500 * UNIT_SCALE_ALS_TO_CC, 1000 * UNIT_SCALE_ALS_TO_CC, 0.0, 1.0);
             this.animationController.setValue(VarName.LandHeavyLightBlend, landHeavyLightBlend);
+            const landHeavyLightBlend_Movement = clampMap(
+                Math.abs(fallSpeed),750 * UNIT_SCALE_ALS_TO_CC, 1500 * UNIT_SCALE_ALS_TO_CC, 0.0, 0.75);
+            this.animationController.setValue(VarName.LandHeavyLightBlend_Movement, landHeavyLightBlend_Movement);
+            
             if (DEBUG && this._debugRecords) {
                 this._debugRecords.landHeavyLightBlend.value = landHeavyLightBlend;
             }

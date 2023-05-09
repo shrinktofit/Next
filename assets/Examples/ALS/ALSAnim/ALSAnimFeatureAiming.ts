@@ -40,9 +40,9 @@ export class ALSAnimFeatureAiming extends ALSAnimFeature {
             `RightYawTime`,
             clampMap(Math.abs(yaw), 0, Math.PI, 0.5, 1.0)
         );
-        if (yawDeg !== this._yawDeg) {
-            this._yawDeg = yawDeg;
-        }
+        // if (yawDeg !== this._yawDeg) {
+        //     this._yawDeg = yawDeg;
+        // }
 
         if (globalThis.stats) {
             Object.assign(

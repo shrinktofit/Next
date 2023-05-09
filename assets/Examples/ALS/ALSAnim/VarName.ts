@@ -1,6 +1,8 @@
 
 export enum VarName {
     MovementState = 'MovementState',
+    HasMovementInput = 'HasMovementInput',
+    Speed = 'Speed',
 
     //#region Grounded
     ShouldMove = 'ShouldMove',
@@ -18,6 +20,7 @@ export enum VarName {
     JumpPlayRate = 'JumpPlayRate',
     JumpWalkRunBlend = 'JumpWalkRunBlend',
     LandHeavyLightBlend = 'LandHeavyLightBlend',
+    LandHeavyLightBlend_Movement = 'LandHeavyLightBlend_Movement',
     JumpLandBlend = 'JumpLandBlend',
     //#endregion
 }
