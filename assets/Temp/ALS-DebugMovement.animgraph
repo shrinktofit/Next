@@ -3454,7 +3454,7 @@
     "stashName": "RF Movement"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -712,
       "centerY": -54
@@ -3462,7 +3462,7 @@
     "variableName": "VelocityBlendF"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -721,
       "centerY": 85
@@ -3470,7 +3470,7 @@
     "variableName": "VelocityBlendL"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -689,
       "centerY": 23
@@ -3478,7 +3478,7 @@
     "variableName": "VelocityBlendB"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -727,
       "centerY": 162
@@ -3835,7 +3835,7 @@
     "stashName": "RB Movement"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -698,
       "centerY": 18
@@ -3843,7 +3843,7 @@
     "variableName": "VelocityBlendF"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -711,
       "centerY": 91
@@ -3851,7 +3851,7 @@
     "variableName": "VelocityBlendB"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -715,
       "centerY": 157
@@ -3859,7 +3859,7 @@
     "variableName": "VelocityBlendL"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -729,
       "centerY": 208
@@ -4216,7 +4216,7 @@
     "stashName": "RF Movement"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -697,
       "centerY": 80
@@ -4224,7 +4224,7 @@
     "variableName": "VelocityBlendB"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -699,
       "centerY": 24
@@ -4232,7 +4232,7 @@
     "variableName": "VelocityBlendF"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -706,
       "centerY": 187
@@ -4240,7 +4240,7 @@
     "variableName": "VelocityBlendR"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -711,
       "centerY": 142
@@ -4597,7 +4597,7 @@
     "stashName": "B Movement"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -666,
       "centerY": 86
@@ -4605,7 +4605,7 @@
     "variableName": "VelocityBlendB"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -680,
       "centerY": 145
@@ -4613,7 +4613,7 @@
     "variableName": "VelocityBlendL"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -692,
       "centerY": 186
@@ -4621,7 +4621,7 @@
     "variableName": "VelocityBlendR"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -648,
       "centerY": 40
@@ -4978,7 +4978,7 @@
     "stashName": "RB Movement"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -1046,
       "centerY": 19
@@ -4986,7 +4986,7 @@
     "variableName": "VelocityBlendF"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -1050,
       "centerY": 70
@@ -4994,7 +4994,7 @@
     "variableName": "VelocityBlendB"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -1039,
       "centerY": 123
@@ -5002,7 +5002,7 @@
     "variableName": "VelocityBlendL"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -1034,
       "centerY": 176
@@ -5359,7 +5359,7 @@
     "stashName": "RB Movement"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -756,
       "centerY": -26
@@ -5367,7 +5367,7 @@
     "variableName": "VelocityBlendF"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -758,
       "centerY": 26
@@ -5375,7 +5375,7 @@
     "variableName": "VelocityBlendB"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -766,
       "centerY": 130
@@ -5383,7 +5383,7 @@
     "variableName": "VelocityBlendR"
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -761,
       "centerY": 79
@@ -7204,7 +7204,7 @@
     "value": 0
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -490,
       "centerY": 85
@@ -7427,7 +7427,7 @@
     "value": 0
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -628,
       "centerY": 46
@@ -7659,7 +7659,7 @@
     "value": 0
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -195.1111111111111,
       "centerY": 20.22222222222223
@@ -7891,7 +7891,7 @@
     "value": 0
   },
   {
-    "__type__": "cc.animation.x_nodes.XNodeGetVariableFloat",
+    "__type__": "cc.animation.PVNodeGetVariableFloat",
     "__editorExtras__": {
       "centerX": -208,
       "centerY": 28
