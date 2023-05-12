@@ -258,6 +258,7 @@
     "_visibility": 1822425087,
     "_targetTexture": null,
     "_postProcess": null,
+    "_usePostProcess": false,
     "_cameraType": -1,
     "_trackingType": 0,
     "_id": "7dWQTpwS5LrIHnc1zAPUtf"
@@ -617,7 +618,7 @@
     "node": {
       "__id__": 9
     },
-    "_enabled": true,
+    "_enabled": false,
     "__prefab": null,
     "turnSpeed": 270,
     "_id": "1bNlp1E21GWJ8iIvrWJlEk"
@@ -655,22 +656,22 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "featureMovementEnabled": true,
+    "featureMovementEnabled": false,
     "featureMovement": {
       "__id__": 26
     },
     "featureStop": {
       "__id__": 27
     },
-    "featureStopEnabled": true,
+    "featureStopEnabled": false,
     "featureLean": {
       "__id__": 28
     },
-    "featureLeanEnabled": true,
+    "featureLeanEnabled": false,
     "featureTurnInPlace": {
       "__id__": 29
     },
-    "featureTurnInPlaceEnabled": true,
+    "featureTurnInPlaceEnabled": false,
     "featureAiming": {
       "__id__": 30
     },
@@ -678,35 +679,35 @@
     "featureJumpAndFall": {
       "__id__": 31
     },
-    "featureJumpAndFallEnabled": true,
+    "featureJumpAndFallEnabled": false,
     "featureFootLock": {
       "__id__": 33
     },
-    "featureFootLockEnabled": true,
+    "featureFootLockEnabled": false,
     "debug": false,
     "_id": "3ehDWmKuNKwpDhVaA38AxF"
   },
   {
     "__type__": "ALSAnimFeatureMovement",
-    "enabled": true,
+    "enabled": false,
     "debug": true,
     "velocityBlendInteropSpeed": 12
   },
   {
     "__type__": "ALSAnimFeatureStop",
-    "enabled": true,
+    "enabled": false,
     "debug": false
   },
   {
     "__type__": "ALSAnimFeatureLean",
-    "enabled": true,
+    "enabled": false,
     "debug": true,
     "groundedLeanInteropSpeed": 4,
     "resetLeanAmountOnceShouldNotMove": false
   },
   {
     "__type__": "ALSAnimFeatureTurnInPlace",
-    "enabled": true,
+    "enabled": false,
     "debug": true,
     "minTurnAngle": 10,
     "minTurnAngleDelay": 0.75,
@@ -720,7 +721,7 @@
   },
   {
     "__type__": "ALSAnimFeatureJumpAndFall",
-    "enabled": true,
+    "enabled": false,
     "debug": true,
     "landPredictionBlendCurve": {
       "__id__": 32
@@ -763,7 +764,7 @@
   },
   {
     "__type__": "ALSAnimFeatureFootLock",
-    "enabled": true,
+    "enabled": false,
     "debug": true,
     "leftFootEnabled": true,
     "leftFoot": null,
@@ -1079,6 +1080,7 @@
         "__expectedType__": "cc.Material"
       }
     ],
+    "_enabledStandardSkin": false,
     "_visFlags": 0,
     "bakeSettings": {
       "__id__": 56
@@ -1440,6 +1442,7 @@
     "_visibility": 41943040,
     "_targetTexture": null,
     "_postProcess": null,
+    "_usePostProcess": false,
     "_cameraType": -1,
     "_trackingType": 0,
     "_id": "02J5gndblDx6kL7eF9otQj"
@@ -1681,7 +1684,7 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 150,
+      "x": 0,
       "y": 0,
       "z": 0
     },
@@ -1898,7 +1901,7 @@
       "__id__": 78
     },
     "_direction": 0,
-    "_progress": 1,
+    "_progress": 0.5,
     "_id": "5erXhcK9ZB3aSRDJOEiwg0"
   },
   {
@@ -2178,6 +2181,7 @@
         "__expectedType__": "cc.Material"
       }
     ],
+    "_enabledStandardSkin": false,
     "_visFlags": 0,
     "bakeSettings": {
       "__id__": 99
@@ -2252,8 +2256,11 @@
     "octree": {
       "__id__": 106
     },
-    "lightProbeInfo": {
+    "skin": {
       "__id__": 107
+    },
+    "lightProbeInfo": {
+      "__id__": 108
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false
@@ -2390,6 +2397,12 @@
       "z": 1024
     },
     "_depth": 8
+  },
+  {
+    "__type__": "cc.SkinInfo",
+    "_enabled": false,
+    "_blurRadius": 0.01,
+    "_sssIntensity": 5
   },
   {
     "__type__": "cc.LightProbeInfo",

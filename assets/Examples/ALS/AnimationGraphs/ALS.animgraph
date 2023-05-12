@@ -13910,7 +13910,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "AimForwardEnter"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -14147,7 +14147,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "AimLeftEnter"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -14379,7 +14379,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "AimRightEnter"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
@@ -14611,7 +14611,7 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
-    "eventName": ""
+    "eventName": "SwitchEnter"
   },
   {
     "__type__": "cc.animation.AnimationGraphEvent",
