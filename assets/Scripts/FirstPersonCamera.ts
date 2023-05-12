@@ -9,6 +9,7 @@ import * as cc from 'cc';
 import { useMouseInput } from './Utils/Env';
 import { reflect } from './Utils/Math';
 import { getForward } from './Utils/NodeUtils';
+import { Vec3 } from 'cc';
 
 @cc._decorator.ccclass('FirstPersonCamera')
 @cc._decorator.executionOrder(9999)
@@ -156,6 +157,7 @@ export class FirstPersonCamera extends cc.Component {
 
         if (targetHorizonPositionChanged || targetVerticalPositionChanged || this._currentDirDirty) {
             this._currentDirDirty = false;
+            Vec3.copy(targetLastPosition, targetWorldPosition);
             this._updatePosition();
         }
     }

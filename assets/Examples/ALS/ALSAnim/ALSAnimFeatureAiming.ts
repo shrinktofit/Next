@@ -40,20 +40,5 @@ export class ALSAnimFeatureAiming extends ALSAnimFeature {
             `RightYawTime`,
             clampMap(Math.abs(yaw), 0, Math.PI, 0.5, 1.0)
         );
-        // if (yawDeg !== this._yawDeg) {
-        //     this._yawDeg = yawDeg;
-        // }
-
-        if (globalThis.stats) {
-            Object.assign(
-                (globalThis.stats[director.getTotalFrames()] ??= {}),
-                {
-                    yaw: yawDeg,
-                    ForwardYawTime: animationController.getValue('ForwardYawTime'),
-                    LeftYawTime: animationController.getValue('ForwardYawTime'),
-                    RightYawTime: animationController.getValue('ForwardYawTime'),
-                },
-            );
-        }
     }
 }
