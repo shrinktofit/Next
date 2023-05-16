@@ -70,7 +70,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 101
+      "__id__": 105
     },
     "_id": "d406a1c6-d605-4e99-948e-023a283531ed"
   },
@@ -258,6 +258,7 @@
     "_visibility": 1822425087,
     "_targetTexture": null,
     "_postProcess": null,
+    "_usePostProcess": false,
     "_cameraType": -1,
     "_trackingType": 0,
     "_id": "7dWQTpwS5LrIHnc1zAPUtf"
@@ -666,24 +667,24 @@
     "featureLean": {
       "__id__": 28
     },
-    "featureLeanEnabled": true,
+    "featureLeanEnabled": false,
     "featureTurnInPlace": {
       "__id__": 29
     },
-    "featureTurnInPlaceEnabled": true,
+    "featureTurnInPlaceEnabled": false,
     "featureAiming": {
       "__id__": 30
     },
-    "featureAimingEnabled": true,
+    "featureAimingEnabled": false,
     "featureJumpAndFall": {
       "__id__": 31
     },
-    "featureJumpAndFallEnabled": true,
+    "featureJumpAndFallEnabled": false,
     "featureFootLock": {
       "__id__": 33
     },
     "featureFootLockEnabled": true,
-    "debug": false,
+    "debug": true,
     "_id": "3ehDWmKuNKwpDhVaA38AxF"
   },
   {
@@ -699,14 +700,14 @@
   },
   {
     "__type__": "ALSAnimFeatureLean",
-    "enabled": true,
+    "enabled": false,
     "debug": true,
     "groundedLeanInteropSpeed": 4,
     "resetLeanAmountOnceShouldNotMove": false
   },
   {
     "__type__": "ALSAnimFeatureTurnInPlace",
-    "enabled": true,
+    "enabled": false,
     "debug": true,
     "minTurnAngle": 10,
     "minTurnAngleDelay": 0.75,
@@ -715,12 +716,12 @@
   },
   {
     "__type__": "ALSAnimFeatureAiming",
-    "enabled": true,
+    "enabled": false,
     "debug": false
   },
   {
     "__type__": "ALSAnimFeatureJumpAndFall",
-    "enabled": true,
+    "enabled": false,
     "debug": true,
     "landPredictionBlendCurve": {
       "__id__": 32
@@ -1079,6 +1080,7 @@
         "__expectedType__": "cc.Material"
       }
     ],
+    "_enabledStandardSkin": false,
     "_visFlags": 0,
     "bakeSettings": {
       "__id__": 56
@@ -1440,6 +1442,7 @@
     "_visibility": 41943040,
     "_targetTexture": null,
     "_postProcess": null,
+    "_usePostProcess": false,
     "_cameraType": -1,
     "_trackingType": 0,
     "_id": "02J5gndblDx6kL7eF9otQj"
@@ -2178,6 +2181,7 @@
         "__expectedType__": "cc.Material"
       }
     ],
+    "_enabledStandardSkin": false,
     "_visFlags": 0,
     "bakeSettings": {
       "__id__": 99
@@ -2222,7 +2226,14 @@
     "asset": null,
     "fileId": "d406a1c6-d605-4e99-948e-023a283531ed",
     "instance": null,
-    "targetOverrides": [],
+    "targetOverrides": [
+      {
+        "__id__": 101
+      },
+      {
+        "__id__": 103
+      }
+    ],
     "nestedPrefabInstanceRoots": [
       {
         "__id__": 9
@@ -2236,24 +2247,73 @@
     ]
   },
   {
+    "__type__": "cc.TargetOverrideInfo",
+    "source": {
+      "__id__": 25
+    },
+    "sourceInfo": null,
+    "propertyPath": [
+      "featureFootLock",
+      "leftFoot"
+    ],
+    "target": {
+      "__id__": 9
+    },
+    "targetInfo": {
+      "__id__": 102
+    }
+  },
+  {
+    "__type__": "cc.TargetInfo",
+    "localID": [
+      "2bJ1EjgbRUKYaLtBj1BdtY"
+    ]
+  },
+  {
+    "__type__": "cc.TargetOverrideInfo",
+    "source": {
+      "__id__": 25
+    },
+    "sourceInfo": null,
+    "propertyPath": [
+      "featureFootLock",
+      "rightFoot"
+    ],
+    "target": {
+      "__id__": 9
+    },
+    "targetInfo": {
+      "__id__": 104
+    }
+  },
+  {
+    "__type__": "cc.TargetInfo",
+    "localID": [
+      "e5xUxUAtxcqrZ4jRMn2vkV"
+    ]
+  },
+  {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 102
-    },
-    "shadows": {
-      "__id__": 103
-    },
-    "_skybox": {
-      "__id__": 104
-    },
-    "fog": {
-      "__id__": 105
-    },
-    "octree": {
       "__id__": 106
     },
-    "lightProbeInfo": {
+    "shadows": {
       "__id__": 107
+    },
+    "_skybox": {
+      "__id__": 108
+    },
+    "fog": {
+      "__id__": 109
+    },
+    "octree": {
+      "__id__": 110
+    },
+    "skin": {
+      "__id__": 111
+    },
+    "lightProbeInfo": {
+      "__id__": 112
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false
@@ -2390,6 +2450,12 @@
       "z": 1024
     },
     "_depth": 8
+  },
+  {
+    "__type__": "cc.SkinInfo",
+    "_enabled": false,
+    "_blurRadius": 0.01,
+    "_sssIntensity": 5
   },
   {
     "__type__": "cc.LightProbeInfo",
