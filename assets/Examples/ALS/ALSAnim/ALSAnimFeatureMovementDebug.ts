@@ -56,9 +56,9 @@ export class ALSAnimFeatureMovementDebug {
             };
         }
         
-        this.animationController.onCustomEvent_experimental('debug-->NotMoving', () => {
-            warn(`Not moving`);
-        });
+        // this.animationController.onCustomEvent_experimental('debug-->NotMoving', () => {
+        //     warn(`Not moving`);
+        // });
     }
 
     private _lastSpeed = 0.0;
@@ -100,7 +100,7 @@ export class ALSAnimFeatureMovementDebug {
         if (!this.characterInfo.isMoving && this._lastIsMoving) {
             const { x, z } = this.characterInfo.velocity;
             const speed = Math.sqrt(x * x + z * z);
-            console.error(`Not moving Speed: ${speed}`);
+            // console.error(`Not moving Speed: ${speed}`);
         }
 
         this._lastIsMoving = this.characterInfo.isMoving;

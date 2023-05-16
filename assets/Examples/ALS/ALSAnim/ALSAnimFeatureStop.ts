@@ -60,7 +60,7 @@ export class ALSAnimFeatureStop extends ALSAnimFeature {
 
         for (const eventName of ['Hips F', 'Hips B', 'Hips LF', 'Hips LB', 'Hips RF', 'Hips RB']) {
             listenToGraphEvent(this.animationController, eventName, () => {
-                console.warn(eventName);
+                // console.warn(eventName);
                 
                 let hipsDirection = HipsDirection.F;
                 switch (eventName) {
