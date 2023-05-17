@@ -130,19 +130,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {

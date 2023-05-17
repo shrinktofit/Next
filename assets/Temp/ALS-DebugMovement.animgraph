@@ -229,19 +229,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -370,19 +370,19 @@
     "speedMultiplierEnabled": false
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -428,19 +428,19 @@
     "speedMultiplierEnabled": false
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -486,19 +486,19 @@
     "speedMultiplierEnabled": false
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -544,19 +544,19 @@
     "speedMultiplierEnabled": false
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -712,11 +712,11 @@
     "value": false
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -842,19 +842,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -953,19 +953,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -1086,11 +1086,11 @@
     "value": false
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -1146,11 +1146,11 @@
     "value": false
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -1202,11 +1202,11 @@
     "value": false
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -3308,19 +3308,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -3689,19 +3689,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -4070,19 +4070,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -4451,19 +4451,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -4832,19 +4832,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -5213,19 +5213,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -5607,11 +5607,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -5654,11 +5654,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -5701,11 +5701,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -5748,11 +5748,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -5795,11 +5795,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -5842,11 +5842,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -5889,11 +5889,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -5936,11 +5936,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -5983,11 +5983,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -6030,11 +6030,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -6077,11 +6077,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -6124,11 +6124,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -6171,11 +6171,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -6218,11 +6218,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -6265,11 +6265,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -6312,11 +6312,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -6359,11 +6359,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -6417,11 +6417,11 @@
     "variableName": "MovementDirection"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -6462,11 +6462,11 @@
     "__type__": "cc.animation.TCStateWeightBinding"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -6507,11 +6507,11 @@
     "__type__": "cc.animation.TCStateWeightBinding"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -7048,19 +7048,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -7267,19 +7267,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -7504,19 +7504,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -7736,19 +7736,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -7968,19 +7968,19 @@
     }
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -8216,11 +8216,11 @@
     "variableName": "AimLeftRight"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -8284,11 +8284,11 @@
     "variableName": "AimLeftRight"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -8352,11 +8352,11 @@
     "variableName": "AimLeftRight"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -8420,11 +8420,11 @@
     "variableName": "AimLeftRight"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -8488,11 +8488,11 @@
     "variableName": "AimLeftRight"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -8556,11 +8556,11 @@
     "variableName": "AimLeftRight"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -8624,11 +8624,11 @@
     "variableName": "AimLeftRight"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
@@ -8692,11 +8692,11 @@
     "variableName": "AimLeftRight"
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.AnimationGraphEvent",
+    "__type__": "cc.animation.AnimationGraphEventBinding",
     "eventName": ""
   },
   {
