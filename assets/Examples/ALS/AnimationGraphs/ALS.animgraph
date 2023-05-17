@@ -16248,14 +16248,16 @@
     "input": null,
     "debug": false,
     "endEffectorBoneName": "foot_l",
-    "endEffectorTargetBoneName": "ik_foot_l",
-    "endEffectorTargetPosition": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
+    "endEffectorTarget": {
+      "__type__": "cc.animation.TwoBoneIKSolver.TargetSpecification",
+      "type": 2,
+      "targetBone": "ik_foot_l"
     },
-    "middleBoneTargetBoneName": "ik_knee_target_l"
+    "poleTarget": {
+      "__type__": "cc.animation.TwoBoneIKSolver.TargetSpecification",
+      "type": 2,
+      "targetBone": "ik_knee_target_l"
+    }
   },
   {
     "__type__": "cc.animation.CopyTransform",
@@ -16277,14 +16279,16 @@
     "input": null,
     "debug": false,
     "endEffectorBoneName": "foot_r",
-    "endEffectorTargetBoneName": "ik_foot_r",
-    "endEffectorTargetPosition": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
+    "endEffectorTarget": {
+      "__type__": "cc.animation.TwoBoneIKSolver.TargetSpecification",
+      "type": 2,
+      "targetBone": "ik_foot_r"
     },
-    "middleBoneTargetBoneName": "ik_knee_target_r"
+    "poleTarget": {
+      "__type__": "cc.animation.TwoBoneIKSolver.TargetSpecification",
+      "type": 2,
+      "targetBone": "ik_knee_target_r"
+    }
   },
   {
     "__type__": "cc.animation.CopyTransform",
@@ -16304,7 +16308,6 @@
       "centerY": -269.50523993381137
     },
     "input": null,
-    "transformName": "ik_foot_l",
     "positionApplyFlag": 1,
     "position": {
       "__type__": "cc.Vec3",
@@ -16323,7 +16326,8 @@
     "intensity": {
       "__id__": 1470
     },
-    "transformSpaceRequirement": 2
+    "node": "ik_foot_l",
+    "transformSpace": 1
   },
   {
     "__type__": "cc.animation.IntensitySpecification",
@@ -16338,7 +16342,6 @@
       "centerY": -276.50220628792056
     },
     "input": null,
-    "transformName": "ik_foot_r",
     "positionApplyFlag": 1,
     "position": {
       "__type__": "cc.Vec3",
@@ -16357,7 +16360,8 @@
     "intensity": {
       "__id__": 1472
     },
-    "transformSpaceRequirement": 2
+    "node": "ik_foot_r",
+    "transformSpace": 1
   },
   {
     "__type__": "cc.animation.IntensitySpecification",
@@ -16426,7 +16430,6 @@
       "centerY": -245.94594594594602
     },
     "input": null,
-    "transformName": "ik_knee_target_l",
     "positionApplyFlag": 2,
     "position": {
       "__type__": "cc.Vec3",
@@ -16445,7 +16448,8 @@
     "intensity": {
       "__id__": 1480
     },
-    "transformSpaceRequirement": 1
+    "node": "ik_knee_target_l",
+    "transformSpace": 2
   },
   {
     "__type__": "cc.animation.IntensitySpecification",
@@ -16460,7 +16464,6 @@
       "centerY": -249.26640926640937
     },
     "input": null,
-    "transformName": "ik_knee_target_r",
     "positionApplyFlag": 2,
     "position": {
       "__type__": "cc.Vec3",
@@ -16479,7 +16482,8 @@
     "intensity": {
       "__id__": 1482
     },
-    "transformSpaceRequirement": 1
+    "node": "ik_knee_target_r",
+    "transformSpace": 2
   },
   {
     "__type__": "cc.animation.IntensitySpecification",
