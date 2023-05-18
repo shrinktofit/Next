@@ -349,7 +349,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -364,
       "centerY": -29
@@ -442,7 +442,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -190,
       "centerY": -20
@@ -467,7 +467,7 @@
     "group": "Locomotion"
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -223,
       "centerY": 92
@@ -749,7 +749,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -229,
       "centerY": -138
@@ -774,7 +774,7 @@
     "group": "Locomotion"
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -232,
       "centerY": 29
@@ -1056,7 +1056,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -253,
       "centerY": -36
@@ -1081,7 +1081,7 @@
     "group": "Locomotion"
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -280,
       "centerY": 83
@@ -1364,7 +1364,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -241,
       "centerY": -8
@@ -1389,7 +1389,7 @@
     "group": "Locomotion"
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -221,
       "centerY": 98
@@ -1671,7 +1671,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -260,
       "centerY": -23
@@ -1696,7 +1696,7 @@
     "group": "Locomotion"
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -239,
       "centerY": 60
@@ -1978,7 +1978,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -212,
       "centerY": -25
@@ -2003,7 +2003,7 @@
     "group": "Locomotion"
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -250,
       "centerY": 61
@@ -2279,7 +2279,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.StateMachineNode",
+    "__type__": "cc.animation.PoseNodeStateMachine",
     "__editorExtras__": {
       "centerX": -448,
       "centerY": -11
@@ -2558,7 +2558,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.BlendInProportion",
+    "__type__": "cc.animation.PoseNodeBlendInProportion",
     "__editorExtras__": {
       "centerX": -309,
       "centerY": -74
@@ -2577,7 +2577,7 @@
     ]
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -556,
       "centerY": -305
@@ -2585,7 +2585,7 @@
     "stashName": "F Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -558,
       "centerY": -247
@@ -2593,7 +2593,7 @@
     "stashName": "B Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -561,
       "centerY": -195
@@ -2601,7 +2601,7 @@
     "stashName": "LF Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -563,
       "centerY": -130
@@ -2939,7 +2939,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.BlendInProportion",
+    "__type__": "cc.animation.PoseNodeBlendInProportion",
     "__editorExtras__": {
       "centerX": -382,
       "centerY": -55
@@ -2958,7 +2958,7 @@
     ]
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -622,
       "centerY": -245
@@ -2966,7 +2966,7 @@
     "stashName": "F Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -633,
       "centerY": -181
@@ -2974,7 +2974,7 @@
     "stashName": "B Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -636,
       "centerY": -130
@@ -2982,7 +2982,7 @@
     "stashName": "LF Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -661,
       "centerY": -65
@@ -3320,7 +3320,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.BlendInProportion",
+    "__type__": "cc.animation.PoseNodeBlendInProportion",
     "__editorExtras__": {
       "centerX": -382,
       "centerY": -55
@@ -3339,7 +3339,7 @@
     ]
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -597,
       "centerY": -149
@@ -3347,7 +3347,7 @@
     "stashName": "B Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -576,
       "centerY": -199
@@ -3355,7 +3355,7 @@
     "stashName": "F Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -594,
       "centerY": -98
@@ -3363,7 +3363,7 @@
     "stashName": "LB Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -610,
       "centerY": -53
@@ -3701,7 +3701,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.BlendInProportion",
+    "__type__": "cc.animation.PoseNodeBlendInProportion",
     "__editorExtras__": {
       "centerX": -382,
       "centerY": -55
@@ -3720,7 +3720,7 @@
     ]
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -619,
       "centerY": -188
@@ -3728,7 +3728,7 @@
     "stashName": "F Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -643,
       "centerY": -17
@@ -3736,7 +3736,7 @@
     "stashName": "RF Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -632,
       "centerY": -74
@@ -3744,7 +3744,7 @@
     "stashName": "LB Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -628,
       "centerY": -132
@@ -4082,7 +4082,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.BlendInProportion",
+    "__type__": "cc.animation.PoseNodeBlendInProportion",
     "__editorExtras__": {
       "centerX": -382,
       "centerY": -55
@@ -4101,7 +4101,7 @@
     ]
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -1014,
       "centerY": -135
@@ -4109,7 +4109,7 @@
     "stashName": "B Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -1023,
       "centerY": -194
@@ -4117,7 +4117,7 @@
     "stashName": "F Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -1021,
       "centerY": -90
@@ -4125,7 +4125,7 @@
     "stashName": "LB Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -1028,
       "centerY": -36
@@ -4463,7 +4463,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.BlendInProportion",
+    "__type__": "cc.animation.PoseNodeBlendInProportion",
     "__editorExtras__": {
       "centerX": -382,
       "centerY": -55
@@ -4482,7 +4482,7 @@
     ]
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -735,
       "centerY": -238
@@ -4490,7 +4490,7 @@
     "stashName": "F Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -734,
       "centerY": -180
@@ -4498,7 +4498,7 @@
     "stashName": "B Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -739,
       "centerY": -129
@@ -4506,7 +4506,7 @@
     "stashName": "LF Movement"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -762,
       "centerY": -75
@@ -5736,7 +5736,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.AddPose",
+    "__type__": "cc.animation.PoseNodeAddPose",
     "__editorExtras__": {
       "centerX": -280,
       "centerY": -84
@@ -5745,7 +5745,7 @@
     "addition": null
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -582,
       "centerY": -66
@@ -5753,7 +5753,7 @@
     "stashName": "CycleBlending"
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -612,
       "centerY": 103
@@ -5945,7 +5945,7 @@
     "group": ""
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -542,
       "centerY": -196
@@ -6080,7 +6080,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -331,
       "centerY": -29
@@ -6156,7 +6156,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.StateMachineNode",
+    "__type__": "cc.animation.PoseNodeStateMachine",
     "__editorExtras__": {
       "centerX": -223,
       "centerY": -12
@@ -6339,7 +6339,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -184,
       "centerY": -22
@@ -6474,7 +6474,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -369,
       "centerY": -37
@@ -6499,7 +6499,7 @@
     "group": ""
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": -129,
       "centerY": -58
@@ -6510,7 +6510,7 @@
     "flag": 1
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": 82,
       "centerY": -59
@@ -6521,7 +6521,7 @@
     "flag": 1
   },
   {
-    "__type__": "cc.animation.StateMachineNode",
+    "__type__": "cc.animation.PoseNodeStateMachine",
     "__editorExtras__": {
       "centerX": 490.48936170212767,
       "centerY": 76.10638297872339
@@ -7162,7 +7162,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": 283.5532499272772,
       "centerY": -53.14894948107133
@@ -7352,7 +7352,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.StateMachineNode",
+    "__type__": "cc.animation.PoseNodeStateMachine",
     "__editorExtras__": {
       "centerX": -409,
       "centerY": 91
@@ -7538,7 +7538,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -255,
       "centerY": 0
@@ -7655,7 +7655,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -274,
       "centerY": 1
@@ -7663,7 +7663,7 @@
     "stashName": "Locomotion Detail"
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": -11,
       "centerY": -29
@@ -7898,7 +7898,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -668,
       "centerY": -67
@@ -7906,7 +7906,7 @@
     "stashName": "Locomotion Detail"
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": -89.35135135135135,
       "centerY": -42.70270270270271
@@ -7917,7 +7917,7 @@
     "flag": 1
   },
   {
-    "__type__": "cc.animation.BlendWithTransformFilter",
+    "__type__": "cc.animation.PoseNodeFilteringBlend",
     "__editorExtras__": {
       "centerX": -388,
       "centerY": 32
@@ -7931,7 +7931,7 @@
     }
   },
   {
-    "__type__": "cc.animation.BlendInProportion",
+    "__type__": "cc.animation.PoseNodeBlendInProportion",
     "__editorExtras__": {
       "centerX": -648.1060606060607,
       "centerY": 286.1111111111111
@@ -7950,7 +7950,7 @@
     ]
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -1148.3306836248018,
       "centerY": 137.56624271330156
@@ -7970,7 +7970,7 @@
     }
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -1150.414482231255,
       "centerY": 265.16366027282174
@@ -7990,7 +7990,7 @@
     }
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -1718.7731612492219,
       "centerY": 476.12072242715215
@@ -8010,7 +8010,7 @@
     }
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -1738.6118316458878,
       "centerY": 793.2495188687142
@@ -8062,7 +8062,7 @@
     "variableName": "VelocityBlendR"
   },
   {
-    "__type__": "cc.animation.ChoosePoseByBoolean",
+    "__type__": "cc.animation.PoseNodeChoosePoseByBoolean",
     "__editorExtras__": {
       "centerX": -1391.4594264674836,
       "centerY": 451.4864716400972
@@ -8078,7 +8078,7 @@
     "chosen": true
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -1707.8022120276164,
       "centerY": 338.7093009061591
@@ -8106,7 +8106,7 @@
     "variableName": "TrackedHipsDirection_LB"
   },
   {
-    "__type__": "cc.animation.ChoosePoseByBoolean",
+    "__type__": "cc.animation.PoseNodeChoosePoseByBoolean",
     "__editorExtras__": {
       "centerX": -1419.5526637027142,
       "centerY": 729.1315934030636
@@ -8122,7 +8122,7 @@
     "chosen": true
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -1739.2895058079778,
       "centerY": 673.8684355083266
@@ -8578,7 +8578,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -391,
       "centerY": -8
@@ -8586,7 +8586,7 @@
     "stashName": "Locomotion Detail"
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": -137,
       "centerY": -10
@@ -8821,7 +8821,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -587,
       "centerY": -94
@@ -8829,7 +8829,7 @@
     "stashName": "Locomotion Detail"
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": -63,
       "centerY": -81
@@ -8840,7 +8840,7 @@
     "flag": 1
   },
   {
-    "__type__": "cc.animation.BlendWithTransformFilter",
+    "__type__": "cc.animation.PoseNodeFilteringBlend",
     "__editorExtras__": {
       "centerX": -358.5,
       "centerY": -49.5
@@ -8854,7 +8854,7 @@
     }
   },
   {
-    "__type__": "cc.animation.BlendInProportion",
+    "__type__": "cc.animation.PoseNodeBlendInProportion",
     "__editorExtras__": {
       "centerX": -610.2203647416413,
       "centerY": 187.196048632219
@@ -8873,7 +8873,7 @@
     ]
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -1088.2003955174691,
       "centerY": -152.83454185893217
@@ -8893,7 +8893,7 @@
     }
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -1100.4659832246045,
       "centerY": -20.456663560111792
@@ -8913,7 +8913,7 @@
     }
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -1679.6183546183556,
       "centerY": 69.55895455895467
@@ -8933,7 +8933,7 @@
     }
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -1703.87436887437,
       "centerY": 361.8874368874374
@@ -8985,7 +8985,7 @@
     "variableName": "VelocityBlendR"
   },
   {
-    "__type__": "cc.animation.ChoosePoseByBoolean",
+    "__type__": "cc.animation.PoseNodeChoosePoseByBoolean",
     "__editorExtras__": {
       "centerX": -1332.9682539682547,
       "centerY": 67.19049308413543
@@ -9001,7 +9001,7 @@
     "chosen": true
   },
   {
-    "__type__": "cc.animation.ChoosePoseByBoolean",
+    "__type__": "cc.animation.PoseNodeChoosePoseByBoolean",
     "__editorExtras__": {
       "centerX": -1317.5714285714291,
       "centerY": 338.8571597508021
@@ -9017,7 +9017,7 @@
     "chosen": true
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -1652.785714285715,
       "centerY": -64.21426609584276
@@ -9037,7 +9037,7 @@
     }
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -1672.7857142857151,
       "centerY": 238.64287676130016
@@ -9963,7 +9963,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.StateMachineNode",
+    "__type__": "cc.animation.PoseNodeStateMachine",
     "__editorExtras__": {
       "centerX": -352,
       "centerY": -11
@@ -10125,7 +10125,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.StateMachineNode",
+    "__type__": "cc.animation.PoseNodeStateMachine",
     "__editorExtras__": {
       "centerX": -340,
       "centerY": -32
@@ -10287,7 +10287,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -325,
       "centerY": -44
@@ -10463,7 +10463,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -230,
       "centerY": -24
@@ -10471,7 +10471,7 @@
     "stashName": "F Input"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -506,
       "centerY": 204
@@ -10479,7 +10479,7 @@
     "stashName": "Sprint Input"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -493.5,
       "centerY": 28.5
@@ -10487,7 +10487,7 @@
     "stashName": "F Input"
   },
   {
-    "__type__": "cc.animation.ChoosePoseByIndex",
+    "__type__": "cc.animation.PoseNodeChoosePoseByIndex",
     "__editorExtras__": {
       "centerX": -236,
       "centerY": 222
@@ -10513,7 +10513,7 @@
     "variableName": "Gait"
   },
   {
-    "__type__": "cc.animation.UseStashedPose",
+    "__type__": "cc.animation.PoseNodeUseStashedPose",
     "__editorExtras__": {
       "centerX": -509.5,
       "centerY": 114.5
@@ -10670,7 +10670,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -220,
       "centerY": 34
@@ -10889,7 +10889,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.StateMachineNode",
+    "__type__": "cc.animation.PoseNodeStateMachine",
     "__editorExtras__": {
       "centerX": -243,
       "centerY": -23
@@ -11137,7 +11137,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.StateMachineNode",
+    "__type__": "cc.animation.PoseNodeStateMachine",
     "__editorExtras__": {
       "centerX": -511.04878048780483,
       "centerY": -301.19512195121956
@@ -11748,7 +11748,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -770.0731707317074,
       "centerY": -105.48780487804879
@@ -11768,7 +11768,7 @@
     }
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -783.9512195121952,
       "centerY": 16.756097560975604
@@ -11788,7 +11788,7 @@
     }
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": 47.383037161319805,
       "centerY": -162.72340944980056
@@ -11799,7 +11799,7 @@
     "flag": 1
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": 279.2978658473238,
       "centerY": -166.97872859873672
@@ -11810,7 +11810,7 @@
     "flag": 1
   },
   {
-    "__type__": "cc.animation.BlendTwoPose",
+    "__type__": "cc.animation.PoseNodeBlendTwoPose",
     "__editorExtras__": {
       "centerX": -558.1759310416197,
       "centerY": -60.69746460282818
@@ -11820,7 +11820,7 @@
     "ratio": 1
   },
   {
-    "__type__": "cc.animation.BlendTwoPose",
+    "__type__": "cc.animation.PoseNodeBlendTwoPose",
     "__editorExtras__": {
       "centerX": -200.46347418064033,
       "centerY": -153.51223159417887
@@ -12145,7 +12145,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.BlendTwoPose",
+    "__type__": "cc.animation.PoseNodeBlendTwoPose",
     "__editorExtras__": {
       "centerX": -332,
       "centerY": -1
@@ -12155,7 +12155,7 @@
     "ratio": 1
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -561,
       "centerY": -12
@@ -12180,7 +12180,7 @@
     "group": ""
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -566,
       "centerY": 75
@@ -12213,7 +12213,7 @@
     "variableName": "LandHeavyLightBlend"
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": -129,
       "centerY": -89
@@ -12224,7 +12224,7 @@
     "flag": 1
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": 67,
       "centerY": -92
@@ -12235,7 +12235,7 @@
     "flag": 1
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": 248.60870892068613,
       "centerY": -102.47830963134766
@@ -12246,7 +12246,7 @@
     "flag": 1
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": 435.5652306598165,
       "centerY": -103.56526615308681
@@ -12257,7 +12257,7 @@
     "flag": 1
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": 633.3913176163385,
       "centerY": -98.13048354439118
@@ -12569,7 +12569,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.AddPose",
+    "__type__": "cc.animation.PoseNodeAddPose",
     "__editorExtras__": {
       "centerX": -390,
       "centerY": 7
@@ -12578,14 +12578,14 @@
     "addition": null
   },
   {
-    "__type__": "cc.animation.GetAllPreviousLayersResult",
+    "__type__": "cc.animation.PoseNodeGetAllPreviousLayersResult",
     "__editorExtras__": {
       "centerX": -674,
       "centerY": -20
     }
   },
   {
-    "__type__": "cc.animation.BlendTwoPose",
+    "__type__": "cc.animation.PoseNodeBlendTwoPose",
     "__editorExtras__": {
       "centerX": -682.9130116338315,
       "centerY": 112.76086691151494
@@ -12595,7 +12595,7 @@
     "ratio": 1
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -949.6750253638089,
       "centerY": 39.248281099157964
@@ -12620,7 +12620,7 @@
     "group": ""
   },
   {
-    "__type__": "cc.animation.MotionNode",
+    "__type__": "cc.animation.PoseNodePlayMotion",
     "__editorExtras__": {
       "centerX": -955.6818903523672,
       "centerY": 121.57093556140052
@@ -12645,7 +12645,7 @@
     "group": ""
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": -188.54554332386374,
       "centerY": -7.829584295099465
@@ -12656,7 +12656,7 @@
     "flag": 1
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": 8.857139950706767,
       "centerY": -22.047624860491112
@@ -12667,7 +12667,7 @@
     "flag": 1
   },
   {
-    "__type__": "cc.animation.SetAuxiliaryCurve",
+    "__type__": "cc.animation.PoseNodeSetAuxiliaryCurve",
     "__editorExtras__": {
       "centerX": 206.47618756975442,
       "centerY": -25.619053431919696
@@ -13174,7 +13174,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.GetAllPreviousLayersResult",
+    "__type__": "cc.animation.PoseNodeGetAllPreviousLayersResult",
     "__editorExtras__": {
       "centerX": -566,
       "centerY": 7
@@ -14082,7 +14082,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -244,
       "centerY": -41
@@ -14301,7 +14301,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -222,
       "centerY": -64
@@ -14538,7 +14538,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": 36,
       "centerY": -81
@@ -14770,7 +14770,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -61,
       "centerY": -108
@@ -14996,7 +14996,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.SampleMotionNode",
+    "__type__": "cc.animation.PoseNodeSampleMotion",
     "__editorExtras__": {
       "centerX": -184,
       "centerY": -4
@@ -16233,14 +16233,14 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.GetAllPreviousLayersResult",
+    "__type__": "cc.animation.PoseNodeGetAllPreviousLayersResult",
     "__editorExtras__": {
       "centerX": -423.8367346938776,
       "centerY": -533.204081632653
     }
   },
   {
-    "__type__": "cc.animation.TwoBoneIKSolver",
+    "__type__": "cc.animation.PoseNodeTwoBoneIKSolver",
     "__editorExtras__": {
       "centerX": -631.7142857142858,
       "centerY": 24.163265306122412
@@ -16256,7 +16256,7 @@
     }
   },
   {
-    "__type__": "cc.animation.TwoBoneIKSolver.TargetSpecification",
+    "__type__": "cc.animation.PoseNodeTwoBoneIKSolver.TargetSpecification",
     "type": 2,
     "targetPosition": {
       "__type__": "cc.Vec3",
@@ -16268,7 +16268,7 @@
     "targetBone": "ik_foot_l"
   },
   {
-    "__type__": "cc.animation.TwoBoneIKSolver.TargetSpecification",
+    "__type__": "cc.animation.PoseNodeTwoBoneIKSolver.TargetSpecification",
     "type": 2,
     "targetPosition": {
       "__type__": "cc.Vec3",
@@ -16280,7 +16280,7 @@
     "targetBone": "ik_knee_target_l"
   },
   {
-    "__type__": "cc.animation.CopyTransform",
+    "__type__": "cc.animation.PoseNodeCopyTransform",
     "__editorExtras__": {
       "centerX": -552.477109762824,
       "centerY": -440.7799227799228
@@ -16291,7 +16291,7 @@
     "transformSpaceRequirement": 2
   },
   {
-    "__type__": "cc.animation.TwoBoneIKSolver",
+    "__type__": "cc.animation.PoseNodeTwoBoneIKSolver",
     "__editorExtras__": {
       "centerX": -309.6020408163265,
       "centerY": 32.82653061224488
@@ -16307,7 +16307,7 @@
     }
   },
   {
-    "__type__": "cc.animation.TwoBoneIKSolver.TargetSpecification",
+    "__type__": "cc.animation.PoseNodeTwoBoneIKSolver.TargetSpecification",
     "type": 2,
     "targetPosition": {
       "__type__": "cc.Vec3",
@@ -16319,7 +16319,7 @@
     "targetBone": "ik_foot_r"
   },
   {
-    "__type__": "cc.animation.TwoBoneIKSolver.TargetSpecification",
+    "__type__": "cc.animation.PoseNodeTwoBoneIKSolver.TargetSpecification",
     "type": 2,
     "targetPosition": {
       "__type__": "cc.Vec3",
@@ -16331,7 +16331,7 @@
     "targetBone": "ik_knee_target_r"
   },
   {
-    "__type__": "cc.animation.CopyTransform",
+    "__type__": "cc.animation.PoseNodeCopyTransform",
     "__editorExtras__": {
       "centerX": -760.1464423607281,
       "centerY": -439.44043022614454
@@ -16342,7 +16342,7 @@
     "transformSpaceRequirement": 2
   },
   {
-    "__type__": "cc.animation.ApplyTransform",
+    "__type__": "cc.animation.PoseNodeApplyTransform",
     "__editorExtras__": {
       "centerX": -897.9619415333702,
       "centerY": -269.50523993381137
@@ -16376,7 +16376,7 @@
     "auxiliaryCurveName": ""
   },
   {
-    "__type__": "cc.animation.ApplyTransform",
+    "__type__": "cc.animation.PoseNodeApplyTransform",
     "__editorExtras__": {
       "centerX": -443.79619415333707,
       "centerY": -276.50220628792056
@@ -16442,7 +16442,7 @@
     "variableName": "FootLock_R_Alpha"
   },
   {
-    "__type__": "cc.animation.CopyTransform",
+    "__type__": "cc.animation.PoseNodeCopyTransform",
     "__editorExtras__": {
       "centerX": -364.71614198426965,
       "centerY": -445.79727090371637
@@ -16453,7 +16453,7 @@
     "transformSpaceRequirement": 2
   },
   {
-    "__type__": "cc.animation.CopyTransform",
+    "__type__": "cc.animation.PoseNodeCopyTransform",
     "__editorExtras__": {
       "centerX": -172.82425009237772,
       "centerY": -443.0945682010138
@@ -16464,7 +16464,7 @@
     "transformSpaceRequirement": 2
   },
   {
-    "__type__": "cc.animation.ApplyTransform",
+    "__type__": "cc.animation.PoseNodeApplyTransform",
     "__editorExtras__": {
       "centerX": -139.18918918918922,
       "centerY": -245.94594594594602
@@ -16498,7 +16498,7 @@
     "auxiliaryCurveName": ""
   },
   {
-    "__type__": "cc.animation.ApplyTransform",
+    "__type__": "cc.animation.PoseNodeApplyTransform",
     "__editorExtras__": {
       "centerX": 77.25868725868736,
       "centerY": -249.26640926640937

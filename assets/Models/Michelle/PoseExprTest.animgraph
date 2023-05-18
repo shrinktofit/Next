@@ -179,7 +179,7 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.BlendInProportion",
+    "__type__": "cc.animation.PoseNodeBlendInProportion",
     "__editorExtras__": {
       "centerX": -536,
       "centerY": -75
