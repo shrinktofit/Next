@@ -51,8 +51,14 @@ export function renameTypeName(root, typeRenameMap) {
 
     for (const obj of visitObj(root, root, new Set())) {
         if (typeRenameMap.has(obj.__type__)) {
-            obj.__type__ = typeRenameMap.get(obj.__type__);
             renamedType.add(obj.__type__);
+            obj.__type__ = typeRenameMap.get(obj.__type__);
+        }
+    }
+
+    for (let type of typeRenameMap.keys()) {
+        if (!renamedType.has(type)) {
+            console.error(`${type} is not renamed`);
         }
     }
 }
