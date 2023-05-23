@@ -667,19 +667,19 @@
     "featureLean": {
       "__id__": 28
     },
-    "featureLeanEnabled": false,
+    "featureLeanEnabled": true,
     "featureTurnInPlace": {
       "__id__": 29
     },
-    "featureTurnInPlaceEnabled": false,
+    "featureTurnInPlaceEnabled": true,
     "featureAiming": {
       "__id__": 30
     },
-    "featureAimingEnabled": false,
+    "featureAimingEnabled": true,
     "featureJumpAndFall": {
       "__id__": 31
     },
-    "featureJumpAndFallEnabled": false,
+    "featureJumpAndFallEnabled": true,
     "featureFootLock": {
       "__id__": 33
     },
@@ -700,14 +700,14 @@
   },
   {
     "__type__": "ALSAnimFeatureLean",
-    "enabled": false,
+    "enabled": true,
     "debug": true,
     "groundedLeanInteropSpeed": 4,
     "resetLeanAmountOnceShouldNotMove": false
   },
   {
     "__type__": "ALSAnimFeatureTurnInPlace",
-    "enabled": false,
+    "enabled": true,
     "debug": true,
     "minTurnAngle": 10,
     "minTurnAngleDelay": 0.75,
@@ -716,12 +716,12 @@
   },
   {
     "__type__": "ALSAnimFeatureAiming",
-    "enabled": false,
+    "enabled": true,
     "debug": false
   },
   {
     "__type__": "ALSAnimFeatureJumpAndFall",
-    "enabled": false,
+    "enabled": true,
     "debug": true,
     "landPredictionBlendCurve": {
       "__id__": 32
