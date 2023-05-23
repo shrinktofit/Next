@@ -349,13 +349,13 @@
       "centerY": -110.32145348373723
     },
     "name": "TurnIP_L90",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 16
     },
     "enteredEvent": {
       "__id__": 17
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 18
     },
     "exitedEvent": {
@@ -407,13 +407,13 @@
       "centerY": -0.11737185108418657
     },
     "name": "TurnIP_R90",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 22
     },
     "enteredEvent": {
       "__id__": 23
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 24
     },
     "exitedEvent": {
@@ -465,13 +465,13 @@
       "centerY": 66.20403585628583
     },
     "name": "ALS_N_TurnIP_L180",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 28
     },
     "enteredEvent": {
       "__id__": 29
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 30
     },
     "exitedEvent": {
@@ -523,13 +523,13 @@
       "centerY": 161.10199503995932
     },
     "name": "ALS_N_TurnIP_R180",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 34
     },
     "enteredEvent": {
       "__id__": 35
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 36
     },
     "exitedEvent": {
@@ -685,10 +685,10 @@
         "__id__": 50
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 52
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 53
     },
     "destinationStart": 0,
@@ -825,13 +825,13 @@
       "centerY": -93
     },
     "name": "Moving",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 65
     },
     "enteredEvent": {
       "__id__": 66
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 67
     },
     "exitedEvent": {
@@ -936,13 +936,13 @@
       "centerY": -238
     },
     "name": "Not Moving",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 76
     },
     "enteredEvent": {
       "__id__": 77
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 78
     },
     "exitedEvent": {
@@ -1008,7 +1008,7 @@
     "motion": {
       "__id__": 83
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 84
     }
   },
@@ -1021,7 +1021,7 @@
     }
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": ""
   },
   {
@@ -1062,10 +1062,10 @@
         "__id__": 89
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 91
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 92
     },
     "destinationStart": 0,
@@ -1110,10 +1110,10 @@
         "__id__": 96
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 98
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 99
     },
     "destinationStart": 0,
@@ -1178,10 +1178,10 @@
         "__id__": 102
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 104
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 105
     },
     "destinationStart": 0,
@@ -1295,7 +1295,7 @@
     "motion": {
       "__id__": 113
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 114
     }
   },
@@ -1308,7 +1308,7 @@
     }
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": "Locomotion"
   },
   {
@@ -1320,7 +1320,7 @@
     "motion": {
       "__id__": 116
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 132
     }
   },
@@ -1511,7 +1511,7 @@
     "value": 0
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": "Locomotion"
   },
   {
@@ -1602,7 +1602,7 @@
     "motion": {
       "__id__": 141
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 142
     }
   },
@@ -1615,7 +1615,7 @@
     }
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": "Locomotion"
   },
   {
@@ -1627,7 +1627,7 @@
     "motion": {
       "__id__": 144
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 160
     }
   },
@@ -1818,7 +1818,7 @@
     "value": 0
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": "Locomotion"
   },
   {
@@ -1909,7 +1909,7 @@
     "motion": {
       "__id__": 169
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 170
     }
   },
@@ -1922,7 +1922,7 @@
     }
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": "Locomotion"
   },
   {
@@ -1934,7 +1934,7 @@
     "motion": {
       "__id__": 172
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 188
     }
   },
@@ -2126,7 +2126,7 @@
     "value": 0
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": "Locomotion"
   },
   {
@@ -2217,7 +2217,7 @@
     "motion": {
       "__id__": 197
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 198
     }
   },
@@ -2230,7 +2230,7 @@
     }
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": "Locomotion"
   },
   {
@@ -2242,7 +2242,7 @@
     "motion": {
       "__id__": 200
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 216
     }
   },
@@ -2433,7 +2433,7 @@
     "value": 0
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": "Locomotion"
   },
   {
@@ -2524,7 +2524,7 @@
     "motion": {
       "__id__": 225
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 226
     }
   },
@@ -2537,7 +2537,7 @@
     }
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": "Locomotion"
   },
   {
@@ -2549,7 +2549,7 @@
     "motion": {
       "__id__": 228
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 244
     }
   },
@@ -2740,7 +2740,7 @@
     "value": 0
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": "Locomotion"
   },
   {
@@ -2831,7 +2831,7 @@
     "motion": {
       "__id__": 253
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 254
     }
   },
@@ -2844,7 +2844,7 @@
     }
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": "Locomotion"
   },
   {
@@ -2856,7 +2856,7 @@
     "motion": {
       "__id__": 256
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 272
     }
   },
@@ -3047,7 +3047,7 @@
     "value": 0
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": "Locomotion"
   },
   {
@@ -3291,13 +3291,13 @@
       "centerY": -177
     },
     "name": "Move F",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 286
     },
     "enteredEvent": {
       "__id__": 287
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 288
     },
     "exitedEvent": {
@@ -3672,13 +3672,13 @@
       "centerY": -77
     },
     "name": "Move LF",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 321
     },
     "enteredEvent": {
       "__id__": 322
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 323
     },
     "exitedEvent": {
@@ -4053,13 +4053,13 @@
       "centerY": -77
     },
     "name": "Move RF",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 356
     },
     "enteredEvent": {
       "__id__": 357
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 358
     },
     "exitedEvent": {
@@ -4434,13 +4434,13 @@
       "centerY": 61
     },
     "name": "Move LB",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 391
     },
     "enteredEvent": {
       "__id__": 392
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 393
     },
     "exitedEvent": {
@@ -4815,13 +4815,13 @@
       "centerY": 155
     },
     "name": "Move B",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 426
     },
     "enteredEvent": {
       "__id__": 427
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 428
     },
     "exitedEvent": {
@@ -5196,13 +5196,13 @@
       "centerY": 62
     },
     "name": "Move RB",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 461
     },
     "enteredEvent": {
       "__id__": 462
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 463
     },
     "exitedEvent": {
@@ -5581,10 +5581,10 @@
         "__id__": 496
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 498
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 499
     },
     "destinationStart": 0,
@@ -5628,10 +5628,10 @@
         "__id__": 501
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 503
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 504
     },
     "destinationStart": 0,
@@ -5675,10 +5675,10 @@
         "__id__": 506
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 508
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 509
     },
     "destinationStart": 0,
@@ -5722,10 +5722,10 @@
         "__id__": 511
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 513
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 514
     },
     "destinationStart": 0,
@@ -5769,10 +5769,10 @@
         "__id__": 516
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 518
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 519
     },
     "destinationStart": 0,
@@ -5816,10 +5816,10 @@
         "__id__": 521
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 523
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 524
     },
     "destinationStart": 0,
@@ -5863,10 +5863,10 @@
         "__id__": 526
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 528
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 529
     },
     "destinationStart": 0,
@@ -5910,10 +5910,10 @@
         "__id__": 531
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 533
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 534
     },
     "destinationStart": 0,
@@ -5957,10 +5957,10 @@
         "__id__": 536
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 538
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 539
     },
     "destinationStart": 0,
@@ -6004,10 +6004,10 @@
         "__id__": 541
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 543
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 544
     },
     "destinationStart": 0,
@@ -6051,10 +6051,10 @@
         "__id__": 546
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 548
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 549
     },
     "destinationStart": 0,
@@ -6098,10 +6098,10 @@
         "__id__": 551
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 553
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 554
     },
     "destinationStart": 0,
@@ -6145,10 +6145,10 @@
         "__id__": 556
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 558
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 559
     },
     "destinationStart": 0,
@@ -6192,10 +6192,10 @@
         "__id__": 561
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 563
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 564
     },
     "destinationStart": 0,
@@ -6239,10 +6239,10 @@
         "__id__": 566
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 568
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 569
     },
     "destinationStart": 0,
@@ -6286,10 +6286,10 @@
         "__id__": 571
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 573
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 574
     },
     "destinationStart": 0,
@@ -6333,10 +6333,10 @@
         "__id__": 576
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 578
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 579
     },
     "destinationStart": 0,
@@ -6391,10 +6391,10 @@
         "__id__": 582
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 584
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 585
     },
     "destinationStart": 0,
@@ -6438,10 +6438,10 @@
         "__id__": 587
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 589
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 590
     },
     "destinationStart": 0,
@@ -6483,10 +6483,10 @@
         "__id__": 592
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 594
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 595
     },
     "destinationStart": 0,
@@ -6601,13 +6601,13 @@
     "pose": null
   },
   {
-    "__type__": "cc.animation.PoseNodeAddPose",
+    "__type__": "cc.animation.PoseNodeAdditivelyBlend",
     "__editorExtras__": {
       "centerX": -280,
       "centerY": -84
     },
-    "base": null,
-    "addition": null
+    "basePose": null,
+    "additivePose": null
   },
   {
     "__type__": "cc.animation.PoseNodeUseStashedPose",
@@ -6626,7 +6626,7 @@
     "motion": {
       "__id__": 605
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 618
     }
   },
@@ -6806,7 +6806,7 @@
     "value": 0
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": ""
   },
   {
@@ -6818,7 +6818,7 @@
     "motion": {
       "__id__": 620
     },
-    "coordination": {
+    "syncInfo": {
       "__id__": 621
     }
   },
@@ -6831,7 +6831,7 @@
     }
   },
   {
-    "__type__": "cc.animation.MotionCoordination",
+    "__type__": "cc.animation.MotionSyncInfo",
     "group": ""
   },
   {
@@ -6868,7 +6868,7 @@
   {
     "__type__": "cc.animation.PoseGraphNodeInputBinding",
     "_inputPath": [
-      "base"
+      "basePose"
     ],
     "_producer": {
       "__id__": 603
@@ -6878,7 +6878,7 @@
   {
     "__type__": "cc.animation.PoseGraphNodeInputBinding",
     "_inputPath": [
-      "addition"
+      "additivePose"
     ],
     "_producer": {
       "__id__": 604
@@ -7031,13 +7031,13 @@
       "centerY": -25.41666666666663
     },
     "name": "Zero",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 636
     },
     "enteredEvent": {
       "__id__": 637
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 638
     },
     "exitedEvent": {
@@ -7250,13 +7250,13 @@
       "centerY": -191
     },
     "name": "Forward",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 657
     },
     "enteredEvent": {
       "__id__": 658
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 659
     },
     "exitedEvent": {
@@ -7487,13 +7487,13 @@
       "centerY": 8
     },
     "name": "Left",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 679
     },
     "enteredEvent": {
       "__id__": 680
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 681
     },
     "exitedEvent": {
@@ -7719,13 +7719,13 @@
       "centerY": 2
     },
     "name": "Right",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 701
     },
     "enteredEvent": {
       "__id__": 702
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 703
     },
     "exitedEvent": {
@@ -7951,13 +7951,13 @@
       "centerY": 176
     },
     "name": "Pose",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 723
     },
     "enteredEvent": {
       "__id__": 724
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 725
     },
     "exitedEvent": {
@@ -8176,10 +8176,10 @@
         "__id__": 745
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 747
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 748
     },
     "destinationStart": 0,
@@ -8244,10 +8244,10 @@
         "__id__": 752
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 754
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 755
     },
     "destinationStart": 0,
@@ -8312,10 +8312,10 @@
         "__id__": 759
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 761
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 762
     },
     "destinationStart": 0,
@@ -8380,10 +8380,10 @@
         "__id__": 766
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 768
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 769
     },
     "destinationStart": 0,
@@ -8448,10 +8448,10 @@
         "__id__": 773
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 775
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 776
     },
     "destinationStart": 0,
@@ -8516,10 +8516,10 @@
         "__id__": 780
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 782
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 783
     },
     "destinationStart": 0,
@@ -8584,10 +8584,10 @@
         "__id__": 787
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 789
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 790
     },
     "destinationStart": 0,
@@ -8652,10 +8652,10 @@
         "__id__": 794
       }
     ],
-    "startEvent": {
+    "startEventBinding": {
       "__id__": 796
     },
-    "endEvent": {
+    "endEventBinding": {
       "__id__": 797
     },
     "destinationStart": 0,

@@ -113,13 +113,13 @@
       "centerY": -146
     },
     "name": "Pose",
-    "transitionInEvent": {
+    "transitionInEventBinding": {
       "__id__": 7
     },
     "enteredEvent": {
       "__id__": 8
     },
-    "transitionOutEvent": {
+    "transitionOutEventBinding": {
       "__id__": 9
     },
     "exitedEvent": {
