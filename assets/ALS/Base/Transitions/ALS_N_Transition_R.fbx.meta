@@ -22,28 +22,58 @@
           "to": 2.3333332538604736
         },
         "events": [],
-        "auxiliaryCurves_2": [
-          {
-            "name": "Foot Lock R",
-            "curve": [
-              {
-                "interop": "linear",
-                "time": 25,
-                "value": 0
-              },
-              {
-                "interop": "constant",
-                "time": 38,
-                "value": -1
-              },
-              {
-                "interop": "constant",
-                "time": 40,
-                "value": 0
-              }
-            ]
+        "auxiliaryCurves": {
+          "Foot Lock R": {
+            "curve": {
+              "__type__": "cc.RealCurve",
+              "_times": [
+                0.8333333333333334,
+                1.2666666666666666,
+                1.3333333333333333
+              ],
+              "_values": [
+                {
+                  "__type__": "cc.RealKeyframeValue",
+                  "interpolationMode": 0,
+                  "tangentWeightMode": 0,
+                  "value": 0,
+                  "rightTangent": 0,
+                  "rightTangentWeight": 0,
+                  "leftTangent": 0,
+                  "leftTangentWeight": 0,
+                  "easingMethod": 0,
+                  "__editorExtras__": null
+                },
+                {
+                  "__type__": "cc.RealKeyframeValue",
+                  "interpolationMode": 1,
+                  "tangentWeightMode": 0,
+                  "value": -1,
+                  "rightTangent": 0,
+                  "rightTangentWeight": 0,
+                  "leftTangent": 0,
+                  "leftTangentWeight": 0,
+                  "easingMethod": 0,
+                  "__editorExtras__": null
+                },
+                {
+                  "__type__": "cc.RealKeyframeValue",
+                  "interpolationMode": 1,
+                  "tangentWeightMode": 0,
+                  "value": 0,
+                  "rightTangent": 0,
+                  "rightTangentWeight": 0,
+                  "leftTangent": 0,
+                  "leftTangentWeight": 0,
+                  "easingMethod": 0,
+                  "__editorExtras__": null
+                }
+              ],
+              "preExtrapolation": 1,
+              "postExtrapolation": 1
+            }
           }
-        ]
+        }
       },
       "ver": "1.0.16",
       "imported": true,
