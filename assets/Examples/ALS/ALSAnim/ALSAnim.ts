@@ -9,6 +9,7 @@ import { ALSAnimFeatureStop } from './ALSAnimFeatureStop';
 import { ALSAnimFeatureTurnInPlace } from './ALSAnimFeatureTurnInPlace';
 import { ALSAnimFeatureJumpAndFall } from './ALSAnimFeatureJumpAndFall';
 import { VarName } from './VarName';
+import { ALSAnimFeatureMantle } from './ALSAnimFeatureMantle';
 const { ccclass, property, executionOrder } = _decorator;
 
 const FEATURE_NAME_MOVEMENT = '移动';
@@ -24,6 +25,8 @@ const FEATURE_NAME_STOP = '停止';
 const FEATURE_NAME_FOOT_LOCK = '脚步锁定';
 
 const FEATURE_NAME_JUMP_AND_FALL = '跳和下落';
+
+const FEATURE_NAME_MANTLE = '攀越';
 
 const GROUP_ENABLING = '启用';
 
@@ -128,6 +131,18 @@ export class ALSAnim extends Component {
     public featureFootLockEnabled = true;
 
     @property({
+        group: FEATURE_NAME_MANTLE,
+    })
+    public featureMantle = new ALSAnimFeatureMantle();
+
+    @featureEnabling(function(this: ALSAnim) { return this.featureMantle; })
+    @property({
+        group: GROUP_ENABLING,
+        displayName: FEATURE_NAME_MANTLE,
+    })
+    public featureMantleEnabled = true;
+
+    @property({
         group: GROUP_ENABLING,
         displayName: '调试',
     })
@@ -162,6 +177,7 @@ export class ALSAnim extends Component {
             this.featureStop,
             this.featureLean,
             this.featureTurnInPlace,
+            this.featureMantle, // Make sure mantle is prior than jump
             this.featureJumpAndFall,
             this.featureAiming,
             this.featureFootLock,

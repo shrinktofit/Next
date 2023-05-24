@@ -1,0 +1,99 @@
+{
+  "ver": "2.3.6",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "96fd935f-755e-4bd6-add7-0f765a036f6a",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "4f4a2": {
+      "importer": "gltf-animation",
+      "uuid": "96fd935f-755e-4bd6-add7-0f765a036f6a@4f4a2",
+      "displayName": "",
+      "id": "4f4a2",
+      "name": "ALS_N_Mantle_1m_LH.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.5
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "b5cd6": {
+      "importer": "gltf-scene",
+      "uuid": "96fd935f-755e-4bd6-add7-0f765a036f6a@b5cd6",
+      "displayName": "",
+      "id": "b5cd6",
+      "name": "ALS_N_Mantle_1m_LH.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.13",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 1.5,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_Mantle_1m_LH",
+            "from": 0,
+            "to": 1.5,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "96fd935f-755e-4bd6-add7-0f765a036f6a@b5cd6",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "96fd935f-755e-4bd6-add7-0f765a036f6a@b5cd6"
+      ]
+    }
+  }
+}

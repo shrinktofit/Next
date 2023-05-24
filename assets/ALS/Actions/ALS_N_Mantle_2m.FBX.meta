@@ -1,0 +1,99 @@
+{
+  "ver": "2.3.6",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "c77d4bcf-a6f2-4d88-82f2-479fc8924777",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "71aef": {
+      "importer": "gltf-animation",
+      "uuid": "c77d4bcf-a6f2-4d88-82f2-479fc8924777@71aef",
+      "displayName": "",
+      "id": "71aef",
+      "name": "ALS_N_Mantle_2m.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2.700000047683716
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "78e71": {
+      "importer": "gltf-scene",
+      "uuid": "c77d4bcf-a6f2-4d88-82f2-479fc8924777@78e71",
+      "displayName": "",
+      "id": "78e71",
+      "name": "ALS_N_Mantle_2m.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.13",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Unreal Take",
+        "duration": 2.700000047683716,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "ALS_N_Mantle_2m",
+            "from": 0,
+            "to": 2.700000047683716,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "c77d4bcf-a6f2-4d88-82f2-479fc8924777@78e71",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "c77d4bcf-a6f2-4d88-82f2-479fc8924777@78e71"
+      ]
+    }
+  }
+}

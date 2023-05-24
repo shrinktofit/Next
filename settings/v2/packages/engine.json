@@ -37,7 +37,7 @@
       },
       "physics": {
         "_value": true,
-        "_option": "physics-builtin"
+        "_option": "physics-physx"
       },
       "physics-ammo": {
         "_value": false
@@ -74,7 +74,7 @@
         "_value": false
       },
       "geometry-renderer": {
-        "_value": false
+        "_value": true
       },
       "debug-renderer": {
         "_value": false
@@ -118,6 +118,9 @@
       "marionette": {
         "_value": true
       },
+      "procedural-animation": {
+        "_value": true
+      },
       "custom-pipeline": {
         "_value": false
       }
@@ -130,6 +133,7 @@
       "audio",
       "base",
       "dragon-bones",
+      "geometry-renderer",
       "gfx-webgl",
       "gfx-webgl2",
       "intersection-2d",
@@ -138,8 +142,9 @@
       "particle",
       "particle-2d",
       "physics-2d-box2d",
-      "physics-builtin",
+      "physics-physx",
       "primitive",
+      "procedural-animation",
       "profiler",
       "skeletal-animation",
       "spine",

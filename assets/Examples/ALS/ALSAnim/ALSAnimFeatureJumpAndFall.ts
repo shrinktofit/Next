@@ -6,7 +6,7 @@ import { UNIT_SCALE_ALS_TO_CC } from '../Utility/UnitConversion';
 import { DEBUG } from 'cc/env';
 import { VarName } from './VarName';
 import { assertIsTrue } from '../Utility/Asserts';
-import { ALSCharacterEventType } from '../ALSCharacterInfo';
+import { ALSCharacterEventType, MovementAction } from '../ALSCharacterInfo';
 import { RangedFloatRecord, getGlobalDebugInfoDisplay } from '../DebugInfoDisplay/DebugInfoDisplay';
 import { physics } from 'cc';
 import { geometry } from 'cc';
@@ -119,6 +119,10 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
     }
 
     onJumped() {
+        if (this.characterInfo.movementAction !== MovementAction.None) {
+            return;
+        }
+
         assertIsTrue(this.characterInfo.movementState === ALSMovementState.InAir);
 
         this._jumped = true;

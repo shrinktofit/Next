@@ -5,6 +5,7 @@ import { UNIT_SCALE_ALS_TO_CC } from './Utility/UnitConversion';
 import { ALSMovementState } from './ALSAnim/ALSMovementState';
 import { EventTarget } from 'cc';
 import { MovementMode } from './ALSAnim/MovementMode';
+import { CharacterController } from 'cc';
 const { ccclass, property } = _decorator;
 
 export enum ALSCharacterEventType {
@@ -13,6 +14,14 @@ export enum ALSCharacterEventType {
 
 interface EventMap {
     [ALSCharacterEventType.Jump](): void;
+}
+
+export enum MovementAction {
+    None,
+    LowMantle,
+	HighMantle,
+	Rolling,
+	GettingUp,
 }
 
 @ccclass('ALSCharacterInfo')
@@ -81,6 +90,8 @@ export class ALSCharacterInfo extends Component {
         return this._movementState;
     }
 
+    public movementAction = MovementAction.None;
+
     public isMovingOnGround() {
         return true;
     }
@@ -114,6 +125,14 @@ export class ALSCharacterInfo extends Component {
         this._setLastUpdateTransform();
     }
 
+    public setMovementState(newState: ALSMovementState, force = false) {
+        if (force || newState !== this._movementState) {
+            this._preMovementState = this._movementState;
+            this._movementState = newState;
+            this._onMovementStateChanged();
+        }
+    }
+
     public on<TEventType extends ALSCharacterEventType, TThis>(
         eventType: ALSCharacterEventType,
         callback: (this: TThis, ...args: Parameters<EventMap[TEventType]>) => void,
@@ -142,17 +161,9 @@ export class ALSCharacterInfo extends Component {
 
     private _onMovementModeChanged(mode: MovementMode) {
         if (mode === MovementMode.Walking) {
-            this._setMovementState(ALSMovementState.Grounded);
+            this.setMovementState(ALSMovementState.Grounded);
         } else {
-            this._setMovementState(ALSMovementState.InAir);
-        }
-    }
-
-    private _setMovementState(value: ALSMovementState, force = false) {
-        if (force || value !== this._movementState) {
-            this._preMovementState = this._movementState;
-            this._movementState = value;
-            this._onMovementStateChanged();
+            this.setMovementState(ALSMovementState.InAir);
         }
     }
 
