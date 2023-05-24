@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.5",
+  "ver": "2.3.6",
   "importer": "fbx",
   "imported": true,
   "uuid": "a9d9cb00-4adb-4063-a481-64728af00f09",
@@ -94,6 +94,7 @@
           "faceCount": 0.1
         }
       ]
-    }
+    },
+    "mountAllAnimationsOnPrefab": true
   }
 }

@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.5",
+  "ver": "2.3.6",
   "importer": "gltf",
   "imported": true,
   "uuid": "027bfb69-b272-4d3c-941a-517d420bdcba",
@@ -128,6 +128,7 @@
           "faceCount": 0.1
         }
       ]
-    }
+    },
+    "mountAllAnimationsOnPrefab": true
   }
 }
