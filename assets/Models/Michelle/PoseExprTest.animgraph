@@ -104,7 +104,7 @@
     "name": "Any"
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "",
       "id": "16757440114000.5466667841705535",

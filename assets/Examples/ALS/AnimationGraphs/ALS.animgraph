@@ -264,13 +264,13 @@
       "name": "",
       "id": "16782466580460.9463067763448889",
       "clone": null,
-      "centerX": 391.8723404255319,
-      "centerY": 12.127659574468112
+      "centerX": 398.2553191489361,
+      "centerY": 13.191489361702168
     },
     "name": "Any"
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Pose Entry",
       "id": "16782467308880.6491535195696303",
@@ -2435,7 +2435,7 @@
     "name": "Any"
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Move F",
       "id": "16751332676520.12270353781612275",
@@ -2802,7 +2802,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Move LF",
       "id": "16751332753080.9992352077793576",
@@ -3169,7 +3169,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Move RF",
       "id": "16751332785720.42907339960798896",
@@ -3536,7 +3536,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Move LB",
       "id": "16751332807720.5331162337100097",
@@ -3903,7 +3903,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Move B",
       "id": "16751332834840.960182793619367",
@@ -4270,7 +4270,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Move RB",
       "id": "16751332861560.3250469185927376",
@@ -4637,7 +4637,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 225
@@ -4683,7 +4683,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 192
@@ -4729,7 +4729,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 192
@@ -4775,7 +4775,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 258
@@ -4821,7 +4821,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 291
@@ -4867,7 +4867,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 225
@@ -4913,7 +4913,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 291
@@ -4959,7 +4959,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 324
@@ -5005,7 +5005,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 324
@@ -5051,7 +5051,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 357
@@ -5097,7 +5097,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 258
@@ -5143,7 +5143,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 357
@@ -5189,7 +5189,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 291
@@ -5235,7 +5235,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 258
@@ -5281,7 +5281,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 225
@@ -5327,7 +5327,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 357
@@ -5373,7 +5373,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 324
@@ -5430,7 +5430,7 @@
     "conditions": []
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 192
@@ -5476,7 +5476,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 291
@@ -5520,7 +5520,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 357
@@ -6176,7 +6176,7 @@
     "name": "Any"
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Moving",
       "id": "16758441197060.4907653651800066",
@@ -6273,7 +6273,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Not Moving",
       "id": "16768870057120.43824781768186116",
@@ -7106,7 +7106,7 @@
     "eventName": "StopTransition"
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Stop",
       "id": "16781740313070.828400934906228",
@@ -7270,7 +7270,7 @@
     "name": "Any"
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Pre-Stop",
       "id": "16783566563730.258157839839362",
@@ -7367,7 +7367,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Lock Left Foot",
       "id": "16785198300240.27182418561312627",
@@ -7500,7 +7500,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Plant Left Foot",
       "id": "16785198330600.59130407155084",
@@ -8262,7 +8262,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Lock Right Foot",
       "id": "16785198505160.061022146297075475",
@@ -8395,7 +8395,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Plant Right Foot",
       "id": "16785198817570.8999063366220454",
@@ -9168,7 +9168,7 @@
     "conditions": []
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 630
@@ -9229,7 +9229,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 630
@@ -9290,7 +9290,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 630
@@ -9335,7 +9335,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 630
@@ -9412,7 +9412,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 549
@@ -9456,7 +9456,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 540
@@ -9526,7 +9526,7 @@
     "conditions": []
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 540
@@ -9585,7 +9585,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 622
@@ -9795,7 +9795,7 @@
     "name": "Any"
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Main Grounded States",
       "id": "16781881196520.9544749566109363",
@@ -9935,7 +9935,7 @@
     "name": "Any"
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Standing",
       "id": "16781882390200.5416007300955605",
@@ -10522,7 +10522,7 @@
     "name": "Any"
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Main Movement States",
       "id": "16818928796130.32985385920518207",
@@ -10706,7 +10706,7 @@
     "name": "Grounded"
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Jump",
       "id": "16818930442520.4230984180424333",
@@ -11644,7 +11644,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Land",
       "id": "16819679125770.17517472302578585",
@@ -12056,7 +12056,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Land Movement",
       "id": "16836290302330.6867672545890766",
@@ -12518,7 +12518,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 934
@@ -12581,7 +12581,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 1014
@@ -12625,7 +12625,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 934
@@ -12686,7 +12686,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 934
@@ -12732,7 +12732,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 1051
@@ -13571,7 +13571,7 @@
     "name": "Any"
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Zero",
       "id": "16716047077710.9577133932083413",
@@ -13776,7 +13776,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Forward",
       "id": "16716047607400.7339306658580351",
@@ -13999,7 +13999,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Left",
       "id": "16716047783490.5168919371457288",
@@ -14217,7 +14217,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Right",
       "id": "16716047921870.9938819119105531",
@@ -14435,7 +14435,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "SwitchSidesBlendPose",
       "id": "16734950386970.5238001021374425",
@@ -14635,7 +14635,7 @@
     "conditions": []
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": {
       "name": "",
       "id": "16735057861490.46546529849528695",
@@ -14717,7 +14717,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": {
       "name": "",
       "id": "16735057861490.03461983320774453",
@@ -14799,7 +14799,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": {
       "name": "",
       "id": "16735057861490.057571106256820714",
@@ -14881,7 +14881,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": {
       "name": "",
       "id": "16735057861490.27188471144857274",
@@ -14948,7 +14948,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 1208
@@ -15026,7 +15026,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": {
       "name": "",
       "id": "16735106123370.6567597468382278",
@@ -15093,7 +15093,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": {
       "name": "",
       "id": "16735106123370.4534628411340522",
@@ -15160,7 +15160,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": {
       "name": "",
       "id": "16735106123370.021818023937154818",
@@ -15227,7 +15227,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": {
       "name": "",
       "id": "16735106123370.845594975384238",
@@ -15294,7 +15294,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 1248
@@ -15357,7 +15357,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 1208
@@ -15420,7 +15420,7 @@
     "eventName": ""
   },
   {
-    "__type__": "cc.animation.PoseTransition",
+    "__type__": "cc.animation.ProceduralPoseTransition",
     "__editorExtras__": null,
     "from": {
       "__id__": 1228
@@ -15568,7 +15568,7 @@
     "name": "Any"
   },
   {
-    "__type__": "cc.animation.PoseState",
+    "__type__": "cc.animation.ProceduralPoseState",
     "__editorExtras__": {
       "name": "Foot IK",
       "id": "16787902948070.952099853724832",
