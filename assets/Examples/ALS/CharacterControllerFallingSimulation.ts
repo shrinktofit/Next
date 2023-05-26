@@ -1,10 +1,6 @@
 import { Vec3 } from 'cc';
-import { _decorator, Component, Node } from 'cc';
-import { ALSCharacterEventType, ALSCharacterInfo } from './ALSCharacterInfo';
-import { MovementMode } from './ALSAnim/MovementMode';
+import { _decorator, Node } from 'cc';
 import { UNIT_SCALE_ALS_TO_CC } from './Utility/UnitConversion';
-import { globalInputManager } from './Input/Input';
-import { PredefinedActionId } from './Input/Predefined';
 const { ccclass, property } = _decorator;
 
 @ccclass('CharacterControllerFallingSimulation')
@@ -34,8 +30,6 @@ export class CharacterControllerFallingSimulation {
     }
 
     update(deltaTime: number) {
-        this._applyInput();
-
         if (this._falling) {
             this._acceleration = this.gravity;
             this._velocity += -this.gravity * deltaTime;
@@ -52,26 +46,19 @@ export class CharacterControllerFallingSimulation {
             this._velocity = 0.0;
             this._acceleration = 0.0;
 
-            const characterInfo = this.node.getComponent(ALSCharacterInfo);
-            if (characterInfo) {
-                characterInfo._emitMovementModeChanged(MovementMode.Walking);
-            }
-
             this._falling = false;
+        }
+    }
+
+    public jump() {
+        if (!this._falling) {
+            this._jump();
         }
     }
 
     private _falling = false;
     private _velocity = 0.0;
     private _acceleration = 0.0;
-
-    private _applyInput() {
-        if (globalInputManager.getAction(PredefinedActionId.Jump)) {
-            if (!this._falling) {
-                this._jump();
-            }
-        }
-    }
 
     private _jump() {
         if (this._falling) {
@@ -81,12 +68,6 @@ export class CharacterControllerFallingSimulation {
         this._falling = true;
 
         this._velocity = 600 * UNIT_SCALE_ALS_TO_CC;
-
-        const characterInfo = this.node.getComponent(ALSCharacterInfo);
-        if (characterInfo) {
-            characterInfo._emitMovementModeChanged(MovementMode.Falling);
-            characterInfo._emit(ALSCharacterEventType.Jump);
-        }
     }
 }
 

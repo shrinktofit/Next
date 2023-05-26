@@ -6,7 +6,7 @@ import { UNIT_SCALE_ALS_TO_CC } from '../Utility/UnitConversion';
 import { DEBUG } from 'cc/env';
 import { VarName } from './VarName';
 import { assertIsTrue } from '../Utility/Asserts';
-import { ALSCharacterEventType, MovementAction } from '../ALSCharacterInfo';
+import { MovementAction } from '../ALSCharacterInfo';
 import { RangedFloatRecord, getGlobalDebugInfoDisplay } from '../DebugInfoDisplay/DebugInfoDisplay';
 import { physics } from 'cc';
 import { geometry } from 'cc';
@@ -30,7 +30,7 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
     })();
 
     onStart() {
-        this.characterInfo.on(ALSCharacterEventType.Jump, this.onJumped, this);
+        this.characterInfo.onJumped.subscribe(this.onJumped, this);
 
         if (this.debug) {
             const display = getGlobalDebugInfoDisplay();

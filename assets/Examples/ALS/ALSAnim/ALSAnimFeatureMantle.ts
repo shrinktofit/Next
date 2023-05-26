@@ -7,10 +7,10 @@ import { getForward } from '../../../Scripts/Utils/NodeUtils';
 import { UNIT_SCALE_ALS_TO_CC } from '../Utility/UnitConversion';
 import { MantleDebugger } from './MantleDebugger';
 import { DEBUG } from 'cc/env';
-import { globalInputManager } from '../Input/Input';
-import { PredefinedActionId } from '../Input/Predefined';
 import { MovementAction } from '../ALSCharacterInfo';
 import { ALSMovementState } from './ALSMovementState';
+import { MovementMode } from '../Source/Logic/CharacterMovement';
+import { VarName } from './VarName';
 const { ccclass, property } = _decorator;
 
 @ccclass('ALSAnimFeatureMantle.TraceSettings')
@@ -43,20 +43,23 @@ export class ALSAnimFeatureMantle extends ALSAnimFeature {
     fallingTraceSettings = new ALSMantleTraceSettings();
 
     onStart() {
+        this.characterInfo.onJumpInput.subscribe(this._onJumpInput, this);
+
         if (this.debug) {
             this._debugger = new MantleDebugger();
         }
     }
     
     onUpdate(deltaTime: number) {
-        if (globalInputManager.getAction(PredefinedActionId.Jump)) {
-            if (this.characterInfo.movementAction === MovementAction.None) {
-                this._mantleCheck(this.groundedTraceSettings);
-            }
-        }
     }
 
     private _debugger: MantleDebugger | undefined;
+
+    private _onJumpInput() {
+        if (this.characterInfo.movementState === ALSMovementState.Grounded) {
+            this._mantleCheck(this.groundedTraceSettings);
+        }
+    }
 
     private _mantleCheck(traceSettings: ALSMantleTraceSettings) {
         const capsuleCollider = this.node.getComponent(CapsuleCollider);
@@ -99,11 +102,20 @@ export class ALSAnimFeatureMantle extends ALSAnimFeature {
         }
 
         console.warn(`Hit`);
+        this._mantleStart();
     }
 
     private _mantleStart() {
+        this.characterInfo.characterMovement.movementMode = MovementMode.None;
         this.characterInfo.setMovementState(ALSMovementState.Mantling);
-        
+        this.animationController.setValue(VarName.PlayMantle1mLH, true);
+        setTimeout(() => {
+            this._mantleEnd();
+        }, 3000);
+    }
+
+    private _mantleEnd() {
+        this.characterInfo.characterMovement.movementMode = MovementMode.Walking;
     }
 }
 

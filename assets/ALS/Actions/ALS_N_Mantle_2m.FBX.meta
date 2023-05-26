@@ -15,7 +15,7 @@
       "name": "ALS_N_Mantle_2m.animation",
       "userData": {
         "gltfIndex": 0,
-        "wrapMode": 2,
+        "wrapMode": 1,
         "sample": 30,
         "span": {
           "from": 0,
@@ -62,7 +62,7 @@
             "name": "ALS_N_Mantle_2m",
             "from": 0,
             "to": 2.700000047683716,
-            "wrapMode": 2
+            "wrapMode": 1
           }
         ]
       }

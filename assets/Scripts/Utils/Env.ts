@@ -1,4 +1,5 @@
 import { sys } from "cc";
+import { EDITOR } from "cc/env";
 
 declare global {
     namespace globalThis {
@@ -13,5 +14,5 @@ export function useMouseInput() {
 }
 
 function isTouchDevice() {
-    return sys.hasFeature(sys.Feature.INPUT_TOUCH);
+    return !EDITOR && sys.hasFeature(sys.Feature.INPUT_TOUCH);
 }

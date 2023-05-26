@@ -2,6 +2,7 @@ import { renderer } from "cc";
 import { Camera } from "cc";
 import { Vec3 } from "cc";
 import { geometry } from "cc";
+import { cclegacy } from "cc";
 import { Color } from "cc";
 import { director } from "cc";
 import { find } from "cc";
@@ -10,7 +11,7 @@ import { EDITOR } from "cc/env";
 
 function getGeometryRender (): GeometryRenderer | null | undefined {
     let camera: renderer.scene.Camera | undefined = undefined;
-    if (EDITOR) {
+    if (EDITOR && !cclegacy.GAME_VIEW) {
         camera = globalThis.cce?.Camera.camera.camera as renderer.scene.Camera;
     } else {
         camera = find('Main Camera')?.getComponent(Camera)?.camera;

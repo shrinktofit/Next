@@ -19,128 +19,134 @@
       },
       {
         "__id__": 1378
+      },
+      {
+        "__id__": 1443
       }
     ],
     "_variables": {
       "SweepUpDown": {
-        "__id__": 1443
-      },
-      "AimLeftRight": {
-        "__id__": 1444
-      },
-      "ForwardYawTime": {
-        "__id__": 1445
-      },
-      "LeftYawTime": {
-        "__id__": 1446
-      },
-      "RightYawTime": {
-        "__id__": 1447
-      },
-      "MovementDirection": {
-        "__id__": 1448
-      },
-      "VelocityBlendF": {
-        "__id__": 1449
-      },
-      "VelocityBlendL": {
-        "__id__": 1450
-      },
-      "VelocityBlendR": {
-        "__id__": 1451
-      },
-      "VelocityBlendB": {
-        "__id__": 1452
-      },
-      "ShouldMove": {
-        "__id__": 1453
-      },
-      "NEVER": {
-        "__id__": 1454
-      },
-      "LeanAmountLR": {
-        "__id__": 1455
-      },
-      "LeanAmountFB": {
-        "__id__": 1456
-      },
-      "StrideBlend": {
-        "__id__": 1457
-      },
-      "WalkRunBlend": {
-        "__id__": 1458
-      },
-      "QuickStopN": {
-        "__id__": 1459
-      },
-      "StopTransition": {
-        "__id__": 1460
-      },
-      "FootLock_L_Location": {
         "__id__": 1461
       },
-      "FootLock_L_Alpha": {
+      "AimLeftRight": {
         "__id__": 1462
       },
-      "FootLock_R_Location": {
+      "ForwardYawTime": {
         "__id__": 1463
       },
-      "FootLock_R_Alpha": {
+      "LeftYawTime": {
         "__id__": 1464
       },
-      "->N Stop L": {
+      "RightYawTime": {
         "__id__": 1465
       },
-      "->N Stop R": {
+      "MovementDirection": {
         "__id__": 1466
       },
-      "TrackedHipsDirection": {
+      "VelocityBlendF": {
         "__id__": 1467
       },
-      "TurnIPLeft90": {
+      "VelocityBlendL": {
         "__id__": 1468
       },
-      "TurnIPLeft180": {
+      "VelocityBlendR": {
         "__id__": 1469
       },
-      "TurnIPRight90": {
+      "VelocityBlendB": {
         "__id__": 1470
       },
-      "TurnIPRight180": {
+      "ShouldMove": {
         "__id__": 1471
       },
-      "TrackedHipsDirection_LB": {
+      "NEVER": {
         "__id__": 1472
       },
-      "TrackedHipsDirection_RB": {
+      "LeanAmountLR": {
         "__id__": 1473
       },
-      "JumpWalkRunBlend": {
+      "LeanAmountFB": {
         "__id__": 1474
       },
-      "LandHeavyLightBlend": {
+      "StrideBlend": {
         "__id__": 1475
       },
-      "JumpLandBlend": {
+      "WalkRunBlend": {
         "__id__": 1476
       },
-      "MovementState": {
+      "QuickStopN": {
         "__id__": 1477
       },
-      "JumpPlayRate": {
+      "StopTransition": {
         "__id__": 1478
       },
-      "Speed": {
+      "FootLock_L_Location": {
         "__id__": 1479
       },
-      "HasMovementInput": {
+      "FootLock_L_Alpha": {
         "__id__": 1480
       },
-      "LandHeavyLightBlend_Movement": {
+      "FootLock_R_Location": {
         "__id__": 1481
       },
-      "Gait": {
+      "FootLock_R_Alpha": {
         "__id__": 1482
+      },
+      "->N Stop L": {
+        "__id__": 1483
+      },
+      "->N Stop R": {
+        "__id__": 1484
+      },
+      "TrackedHipsDirection": {
+        "__id__": 1485
+      },
+      "TurnIPLeft90": {
+        "__id__": 1486
+      },
+      "TurnIPLeft180": {
+        "__id__": 1487
+      },
+      "TurnIPRight90": {
+        "__id__": 1488
+      },
+      "TurnIPRight180": {
+        "__id__": 1489
+      },
+      "TrackedHipsDirection_LB": {
+        "__id__": 1490
+      },
+      "TrackedHipsDirection_RB": {
+        "__id__": 1491
+      },
+      "JumpWalkRunBlend": {
+        "__id__": 1492
+      },
+      "LandHeavyLightBlend": {
+        "__id__": 1493
+      },
+      "JumpLandBlend": {
+        "__id__": 1494
+      },
+      "MovementState": {
+        "__id__": 1495
+      },
+      "JumpPlayRate": {
+        "__id__": 1496
+      },
+      "Speed": {
+        "__id__": 1497
+      },
+      "HasMovementInput": {
+        "__id__": 1498
+      },
+      "LandHeavyLightBlend_Movement": {
+        "__id__": 1499
+      },
+      "Gait": {
+        "__id__": 1500
+      },
+      "Play_Mantle_1m_LH": {
+        "__id__": 1501
       }
     }
   },
@@ -16313,6 +16319,233 @@
     "conditions": []
   },
   {
+    "__type__": "cc.animation.Layer",
+    "_stateMachine": {
+      "__id__": 1444
+    },
+    "name": "Play",
+    "weight": 1,
+    "mask": null,
+    "additive": false,
+    "_stashes": {}
+  },
+  {
+    "__type__": "cc.animation.StateMachine",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16850812823960.7482819151503395",
+      "clone": null,
+      "viewport": {
+        "scale": 1,
+        "top": -1,
+        "left": -86
+      }
+    },
+    "_states": [
+      {
+        "__id__": 1445
+      },
+      {
+        "__id__": 1446
+      },
+      {
+        "__id__": 1447
+      },
+      {
+        "__id__": 1448
+      },
+      {
+        "__id__": 1449
+      }
+    ],
+    "_transitions": [
+      {
+        "__id__": 1453
+      },
+      {
+        "__id__": 1454
+      },
+      {
+        "__id__": 1458
+      }
+    ],
+    "_entryState": {
+      "__id__": 1445
+    },
+    "_exitState": {
+      "__id__": 1446
+    },
+    "_anyState": {
+      "__id__": 1447
+    }
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16850812823960.1123407972773165",
+      "clone": null,
+      "centerX": -125,
+      "centerY": 0
+    },
+    "name": "Entry"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16850812823960.35415327264606455",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Exit"
+  },
+  {
+    "__type__": "cc.animation.State",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16850812823960.13591246522378087",
+      "clone": null,
+      "centerX": 125,
+      "centerY": 0
+    },
+    "name": "Any"
+  },
+  {
+    "__type__": "cc.animation.EmptyState",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16850813051590.994560885216758",
+      "clone": null,
+      "centerX": -70.5,
+      "centerY": -56
+    },
+    "name": "Empty"
+  },
+  {
+    "__type__": "cc.animation.Motion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16850813129690.4463414517921873",
+      "clone": null,
+      "centerX": 79.5,
+      "centerY": -66
+    },
+    "name": "Clip Motion",
+    "_components": [],
+    "motion": {
+      "__id__": 1450
+    },
+    "speed": 1,
+    "speedMultiplier": "",
+    "speedMultiplierEnabled": false,
+    "transitionInEventBinding": {
+      "__id__": 1451
+    },
+    "transitionOutEventBinding": {
+      "__id__": 1452
+    }
+  },
+  {
+    "__type__": "cc.animation.ClipMotion",
+    "__editorExtras__": {
+      "name": "",
+      "id": "16850813129690.8995194931599897",
+      "clone": null
+    },
+    "clip": {
+      "__uuid__": "96fd935f-755e-4bd6-add7-0f765a036f6a@4f4a2",
+      "__expectedType__": "cc.AnimationClip"
+    }
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.Transition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 1445
+    },
+    "to": {
+      "__id__": 1448
+    },
+    "conditions": []
+  },
+  {
+    "__type__": "cc.animation.EmptyStateTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 1448
+    },
+    "to": {
+      "__id__": 1449
+    },
+    "conditions": [
+      {
+        "__id__": 1455
+      }
+    ],
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "startEventBinding": {
+      "__id__": 1456
+    },
+    "endEventBinding": {
+      "__id__": 1457
+    },
+    "duration": 0.3
+  },
+  {
+    "__type__": "cc.animation.TriggerCondition",
+    "trigger": "Play_Mantle_1m_LH"
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationTransition",
+    "__editorExtras__": null,
+    "from": {
+      "__id__": 1449
+    },
+    "to": {
+      "__id__": 1448
+    },
+    "conditions": [],
+    "destinationStart": 0,
+    "relativeDestinationStart": false,
+    "startEventBinding": {
+      "__id__": 1459
+    },
+    "endEventBinding": {
+      "__id__": 1460
+    },
+    "duration": 0.3,
+    "relativeDuration": false,
+    "exitConditionEnabled": true,
+    "_exitCondition": 1
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
+    "__type__": "cc.animation.AnimationGraphEventBinding",
+    "eventName": ""
+  },
+  {
     "__type__": "cc.animation.PlainVariable",
     "_type": 0,
     "_value": 0
@@ -16511,5 +16744,9 @@
     "__type__": "cc.animation.PlainVariable",
     "_type": 3,
     "_value": 2
+  },
+  {
+    "__type__": "cc.animation.TriggerVariable",
+    "_flags": 0
   }
 ]

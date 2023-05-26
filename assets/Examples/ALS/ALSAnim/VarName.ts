@@ -23,4 +23,6 @@ export enum VarName {
     LandHeavyLightBlend_Movement = 'LandHeavyLightBlend_Movement',
     JumpLandBlend = 'JumpLandBlend',
     //#endregion
+
+    PlayMantle1mLH = 'Play_Mantle_1m_LH',
 }

@@ -3,18 +3,10 @@ import { getForward } from '../../Scripts/Utils/NodeUtils';
 import { ALSGait } from './ALSGait';
 import { UNIT_SCALE_ALS_TO_CC } from './Utility/UnitConversion';
 import { ALSMovementState } from './ALSAnim/ALSMovementState';
-import { EventTarget } from 'cc';
-import { MovementMode } from './ALSAnim/MovementMode';
-import { CharacterController } from 'cc';
+import { CharacterMovement, MovementMode } from './Source/Logic/CharacterMovement';
+import { injectComponent } from './Source/Utils/InjectComponent';
+import { Event } from './Source/Utils/Event';
 const { ccclass, property } = _decorator;
-
-export enum ALSCharacterEventType {
-    Jump,
-}
-
-interface EventMap {
-    [ALSCharacterEventType.Jump](): void;
-}
 
 export enum MovementAction {
     None,
@@ -34,6 +26,10 @@ export class ALSCharacterInfo extends Component {
 
     @property
     public sprintSpeed = 600 * UNIT_SCALE_ALS_TO_CC;
+
+    get characterMovement() {
+        return this._characterMovement;
+    }
 
     public get hasMovementInput() {
         // Determine if the character has movement input by getting its movement input amount.
@@ -100,11 +96,21 @@ export class ALSCharacterInfo extends Component {
         return this._gait;
     }
 
+    get onJumped() {
+        return this._characterMovement.onJumped;
+    }
+
+    readonly onJumpInput = new Event();
+
     public start() {
+        this._characterMovement.onMovementModeChanged.subscribe(this._onMovementModeChanged, this);
+
         this._setLastUpdateTransform();
     }
 
     public update(deltaTime: number) {
+        this._grabCharacterMovementInfo();
+        
         this._updateAcceleration(deltaTime);
 
         // Set the Allowed Gait
@@ -133,23 +139,13 @@ export class ALSCharacterInfo extends Component {
         }
     }
 
-    public on<TEventType extends ALSCharacterEventType, TThis>(
-        eventType: ALSCharacterEventType,
-        callback: (this: TThis, ...args: Parameters<EventMap[TEventType]>) => void,
-        thisArg: TThis,
-    ) {
-        this._eventTarget.on(eventType, callback as any, thisArg);
+    public handleJumpInput() {
+        this.onJumpInput.emit();
     }
 
-    public _emit<TEventType extends ALSCharacterEventType>(eventType: ALSCharacterEventType, ...args: Parameters<EventMap[TEventType]>) {
-        this._eventTarget.emit(eventType, ...args);
-    }
+    @injectComponent(CharacterMovement)
+    private _characterMovement!: CharacterMovement;
 
-    public _emitMovementModeChanged(mode: MovementMode) {
-        this._onMovementModeChanged(mode);
-    }
-
-    private _eventTarget = new EventTarget();
     private _preMovementState = ALSMovementState.Grounded;
     private _movementState: ALSMovementState = ALSMovementState.Grounded;
     private readonly _acceleration = new Vec3();
@@ -159,11 +155,25 @@ export class ALSCharacterInfo extends Component {
     private readonly _lastUpdateWorldRotation = new Quat();
     private _gait = ALSGait.Walking;
 
-    private _onMovementModeChanged(mode: MovementMode) {
-        if (mode === MovementMode.Walking) {
-            this.setMovementState(ALSMovementState.Grounded);
-        } else {
-            this.setMovementState(ALSMovementState.InAir);
+    private _grabCharacterMovementInfo() {
+        const { _characterMovement: characterMovement } = this;
+        Vec3.copy(this.velocity, characterMovement.velocity);
+        Vec3.copy(this.replicatedAcceleration, characterMovement.acceleration);
+        this.maxAcceleration = characterMovement.maxAcceleration;
+        this.maxBrakingDeceleration = characterMovement.maxBrakingDeceleration;
+    }
+
+    private _onMovementModeChanged(oldMode: MovementMode) {
+        switch (this._characterMovement.movementMode) {
+            default:
+            case MovementMode.None:
+                break;
+            case MovementMode.Walking:
+                this.setMovementState(ALSMovementState.Grounded);
+                break;
+            case MovementMode.Falling:
+                this.setMovementState(ALSMovementState.InAir);
+                break;
         }
     }
 
