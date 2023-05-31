@@ -34,6 +34,12 @@ export function drawCapsule(position: Vec3, center: Vec3, radius:number, height:
     geometryRenderer.addCapsule(Vec3.add(new Vec3(), position, center), radius, height, color, 10, 4, true);
 }
 
+export function drawSphere(center: Vec3, radius:number, color = Color.GREEN) {
+    const geometryRenderer = getGeometryRender();
+    if (!geometryRenderer) return;
+    geometryRenderer.addSphere(center, radius, color, 10, 4, true);
+}
+
 export function drawCube(position: Vec3, extent: Vec3, color = Color.WHITE) {
     const geometryRenderer = getGeometryRender();
     if (!geometryRenderer)  {

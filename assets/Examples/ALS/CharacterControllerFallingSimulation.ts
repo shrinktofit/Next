@@ -16,11 +16,15 @@ export class CharacterControllerFallingSimulation {
     }
 
     get velocity() {
+        return this._falling ? this._velocity : 0.0;
+    }
+
+    get potentialVelocity() {
         return this._velocity;
     }
 
     get acceleration() {
-        return this._acceleration;
+        return this._falling ? -this.gravity : 0.0;
     }
 
     public declare node: Node;
@@ -30,23 +34,18 @@ export class CharacterControllerFallingSimulation {
     }
 
     update(deltaTime: number) {
-        if (this._falling) {
-            this._acceleration = this.gravity;
-            this._velocity += -this.gravity * deltaTime;
-        } else {
-            this._acceleration = 0.0;
-        }
-
-        const t = this._velocity * deltaTime;
-        this.node.translate(new Vec3(0.0, t));
-
-        if (this.node.worldPosition.y < 0.0) {
-            this.node.worldPosition = new Vec3(this.node.worldPosition.x, 0.0, this.node.worldPosition.z);
-
+        if (!this._falling) {
             this._velocity = 0.0;
-            this._acceleration = 0.0;
+        }
+        this._velocity += -this.gravity * deltaTime;
+    }
 
+    public feedbackIsOnGrounded(v: boolean) {
+        if (v) {
+            this._velocity = 0.0;
             this._falling = false;
+        } else {
+            this._falling = true;
         }
     }
 
@@ -58,7 +57,7 @@ export class CharacterControllerFallingSimulation {
 
     private _falling = false;
     private _velocity = 0.0;
-    private _acceleration = 0.0;
+    private _isGrounded = true;
 
     private _jump() {
         if (this._falling) {

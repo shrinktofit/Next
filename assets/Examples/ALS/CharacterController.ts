@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Vec2, Vec3, Quat, NodeSpace, clamp, find } from 'cc';
+import { _decorator, Component, Node, Vec2, Vec3, Quat, NodeSpace, clamp, find, CharacterController as PhysicalCharacterController } from 'cc';
 import { getForward } from '../../Scripts/Utils/NodeUtils';
 import { ALSCharacterInfo } from './ALSCharacterInfo';
 import { globalInputManager } from './Input/Input';
@@ -10,9 +10,10 @@ import { signedAngleVec3 } from './Utility/SignedAngle';
 import { toDegree } from 'cc';
 import { toRadian } from 'cc';
 import { ALSMovementState } from './ALSAnim/ALSMovementState';
-const { ccclass, property } = _decorator;
+const { ccclass, property, requireComponent } = _decorator;
 
 @ccclass('CharacterController')
+@requireComponent([CharacterMovement])
 export class CharacterController extends Component {
     @property
     public moveAccordingToCharacterDirection = false;
@@ -35,17 +36,24 @@ export class CharacterController extends Component {
             this._faceView(deltaTime);
             this._applyHorizontalInput(horizontalInput, deltaTime);
         }
+
         this._applyVerticalInput(deltaTime);
+
         if (!this.inPlace) {
-            this.node.translate(
-                Vec3.multiplyScalar(new Vec3(), this._characterMovement.velocity, deltaTime),
-                NodeSpace.WORLD,
-            );
+            const movement = Vec3.multiplyScalar(new Vec3(), this._characterMovement.potentialVelocity, deltaTime);
+                
+            // this.node.translate(movement, NodeSpace.WORLD);
+            this._physicalCharacterController.move(movement);
+
+            this._characterMovement.feedbackIsOnGrounded(this._physicalCharacterController.onGround());
         }
     }
 
     @injectComponent(CharacterMovement)
     private _characterMovement!: CharacterMovement;
+
+    @injectComponent(PhysicalCharacterController)
+    private _physicalCharacterController!: PhysicalCharacterController;
 
     @injectComponent(ALSCharacterInfo)
     private _characterInfo!: ALSCharacterInfo;

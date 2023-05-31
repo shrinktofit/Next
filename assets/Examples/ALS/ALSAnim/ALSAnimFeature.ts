@@ -18,6 +18,10 @@ export class ALSAnimFeature {
     public onUpdate(deltaTime: number) {
     }
 
+    public check() {
+        return true;
+    }
+
     public _init(node: Node, characterInfo: ALSCharacterInfo, animationController: animation.AnimationController) {
         this._node = node;
         this._characterInfo = characterInfo;

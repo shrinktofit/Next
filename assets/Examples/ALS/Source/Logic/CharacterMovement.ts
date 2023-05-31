@@ -54,6 +54,10 @@ export class CharacterMovement extends Component {
         return new Vec3(this._velocity.x, this.fallingSimulation.velocity, this._velocity.z);
     }
 
+    get potentialVelocity() {
+        return new Vec3(this._velocity.x, this.fallingSimulation.potentialVelocity, this._velocity.z);
+    }
+
     get acceleration() {
         return new Vec3(this._acceleration.x, this.fallingSimulation.acceleration, this._acceleration.z);
     }
@@ -89,14 +93,16 @@ export class CharacterMovement extends Component {
             );
         }
 
-        if (this._movementMode === MovementMode.Falling) {
-            this.fallingSimulation.update(deltaTime);
-            if (!this.fallingSimulation.falling) {
-                this.movementMode = MovementMode.Walking;
-            }
-        }
+        this.fallingSimulation.update(deltaTime);
+
+        this._updateMode();
 
         Vec3.zero(this._inputVector);
+    }
+
+    public feedbackIsOnGrounded(v: boolean) {
+        this.fallingSimulation.feedbackIsOnGrounded(v);
+        this._updateMode();
     }
 
     public addInputVector(input: Readonly<Vec3>) {
@@ -124,6 +130,23 @@ export class CharacterMovement extends Component {
     private _requestedMoveWithMaxSpeed = false;
     private _requestedMoveUseAcceleration = true;
     private _movementMode = MovementMode.Walking;
+
+    private _updateMode() {
+        switch (this.movementMode) {
+            case MovementMode.None:
+                break;
+            case MovementMode.Walking:
+                if (this.fallingSimulation.falling) {
+                    this.movementMode = MovementMode.Falling;
+                }
+                break;
+            case MovementMode.Falling:
+                if (!this.fallingSimulation.falling) {
+                    this.movementMode = MovementMode.Walking;
+                }
+                break;
+        }
+    }
 
     private _controlledCharacterMove(inputVector: Readonly<Vec3>, deltaTime: number) {
         const constrainedInputVector = this._constrainInputAcceleration(new Vec3(), inputVector);

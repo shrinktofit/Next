@@ -1,0 +1,13 @@
+{
+  "ver": "2.0.3",
+  "importer": "animation-clip",
+  "imported": true,
+  "uuid": "7d31fdc1-a6b7-4338-8346-8c563ab74ccd",
+  "files": [
+    ".cconb"
+  ],
+  "subMetas": {},
+  "userData": {
+    "name": "ALS_N_Mantle_2m_PositionCorrectionCurve"
+  }
+}

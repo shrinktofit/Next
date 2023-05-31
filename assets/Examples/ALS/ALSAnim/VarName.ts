@@ -25,4 +25,5 @@ export enum VarName {
     //#endregion
 
     PlayMantle1mLH = 'Play_Mantle_1m_LH',
+    PlayMantle2m = 'Play_Mantle_2m',
 }

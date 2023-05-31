@@ -7,6 +7,10 @@
         "index": 1,
         "name": "Walkable"
       }
-    ]
+    ],
+    "collisionMatrix": {
+      "0": 2,
+      "1": 1
+    }
   }
 }
