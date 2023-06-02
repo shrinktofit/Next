@@ -23,7 +23,9 @@
         },
         "events": [],
         "additive": {
-          "baseClip": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767"
+          "baseClip": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767",
+          "enabled": true,
+          "refClip": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767"
         }
       },
       "ver": "1.0.16",
@@ -68,7 +70,9 @@
             "to": 1,
             "wrapMode": 2,
             "additive": {
-              "baseClip": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767"
+              "baseClip": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767",
+              "enabled": true,
+              "refClip": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767"
             }
           }
         ]

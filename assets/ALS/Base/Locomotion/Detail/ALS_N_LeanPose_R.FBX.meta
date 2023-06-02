@@ -23,7 +23,9 @@
         },
         "events": [],
         "additive": {
-          "baseClip": "e749e648-19a4-4512-9a08-27cba10a6162@760c4"
+          "baseClip": "e749e648-19a4-4512-9a08-27cba10a6162@760c4",
+          "enabled": true,
+          "refClip": "e749e648-19a4-4512-9a08-27cba10a6162@760c4"
         }
       },
       "ver": "1.0.16",
@@ -67,7 +69,9 @@
             "to": 0.03333333507180214,
             "wrapMode": 2,
             "additive": {
-              "baseClip": "e749e648-19a4-4512-9a08-27cba10a6162@760c4"
+              "baseClip": "e749e648-19a4-4512-9a08-27cba10a6162@760c4",
+              "enabled": true,
+              "refClip": "e749e648-19a4-4512-9a08-27cba10a6162@760c4"
             }
           }
         ]

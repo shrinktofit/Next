@@ -21,7 +21,11 @@
           "from": 0,
           "to": 1.1666666269302368
         },
-        "events": []
+        "events": [],
+        "additive": {
+          "enabled": true,
+          "refClip": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767"
+        }
       },
       "ver": "1.0.16",
       "imported": true,
@@ -62,7 +66,11 @@
             "name": "ALS_N_Land_Light_Additive",
             "from": 0,
             "to": 1.1666666269302368,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "additive": {
+              "enabled": true,
+              "refClip": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767"
+            }
           }
         ]
       }
