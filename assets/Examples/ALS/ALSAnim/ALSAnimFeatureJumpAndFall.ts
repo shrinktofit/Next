@@ -39,7 +39,10 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
                     jumpWalkRunBlend: display.addRangedFloat('JumpWalkRunBlend', 0.0, 0.0, 1.0, {}),
                     jumpPlayRate: display.addRangedFloat('JumpPlayRate', 0.0, JUMP_PLAY_RATE_MIN, JUMP_PLAY_RATE_MAX, {}),
                     jumpLandBlend: display.addRangedFloat('JumpLandBlend', 0.0, 0.0, 1.0, {}),
+                    fallLoopBlend: display.addRangedFloat('FallLoopBlend', 0.0, 0.0, 1.0, {}),
+                    flailBlend: display.addRangedFloat('flailBlend', 0.0, 0.0, 1.0, {}),
                     landHeavyLightBlend: display.addRangedFloat('LandHeavyLightBlend', 0.0, 0.0, 1.0, {}),
+                    fallLandBlend: display.addRangedFloat('fallLandBlend', 0.0, 0.0, 1.0, {}),
                 };
             }
 
@@ -89,11 +92,35 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
             }
         }
 
+        {
+            const fallLoopBlend = clampMap(
+                fallSpeed,
+                -1000 * UNIT_SCALE_ALS_TO_CC, 0 * UNIT_SCALE_ALS_TO_CC,
+                1, 0,
+            );
+            this.animationController.setValue(VarName.FallLoopBlend, fallLoopBlend);
+            if (DEBUG && this._debugRecords) {
+                this._debugRecords.fallLoopBlend.value = fallLoopBlend;
+            }
+        }
+
+        {
+            const flailBlend = clampMap(
+                fallSpeed,
+                -500 * UNIT_SCALE_ALS_TO_CC, -3000 * UNIT_SCALE_ALS_TO_CC,
+                0, 1,
+            );
+            this.animationController.setValue(VarName.FlailBlend, flailBlend);
+            if (DEBUG && this._debugRecords) {
+                this._debugRecords.flailBlend.value = flailBlend;
+            }
+        }
+
         // Set `LandHeavyLightBlend` according to fall speed.
         {
             // TODO: interop speed increasing/decreasing
             // TODO:
-            // > ALS use clampMap(fallSpeed, -1000, 500, 0, 1) for blend in jump state,
+            // > ALS use clampMap(fallSpeed, -1000, -500, 0, 1) for blend in jump state,
             // > whereas use clampMap(abs(fallSpeed), 500, 1000, 0, 1) for blend in land state,
             // > we uniform use the later here.
             const landHeavyLightBlend = clampMap(
@@ -114,6 +141,14 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
             this.animationController.setValue(VarName.JumpLandBlend, jumpLandBlend);
             if (DEBUG && this._debugRecords) {
                 this._debugRecords.jumpLandBlend.value = jumpLandBlend;
+            }
+        }
+
+        {
+            const fallLandBlend = landPrediction;
+            this.animationController.setValue(VarName.FallLandBlend, fallLandBlend);
+            if (DEBUG && this._debugRecords) {
+                this._debugRecords.fallLandBlend.value = fallLandBlend;
             }
         }
     }
@@ -141,7 +176,10 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
         jumpWalkRunBlend: RangedFloatRecord;
         jumpPlayRate: RangedFloatRecord;
         jumpLandBlend: RangedFloatRecord;
+        fallLoopBlend: RangedFloatRecord;
+        flailBlend: RangedFloatRecord;
         landHeavyLightBlend: RangedFloatRecord;
+        fallLandBlend: RangedFloatRecord;
     };
     private _debugHelper: ALSAnimFeatureJumpAndFallDebugHelper | undefined;
 

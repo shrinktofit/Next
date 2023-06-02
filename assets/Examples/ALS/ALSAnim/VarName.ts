@@ -22,8 +22,13 @@ export enum VarName {
     LandHeavyLightBlend = 'LandHeavyLightBlend',
     LandHeavyLightBlend_Movement = 'LandHeavyLightBlend_Movement',
     JumpLandBlend = 'JumpLandBlend',
+    FallLoopBlend = 'FallLoopBlend',
+    FlailBlend = 'FlailBlend',
+    FallLandBlend = 'FallLandBlend',
     //#endregion
 
     PlayMantle1mLH = 'Play_Mantle_1m_LH',
     PlayMantle2m = 'Play_Mantle_2m',
+    MantleStartPosition = 'MantleStartPosition',
+    MantlePlayRate = 'MantlePlayRate',
 }

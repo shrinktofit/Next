@@ -32,7 +32,7 @@ export class CharacterController extends Component {
             globalInputManager.getAxisValue(PredefinedAxisId.MoveLeft),
             globalInputManager.getAxisValue(PredefinedAxisId.MoveForward),
         );
-        if (!Vec2.equals(horizontalInput, Vec2.ZERO)) {
+        if (!Vec2.equals(horizontalInput, Vec2.ZERO) && this._characterInfo.movementState === ALSMovementState.Grounded) {
             this._faceView(deltaTime);
             this._applyHorizontalInput(horizontalInput, deltaTime);
         }

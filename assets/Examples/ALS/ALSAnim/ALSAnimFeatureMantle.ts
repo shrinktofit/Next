@@ -18,6 +18,10 @@ import { AnimationClip } from 'cc';
 import { lerp } from 'cc';
 import { clampMap } from '../Utility/ClampMap';
 import { ccenum } from 'cc';
+import { assertIsTrue } from '../Utility/Asserts';
+import { CharacterController } from 'cc';
+import { CapsuleCharacterController } from 'cc';
+import { Node } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('ALSAnimFeatureMantle.TraceSettings')
@@ -163,13 +167,17 @@ export class ALSAnimFeatureMantle extends ALSAnimFeature {
             this._debugger?.clear();
         }
 
-        const capsuleCollider = this.node.getComponent(CapsuleCollider);
-        if (!capsuleCollider) {
+        const capsuleParams = this._getCapsuleParams();
+        if (!capsuleParams) {
+            error(
+                `Could not decide capsule params. ` +
+                `Please ensure you have a capsule character controller or capsule collider.`
+            );
             return;
         }
 
         const traceDirection = getForward(this.node);
-        const capsuleBaseLocation = getCapsuleBaseLocation(2.0 * UNIT_SCALE_ALS_TO_CC, capsuleCollider);
+        const capsuleBaseLocation = getCapsuleBaseLocation(2.0 * UNIT_SCALE_ALS_TO_CC, capsuleParams.node);
         if (DEBUG) {
             this._debugger?.drawBaseCapsulePosition(capsuleBaseLocation);
         }
@@ -290,8 +298,14 @@ export class ALSAnimFeatureMantle extends ALSAnimFeature {
         this.characterInfo.characterMovement.movementMode = MovementMode.None;
         this.characterInfo.setMovementState(ALSMovementState.Mantling);
         this.animationController.setValue(mantleAsset.animationGraphTriggerName, true);
+        this.animationController.setValue(VarName.MantleStartPosition, mantleParams.startingPosition);
+        this.animationController.setValue(VarName.MantlePlayRate, mantleParams.playRate);
 
         this.mantleTimeline.play(mantleAsset.positionCorrectionCurve!.name);
+        const state = this.mantleTimeline.getState(mantleAsset.positionCorrectionCurve!.name);
+        assertIsTrue(state);
+        state.setTime(mantleParams.startingPosition);
+        state.speed = mantleParams.playRate;
         this.mantleTimeline.on(Animation.EventType.STOP, this._onMantleTimelineStop, this);
     }
 
@@ -334,10 +348,26 @@ export class ALSAnimFeatureMantle extends ALSAnimFeature {
         this.mantleTimeline!.off(Animation.EventType.STOP, this._onMantleTimelineStop, this);
         this._mantleEnd();
     }
+
+    private _getCapsuleParams() {
+        {
+            const controller = this.node.getComponent(CapsuleCharacterController);
+            if (controller) {
+                return { node: this.node, radius: controller.radius, height: controller.height };
+            }
+        }
+        {
+            const collider = this.node.getComponent(CapsuleCollider);
+            if (collider) {
+                return { node: this.node, radius: collider.radius, height: collider.radius };
+            }
+        }
+        return undefined;
+    }
 }
 
-function getCapsuleBaseLocation(heightOffset: number, capsuleCollider: CapsuleCollider) {
-    return Vec3.scaleAndAdd(new Vec3(), capsuleCollider.node.worldPosition, Vec3.UNIT_Y, heightOffset);
+function getCapsuleBaseLocation(heightOffset: number, capsuleNode: Node) {
+    return Vec3.scaleAndAdd(new Vec3(), capsuleNode.worldPosition, Vec3.UNIT_Y, heightOffset);
     // return Vec3.scaleAndAdd(new Vec3(),
     //     capsuleCollider.node.worldPosition, capsuleCollider.node.up, capsuleCollider.height / 2 + heightOffset);
 }
