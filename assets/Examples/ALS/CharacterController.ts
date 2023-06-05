@@ -29,6 +29,8 @@ export class CharacterController extends Component {
     }
 
     update(deltaTime: number) {
+        const yOld = this.node.worldPosition.y;
+
         this._updateDesiredGait();
 
         const horizontalInput = new Vec2(
@@ -43,12 +45,32 @@ export class CharacterController extends Component {
         this._applyVerticalInput(deltaTime);
 
         if (!this.inPlace) {
-            const movement = Vec3.multiplyScalar(new Vec3(), this._characterMovement.potentialVelocity, deltaTime);
-                
-            // this.node.translate(movement, NodeSpace.WORLD);
-            this._physicalCharacterController.move(movement);
+            const ZERO_MOVEMENT_CHECK: boolean = false;
 
-            this._characterMovement.feedbackIsOnGrounded(this._physicalCharacterController.onGround());
+            const movement = Vec3.multiplyScalar(new Vec3(), this._characterMovement.potentialVelocity, deltaTime);
+
+            if (!ZERO_MOVEMENT_CHECK || Vec3.len(movement) > this._physicalCharacterController.minMoveDistance) {
+                // this._physicalCharacterController.setPosition(this.node.worldPosition);
+                
+                // this.node.translate(movement, NodeSpace.WORLD);
+                this._physicalCharacterController.move(movement);
+
+                const onGround = this._physicalCharacterController.onGround();
+                // if (onGround !== this._lastOnGround) {
+                //     console.error(`onGround changed: ${onGround}, movement y: ${movement.y}, Delta time: ${deltaTime}, x: ${9.18 * (deltaTime ** 2)}`);
+                //     this._lastOnGround = onGround;
+                // }
+                this._characterMovement.feedbackIsOnGrounded(onGround);
+            }
+
+            // const p = new Vec3();
+            // this._physicalCharacterController.getPosition(p);
+            // this.node.worldPosition = p;
+        }
+
+        const yNew = this.node.worldPosition.y;
+        if (yNew < yOld) {
+            console.log(`Falled`);
         }
     }
 

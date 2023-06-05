@@ -973,7 +973,7 @@
     "_enabled": true,
     "__prefab": null,
     "moveAccordingToCharacterDirection": false,
-    "inPlace": false,
+    "inPlace": true,
     "turnSpeed": 270,
     "_id": "03D/eahVVNCJOlwBvq4/TI"
   },
