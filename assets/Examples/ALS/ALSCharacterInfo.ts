@@ -19,13 +19,13 @@ export enum MovementAction {
 @ccclass('ALSCharacterInfo')
 export class ALSCharacterInfo extends Component {
     @property
-    public walkSpeed = 165 * UNIT_SCALE_ALS_TO_CC;
+    public walkSpeed = 175 * UNIT_SCALE_ALS_TO_CC;
 
     @property
-    public runSpeed = 350 * UNIT_SCALE_ALS_TO_CC;
+    public runSpeed = 375 * UNIT_SCALE_ALS_TO_CC;
 
     @property
-    public sprintSpeed = 600 * UNIT_SCALE_ALS_TO_CC;
+    public sprintSpeed = 650 * UNIT_SCALE_ALS_TO_CC;
 
     get characterMovement() {
         return this._characterMovement;
@@ -92,8 +92,14 @@ export class ALSCharacterInfo extends Component {
         return true;
     }
 
+    public desiredGait = ALSGait.Running;
+
     get gait() {
         return this._gait;
+    }
+
+    get allowedGait() {
+        return this._allowedGait;
     }
 
     get onJumped() {
@@ -115,16 +121,17 @@ export class ALSCharacterInfo extends Component {
 
         // Set the Allowed Gait
         const allowedGait = this._getAllowedGait();
+        this._allowedGait = allowedGait;
 
         // Determine the Actual Gait. If it is different from the current Gait, Set the new Gait Event.
         const actualGait = this._getActualGait(allowedGait);
         if (actualGait !== this._gait) {
             this._setGait(actualGait);
         }
-
-        this._setAllowedGait(allowedGait);
         
         this._fetchViewDirection();
+
+        this._updateDynamicMovementSettings();
     }
 
     public lateUpdate() {
@@ -153,6 +160,7 @@ export class ALSCharacterInfo extends Component {
     private readonly _viewDirection = new Vec3();
     private readonly _lastUpdateWorldPosition = new Vec3();
     private readonly _lastUpdateWorldRotation = new Quat();
+    private _allowedGait = ALSGait.Running;
     private _gait = ALSGait.Walking;
 
     private _grabCharacterMovementInfo() {
@@ -231,15 +239,45 @@ export class ALSCharacterInfo extends Component {
     }
 
     private _getAllowedGait() {
-        return ALSGait.Running;
+        switch (this.desiredGait) {
+            case ALSGait.Walking:
+                return ALSGait.Walking;
+            case ALSGait.Running:
+                return ALSGait.Running;
+            case ALSGait.Sprinting:
+                if (this._canSprint()) {
+                    return ALSGait.Sprinting;
+                }
+                return ALSGait.Running;
+        }
     }
 
     private _onGaitChange(previousGait: ALSGait) {
         // TODO
     }
 
-    private _setAllowedGait(newAllowedGait: ALSGait) {
-        // TODO
+    private _canSprint() {
+        return true;
+    }
+
+    private _updateDynamicMovementSettings() {
+        const characterMovement = this.node.getComponent(CharacterMovement);
+        if (!characterMovement) {
+            return;
+        }
+        let maxWalkSpeed = 0.0;
+        switch (this._allowedGait) {
+            case ALSGait.Walking:
+                maxWalkSpeed = 165 * UNIT_SCALE_ALS_TO_CC;
+                break;
+            case ALSGait.Running:
+                maxWalkSpeed = 350 * UNIT_SCALE_ALS_TO_CC;
+                break;
+            case ALSGait.Sprinting:
+                maxWalkSpeed = 600 * UNIT_SCALE_ALS_TO_CC;
+                break;
+        }
+        characterMovement.maxMoveSpeed = maxWalkSpeed;
     }
 
     private _isLocallyControlled() {

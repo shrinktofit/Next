@@ -18296,7 +18296,7 @@
   {
     "__type__": "cc.animation.PlainVariable",
     "_type": 3,
-    "_value": 2
+    "_value": 0
   },
   {
     "__type__": "cc.animation.TriggerVariable",

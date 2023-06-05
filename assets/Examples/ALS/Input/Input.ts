@@ -26,16 +26,44 @@ class InputManager {
         return this._axes[axisId]?.axis.value ?? 0.0;
     }
 
-    public getAction(actionId: ActionId) {
-        return this._actions[actionId]?.triggered ?? false;
+    public getActionEvent(actionId: ActionId): ActionEvent {
+        const action = this._actions[actionId];
+        if (!action) {
+            return ActionEvent.None;
+        }
+        switch (action.state) {
+            default:
+            case ActionState.Inactive:
+            case ActionState.AboutToBePressed:
+            case ActionState.AboutToBeReleased:
+            case ActionState.Alive:
+                return ActionEvent.None;
+            case ActionState.Pressed:
+                return ActionEvent.Pressed;
+            case ActionState.Released:
+                return ActionEvent.Released;
+        }
     }
 
     public update(deltaTime: number) {
         for (const [_, action] of Object.entries(this._actions)) {
-            action.triggered = false;
-            if (action.triggered2) {
-                action.triggered = true;
-                action.triggered2 = false;
+            switch (action.state) {
+                default:
+                case ActionState.Inactive:
+                case ActionState.Alive:
+                    break;
+                case ActionState.AboutToBePressed:
+                    action.state = ActionState.Pressed;
+                    break;
+                case ActionState.AboutToBeReleased:
+                    action.state = ActionState.Released;
+                    break;
+                case ActionState.Pressed:
+                    action.state = ActionState.Alive;
+                    break;
+                case ActionState.Released:
+                    action.state = ActionState.Inactive;
+                    break;
             }
         }
 
@@ -90,13 +118,18 @@ class InputManager {
         this._pressedKeys.add(keyCode);
         for (const [_, action] of Object.entries(this._actions)) {
             if (action.mappings.some((mapping) => mapping.keyCode === keyCode)) {
-                action.triggered2 = true;
+                action.state = ActionState.AboutToBePressed;
             }
         }
     }
 
     private _onKeyUp(keyCode: KeyCode) {
         this._pressedKeys.delete(keyCode);
+        for (const [_, action] of Object.entries(this._actions)) {
+            if (action.mappings.some((mapping) => mapping.keyCode === keyCode)) {
+                action.state = ActionState.AboutToBeReleased;
+            }
+        }
     }
 }
 
@@ -134,11 +167,23 @@ class ActionRecord {
     public readonly action = new Action();
 
     public readonly mappings: ActionMapping[] = [];
-
-    public triggered = false;
-
-    public triggered2 = false;
+    
+    public state = ActionState.Inactive;
 }
 
+enum ActionState {
+    Inactive,
+    AboutToBePressed,
+    Pressed,
+    Alive,
+    AboutToBeReleased,
+    Released,
+}
+
+export enum ActionEvent {
+    None = 0,
+    Pressed = 1,
+    Released = 2,
+}
 
 export const globalInputManager = new InputManager();

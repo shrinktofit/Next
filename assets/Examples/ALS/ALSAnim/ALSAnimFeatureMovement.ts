@@ -10,6 +10,7 @@ import { UNIT_SCALE_ALS_TO_CC } from '../Utility/UnitConversion';
 import { ALSAnimFeature } from './ALSAnimFeature';
 import { ALSAnimFeatureMovementDebug } from './ALSAnimFeatureMovementDebug';
 import { ALSMovementState } from './ALSMovementState';
+import { VarName } from './VarName';
 const { ccclass, property } = _decorator;
 
 export enum GraphVarName {
@@ -53,6 +54,8 @@ export class ALSAnimFeatureMovement extends ALSAnimFeature {
         } = this;
 
         this._walkRunBlendSmoothSetter.update(deltaTime);
+
+        animationController.setValue(VarName.Gait, this.characterInfo.gait);
 
         const shouldMove = this.shouldMove;
 

@@ -11,6 +11,8 @@ export enum PredefinedActionId {
     Jump,
     Reload,
     Crouch,
+    WalkRunSwitch,
+    Sprint,
 }
 
 export const predefinedAxes: Record<PredefinedAxisId, { mappings: { keyCode: KeyCode, scale: number }[] }> = {
@@ -25,6 +27,8 @@ export const predefinedAxes: Record<PredefinedAxisId, { mappings: { keyCode: Key
 }
 
 export const predefinedActions: Record<PredefinedActionId, { mappings: { keyCode: KeyCode }[] }> = {
+    [PredefinedActionId.WalkRunSwitch]: { mappings: [{ keyCode: KeyCode.CTRL_LEFT }] },
+    [PredefinedActionId.Sprint]: { mappings: [{ keyCode: KeyCode.SHIFT_LEFT }] },
     [PredefinedActionId.Fire]: { mappings: [{ keyCode: KeyCode.KEY_F }] },
     [PredefinedActionId.IronSights]: { mappings: [{ keyCode: KeyCode.KEY_Q }] },
     [PredefinedActionId.Jump]: { mappings: [{ keyCode: KeyCode.SPACE }] },

@@ -1,7 +1,7 @@
 import { _decorator, Component, Node, Vec2, Vec3, Quat, NodeSpace, clamp, find, CharacterController as PhysicalCharacterController } from 'cc';
 import { getForward } from '../../Scripts/Utils/NodeUtils';
 import { ALSCharacterInfo } from './ALSCharacterInfo';
-import { globalInputManager } from './Input/Input';
+import { ActionEvent, globalInputManager } from './Input/Input';
 import { PredefinedActionId, PredefinedAxisId } from './Input/Predefined';
 import { CharacterMovement } from './Source/Logic/CharacterMovement';
 import { error } from 'cc';
@@ -10,6 +10,7 @@ import { signedAngleVec3 } from './Utility/SignedAngle';
 import { toDegree } from 'cc';
 import { toRadian } from 'cc';
 import { ALSMovementState } from './ALSAnim/ALSMovementState';
+import { ALSGait } from './ALSGait';
 const { ccclass, property, requireComponent } = _decorator;
 
 @ccclass('CharacterController')
@@ -28,6 +29,8 @@ export class CharacterController extends Component {
     }
 
     update(deltaTime: number) {
+        this._updateDesiredGait();
+
         const horizontalInput = new Vec2(
             globalInputManager.getAxisValue(PredefinedAxisId.MoveLeft),
             globalInputManager.getAxisValue(PredefinedAxisId.MoveForward),
@@ -90,7 +93,7 @@ export class CharacterController extends Component {
     }
 
     private _applyVerticalInput(deltaTime: number) {
-        if (globalInputManager.getAction(PredefinedActionId.Jump)) {
+        if (globalInputManager.getActionEvent(PredefinedActionId.Jump) === ActionEvent.Pressed) {
             this._characterInfo.handleJumpInput();
             if (this._characterInfo.movementState === ALSMovementState.Grounded) {
                 this._characterMovement.jump();
@@ -122,6 +125,28 @@ export class CharacterController extends Component {
             return Vec3.set(new Vec3(), 0, 0, -1);
         } else {
             return Vec3.negate(new Vec3(), getForward(mainCamera));
+        }
+    }
+
+    private _updateDesiredGait() {
+        if (globalInputManager.getActionEvent(PredefinedActionId.WalkRunSwitch) === ActionEvent.Pressed) {
+            switch (this._characterInfo.desiredGait) {
+                case ALSGait.Running:
+                    this._characterInfo.desiredGait = ALSGait.Walking;
+                    break;
+                case ALSGait.Walking:
+                    this._characterInfo.desiredGait = ALSGait.Running;
+                    break;
+            }
+        }
+
+        switch (globalInputManager.getActionEvent(PredefinedActionId.Sprint)) {
+            case ActionEvent.Pressed:
+                this._characterInfo.desiredGait = ALSGait.Sprinting;
+                break;
+            case ActionEvent.Released:
+                this._characterInfo.desiredGait = ALSGait.Running;
+                break;
         }
     }
 }

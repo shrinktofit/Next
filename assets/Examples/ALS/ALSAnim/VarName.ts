@@ -3,6 +3,7 @@ export enum VarName {
     MovementState = 'MovementState',
     HasMovementInput = 'HasMovementInput',
     Speed = 'Speed',
+    Gait = 'Gait',
 
     //#region Grounded
     ShouldMove = 'ShouldMove',
