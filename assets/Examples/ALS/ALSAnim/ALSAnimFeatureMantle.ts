@@ -301,6 +301,7 @@ export class ALSAnimFeatureMantle extends ALSAnimFeature {
         this.animationController.setValue(VarName.MantleStartPosition, mantleParams.startingPosition);
         this.animationController.setValue(VarName.MantlePlayRate, mantleParams.playRate);
 
+        this.mantleTimeline.node.position = Vec3.ZERO;
         this.mantleTimeline.play(mantleAsset.positionCorrectionCurve!.name);
         const state = this.mantleTimeline.getState(mantleAsset.positionCorrectionCurve!.name);
         assertIsTrue(state);
