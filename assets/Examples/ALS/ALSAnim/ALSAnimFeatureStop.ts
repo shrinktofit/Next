@@ -2,7 +2,10 @@ import { _decorator, Vec3, Quat, toDegree, clamp, director, animation, game } fr
 import { DEBUG } from 'cc/env';
 import { createRealtimeNumberChart, RealTimeNumberChart } from '../Debug/Charts/ChartService';
 import { ALSAnimFeature } from './ALSAnimFeature';
+import { AnimEventDispatcher } from './AnimEventDispatcher';
+
 const { ccclass, property } = _decorator;
+const listenToGraphEvent = AnimEventDispatcher.listenToGraphEvent；
 
 const CHART_FEET_POSITION_ENABLED: boolean = true;
 
@@ -30,6 +33,53 @@ export class ALSAnimFeatureStop extends ALSAnimFeature {
                 maxValue: 1. * 1.1,
             });
         }
+        
+        listenToGraphEvent(this, `StopTransition`, () => {
+            this.animationController.setValue(`StopTransition`, true);
+        });
+
+        listenToGraphEvent(this, '->N QuickStop', () => {
+            this.animationController.setValue(`QuickStopN`, true);
+        });
+
+        for (const eventName of [
+            '-> Debug Lock Left Foot',
+            '-> Debug Lock Right Foot',
+            '-> Debug Plant Left Foot',
+            '-> Debug Plant Right Foot',
+            '-> Debug Play N Stop L',
+            '-> Debug Play N Stop R',
+        ]) {
+            listenToGraphEvent(this, eventName, () => {
+                console.warn(eventName);
+            });
+        }
+
+        for (const eventName of ['->N Stop L', '->N Stop R']) {
+            listenToGraphEvent(this, eventName, () => {
+                this.animationController.setValue(eventName, true);
+                // game.pause();
+            });
+        }
+
+        for (const eventName of ['Hips F', 'Hips B', 'Hips LF', 'Hips LB', 'Hips RF', 'Hips RB']) {
+            listenToGraphEvent(this, eventName, () => {
+                // console.warn(eventName);
+
+                let hipsDirection = HipsDirection.F;
+                switch (eventName) {
+                    case 'Hips F': hipsDirection = HipsDirection.F; break;
+                    case 'Hips B': hipsDirection = HipsDirection.B; break;
+                    case 'Hips LF': hipsDirection = HipsDirection.LF; break;
+                    case 'Hips LB': hipsDirection = HipsDirection.LB; break;
+                    case 'Hips RF': hipsDirection = HipsDirection.RF; break;
+                    case 'Hips RB': hipsDirection = HipsDirection.RB; break;
+                }
+                this.animationController.setValue('TrackedHipsDirection', hipsDirection);
+                this.animationController.setValue('TrackedHipsDirection_LB', hipsDirection === HipsDirection.LB);
+                this.animationController.setValue('TrackedHipsDirection_RB', hipsDirection === HipsDirection.RB);
+            });
+        }
     }
 
     onUpdate() {
@@ -46,66 +96,6 @@ export class ALSAnimFeatureStop extends ALSAnimFeature {
 
     private _debugChart: RealTimeNumberChart | undefined;
 }
-
-(function registerEventMethodsForALSAnimFeatureStop() {
-    function listenToGraphEvent(eventName: string, callback: () => void) {
-        ALSAnimFeatureStop.prototype[eventName] = function () {
-            if (false) {
-                console.log(`Graph event ${eventName} triggered.`);
-            }
-            if (this.enabled) {
-                callback();
-            }
-        }
-    }
-    
-    listenToGraphEvent(`StopTransition`, () => {
-        this.animationController.setValue(`StopTransition`, true);
-    });
-
-    listenToGraphEvent('->N QuickStop', () => {
-        this.animationController.setValue(`QuickStopN`, true);
-    });
-
-    for (const eventName of [
-        '-> Debug Lock Left Foot',
-        '-> Debug Lock Right Foot',
-        '-> Debug Plant Left Foot',
-        '-> Debug Plant Right Foot',
-        '-> Debug Play N Stop L',
-        '-> Debug Play N Stop R',
-    ]) {
-        listenToGraphEvent(eventName, () => {
-            console.warn(eventName);
-        });
-    }
-
-    for (const eventName of ['->N Stop L', '->N Stop R']) {
-        listenToGraphEvent(eventName, () => {
-            this.animationController.setValue(eventName, true);
-            // game.pause();
-        });
-    }
-
-    for (const eventName of ['Hips F', 'Hips B', 'Hips LF', 'Hips LB', 'Hips RF', 'Hips RB']) {
-        listenToGraphEvent(eventName, () => {
-            // console.warn(eventName);
-
-            let hipsDirection = HipsDirection.F;
-            switch (eventName) {
-                case 'Hips F': hipsDirection = HipsDirection.F; break;
-                case 'Hips B': hipsDirection = HipsDirection.B; break;
-                case 'Hips LF': hipsDirection = HipsDirection.LF; break;
-                case 'Hips LB': hipsDirection = HipsDirection.LB; break;
-                case 'Hips RF': hipsDirection = HipsDirection.RF; break;
-                case 'Hips RB': hipsDirection = HipsDirection.RB; break;
-            }
-            this.animationController.setValue('TrackedHipsDirection', hipsDirection);
-            this.animationController.setValue('TrackedHipsDirection_LB', hipsDirection === HipsDirection.LB);
-            this.animationController.setValue('TrackedHipsDirection_RB', hipsDirection === HipsDirection.RB);
-        });
-    }
-})()
 
 enum HipsDirection {
     F, B, LF, LB, RF, RB,
