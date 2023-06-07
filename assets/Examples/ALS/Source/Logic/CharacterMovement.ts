@@ -17,12 +17,6 @@ export enum CharacterMovementEventType {
 
 @ccclass('CharacterMovement')
 export class CharacterMovement extends Component {
-    @property
-    public moveAccordingToCharacterDirection = false;
-
-    @property
-    public inPlace = false;
-
     public maxAcceleration = 2000.0 * UNIT_SCALE_ALS_TO_CC;
 
     public maxBrakingDeceleration = 1250.0 * UNIT_SCALE_ALS_TO_CC;

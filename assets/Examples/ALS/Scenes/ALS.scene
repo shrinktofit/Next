@@ -726,7 +726,7 @@
     "featureStop": {
       "__id__": 29
     },
-    "featureStopEnabled": false,
+    "featureStopEnabled": true,
     "featureLean": {
       "__id__": 30
     },
@@ -742,7 +742,7 @@
     "featureJumpAndFall": {
       "__id__": 33
     },
-    "featureJumpAndFallEnabled": false,
+    "featureJumpAndFallEnabled": true,
     "featureFootLock": {
       "__id__": 35
     },
@@ -750,8 +750,8 @@
     "featureMantle": {
       "__id__": 36
     },
-    "featureMantleEnabled": false,
-    "debug": false,
+    "featureMantleEnabled": true,
+    "debug": true,
     "_id": "3ehDWmKuNKwpDhVaA38AxF"
   },
   {
@@ -762,7 +762,7 @@
   },
   {
     "__type__": "ALSAnimFeatureStop",
-    "enabled": false,
+    "enabled": true,
     "debug": false
   },
   {
@@ -788,7 +788,7 @@
   },
   {
     "__type__": "ALSAnimFeatureJumpAndFall",
-    "enabled": false,
+    "enabled": true,
     "debug": true,
     "landPredictionBlendCurve": {
       "__id__": 34
@@ -840,8 +840,9 @@
   },
   {
     "__type__": "ALSAnimFeatureMantle",
-    "enabled": false,
+    "enabled": true,
     "debug": true,
+    "debugShowSweeping": false,
     "groundedTraceSettings": {
       "__id__": 37
     },
@@ -881,11 +882,11 @@
   },
   {
     "__type__": "ALSAnimFeatureMantle.TraceSettings",
-    "maxLedgeHeight": 0,
-    "minLedgeHeight": 0,
-    "reachDistance": 0,
-    "forwardTraceRadius": 0,
-    "downwardTraceRadius": 0
+    "maxLedgeHeight": 1.5,
+    "minLedgeHeight": 0.5,
+    "reachDistance": 0.7,
+    "forwardTraceRadius": 0.3,
+    "downwardTraceRadius": 0.3
   },
   {
     "__type__": "ALSMantleAsset",
@@ -972,8 +973,10 @@
     },
     "_enabled": true,
     "__prefab": null,
+    "debugShowCollider": false,
+    "debugShowSlope": false,
     "moveAccordingToCharacterDirection": false,
-    "inPlace": true,
+    "inPlace": false,
     "turnSpeed": 270,
     "_id": "03D/eahVVNCJOlwBvq4/TI"
   },
@@ -991,8 +994,6 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "moveAccordingToCharacterDirection": false,
-    "inPlace": false,
     "fallingSimulation": {
       "__id__": 45
     },
@@ -1058,9 +1059,9 @@
     ],
     "value": {
       "__type__": "cc.Vec3",
-      "x": 0,
+      "x": -0.9660000205039978,
       "y": 2.622604367008563e-8,
-      "z": -10.515999794006348
+      "z": -3.1029999256134033
     }
   },
   {
@@ -1625,7 +1626,7 @@
     "_priority": 1073741824,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 359.99999999999994,
+    "_orthoHeight": 360,
     "_near": 1,
     "_far": 2000,
     "_color": {

@@ -42,6 +42,7 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
                     fallLoopBlend: display.addRangedFloat('FallLoopBlend', 0.0, 0.0, 1.0, {}),
                     flailBlend: display.addRangedFloat('flailBlend', 0.0, 0.0, 1.0, {}),
                     landHeavyLightBlend: display.addRangedFloat('LandHeavyLightBlend', 0.0, 0.0, 1.0, {}),
+                    landHeavyLightBlendMovement: display.addRangedFloat('LandHeavyLightBlendMovement', 0.0, 0.0, 1.0, {}),
                     fallLandBlend: display.addRangedFloat('fallLandBlend', 0.0, 0.0, 1.0, {}),
                 };
             }
@@ -132,6 +133,7 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
             
             if (DEBUG && this._debugRecords) {
                 this._debugRecords.landHeavyLightBlend.value = landHeavyLightBlend;
+                this._debugRecords.landHeavyLightBlendMovement.value = landHeavyLightBlend_Movement;
             }
         }
 
@@ -179,6 +181,7 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
         fallLoopBlend: RangedFloatRecord;
         flailBlend: RangedFloatRecord;
         landHeavyLightBlend: RangedFloatRecord;
+        landHeavyLightBlendMovement: RangedFloatRecord;
         fallLandBlend: RangedFloatRecord;
     };
     private _debugHelper: ALSAnimFeatureJumpAndFallDebugHelper | undefined;

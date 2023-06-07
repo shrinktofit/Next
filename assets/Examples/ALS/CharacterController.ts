@@ -1,9 +1,9 @@
-import { _decorator, Component, Node, Vec2, Vec3, Quat, NodeSpace, clamp, find, CharacterController as PhysicalCharacterController } from 'cc';
+import { _decorator, Component, Node, Vec2, Vec3, Quat, NodeSpace, clamp, find, CapsuleCharacterController as PhysicalCharacterController, physics } from 'cc';
 import { getForward } from '../../Scripts/Utils/NodeUtils';
 import { ALSCharacterInfo } from './ALSCharacterInfo';
 import { ActionEvent, globalInputManager } from './Input/Input';
 import { PredefinedActionId, PredefinedAxisId } from './Input/Predefined';
-import { CharacterMovement } from './Source/Logic/CharacterMovement';
+import { CharacterMovement, MovementMode } from './Source/Logic/CharacterMovement';
 import { error } from 'cc';
 import { injectComponent } from './Source/Utils/InjectComponent';
 import { signedAngleVec3 } from './Utility/SignedAngle';
@@ -11,11 +11,20 @@ import { toDegree } from 'cc';
 import { toRadian } from 'cc';
 import { ALSMovementState } from './ALSAnim/ALSMovementState';
 import { ALSGait } from './ALSGait';
+import { drawCapsule, drawCube, drawLineOriginDirLen } from './Utility/Gizmo';
+import { Color } from 'cc';
+import { DEBUG } from 'cc/env';
 const { ccclass, property, requireComponent } = _decorator;
 
 @ccclass('CharacterController')
 @requireComponent([CharacterMovement])
 export class CharacterController extends Component {
+    @property
+    debugShowCollider = false;
+
+    @property
+    debugShowSlope = false;
+
     @property
     public moveAccordingToCharacterDirection = false;
 
@@ -26,6 +35,7 @@ export class CharacterController extends Component {
     public turnSpeed = 180;
 
     start() {
+        this._physicalCharacterController.on('onColliderHit', this._onPhysicalCharacterControllerHit, this);
     }
 
     update(deltaTime: number) {
@@ -47,7 +57,12 @@ export class CharacterController extends Component {
         if (!this.inPlace) {
             const ZERO_MOVEMENT_CHECK: boolean = false;
 
-            const movement = Vec3.multiplyScalar(new Vec3(), this._characterMovement.potentialVelocity, deltaTime);
+            const potentialVelocity = new Vec3(this._characterMovement.potentialVelocity);
+            potentialVelocity.y = 0.0;
+            this._applySlideVelocity(potentialVelocity);
+            potentialVelocity.y += this._characterMovement.potentialVelocity.y;
+
+            const movement = Vec3.multiplyScalar(new Vec3(), potentialVelocity, deltaTime);
 
             if (!ZERO_MOVEMENT_CHECK || Vec3.len(movement) > this._physicalCharacterController.minMoveDistance) {
                 // this._physicalCharacterController.setPosition(this.node.worldPosition);
@@ -72,6 +87,8 @@ export class CharacterController extends Component {
         if (yNew < yOld) {
             console.log(`Falled`);
         }
+
+        this._debugUpdate();
     }
 
     @injectComponent(CharacterMovement)
@@ -82,6 +99,9 @@ export class CharacterController extends Component {
 
     @injectComponent(ALSCharacterInfo)
     private _characterInfo!: ALSCharacterInfo;
+
+    private _walkableNormal = new Vec3(Vec3.UNIT_Y);
+    private _lastContact = new Vec3();
     
     private _applyHorizontalInput(horizontalInput: Readonly<Vec2>, deltaTime: number) {
         const inputVector = new Vec3();
@@ -169,6 +189,43 @@ export class CharacterController extends Component {
             case ActionEvent.Released:
                 this._characterInfo.desiredGait = ALSGait.Running;
                 break;
+        }
+    }
+
+    private _onPhysicalCharacterControllerHit(controller, collider, contact: physics.CharacterControllerContact) {
+        Vec3.copy(this._walkableNormal, contact.worldNormal);
+        Vec3.copy(this._lastContact, contact.worldPosition);
+    }
+
+    private _applySlideVelocity(vel: Vec3) {
+        if (this._characterMovement.movementMode !== MovementMode.Walking) {
+            return vel;
+        }
+        // Don't slide if we're slide upwards.
+        if (Vec3.angle(this._walkableNormal, vel) > (Math.PI / 2)) {
+            return vel;
+        }
+        Vec3.projectOnPlane(vel, new Vec3(vel), this._walkableNormal);
+        // drawLineOriginDirLen(this.node.worldPosition, Vec3.normalize(new Vec3(), vel), 1);
+        return vel;
+    }
+
+    private _debugUpdate() {
+        if (!DEBUG) {
+            return;
+        }
+        if (this.debugShowCollider) {
+            drawCapsule(
+                this.node.worldPosition,
+                this._physicalCharacterController.center,
+                this._physicalCharacterController.radius,
+                this._physicalCharacterController.height,
+                Color.BLACK,
+            );
+        }
+        if (this.debugShowSlope) {
+            drawCube(this._lastContact, Vec3.multiplyScalar(new Vec3(), Vec3.ONE, 0.1));
+            drawLineOriginDirLen(this._lastContact, this._walkableNormal, 1.0, Color.BLUE);
         }
     }
 }
