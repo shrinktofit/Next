@@ -10,6 +10,8 @@ import { ALSAnimFeatureTurnInPlace } from './ALSAnimFeatureTurnInPlace';
 import { ALSAnimFeatureJumpAndFall } from './ALSAnimFeatureJumpAndFall';
 import { VarName } from './VarName';
 import { ALSAnimFeatureMantle } from './ALSAnimFeatureMantle';
+import { AnimEventDispatcher } from './AnimEventDispatcher';
+
 const { ccclass, property, executionOrder } = _decorator;
 
 const FEATURE_NAME_MOVEMENT = '移动';
@@ -45,6 +47,7 @@ function featureEnabling(getFeature: (this: ALSAnim) => ALSAnimFeature): Propert
 
 @ccclass('ALSAnim')
 @executionOrder(1)
+@requireComponent(AnimEventDispatcher)
 export class ALSAnim extends Component {
     @featureEnabling(function(this: ALSAnim) { return this.featureMovement; })
     @property({
