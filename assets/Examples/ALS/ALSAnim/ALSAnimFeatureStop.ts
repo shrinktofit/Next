@@ -53,7 +53,9 @@ export class ALSAnimFeatureStop extends ALSAnimFeature {
             if (false) {
                 console.log(`Graph event ${eventName} triggered.`);
             }
-            callback();
+            if (this.enabled) {
+                callback();
+            }
         }
     }
     
