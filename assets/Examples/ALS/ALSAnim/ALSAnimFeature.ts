@@ -1,6 +1,7 @@
 import { animation, Node, _decorator } from "cc";
 import { ALSCharacterInfo } from "../ALSCharacterInfo";
 import { UNIT_SCALE_ALS_TO_CC } from "../Utility/UnitConversion";
+import { ALSAnim } from "./ALSAnim";
 
 const { ccclass, property } = _decorator;
 
@@ -22,10 +23,15 @@ export class ALSAnimFeature {
         return true;
     }
 
-    public _init(node: Node, characterInfo: ALSCharacterInfo, animationController: animation.AnimationController) {
+    public _init(owner: ALSAnim, node: Node, characterInfo: ALSCharacterInfo, animationController: animation.AnimationController) {
+        this._owner = owner;
         this._node = node;
         this._characterInfo = characterInfo;
         this._animationController = animationController;
+    }
+
+    get owner() {
+        return this._owner;
     }
 
     protected get node() {
@@ -44,6 +50,8 @@ export class ALSAnimFeature {
         const { characterInfo } = this;
         return (characterInfo.isMoving && characterInfo.hasMovementInput) || characterInfo.speed > (150 * UNIT_SCALE_ALS_TO_CC);
     }
+
+    private declare _owner: ALSAnim;
 
     private declare _node: Node;
 

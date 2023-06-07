@@ -55,10 +55,6 @@ export class ALSAnimFeatureMovementDebug {
                 },
             };
         }
-        
-        // this.animationController.onCustomEvent_experimental('debug-->NotMoving', () => {
-        //     warn(`Not moving`);
-        // });
     }
 
     private _lastSpeed = 0.0;

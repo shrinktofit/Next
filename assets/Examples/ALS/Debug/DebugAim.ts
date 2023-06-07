@@ -10,6 +10,7 @@ import { DEBUG, EDITOR } from 'cc/env';
 import { animation } from 'cc';
 import { director } from 'cc';
 import { game } from 'cc';
+import { ALSAnim } from '../ALSAnim/ALSAnim';
 
 if (DEBUG && !EDITOR) {
     // ALS also has this bug.
@@ -18,7 +19,8 @@ if (DEBUG && !EDITOR) {
             // Slomo 0.5
             const TIME_MULTIPLIER = 1.0 / 5.;
             const character = find('AnimMan')!;
-            const anim = character.getComponent(animation.AnimationController)!;
+            const controller = character.getComponent(animation.AnimationController)!;
+            const anim = character.getComponent(ALSAnim)!;
             const events = ['AimLeftEnter', 'AimRightEnter', 'SwitchEnter', 'AimForwardEnter'];
             tween(new TweenTarget(character))
                 .call(() => { console.clear(); })
@@ -30,13 +32,13 @@ if (DEBUG && !EDITOR) {
                 .to(0.8 * TIME_MULTIPLIER, { positionDeg: 30 })
                 .call(() => {
                     for (const eventName of events) {
-                        anim.offCustomEvent_experimental(eventName);
+                        anim.unsubscribeAnimationEvent(eventName);
                     }
                 })
                 .start();
             for (const eventName of events) {
-                anim.onCustomEvent_experimental(eventName, () => {
-                    console.warn(director.getTotalFrames(), eventName, `${anim.getValue('AimLeftRight')}`);
+                anim.subscribeAnimationEvent(eventName, () => {
+                    console.warn(director.getTotalFrames(), eventName, `${controller.getValue('AimLeftRight')}`);
                 });
             }
         },

@@ -53,7 +53,7 @@ export class ALSAnimFeatureJumpAndFall extends ALSAnimFeature {
                 this.characterInfo,
             );
 
-            this.animationController.onCustomEvent_experimental('--> Debug Land Movement', () => {
+            this.owner.subscribeAnimationEvent('--> Debug Land Movement', () => {
                 console.error('--> Debug Land Movement');
             });
         }

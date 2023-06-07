@@ -131,19 +131,19 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.PoseGraph",

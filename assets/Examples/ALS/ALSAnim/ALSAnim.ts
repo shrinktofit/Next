@@ -10,6 +10,8 @@ import { ALSAnimFeatureTurnInPlace } from './ALSAnimFeatureTurnInPlace';
 import { ALSAnimFeatureJumpAndFall } from './ALSAnimFeatureJumpAndFall';
 import { VarName } from './VarName';
 import { ALSAnimFeatureMantle } from './ALSAnimFeatureMantle';
+import { warn } from 'cc';
+import { EventTarget } from 'cc';
 const { ccclass, property, executionOrder } = _decorator;
 
 const FEATURE_NAME_MOVEMENT = '移动';
@@ -187,6 +189,7 @@ export class ALSAnim extends Component {
                     feature.debug = false;
                 }
                 feature._init(
+                    this,
                     this.node,
                     characterInfo!,
                     animationController!,
@@ -207,11 +210,35 @@ export class ALSAnim extends Component {
         }
     }
 
+    public subscribeAnimationEvent(eventName: string, callback: (...args: any[]) => void, thisArg?: object) {
+        if (!this._animationEventTarget.hasEventListener(eventName)) {
+            Object.defineProperty(this, eventName, {
+                value: (...args: unknown[]) => {
+                    this._dispatchAnimEvent(eventName, ...args);
+                },
+            });
+        }
+        this._animationEventTarget.on(eventName, callback, thisArg);
+    }
+
+    public unsubscribeAnimationEvent(eventName: string, callback?: (...args: any[]) => void, thisArg?: object) {
+        this._animationEventTarget.off(eventName, callback, thisArg);
+        if (!this._animationEventTarget.hasEventListener(eventName)) {
+            this[eventName] = undefined;
+        }
+    }
+
     private _characterInfo!: ALSCharacterInfo;
 
     private _animationController!: animation.AnimationController;
 
     private _activatedFeatures: ALSAnimFeature[] = [];
+
+    private _animationEventTarget = new EventTarget();
+
+    private _dispatchAnimEvent(eventName: string, ...args: unknown[]) {
+        this._animationEventTarget.emit(eventName, ...args);
+    }
 
     protected get characterInfo() {
         return this._characterInfo;

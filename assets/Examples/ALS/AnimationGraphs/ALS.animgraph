@@ -381,11 +381,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Transition",
@@ -2827,11 +2827,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "Hips F"
+    "methodName": "Hips F"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -3194,11 +3194,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "Hips LF"
+    "methodName": "Hips LF"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -3561,11 +3561,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "Hips RF"
+    "methodName": "Hips RF"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -3928,11 +3928,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "Hips LB"
+    "methodName": "Hips LB"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -4295,11 +4295,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "Hips B"
+    "methodName": "Hips B"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -4662,11 +4662,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "Hips RB"
+    "methodName": "Hips RB"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -4708,11 +4708,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -4754,11 +4754,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -4800,11 +4800,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -4846,11 +4846,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -4892,11 +4892,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -4938,11 +4938,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -4984,11 +4984,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -5030,11 +5030,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -5076,11 +5076,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -5122,11 +5122,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -5168,11 +5168,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -5214,11 +5214,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -5260,11 +5260,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -5306,11 +5306,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -5352,11 +5352,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -5398,11 +5398,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -5444,11 +5444,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Transition",
@@ -5501,11 +5501,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -5545,11 +5545,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -5589,11 +5589,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -6300,11 +6300,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "StopTransition"
+    "methodName": "StopTransition"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -6592,11 +6592,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "-->Turn In Place Left 90"
+    "methodName": "-->Turn In Place Left 90"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Motion",
@@ -6636,11 +6636,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "-->Turn In Place Right 90"
+    "methodName": "-->Turn In Place Right 90"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Motion",
@@ -6680,11 +6680,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "-->Turn In Place Left 180"
+    "methodName": "-->Turn In Place Left 180"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Motion",
@@ -6724,11 +6724,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "-->Turn In Place Right 180"
+    "methodName": "-->Turn In Place Right 180"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -6948,11 +6948,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -6984,11 +6984,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationTransition",
@@ -7015,11 +7015,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationTransition",
@@ -7046,11 +7046,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -7082,11 +7082,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationTransition",
@@ -7113,11 +7113,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -7149,11 +7149,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -7185,11 +7185,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationTransition",
@@ -7216,11 +7216,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Transition",
@@ -7332,11 +7332,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "debug-->NotMoving"
+    "methodName": "debug-->NotMoving"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "StopTransition"
+    "methodName": "StopTransition"
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -7592,11 +7592,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -7725,11 +7725,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "->N Stop L"
+    "methodName": "->N Stop L"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -8487,11 +8487,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "->N Stop L"
+    "methodName": "->N Stop L"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -8620,11 +8620,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "->N Stop R"
+    "methodName": "->N Stop R"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -9382,11 +9382,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "->N Stop R"
+    "methodName": "->N Stop R"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Transition",
@@ -9454,11 +9454,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "-> Debug Plant Left Foot"
+    "methodName": "-> Debug Plant Left Foot"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -9515,11 +9515,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "-> Debug Plant Right Foot"
+    "methodName": "-> Debug Plant Right Foot"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -9560,11 +9560,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "-> Debug Lock Left Foot"
+    "methodName": "-> Debug Lock Left Foot"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -9605,11 +9605,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "-> Debug Lock Right Foot"
+    "methodName": "-> Debug Lock Right Foot"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -9637,11 +9637,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -9681,11 +9681,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -9740,11 +9740,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Transition",
@@ -9810,11 +9810,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "->N QuickStop"
+    "methodName": "->N QuickStop"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -9869,11 +9869,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -10114,11 +10114,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Motion",
@@ -10158,11 +10158,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "-> Debug Play N Stop L"
+    "methodName": "-> Debug Play N Stop L"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Motion",
@@ -10202,11 +10202,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": "-> Debug Play N Stop R"
+    "methodName": "-> Debug Play N Stop R"
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -10318,11 +10318,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -10354,11 +10354,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationTransition",
@@ -10385,11 +10385,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationTransition",
@@ -10424,11 +10424,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Transition",
@@ -10466,11 +10466,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationTransition",
@@ -10505,11 +10505,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -10541,11 +10541,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -10577,11 +10577,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationTransition",
@@ -10608,11 +10608,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationTransition",
@@ -10647,11 +10647,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.PoseNodeStateMachine",
@@ -10826,11 +10826,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Transition",
@@ -11634,11 +11634,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -11857,11 +11857,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -12075,11 +12075,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -12293,11 +12293,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -12478,11 +12478,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Transition",
@@ -12575,11 +12575,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -12657,11 +12657,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -12739,11 +12739,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -12806,11 +12806,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -12884,11 +12884,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -12951,11 +12951,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -13018,11 +13018,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -13085,11 +13085,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -13152,11 +13152,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -13215,11 +13215,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -13278,11 +13278,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -13341,11 +13341,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.PoseNodeAdditivelyBlend",
@@ -14066,11 +14066,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Motion",
@@ -14173,11 +14173,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Motion",
@@ -14217,11 +14217,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Motion",
@@ -14261,11 +14261,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Transition",
@@ -14348,11 +14348,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationTransition",
@@ -14379,11 +14379,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationTransition",
@@ -14410,11 +14410,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.PoseNodeSampleMotion",
@@ -14688,11 +14688,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -15102,11 +15102,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -15512,11 +15512,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -15609,11 +15609,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -16197,11 +16197,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -16260,11 +16260,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -16321,11 +16321,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -16367,11 +16367,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Transition",
@@ -16439,11 +16439,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -16483,11 +16483,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -16527,11 +16527,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -16588,11 +16588,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -16651,11 +16651,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -16712,11 +16712,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -16758,11 +16758,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -16804,11 +16804,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -16836,11 +16836,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -17017,11 +17017,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseState",
@@ -17198,11 +17198,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Transition",
@@ -17245,11 +17245,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -17289,11 +17289,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -17325,11 +17325,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.ProceduralPoseTransition",
@@ -17369,11 +17369,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.PoseGraphNodeShell",
@@ -18257,11 +18257,11 @@
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.AnimationGraphEventBinding",
-    "eventName": ""
+    "methodName": ""
   },
   {
     "__type__": "cc.animation.Transition",

@@ -30,11 +30,11 @@ export class ALSAnimFeatureStop extends ALSAnimFeature {
                 maxValue: 1. * 1.1,
             });
         }
-        listenToGraphEvent(this.animationController, `StopTransition`, () => {
+        this.owner.subscribeAnimationEvent(`StopTransition`, () => {
             this.animationController.setValue(`StopTransition`, true);
         });
 
-        listenToGraphEvent(this.animationController, '->N QuickStop', () => {
+        this.owner.subscribeAnimationEvent('->N QuickStop', () => {
             this.animationController.setValue(`QuickStopN`, true);
         });
 
@@ -46,20 +46,20 @@ export class ALSAnimFeatureStop extends ALSAnimFeature {
             '-> Debug Play N Stop L',
             '-> Debug Play N Stop R',
         ]) {
-            listenToGraphEvent(this.animationController, eventName, () => {
+            this.owner.subscribeAnimationEvent(eventName, () => {
                 console.warn(eventName);
             });
         }
 
         for (const eventName of ['->N Stop L', '->N Stop R']) {
-            listenToGraphEvent(this.animationController, eventName, () => {
+            this.owner.subscribeAnimationEvent(eventName, () => {
                 this.animationController.setValue(eventName, true);
                 // game.pause();
             });
         }
 
         for (const eventName of ['Hips F', 'Hips B', 'Hips LF', 'Hips LB', 'Hips RF', 'Hips RB']) {
-            listenToGraphEvent(this.animationController, eventName, () => {
+            this.owner.subscribeAnimationEvent(eventName, () => {
                 // console.warn(eventName);
                 
                 let hipsDirection = HipsDirection.F;
@@ -91,15 +91,6 @@ export class ALSAnimFeatureStop extends ALSAnimFeature {
     }
 
     private _debugChart: RealTimeNumberChart | undefined;
-}
-
-function listenToGraphEvent(controller: animation.AnimationController, eventName: string, callback: () => void) {
-    controller.onCustomEvent_experimental(eventName, () => {
-        if (false) {
-            console.log(`Graph event ${eventName} triggered.`);
-        }
-        callback();
-    });
 }
 
 enum HipsDirection {
