@@ -6,7 +6,7 @@ import type { ALSAnimFeature } from './ALSAnimFeature';
 // Just a dummy class to dispatch event for Animation(Controller)
 // TODO: Consider supporting dynamic display of event lists by allowing to edit Eventify as normal property
 @ccclass('AnimEventDispatcher')
-export class AnimEventDispatcher extends Eventify(Component) {
+export class AnimEventDispatcher extends Component {
     public static listenToGraphEvent (target: ALSAnimFeature, eventName: string, callback: () => void) {
         AnimEventDispatcher.prototype[eventName] = function () {
             if (false) {
