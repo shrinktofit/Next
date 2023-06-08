@@ -35,7 +35,7 @@ export class CharacterController extends Component {
     public turnSpeed = 180;
 
     start() {
-        this._physicalCharacterController.on('onColliderHit', this._onPhysicalCharacterControllerHit, this);
+        this._physicalCharacterController.on('onControllerColliderHit', this._onPhysicalCharacterControllerHit, this);
     }
 
     update(deltaTime: number) {
@@ -192,7 +192,7 @@ export class CharacterController extends Component {
         }
     }
 
-    private _onPhysicalCharacterControllerHit(controller, collider, contact: physics.CharacterControllerContact) {
+    private _onPhysicalCharacterControllerHit(contact: physics.CharacterControllerContact) {
         Vec3.copy(this._walkableNormal, contact.worldNormal);
         Vec3.copy(this._lastContact, contact.worldPosition);
     }
