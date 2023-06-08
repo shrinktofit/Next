@@ -27,6 +27,8 @@ export class FootLockDebugger {
         if (display) {
             this._feetPositionRecord = display.addRangedFloat('FeetPosition', 0.0, -1.1, 1.1);
             this._records = {
+                Enable_FootIK_L: display.addRangedFloat('Enable_FootIK_L', 0.0, 0.0, 1.0),
+                Enable_FootIK_R: display.addRangedFloat('Enable_FootIK_R', 0.0, 0.0, 1.0),
                 footLockL: display.addRangedFloat('FootLock_L', 0.0, 0.0, 3.0),
                 footLockR: display.addRangedFloat('FootLock_R', 0.0, 0.0, 3.0),
                 footLockAlphaL: display.addRangedFloat('FootLock_L_Alpha', 0.0, 0.0, 1.0),
@@ -40,6 +42,8 @@ export class FootLockDebugger {
             this._feetPositionRecord.value = animationController.getAuxiliaryCurveValue_experimental('Feet_Position');
         }
         if (this._records) {
+            this._records.Enable_FootIK_L.value = animationController.getAuxiliaryCurveValue_experimental('Enable_FootIK_L');
+            this._records.Enable_FootIK_R.value = animationController.getAuxiliaryCurveValue_experimental('Enable_FootIK_R');
             this._records.footLockL.value = animationController.getAuxiliaryCurveValue_experimental('Foot Lock L') as number;
             this._records.footLockR.value = animationController.getAuxiliaryCurveValue_experimental('Foot Lock R') as number;
             this._records.footLockAlphaL.value = animationController.getValue('FootLock_L_Alpha') as number;
@@ -122,6 +126,8 @@ export class FootLockDebugger {
 
     private _feetPositionRecord: RangedFloatRecord | undefined;
     private _records: {
+        Enable_FootIK_L: RangedFloatRecord;
+        Enable_FootIK_R: RangedFloatRecord;
         footLockL: RangedFloatRecord;
         footLockR: RangedFloatRecord;
         footLockAlphaL: RangedFloatRecord;

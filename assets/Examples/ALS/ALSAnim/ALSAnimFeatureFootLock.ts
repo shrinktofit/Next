@@ -10,7 +10,30 @@ import { DEBUG } from 'cc/env';
 import { drawCube } from '../Utility/Gizmo';
 import { Color } from 'cc';
 import { componentToWorldPosition, worldToComponentPosition, worldToComponentRotation } from '../Source/Utils/ComponentSpaceConversion';
+import { game } from 'cc';
 const { ccclass, property } = _decorator;
+
+@ccclass('ALSAnimFeatureFootLock.FootLockSettings')
+export class FootLockSettings {
+    @property(Node)
+    ikBone: Node | null = null;
+
+    @property
+    lockCurveName = 'Foot Lock [LR]';
+
+    @property
+    enableCurveName = 'Enable_FootIK_[LR]';
+
+    @property
+    lockAlphaVariableName = 'FootLock_[LR]_Alpha';
+
+    @property
+    lockLocationVariableName = 'FootLock_[LR]_Location';
+
+    @property
+    lockRotationVariableName = 'FootLock_[LR]_Rotation';
+}
+
 
 @ccclass('ALSAnimFeatureFootLock')
 export class ALSAnimFeatureFootLock extends ALSAnimFeature {
@@ -18,43 +41,43 @@ export class ALSAnimFeatureFootLock extends ALSAnimFeature {
     leftFootEnabled = true;
 
     @property({
-        type: Node,
         visible: function(this: ALSAnimFeatureFootLock) {
             return this.leftFootEnabled;
         },
     })
-    leftFoot: Node | null = null;
+    leftFootSettings = new FootLockSettings();
 
     @property
     rightFootEnabled = true;
 
     @property({
-        type: Node,
         visible: function(this: ALSAnimFeatureFootLock) {
             return this.rightFootEnabled;
         },
     })
-    rightFoot: Node | null = null;
+    rightFootSettings = new FootLockSettings();
 
     onStart() {
-        if (this.leftFootEnabled && this.leftFoot) {
+        if (this.leftFootEnabled && this.leftFootSettings.ikBone) {
             this._leftFootRecord = new FootLockRecord(
                 this.animationController,
                 this.characterInfo,
-                'Foot Lock L',
-                this.leftFoot,
-                'FootLock_L_Alpha',
-                'FootLock_L_Location'
+                this.leftFootSettings.enableCurveName,
+                this.leftFootSettings.lockCurveName,
+                this.leftFootSettings.ikBone,
+                this.leftFootSettings.lockAlphaVariableName,
+                this.leftFootSettings.lockLocationVariableName,
             );
         }
-        if (this.rightFootEnabled && this.rightFoot) {
+        if (this.rightFootEnabled && this.rightFootSettings.ikBone) {
             this._rightFootRecord = new FootLockRecord(
                 this.animationController,
                 this.characterInfo,
-                'Foot Lock R',
-                this.rightFoot,
-                'FootLock_R_Alpha',
-                'FootLock_R_Location'
+                this.rightFootSettings.enableCurveName,
+                this.rightFootSettings.lockCurveName,
+                this.rightFootSettings.ikBone,
+                this.rightFootSettings.lockAlphaVariableName,
+                this.rightFootSettings.lockLocationVariableName,
             );
         }
 
@@ -64,17 +87,17 @@ export class ALSAnimFeatureFootLock extends ALSAnimFeature {
     }
 
     onUpdate(deltaTime: number) {
-        this._debugger?.update(
-            deltaTime,
-            this.animationController,
-            this.characterInfo,
-        );
-
         for (const record of [this._leftFootRecord, this._rightFootRecord]) {
             if (record) {
                 record.onUpdate(deltaTime);
             }
         }
+
+        this._debugger?.update(
+            deltaTime,
+            this.animationController,
+            this.characterInfo,
+        );
     }
 
     private _leftFootRecord: FootLockRecord | null = null;
@@ -86,14 +109,26 @@ class FootLockRecord {
     constructor(
         private _animationController: animation.AnimationController,
         private _characterInfo: ALSCharacterInfo,
-        private _curveName: string,
+        private _enableLockCurveName: string,
+        private _lockCurveName: string,
         private _bone: Node,
         private _footLockAlphaVarName: string,
         private _footLockLocationVarName: string,
     ) {
     }
 
+    private _updateCount = 0;
+
     onUpdate(deltaTime: number) {
+        ++this._updateCount;
+        if (this._updateCount === 1) {
+            game.pause();
+        }
+        // if (this._updateCount > 2) {
+        //     this._debugUpdate(deltaTime);
+        //     return;
+        // }
+
         this._setFootLocking(deltaTime);
         this._debugUpdate(deltaTime);
 
@@ -109,16 +144,21 @@ class FootLockRecord {
         // Quat.multiply(skeletalSpaceLockRotation, this._lockingRotation, skeletalSpaceLockRotation);
     }
 
-    private _useFootLockCurve = true;
-    private _currentLockStrength = 1.0;
+    private _currentLockStrength = 0.0;
     private _lockingPosition = new Vec3();
     private _lockingRotation = new Quat();
 
     private _setFootLocking(deltaTime: number) {
         const { _animationController: animationController } = this;
 
-        const lockStrengthUnclamped = animationController.getAuxiliaryCurveValue_experimental(this._curveName);
-        const lockStrength = clamp01(lockStrengthUnclamped);
+        if (animationController.getAuxiliaryCurveValue_experimental(this._enableLockCurveName) <= 0.0) {
+            return;
+        }
+
+        const lockCurveValue = animationController.getAuxiliaryCurveValue_experimental(this._lockCurveName);
+        // const lockStrength = lockCurveValue;
+        const lockStrength = clamp01(lockCurveValue);
+
         if (lockStrength < this._currentLockStrength || lockStrength >= 0.99) {
             this._currentLockStrength = lockStrength;
         }
