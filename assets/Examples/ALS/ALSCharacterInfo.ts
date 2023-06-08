@@ -88,8 +88,8 @@ export class ALSCharacterInfo extends Component {
 
     public movementAction = MovementAction.None;
 
-    public isMovingOnGround() {
-        return true;
+    public get movingOnGround() {
+        return this._characterMovement.movingOnGround;
     }
 
     public desiredGait = ALSGait.Running;

@@ -69,6 +69,10 @@ export class CharacterMovement extends Component {
         this.onMovementModeChanged.emit(old);
     }
 
+    get movingOnGround() {
+        return this.movementMode === MovementMode.Walking;
+    }
+
     start() {
         this.fallingSimulation.node = this.node;
         this.fallingSimulation.start();
