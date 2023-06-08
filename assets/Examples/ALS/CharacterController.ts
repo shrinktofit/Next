@@ -70,7 +70,7 @@ export class CharacterController extends Component {
                 // this.node.translate(movement, NodeSpace.WORLD);
                 this._physicalCharacterController.move(movement);
 
-                const onGround = this._physicalCharacterController.onGround();
+                const onGround = this._physicalCharacterController.onGround;
                 // if (onGround !== this._lastOnGround) {
                 //     console.error(`onGround changed: ${onGround}, movement y: ${movement.y}, Delta time: ${deltaTime}, x: ${9.18 * (deltaTime ** 2)}`);
                 //     this._lastOnGround = onGround;
