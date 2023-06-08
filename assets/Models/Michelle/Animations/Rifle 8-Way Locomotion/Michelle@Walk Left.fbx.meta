@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "37f9e200-9578-4d27-be56-5b404abcaf34",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "Walk Left",
             "from": 0,
             "to": 1,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "ff651"
           }
         ]
       }

@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc",
@@ -39,12 +39,12 @@
       ],
       "subMetas": {}
     },
-    "bac42": {
+    "9b47e": {
       "importer": "gltf-mesh",
-      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@bac42",
+      "uuid": "a3dfab70-da56-449d-b7df-a79fb5c46acc@9b47e",
       "displayName": "",
-      "id": "bac42",
-      "name": "AnimMan_Material0.mesh",
+      "id": "9b47e",
+      "name": "AnimMan.mesh",
       "userData": {
         "gltfIndex": 0,
         "triangleCount": 16544
@@ -353,7 +353,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -366,7 +367,8 @@
             "from": 0,
             "to": 0.03333333507180214,
             "wrapMode": 2,
-            "speed": 1
+            "speed": 1,
+            "previousId": "07767"
           },
           {
             "name": "ZeroAdditivePose",
@@ -376,7 +378,8 @@
             "speed": 1,
             "additive": {
               "enabled": true
-            }
+            },
+            "previousId": "dbe1e"
           }
         ]
       }
@@ -384,7 +387,7 @@
     "redirect": "a3dfab70-da56-449d-b7df-a79fb5c46acc@1eed0",
     "assetFinder": {
       "meshes": [
-        "a3dfab70-da56-449d-b7df-a79fb5c46acc@bac42"
+        "a3dfab70-da56-449d-b7df-a79fb5c46acc@9b47e"
       ],
       "skeletons": [
         "a3dfab70-da56-449d-b7df-a79fb5c46acc@438fe"

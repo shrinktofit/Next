@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "591db3b7-2e5f-4fe6-ba22-f5aa5670ed6e",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "ALS_Flail",
             "from": 0,
             "to": 0.699999988079071,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "ecacb"
           }
         ]
       }

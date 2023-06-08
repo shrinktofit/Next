@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "gltf",
   "imported": true,
   "uuid": "027bfb69-b272-4d3c-941a-517d420bdcba",
@@ -83,7 +83,8 @@
             "name": "Injured",
             "from": 0,
             "to": 9.366666793823242,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "adb58"
           }
         ]
       },
@@ -96,7 +97,8 @@
             "name": "Injured(OnlyUpperBody)",
             "from": 0,
             "to": 9.366666793823242,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "431f0"
           }
         ]
       }

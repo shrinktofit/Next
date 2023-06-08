@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "d01ca8f3-1c65-4cee-af5a-ec26950f3e74",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "Walk Backward",
             "from": 0,
             "to": 1,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "d2b0d"
           }
         ]
       }

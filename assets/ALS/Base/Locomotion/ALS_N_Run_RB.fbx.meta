@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "2b596964-ffd2-4a2c-9915-80ef7d1cf418",
@@ -128,7 +128,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -140,7 +141,8 @@
             "name": "ALS_N_Run_RB",
             "from": 0,
             "to": 0.699999988079071,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "20074"
           }
         ]
       }

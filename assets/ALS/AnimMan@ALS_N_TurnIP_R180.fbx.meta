@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "c22fa47f-c8fd-47ba-a438-7ac3f136d09d",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "ALS_N_TurnIP_R180",
             "from": 0,
             "to": 2,
-            "wrapMode": 1
+            "wrapMode": 1,
+            "previousId": "d3d66"
           }
         ]
       }

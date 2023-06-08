@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "74855ed6-0675-4b08-b408-db557e84f831",
@@ -39,12 +39,12 @@
       ],
       "subMetas": {}
     },
-    "bac42": {
+    "9b47e": {
       "importer": "gltf-mesh",
-      "uuid": "74855ed6-0675-4b08-b408-db557e84f831@bac42",
+      "uuid": "74855ed6-0675-4b08-b408-db557e84f831@9b47e",
       "displayName": "",
-      "id": "bac42",
-      "name": "AnimMan_Material0.mesh",
+      "id": "9b47e",
+      "name": "AnimMan.mesh",
       "userData": {
         "gltfIndex": 0,
         "triangleCount": 16544
@@ -325,7 +325,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -337,7 +338,8 @@
             "name": "Unreal Take",
             "from": 0,
             "to": 2,
-            "wrapMode": 1
+            "wrapMode": 1,
+            "previousId": "083c5"
           }
         ]
       }
@@ -345,7 +347,7 @@
     "redirect": "74855ed6-0675-4b08-b408-db557e84f831@3d15a",
     "assetFinder": {
       "meshes": [
-        "74855ed6-0675-4b08-b408-db557e84f831@bac42"
+        "74855ed6-0675-4b08-b408-db557e84f831@9b47e"
       ],
       "skeletons": [
         "74855ed6-0675-4b08-b408-db557e84f831@438fe"

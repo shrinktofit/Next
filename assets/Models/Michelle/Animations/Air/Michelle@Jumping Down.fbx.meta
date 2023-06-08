@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "fa62e9af-ed22-4a37-94b8-ea763ea8ae62",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "Jumping Down",
             "from": 0,
             "to": 0.36666667461395264,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "91404"
           }
         ]
       }

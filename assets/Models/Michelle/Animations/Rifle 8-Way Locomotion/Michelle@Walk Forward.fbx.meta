@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "9e239e46-d2f7-42e7-8bd1-dcad196c0188",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "Walk Forward",
             "from": 0,
             "to": 1,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "a2147"
           }
         ]
       }

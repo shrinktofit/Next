@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "8c70675b-73e2-4b52-9978-ed13dabbc95b",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "ALS_N_JumpLoop",
             "from": 0,
             "to": 0.699999988079071,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "2e10b"
           }
         ]
       }

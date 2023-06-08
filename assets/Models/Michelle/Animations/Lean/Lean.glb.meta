@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "gltf",
   "imported": true,
   "uuid": "5a030041-d155-4bb1-b171-a06f357101a2",
@@ -59,7 +59,8 @@
             "name": "LeanPose",
             "from": 0,
             "to": 0.13333334028720856,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "9f1ce"
           }
         ]
       }

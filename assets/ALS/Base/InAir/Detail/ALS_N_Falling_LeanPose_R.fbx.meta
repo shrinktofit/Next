@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "97eb09fa-9a50-43dc-ba22-ca8b496f07ca",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "ALS_N_Falling_LeanPose_R",
             "from": 0,
             "to": 0.03333333507180214,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "10f09"
           }
         ]
       }

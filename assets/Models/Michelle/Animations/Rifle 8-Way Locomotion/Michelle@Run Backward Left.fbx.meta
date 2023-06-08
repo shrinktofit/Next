@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "585f526b-a34a-4f95-b699-f02de0b1b4fd",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "Run Backward Left",
             "from": 0,
             "to": 0.5,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "deec5"
           }
         ]
       }

@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "e5dbabe3-1a08-4886-8442-8999633ade4a",
@@ -128,7 +128,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -140,7 +141,8 @@
             "name": "ALS_N_Walk_LF",
             "from": 0,
             "to": 1.1333333253860474,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "1fc01"
           }
         ]
       }

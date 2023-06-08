@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "748960de-51b1-4ab2-920d-7a7fef932dc4",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "ALS_N_JumpRun_LF",
             "from": 0,
             "to": 1.6666666269302368,
-            "wrapMode": 1
+            "wrapMode": 1,
+            "previousId": "e9cf6"
           }
         ]
       }

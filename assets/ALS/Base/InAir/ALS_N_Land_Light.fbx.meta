@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "efdf7eee-13de-4ea1-a2d6-9991191c0e08",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "ALS_N_Land_Light",
             "from": 0,
             "to": 1.1666666269302368,
-            "wrapMode": 1
+            "wrapMode": 1,
+            "previousId": "964f4"
           }
         ]
       }

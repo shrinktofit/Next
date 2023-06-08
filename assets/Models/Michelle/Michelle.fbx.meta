@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "c95fd6a8-c24e-46ed-9c6c-00afe117baf5",
@@ -290,7 +290,8 @@
       }
     ],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -302,7 +303,8 @@
             "name": "mixamo.com",
             "from": 0,
             "to": 0.03333333507180214,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "18d6f"
           }
         ]
       }

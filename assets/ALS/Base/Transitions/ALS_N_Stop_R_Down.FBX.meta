@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "998d5f90-3a3e-4121-a8ee-56184c6be9e3",
@@ -179,7 +179,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -194,7 +195,8 @@
             "wrapMode": 2,
             "additive": {
               "enabled": true
-            }
+            },
+            "previousId": "30492"
           }
         ]
       }

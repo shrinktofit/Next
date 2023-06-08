@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "e1535b18-7f97-409a-9b39-4df312533f37",
@@ -56,7 +56,8 @@
     "imageMetas": [],
     "fbx": {
       "smartMaterialEnabled": true,
-      "preferLocalTimeSpan": true
+      "preferLocalTimeSpan": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -73,7 +74,8 @@
               "baseClip": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767",
               "enabled": true,
               "refClip": "a3dfab70-da56-449d-b7df-a79fb5c46acc@07767"
-            }
+            },
+            "previousId": "e645c"
           }
         ]
       }

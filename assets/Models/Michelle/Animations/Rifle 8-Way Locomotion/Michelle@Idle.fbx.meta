@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "2def71d4-79d1-4a7c-a6f7-ad0165dd6492",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "Idle",
             "from": 0,
             "to": 2.0999999046325684,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "c2696"
           }
         ]
       }

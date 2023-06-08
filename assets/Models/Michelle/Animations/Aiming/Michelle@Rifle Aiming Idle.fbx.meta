@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "e036d0d4-1791-42f5-80d7-90c020954fbc",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "Rifle Aiming Idle",
             "from": 0,
             "to": 3.0999999046325684,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "47e2c"
           }
         ]
       }

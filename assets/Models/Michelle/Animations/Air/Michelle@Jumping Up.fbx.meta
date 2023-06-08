@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.6",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "8b80e240-0fd5-401b-803e-57b08d0346d3",
@@ -50,7 +50,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -62,7 +63,8 @@
             "name": "Jumping Up",
             "from": 0,
             "to": 0.23333333432674408,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "43826"
           }
         ]
       }
