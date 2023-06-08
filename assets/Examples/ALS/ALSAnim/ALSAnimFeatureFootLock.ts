@@ -60,6 +60,7 @@ export class ALSAnimFeatureFootLock extends ALSAnimFeature {
     onStart() {
         if (this.leftFootEnabled && this.leftFootSettings.ikBone) {
             this._leftFootRecord = new FootLockRecord(
+                this,
                 this.animationController,
                 this.characterInfo,
                 this.leftFootSettings.enableCurveName,
@@ -71,6 +72,7 @@ export class ALSAnimFeatureFootLock extends ALSAnimFeature {
         }
         if (this.rightFootEnabled && this.rightFootSettings.ikBone) {
             this._rightFootRecord = new FootLockRecord(
+                this,
                 this.animationController,
                 this.characterInfo,
                 this.rightFootSettings.enableCurveName,
@@ -107,6 +109,7 @@ export class ALSAnimFeatureFootLock extends ALSAnimFeature {
 
 class FootLockRecord {
     constructor(
+        private _owner: ALSAnimFeatureFootLock,
         private _animationController: animation.AnimationController,
         private _characterInfo: ALSCharacterInfo,
         private _enableLockCurveName: string,
@@ -117,13 +120,7 @@ class FootLockRecord {
     ) {
     }
 
-    private _updateCount = 0;
-
     onUpdate(deltaTime: number) {
-        ++this._updateCount;
-        if (this._updateCount === 1) {
-            game.pause();
-        }
         // if (this._updateCount > 2) {
         //     this._debugUpdate(deltaTime);
         //     return;
@@ -228,7 +225,7 @@ class FootLockRecord {
     }
 
     private _debugUpdate(deltaTime: number) {
-        if (!DEBUG) {
+        if (!DEBUG || !this._owner.debug) {
             return;
         }
         drawCube(
